@@ -1,0 +1,5 @@
+title: Draw some track roads
+emoji: 🚜
+description: A track road is a road leading to some farm or in a forest. It is marked by highway=track with optional tracktype=gradeN, with N from 1 (best) to 5 (worst). Find a field or a forest and draw 2-3 km of a track.
+test:
+  created_2_ways: "highway=track"

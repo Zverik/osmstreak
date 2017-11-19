@@ -1,0 +1,5 @@
+title: Fix a subway
+emoji: 🚇
+description: For this you need to know the Public Transport v2 schema. Head to https://osmz.ru/subways/ and pick a city with an error in the subway. It should involve modifying a subway route. Fix it — and you may go, or continue tidying up the network.
+test:
+  modified_relation: ["type=route", "route=subway"]

@@ -1,0 +1,6 @@
+title: Draw twenty buildings
+emoji: 🏠
+description: Draw at least 20 buildings anywhere. Open your editor of choice, navigate to a poorly mapped rural or industrial area, and trace some buildings.
+active: true
+test:
+  created_20_ways: "building=*"

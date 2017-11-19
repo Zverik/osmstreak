@@ -1,0 +1,5 @@
+title: Use MAPS.ME
+emoji: 📱
+description: MAPS.ME is not just a multiplatform map browser and navigator. You can edit the map with it. Just click on an amenity, or choose "Add a place" from the menu. Try that.
+test:
+  changeset: "created_by=MAPS.ME*"

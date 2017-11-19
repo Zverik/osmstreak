@@ -1,0 +1,5 @@
+title: Add a Turn Restriction
+emoji: 🚫
+description: Find an unmapped turn restriction on Mapillary or other OSM-compatible source. Choose a smaller town if you like. Map the restriction.
+test:
+  created_relation: "type=restriction"

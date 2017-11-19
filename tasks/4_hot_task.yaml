@@ -1,0 +1,7 @@
+title: Fix a building
+emoji: ⛺
+description: >
+  Open https://tasks.hotosm.org/ and choose a random active task. Inside, choose a random yellow rectangle and do a validation. See how novice mappers draw their buildings, meditate on that a bit, and then fix them: straighten the edges, improve shapes. Just a couple would do.
+test:
+  modify_2_nodes: ""
+  modify_area: "building=*"

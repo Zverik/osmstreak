@@ -1,0 +1,5 @@
+title: Add a Postcode
+emoji: 🏤
+description: In some countries, like Russia or the USA, you can find a postcode in a publicly-available database. In others you just know it or deduce it from indirect sources, like a shop website. Find a postcode for any building that does not have it, and map it.
+test:
+  modified_area: "addr:postcode=*"

@@ -1,0 +1,6 @@
+title: Give Way
+emoji: 🛑
+description: There is a special tag for mapping the triangle "give way" sign. It's highway=give_way, obviously. Find such a sign, either by using Mapillary or your memory, place a node on a highway that has to give way, and tag that node with the tag. Also add a priority_road tag to the main road.
+test:
+  created_node: "highway=give_way"
+  modified_way: "priority_road=*"

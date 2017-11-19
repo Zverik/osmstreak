@@ -1,0 +1,6 @@
+title: Make an edit with JOSM
+emoji: ☕
+description: >
+  Install the JOSM editor, if you haven't already, and edit something with it. We recommend drawing some buildings: (explanation)
+test:
+  changeset: "created_by=JOSM*"
