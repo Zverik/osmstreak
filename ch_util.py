@@ -177,8 +177,7 @@ def validate_changeset(user, changeset, task_name=None, req=None):
     date_str = ch.get('created_at')[:10]
     date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
     if date != today():  # and date + date.resolution != today:
-        # raise ValueError('Changeset is too old')
-        pass
+        raise ValueError('Changeset is too old')
 
     try:
         if not task_name:
