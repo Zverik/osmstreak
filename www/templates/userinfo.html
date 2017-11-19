@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}{{ quser.name }} on OSM Streak{% endblock %}
+{% block content %}
+<div id="userinfo">
+    <p class="name" id="user_name">{{ quser.name }}</p>
+    <p class="stars"><span id="user_level" style="display: none;">{{ quser.level }}</span>{{ '⭐' * quser.level }}</p>
+    <p class="points"><span id="user_points">{{ quser.score }}</span> points</p>
+</div>
+{% endblock %}

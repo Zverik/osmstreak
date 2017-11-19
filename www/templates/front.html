@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}OSM Streak{% endblock %}
+{% block header %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% endblock %}
+{% block content %}
+{{ task | safe }}
+{% if tobj.changeset %}
+<p>Thanks for editing OpenStreetMap today! You are uploading changes {{ user.streak }} days in a row!</p>
+{% else %}
+<form action="{{ url_for('changeset') }}">
+    <p>Submit a changeset URL for the task, or <a href="javascript:showChangesets()">choose from a list</a>:</p>
+    <div id="changesets"></div>
+    <p><input type="text" name="changeset" value=""> <input type="submit"></p>
+    <p>Time left to submit a changeset: {{ timeleft }}.</p>
+</form>
+<script>
+    function showChangesets() {
+        function esc(s) {
+            return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+        $.getJSON("{{ url_for('get_changesets') }}", function(data) {
+            var $ch = $('#changesets');
+            $ch.empty();
+            $ch.show();
+            if (data.error) {
+                $ch.text(data.error);
+                return;
+            }
+            var items = [];
+            $.each(data.changesets, function(i, ch) {
+                items.push('<li><a href="{{ url_for('changeset') }}?changeset='+
+                    ch.id+'">'+ch.htime+'</a>: '+esc(ch.comment)+'</li>');
+            });
+            $('<ul>'+items.join('')+'</ul>').appendTo($ch);
+        });
+    }
+</script>
+{% endif %}
+{% endblock %}

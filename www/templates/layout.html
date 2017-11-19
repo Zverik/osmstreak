@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        {% block header %}{% endblock %}
+    </head>
+    <body>
+        <div id="header">
+            <a href="{{ url_for('front') }}">OSM Streak</a>
+            <span class="right">
+                {% if user %}
+                <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} points {{ '⭐' * user.level }}</span>
+                <span><a href="{{ url_for('settings') }}">Connect</a></span>
+                {% else %}
+                <span><a href="{{ url_for('login') }}">Log in</a></span>
+                {% endif %}
+                <span><a href="{{ url_for('about') }}">About</a></span>
+            </span>
+        </div>
+        <div id="content">
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
