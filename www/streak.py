@@ -184,10 +184,12 @@ def changeset():
         redirect(url_for('login'))
 
     cs_data = request.args.get('changeset')
-    changeset = parse_changeset_id(cs_data)
+    if not cs_data.strip():
+        return redirect(url_for('front'))
     user = get_user()
     # TODO: call submit_changeset instead
     try:
+        changeset = parse_changeset_id(cs_data)
         cs_date, conforms = validate_changeset(user, changeset, None, openstreetmap)
     except ValueError as e:
         flash(str(e))
@@ -195,10 +197,7 @@ def changeset():
     if not cs_date or cs_date != today():
         flash('Date of the changeset is wrong')
         return redirect(url_for('front'))
-    try:
-        task = Task.get(Task.user == user, Task.day == cs_date)
-    except Task.DoesNotExist:
-        return 'Task was not given, please visit the front page'
+    task = Task.get(Task.user == user, Task.day == cs_date)
     try:
         last_task = Task.select(Task.day).where(
             Task.user == user, Task.changeset.is_null(False)

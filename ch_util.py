@@ -184,7 +184,7 @@ def validate_changeset(user, changeset, task_name=None, req=None):
             task_obj = Task.get(Task.user == user, Task.day == date)
             task_name = task_obj.task
     except Task.DoesNotExist:
-        raise ValueError('Task was not given, please visit the front page')
+        raise ValueError('You did not visit this website on the day of the changeset')
     task = load_task(task_name)
     if 'test' not in task:
         return date, True
