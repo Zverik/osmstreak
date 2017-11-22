@@ -7,7 +7,7 @@ import math
 import os
 import re
 import requests
-from db import User, Task
+from db import Task
 from random import Random, choice
 from ruamel.yaml import YAML
 from xml.etree import ElementTree as etree
@@ -76,7 +76,7 @@ def random_task_for_user(user):
     tasks = set(get_tasks(user.level))
     if not tasks:
         return None
-    last_tasks = set([x[0] for x in User.select(Task.task).join(Task).order_by(
+    last_tasks = set([x[0] for x in Task.select(Task.task).where(Task.user == user).order_by(
         Task.day.desc()).limit(int(len(tasks) * 0.7)).tuples()])
     return choice(list(tasks - last_tasks))
 
