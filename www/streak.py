@@ -1,6 +1,7 @@
 import os
 import config
 import math
+import re
 from ch_util import (
     load_task, get_or_create_task_for_user, random_task_for_ip,
     validate_changeset, time_until_day_ends,
@@ -133,8 +134,17 @@ def get_token(token='user'):
     return None
 
 
+RE_MARKUP_LINK = re.compile(r'\[(http[^ \]]+) +([^\]]+)\]')
+RE_EM = re.compile(r'\'\'(.*?)\'\'')
+
+
 def render_task(task):
-    return render_template('task.html', task=task)
+    desc = task['description'].strip()
+    desc = desc.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    desc = desc.replace('\n', '<br>')
+    desc = RE_MARKUP_LINK.sub(r'<a href="\1">\2</a>', desc)
+    desc = RE_EM.sub(r'<i>\1</i>', desc)
+    return render_template('task.html', task=task, desc=desc)
 
 
 def get_user():

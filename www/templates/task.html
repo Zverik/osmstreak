@@ -1,5 +1,5 @@
 <div id="task">
 <h2>{{ task.title }}</h2>
 <p id="emoji">{{ task.emoji }}</>
-<p class="description">{{ task.description }}</p>
+<p class="description">{{ desc | safe }}</p>
 </div>
