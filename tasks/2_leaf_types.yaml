@@ -2,8 +2,8 @@ title: Plant three trees
 emoji: 🍂
 description: >
   Mapping a tree is not just placing a _natural=tree_ node. You have to specify its type.
-  Please read wiki pages on [https://whatever.com leaf_type]
-  and [https://www leaf_cycle], and then add 3 trees near your home or somewhere
+  Please read wiki pages on [https://wiki.openstreetmap.org/wiki/Key:leaf_type]
+  and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle], and then add 3 trees near your home or somewhere
   familiar to you using these tags.
 test:
   created_3_nodes: ["natural=tree", "leaf_type=*", "leaf_cycle=*"]
