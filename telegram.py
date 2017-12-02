@@ -139,14 +139,13 @@ class Player(telepot.helper.ChatHandler):
             else:
                 hashcode = text.strip()
             if len(hashcode) != 64:
-                self.sender.sendMessage(no_code_msg.format(config.BASE_URL),
-                                        parse_mode='Markdown')
+                self.sender.sendMessage(no_code_msg.format(config.BASE_URL))
                 return
             user = self._find_user_by_code(hashcode)
             if not user:
                 self.sender.sendMessage(
                     self.t('wrong_code') + '\n' +
-                    no_code_msg.format(config.BASE_URL), parse_mode='Markdown')
+                    no_code_msg.format(config.BASE_URL))
                 return
             Telegram.create(channel=self.id, user=user)
             self.lang = ch.load_language_from_user('telegram', user)
