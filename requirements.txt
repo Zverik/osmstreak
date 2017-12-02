@@ -3,3 +3,4 @@ flask>=0.11
 flask-Compress
 flask-OAuthlib
 ruamel.yaml
+telepot

@@ -31,7 +31,7 @@ class Player(telepot.helper.ChatHandler):
         super(Player, self).__init__(*args, **kwargs)
         tg = self._get_tg()
         self.has_user = tg is not None
-        self.lang = ch.load_language_from_user('telegram', tg.user)
+        self.lang = ch.load_language_from_user('telegram', 'en' if tg is None else tg.user)
 
     def t(self, *args):
         d = self.lang
