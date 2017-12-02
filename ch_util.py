@@ -60,7 +60,7 @@ def load_language(path, lang):
 
 
 def load_language_from_user(path, user):
-    return load_language(path, user.lang)
+    return load_language(path, 'en' if not user else user.lang)
 
 
 def get_supported_languages():
