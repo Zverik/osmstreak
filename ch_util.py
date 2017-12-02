@@ -7,7 +7,7 @@ import math
 import os
 import re
 import requests
-from db import Task
+from db import database, Task
 from random import Random, choice
 from ruamel.yaml import YAML
 from xml.etree import ElementTree as etree
@@ -35,6 +35,37 @@ def time_until_day_ends():
     elif halfhours == 2:
         return 'an hour'
     return '{} minutes'.format(left // 60)
+
+
+def merge_dict(target, other):
+    for k, v in other.items():
+        if isinstance(v, dict):
+            node = target.setdefault(k, {})
+            merge_dict(node, v)
+        else:
+            target[k] = v
+
+
+def load_language(path, lang):
+    yaml = YAML()
+    with open(os.path.join(config.BASE_DIR, 'lang', path or '', 'en.yaml'), 'r') as f:
+        data = yaml.load(f)
+        data = data[data.keys()[0]]
+    lang_file = os.path.join(config.BASE_DIR, 'lang', path or '', lang + '.yaml')
+    if os.path.exists(lang_file):
+        with open(lang_file, 'r') as f:
+            lang_data = yaml.load(f)
+            merge_dict(data, lang_data[lang_data.keys()[0]])
+    return data
+
+
+def load_language_from_user(path, user):
+    return load_language(path, user.lang)
+
+
+def get_supported_languages():
+    return set([x[:x.index('.')].decode('utf-8') for x in os.listdir(
+        os.path.join(config.BASE_DIR, 'lang')) if '.yaml' in x])
 
 
 def get_tasks(max_level=1):
@@ -81,13 +112,16 @@ def random_task_for_user(user):
     return choice(list(tasks - last_tasks))
 
 
-def get_or_create_task_for_user(user, date=None):
+def get_or_create_task_for_user(user, date=None, ip=None):
     if not date:
         date = today()
     try:
         task_obj = Task.get(Task.user == user, Task.day == date)
     except Task.DoesNotExist:
-        task_name = random_task_for_user(user)
+        if ip:
+            task_name = random_task_for_ip(ip)
+        else:
+            task_name = random_task_for_user(user)
         task_obj = Task(user=user, day=date, task=task_name)
         task_obj.save()
     return task_obj
@@ -153,13 +187,26 @@ def validate_tags(obj, tagtest):
     return True
 
 
+class ValidationError(ValueError):
+    def __init__(self, message, arg=None):
+        self.message = message
+        self.arg = arg
+        super(ValidationError, self).__init__(message, arg)
+
+    def to_lang(self, lang):
+        m = lang[self.message]
+        if self.arg:
+            return m.format(self.arg)
+        return m
+
+
 def parse_changeset_id(changeset):
     if isinstance(changeset, basestring):
         m = re.search(r'/changeset/(\d+)', changeset)
         if not m:
             m = re.match(r'^\s*(\d+)\s*$', changeset)
             if not m:
-                raise ValueError('Wrong changeset id: {}'.format(changeset))
+                raise ValidationError('Wrong changeset id: {}', changeset)
         return int(m.group(1))
     return changeset
 
@@ -169,22 +216,22 @@ def validate_changeset(user, changeset, task_name=None, req=None):
         req = RequestsWrapper()
     resp = req.get('changeset/{}'.format(changeset))
     if resp.status != 200:
-        raise Exception('Error connecting to OSM API')
+        raise ValidationError('api_error')
     ch = resp.data[0]
     uid = int(ch.get('uid'))
     if uid != user.uid:
-        raise ValueError('Please add only your changesets')
+        raise ValidationError('not_yours')
     date_str = ch.get('created_at')[:10]
     date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-    if date != today():  # and date + date.resolution != today:
-        raise ValueError('Changeset is too old')
+    if date < yesterday():
+        raise ValidationError('old_changeset')
 
     try:
         if not task_name:
             task_obj = Task.get(Task.user == user, Task.day == date)
             task_name = task_obj.task
     except Task.DoesNotExist:
-        raise ValueError('You did not visit this website on the day of the changeset')
+        raise ValidationError('no_task', date.strftime('%d.%m.%Y'))
     task = load_task(task_name)
     if 'test' not in task:
         return date, True
@@ -198,10 +245,10 @@ def validate_changeset(user, changeset, task_name=None, req=None):
             if changes is None:
                 resp = req.get('changeset/{}/download'.format(changeset))
                 if resp.status != 200:
-                    raise Exception('Error connecting to OSM API')
+                    raise ValidationError('api_error')
                 changes = resp.data
                 if changes.tag != 'osmChange':
-                    raise Exception('OSM API returned {} for the root xml'.format(changes.tag))
+                    raise ValidationError('api_strange')
 
             state_action = True
             actions = set()
@@ -261,22 +308,84 @@ def validate_changeset(user, changeset, task_name=None, req=None):
 
 
 def submit_changeset(user, changeset, req=None):
-    changeset = parse_changeset_id(changeset)
-    cs_date, conforms = validate_changeset(user, changeset, req)
-    if not cs_date:
-        return 'Date of the changeset is wrong'
+    """Validates the changeset, records it and returns a series of messages."""
+    lang = load_language_from_user('', user)['validation']
     try:
-        task = Task.get(Task.user == user, Task.day == cs_date)
-    except Task.DoesNotExist:
-        return 'Task was not given, please visit the front page'
+        changeset = parse_changeset_id(changeset)
+        cs_date, conforms = validate_changeset(user, changeset, None, req)
+
+        if not cs_date:
+            raise ValidationError('wrong_date')
+
+        try:
+            last_task = Task.select(Task.day).where(
+                Task.user == user, Task.changeset.is_null(False)
+            ).order_by(Task.day.desc()).get()
+            last_task_day = last_task.day
+        except Task.DoesNotExist:
+            last_task_day = None
+
+        if last_task_day >= cs_date:
+            raise ValidationError('has_later_changeset')
+
+        if cs_date < yesterday():
+            raise ValidationError('old_changeset')
+    except ValidationError as e:
+        return [e.to_lang(lang)], False
+
+    task = Task.get(Task.user == user, Task.day == cs_date)
     task.changeset = changeset
-    task.correct = False
-    task.save()
-    user.streak += 1
+    task.correct = conforms
+
+    if last_task_day == cs_date - cs_date.resolution:
+        user.streak += 1
+    else:
+        user.streak = 1
     user.score += int(math.log(user.streak+1, 2))
+    msgs = [lang['changeset_noted'].format(user.streak)]
     if conforms:
         user.score += 1
+        msgs.append('extra_point')
     if user.level < len(config.LEVELS) + 1:
         if user.score >= config.LEVELS[user.level-1]:
             user.level += 1
-    user.save()
+            msgs.append('gain_level')
+
+    with database.atomic():
+        task.save()
+        user.save()
+    return msgs, True
+
+
+def get_user_changesets(user, req=None):
+    if not req:
+        req = RequestsWrapper()
+    date = today()
+    since = date - date.resolution * 2
+    resp = req.get('changesets?user={}&time={}'.format(
+        user.uid, since.strftime('%Y-%m-%d')))
+    if resp.status != 200:
+        raise Exception('Error connecting to OSM API')
+    result = []
+    for chs in resp.data:
+        chtime = datetime.datetime.strptime(chs.get('created_at'), '%Y-%m-%dT%H:%M:%SZ')
+        if chtime.date() < date - date.resolution:
+            continue
+        chdata = {
+            'id': int(chs.get('id')),
+            'time': chs.get('created_at')
+        }
+        if chtime.date() == date:
+            hdate = 'Today'
+        elif chtime.date() == date - date.resolution:
+            hdate = 'Yesterday'
+        else:
+            hdate = chtime.strftime('%d.%m')
+        chdata['htime'] = hdate + ' ' + chtime.strftime('%H:%M')
+        for tag in chs.findall('tag'):
+            if tag.get('k') == 'created_by':
+                chdata['editor'] = tag.get('v')
+            elif tag.get('k') == 'comment':
+                chdata['comment'] = tag.get('v').encode('utf-8')
+        result.append(chdata)
+    return result

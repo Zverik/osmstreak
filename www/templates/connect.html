@@ -1,7 +1,22 @@
 {% extends "layout.html" %}
 {% block title %}Connect OSM Streak{% endblock %}
 {% block content %}
-<p>Soon you would be able to get notifications for new tasks
-and submit changesets by Telegram or e-mail.</p>
-<p>But not right now. Sorry.</p>
+<p>Get notifications for new tasks and submit changesets by Telegram or e-mail.</p>
+<p>Telegram: <a href="https://t.me/osm_streak_bot?start={{code}}">click to start the bot</a>.</p>
+<form action="{{ url_for('set_email') }}" method="post">
+    <p>Email:
+        <input type="text" size="30" name="email" value="{{ user.email or '' }}">
+        <input type="submit" value="Subscribe">
+        {% if user.email %}
+        <button onclick="javscript:form.email.value = ''; form.submit();">Unsubscribe</button>
+        {% endif %}
+    </p>
+</form>
+<form action="{{ url_for('set_lang') }}" method="post">
+    <p>Language: <select name="lang" size="1" onchange="javascript:form.submit()">
+        {% for l in langs %}
+        <option value="{{ l }}" {% if l == user.lang %}selected{% endif %}>{{ l }}</option>
+        {% endfor %}
+    </select></p>
+</form>
 {% endblock %}

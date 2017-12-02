@@ -1,17 +1,12 @@
-import os
 import config
 import math
 import re
-from ch_util import (
-    load_task, get_or_create_task_for_user, random_task_for_ip,
-    validate_changeset, time_until_day_ends,
-    parse_changeset_id, today
-)
+import ch_util as ch
 from db import database, User, Task
-from ruamel.yaml import YAML
 from www import app
 from flask import (
-    session, url_for, redirect, request, render_template, g, flash, jsonify
+    session, url_for, redirect, request,
+    render_template, g, flash, jsonify
 )
 from flask_oauthlib.client import OAuth
 from datetime import datetime
@@ -41,34 +36,8 @@ def teardown(exception):
         database.close()
 
 
-def merge_dict(target, other):
-    for k, v in other.items():
-        if isinstance(v, dict):
-            node = target.setdefault(k, {})
-            merge_dict(node, v)
-        else:
-            target[k] = v
-
-
-def load_language(path, lang):
-    yaml = YAML()
-    with open(os.path.join(config.BASE_DIR, path, 'en.yaml'), 'r') as f:
-        data = yaml.load(f)
-        data = data[data.keys()[0]]
-    lang_file = os.path.join(config.BASE_DIR, path, lang + '.yaml')
-    if os.path.exists(lang_file):
-        with open(lang_file, 'r') as f:
-            lang_data = yaml.load(f)
-            merge_dict(data, lang_data[lang_data.keys()[0]])
-    return data
-
-
-def load_user_language():
-    # TODO
-    return
-
-    supported = set([x[:x.index('.')].decode('utf-8') for x in os.listdir(
-        os.path.join(config.BASE_DIR, 'lang')) if '.yaml' in x])
+def get_language_from_request():
+    supported = ch.get_supported_languages()
     accepted = request.headers.get('Accept-Language', '')
     lang = 'en'
     for lpart in accepted.split(','):
@@ -83,9 +52,13 @@ def load_user_language():
         if len(pieces) == 1 and pieces[0].lower() in supported:
             lang = pieces[0].lower()
             break
+    return lang
 
-    data = load_language('lang', lang)
-    tasks = load_language('lang/descriptions', lang)
+
+def load_user_language():
+    user = get_user()
+    data = ch.load_language_from_user('', user)
+    tasks = ch.load_language_from_user('tasks', user)
     data['tasks'] = tasks
     g.lang = data
 
@@ -114,7 +87,10 @@ def oauth():
                                        defaults={'name': name})
     if user.name != name or created:
         user.name = name
+        user.lang = get_language_from_request()
         user.save()
+    # Use the same task a user has seen when not logged in
+    ch.get_or_create_task_for_user(user, ip=get_ip())
     return redirect(url_for('front'))
 
 
@@ -153,15 +129,17 @@ def get_user():
     return None
 
 
+def get_ip():
+    if 'X-Forwarded-For' in request.headers:
+        return request.headers.getlist("X-Forwarded-For")[0].rpartition(' ')[-1]
+    return request.remote_addr or 'unknown'
+
+
 @app.route('/')
 def front():
     if 'osm_token' in session:
         return front_osm()
-    if 'X-Forwarded-For' in request.headers:
-        ip = request.headers.getlist("X-Forwarded-For")[0].rpartition(' ')[-1]
-    else:
-        ip = request.remote_addr or 'unknown'
-    task = load_task(random_task_for_ip(ip))
+    task = ch.load_task(ch.random_task_for_ip(get_ip()))
     return render_template('index.html', task=render_task(task))
 
 
@@ -169,11 +147,11 @@ def front_osm():
     if 'osm_token' not in session:
         redirect(url_for('login'))
     user = get_user()
-    task_obj = get_or_create_task_for_user(user)
-    task = load_task(task_obj.task)
+    task_obj = ch.get_or_create_task_for_user(user)
+    task = ch.load_task(task_obj.task)
     return render_template('front.html', task=render_task(task),
                            user=user, tobj=task_obj,
-                           timeleft=time_until_day_ends())
+                           timeleft=ch.time_until_day_ends())
 
 
 @app.route('/user/<uid>')
@@ -197,42 +175,9 @@ def changeset():
     if not cs_data.strip():
         return redirect(url_for('front'))
     user = get_user()
-    # TODO: call submit_changeset instead
-    try:
-        changeset = parse_changeset_id(cs_data)
-        cs_date, conforms = validate_changeset(user, changeset, None, openstreetmap)
-    except ValueError as e:
-        flash(str(e))
-        return redirect(url_for('front'))
-    if not cs_date or cs_date != today():
-        flash('Date of the changeset is wrong')
-        return redirect(url_for('front'))
-    task = Task.get(Task.user == user, Task.day == cs_date)
-    try:
-        last_task = Task.select(Task.day).where(
-            Task.user == user, Task.changeset.is_null(False)
-        ).order_by(Task.day.desc()).get()
-        is_streak = last_task.day == cs_date - cs_date.resolution
-    except Task.DoesNotExist:
-        is_streak = False
-    task.changeset = changeset
-    task.correct = conforms
-    if is_streak:
-        user.streak += 1
-    else:
-        user.streak = 1
-    user.score += int(math.log(user.streak+1, 2))
-    if conforms:
-        flash('An extra point for completing the task')
-        user.score += 1
-    if user.level < len(config.LEVELS) + 1:
-        if user.score >= config.LEVELS[user.level-1]:
-            user.level += 1
-            flash('Congratulations on gaining a level!')
-    with database.atomic():
-        task.save()
-        user.save()
-    flash('Changeset noted, thank you!')
+    msgs, _ = ch.submit_changeset(user, cs_data, openstreetmap)
+    for m in msgs:
+        flash(m)
     return redirect(url_for('front'))
 
 
@@ -241,34 +186,10 @@ def get_changesets():
     if 'osm_token' not in session:
         return jsonify(error='Log in please')
     user = User.get(User.uid == session['osm_uid'])
-    today = datetime.utcnow().date()
-    since = today - today.resolution * 2
-    resp = openstreetmap.get('changesets?user={}&time={}'.format(
-        user.uid, since.strftime('%Y-%m-%d')))
-    if resp.status != 200:
+    try:
+        result = ch.get_user_changesets(user)
+    except Exception:
         return jsonify(error='Error connecting to OSM API')
-    result = []
-    for ch in resp.data:
-        chtime = datetime.strptime(ch.get('created_at'), '%Y-%m-%dT%H:%M:%SZ')
-        if chtime.date() < today - today.resolution:
-            continue
-        chdata = {
-            'id': int(ch.get('id')),
-            'time': ch.get('created_at')
-        }
-        if chtime.date() == today:
-            hdate = 'Today'
-        elif chtime.date() == today - today.resolution:
-            hdate = 'Yesterday'
-        else:
-            hdate = chtime.strftime('%d.%m')
-        chdata['htime'] = hdate + ' ' + chtime.strftime('%H:%M')
-        for tag in ch.findall('tag'):
-            if tag.get('k') == 'created_by':
-                chdata['editor'] = tag.get('v')
-            elif tag.get('k') == 'comment':
-                chdata['comment'] = tag.get('v')
-        result.append(chdata)
     return jsonify(changesets=result)
 
 
@@ -279,4 +200,34 @@ def about():
 
 @app.route('/settings')
 def settings():
-    return render_template('connect.html', user=get_user())
+    user = get_user()
+    if user:
+        code = user.generate_code()
+    else:
+        code = ''
+    return render_template('connect.html', user=user, code=code,
+                           langs=ch.get_supported_languages())
+
+
+@app.route('/set-email', methods=['POST'])
+def set_email():
+    user = get_user()
+    email = request.form['email']
+    if not email or '@' not in email:
+        new_email = None
+    else:
+        new_email = email
+    if user.email != new_email:
+        user.email = new_email
+        user.save()
+    return redirect(url_for('settings'))
+
+
+@app.route('/set-lang', methods=['POST'])
+def set_lang():
+    user = get_user()
+    new_lang = request.form['lang']
+    if new_lang != user.lang and new_lang in ch.get_supported_languages():
+        user.lang = new_lang
+        user.save()
+    return redirect(url_for('settings'))

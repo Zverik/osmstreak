@@ -4,3 +4,4 @@ config_local.py
 *.db
 *.swp
 venv/
+telegram.state
