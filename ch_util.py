@@ -325,7 +325,7 @@ def submit_changeset(user, changeset, req=None):
         except Task.DoesNotExist:
             last_task_day = None
 
-        if last_task_day >= cs_date:
+        if last_task_day and last_task_day >= cs_date:
             raise ValidationError('has_later_changeset')
 
         if cs_date < yesterday():
