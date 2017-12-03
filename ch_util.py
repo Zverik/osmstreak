@@ -425,6 +425,6 @@ def get_user_changesets(user, req=None, lang=None):
             if tag.get('k') == 'created_by':
                 chdata['editor'] = tag.get('v')
             elif tag.get('k') == 'comment':
-                chdata['comment'] = tag.get('v').encode('utf-8')
+                chdata['comment'] = tag.get('v')
         result.append(chdata)
     return result
