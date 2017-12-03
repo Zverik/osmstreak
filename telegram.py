@@ -9,6 +9,7 @@ import time
 import ch_util as ch
 from datetime import datetime
 from db import database, Telegram, User
+from telepot.loop import MessageLoop
 from telepot.delegate import per_chat_id, create_open, pave_event_space
 
 
@@ -232,7 +233,7 @@ if __name__ == '__main__':
     bot = telepot.DelegatorBot(config.TELEGRAM_TOKEN, [
         pave_event_space()(per_chat_id(types=['private']), create_open, Player, timeout=10),
     ])
-    telepot.loop.MessageLoop(bot).run_as_thread()
+    MessageLoop(bot).run_as_thread()
     while 1:
         send_reminders(bot)
         time.sleep(10)
