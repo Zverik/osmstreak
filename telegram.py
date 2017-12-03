@@ -37,7 +37,7 @@ class Player(telepot.helper.ChatHandler):
         d = self.lang
         for k in args:
             d = d[k]
-        return d
+        return d.encode('utf-8')
 
     def _get_tg(self):
         try:
