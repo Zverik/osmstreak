@@ -377,11 +377,11 @@ def submit_changeset(user, changeset, req=None):
     msgs = [lang['changeset_noted'].format(user.streak)]
     if conforms:
         user.score += 1
-        msgs.append('extra_point')
+        msgs.append(lang['extra_point'])
     if user.level < len(config.LEVELS) + 1:
         if user.score >= config.LEVELS[user.level-1]:
             user.level += 1
-            msgs.append('gain_level')
+            msgs.append(lang['gain_level'])
 
     with database.atomic():
         task.save()

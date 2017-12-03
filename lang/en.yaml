@@ -22,16 +22,16 @@ en:
       yesterday: "Yesterday"
 
   validation:
-      wrong_id: "Wrong changeset id: {}"
-      wrong_date: "Date of the changeset is wrong"
-      api_error: "Error connecting to OSM API"
-      api_strange: "OSM API returned something strange for the root xml"
-      not_yours: "Please add only your changesets"
+      wrong_id: "Wrong changeset id: {}."
+      wrong_date: "Date of the changeset is wrong."
+      api_error: "Error connecting to OSM API."
+      api_strange: "OSM API returned something strange for the root xml."
+      not_yours: "Please add only your changesets."
       no_task: "You did not visit the OSM Streak website on {}"
       has_later_changeset: "Sorry, you already have a changeset registered on or after that day."
       old_changeset: "This changeset is too old, please do another edit."
-      changeset_noted: "Changeset noted, thanks you! That was {} in a row."
-      extra_point: "An extra point for completing the task"
+      changeset_noted: "Changeset noted, thank you! That was {} in a row."
+      extra_point: "An extra point for completing the task."
       gain_level: "Congratulations on gaining a level!"
 
   email:
