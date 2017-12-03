@@ -1,6 +1,6 @@
 title: A Small Fix
 emoji: 🔧
-description: |-
+description: >-
   Changeset comments are important. But not for you today: make a change and put "fix"
   in the changeset comment field. Just these three letters, nothing more.
 test:

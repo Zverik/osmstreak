@@ -15,46 +15,43 @@ en:
       does not have it, and map it.
     title: Add a Postcode
   osmand:
-    description: |-
-      [https://play.google.com/store/apps/details?id=net.osmand OsmAnd] is one of the popular
-      OpenStreetMap applications for Android devices,
-      highly configurable, but a bit too complex for some. It can upload points to the map.
-      Install the "OSM Editing" plugin and create a point somewhere. Read
-      [http://osmand.net/features?id=osm-editing-plugin the documentation] if you get lost
-      in the interface.
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd]
+      is one of the popular OpenStreetMap applications for Android devices, highly
+      configurable, but a bit too complex for some. It can upload points to the map.
+      Install the "OSM Editing" plugin and create a point somewhere. Read [http://osmand.net/features?id=osm-editing-plugin
+      the documentation] if you get lost in the interface.'
     title: Use OsmAnd
   improve_river:
-    description: |-
-      Most rivers have already been mapped. The issue is, that was done using a low-resolution
-      satellite imagery. Now you can do better: fire up JOSM, select a river, press "W" and
-      improve the way. Add at least 10 nodes to a ''waterway=river''.
+    description: "Most rivers have already been mapped. The issue is, that was done\
+      \ using a low-resolution satellite imagery. Now you can do better: fire up JOSM,\
+      \ select a river, press \"W\" and improve the way. Add at least 10 nodes to\
+      \ a ''waterway=river''."
     title: Improve a River
   josm:
-    description: |-
-      Install the JOSM editor, if you haven't already, and edit something with it.
-      We recommend drawing some buildings: download a part of the map, add an imagery layer,
-      press "A" and click on a corner of a building. Then double-click on an adjacent corner,
-      making it a line. Then press "X" and drag the line out to make it a rectangle.
-      Finally, press "Alt+A" to add ''building=yes'' and upload the change.
+    description: "Install the JOSM editor, if you haven't already, and edit something\
+      \ with it. We recommend drawing some buildings: download a part of the map,\
+      \ add an imagery layer, press \"A\" and click on a corner of a building. Then\
+      \ double-click on an adjacent corner, making it a line. Then press \"X\" and\
+      \ drag the line out to make it a rectangle. Finally, press \"Alt+A\" to add\
+      \ ''building=yes'' and upload the change."
     title: Make an edit with JOSM
   fix:
-    description: |-
-      Changeset comments are important. But not for you today: make a change and put "fix"
-      in the changeset comment field. Just these three letters, nothing more.
+    description: 'Changeset comments are important. But not for you today: make a
+      change and put "fix" in the changeset comment field. Just these three letters,
+      nothing more.'
     title: A Small Fix
   gomap:
-    description: |-
-      While Android platform has many OSM editors, iOS is lacking. The best OSM editor
-      for it has been [https://itunes.apple.com/app/id592990211 Go Map!!] (with exclamation
-      marks), but it has been last updated in 2015. Still, it works: give it a try,
-      make an edit with it.
+    description: 'While Android platform has many OSM editors, iOS is lacking. The
+      best OSM editor for it has been [https://itunes.apple.com/app/id592990211 Go
+      Map!!] (with exclamation marks), but it has been last updated in 2015. Still,
+      it works: give it a try, make an edit with it.'
     title: Go Map!!!
   giveway:
-    description: |-
-      There is a special tag for mapping the triangle "give way" sign.
-      It's [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], obviously.
-      Find such a sign, either by using Mapillary or your memory, place a node on a highway that has to give way,
-      and tag that node with the tag. Also add a priority_road tag to the main road.
+    description: There is a special tag for mapping the triangle "give way" sign.
+      It's [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way],
+      obviously. Find such a sign, either by using Mapillary or your memory, place
+      a node on a highway that has to give way, and tag that node with the tag. Also
+      add a priority_road tag to the main road.
     title: Give Way
   note:
     description: Enable notes on the OSM website and find an unresolved note that
@@ -65,10 +62,10 @@ en:
       Find an unmapped road nearby and add it to the map.
     title: Map a Road
   subway:
-    description: |-
-      For this you need to know the [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 schema].
-      Head to the [https://osmz.ru/subways/ Subway Validator] and pick a city with an error in the subway.
-      It should involve modifying a subway route. Fix it — and you may go, or continue tidying up the network.
+    description: For this you need to know the [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping
+      Public Transport v2 schema]. Head to the [https://osmz.ru/subways/ Subway Validator]
+      and pick a city with an error in the subway. It should involve modifying a subway
+      route. Fix it — and you may go, or continue tidying up the network.
     title: Fix a subway
   buildings:
     description: Draw at least 20 buildings anywhere. Open your editor of choice,
@@ -86,44 +83,41 @@ en:
       tags.
     title: Plant two trees
   tiger:
-    description: |-
-      [https://wiki.openstreetmap.org/wiki/TIGER TIGER] is a public domain road dataset in USA.
-      It was imported in 2005, and the import was imperfect.
-      Find a highway with tiger:reviewed=no and fix at least three, setting a correct road class and removing the tag.
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] is a public domain
+      road dataset in USA. It was imported in 2005, and the import was imperfect.
+      Find a highway with tiger:reviewed=no and fix at least three, setting a correct
+      road class and removing the tag.'
     title: Fix a Tiger
   tracks:
-    description: |-
-      A track road is a road leading to some farm or in a forest. It is marked by
-      [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]
-      with optional ''tracktype=gradeN'', with N from 1 (best) to 5 (worst).
-      Find a field or a forest and draw 2-3 km of a track.
+    description: A track road is a road leading to some farm or in a forest. It is
+      marked by [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]
+      with optional ''tracktype=gradeN'', with N from 1 (best) to 5 (worst). Find
+      a field or a forest and draw 2-3 km of a track.
     title: Draw some track roads
   coastline:
-    description: |-
-      Many coastlines were imported long time ago from a digitized low-resolution satellite imagery.
-      You can definitely help improving it in some places. Add at least 10 nodes to a coastline.
+    description: Many coastlines were imported long time ago from a digitized low-resolution
+      satellite imagery. You can definitely help improving it in some places. Add
+      at least 10 nodes to a coastline.
     title: Improve a Coastline
   turn_restriction:
     description: Find an unmapped turn restriction on Mapillary or other OSM-compatible
       source. Choose a smaller town if you like. Map the restriction.
     title: Add a Turn Restriction
   streetcomplete:
-    description: |-
-      If your phone is an iPhone, bad luck. For Android, install the
-      [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete]
-      application and do a few tasks. They really take a second each.
+    description: If your phone is an iPhone, bad luck. For Android, install the [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
+      StreetComplete] application and do a few tasks. They really take a second each.
     title: Map with StreetComplete
   turnlanes:
-    description: |-
-      Read the [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] description,
-      find an intersection with lanes visible on a satellite imagery or on Mapillary,
-      and map all the turn lanes on all four sides of the intersection.
+    description: Read the [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane
+      turn:lanes] description, find an intersection with lanes visible on a satellite
+      imagery or on Mapillary, and map all the turn lanes on all four sides of the
+      intersection.
     title: Turn Lanes
   hot_task:
-    description: |-
-      Open [https://tasks.hotosm.org/ HOT Tasking Manager] and choose a random active task.
-      Inside, choose a random yellow rectangle and do a validation. See how novice mappers draw their buildings,
-      meditate on that a bit, and then fix them: straighten the edges, improve shapes. Just a couple would do.
+    description: 'Open [https://tasks.hotosm.org/ HOT Tasking Manager] and choose
+      a random active task. Inside, choose a random yellow rectangle and do a validation.
+      See how novice mappers draw their buildings, meditate on that a bit, and then
+      fix them: straighten the edges, improve shapes. Just a couple would do.'
     title: Fix a building
   mapsme:
     description: MAPS.ME is not just a multiplatform map browser and navigator. You
@@ -131,10 +125,11 @@ en:
       from the menu. Try that.
     title: Use MAPS.ME
   sidewalk:
-    description: |-
-      Sidewalk is a footway near a road. For a better pedestrian routing, find a road without a sidewalk mapped,
-      and draw two footways on the both sides (backed by the imagery) with an additional ''footway=sidewalk'' tag.
-      Also add a crossing as a way in addition to a ''highway=crossing'' point: use ''footway=crossing'' for it.
+    description: "Sidewalk is a footway near a road. For a better pedestrian routing,\
+      \ find a road without a sidewalk mapped, and draw two footways on the both sides\
+      \ (backed by the imagery) with an additional ''footway=sidewalk'' tag. Also\
+      \ add a crossing as a way in addition to a ''highway=crossing'' point: use ''footway=crossing''\
+      \ for it."
     title: Add a Sidewalk
   delete:
     description: It is not hard to find something to map. But can you find anything

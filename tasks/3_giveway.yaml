@@ -1,6 +1,6 @@
 title: Give Way
 emoji: 🛑
-description: |-
+description: >-
   There is a special tag for mapping the triangle "give way" sign.
   It's [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], obviously.
   Find such a sign, either by using Mapillary or your memory, place a node on a highway that has to give way,

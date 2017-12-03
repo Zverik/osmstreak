@@ -1,6 +1,6 @@
 title: Draw some track roads
 emoji: 🚜
-description: |-
+description: >-
   A track road is a road leading to some farm or in a forest. It is marked by
   [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]
   with optional ''tracktype=gradeN'', with N from 1 (best) to 5 (worst).
