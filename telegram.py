@@ -193,7 +193,7 @@ def send_reminder(bot, hm):
         task = ch.load_task(task_obj.task)
         msg = '{} {}\n\n{}\n\n{}'.format(
                 task['emoji'].encode('utf-8'), task['title'], task['description'],
-                lang['post_changeset'])
+                lang['post_changeset'].encode('utf-8'))
         try:
             bot.sendMessage(tg.channel, msg)
         except telepot.exception.TelegramError as e:
