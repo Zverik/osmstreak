@@ -33,7 +33,7 @@
             var items = [];
             $.each(data.changesets, function(i, ch) {
                 items.push('<li><a href="{{ url_for('changeset') }}?changeset='+
-                    ch.id+'">'+ch.htime+'</a>: '+esc(ch.comment)+'</li>');
+                    ch.id+'">'+ch.htime+'</a>: '+esc(ch.comment || '(no comment)')+'</li>');
             });
             $('<ul>'+items.join('')+'</ul>').appendTo($ch);
         });
