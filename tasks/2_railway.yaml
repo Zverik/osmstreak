@@ -1,0 +1,5 @@
+title: Map a railway
+emoji: 🚆
+description: Railways usually get less attention than roads - map some, they are no less important!
+test:
+  created_way: "railway=rail"
