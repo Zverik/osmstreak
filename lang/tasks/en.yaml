@@ -8,12 +8,13 @@ en:
     description: Rivers are mostly mapped all over the world, but streams are too
       many. Choose any, and map it. Not a river — a stream.
     title: Draw a Stream
-  postcode:
-    description: In some countries, like Russia or the USA, you can find a postcode
-      in a publicly-available database. In others you just know it or deduce it from
-      indirect sources, like a shop website. Find a postcode for any building that
-      does not have it, and map it.
-    title: Add a Postcode
+  sidewalk:
+    description: "Sidewalk is a footway near a road. For a better pedestrian routing,\
+      \ find a road without a sidewalk mapped, and draw two footways on the both sides\
+      \ (backed by the imagery) with an additional ''footway=sidewalk'' tag. Also\
+      \ add a crossing as a way in addition to a ''highway=crossing'' point: use ''footway=crossing''\
+      \ for it."
+    title: Add a Sidewalk
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd]
       is one of the popular OpenStreetMap applications for Android devices, highly
@@ -103,10 +104,16 @@ en:
     description: Find an unmapped turn restriction on Mapillary or other OSM-compatible
       source. Choose a smaller town if you like. Map the restriction.
     title: Add a Turn Restriction
-  streetcomplete:
-    description: If your phone is an iPhone, bad luck. For Android, install the [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
-      StreetComplete] application and do a few tasks. They really take a second each.
-    title: Map with StreetComplete
+  postcode:
+    description: In some countries, like Russia or the USA, you can find a postcode
+      in a publicly-available database. In others you just know it or deduce it from
+      indirect sources, like a shop website. Find a postcode for any building that
+      does not have it, and map it.
+    title: Add a Postcode
+  railway:
+    description: Railways usually get less attention than roads - map some, they are
+      no less important! For example, find a station and add missing side tracks.
+    title: Map a Railway
   turnlanes:
     description: Read the [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane
       turn:lanes] description, find an intersection with lanes visible on a satellite
@@ -124,13 +131,10 @@ en:
       can edit the map with it. Just click on an amenity, or choose "Add a place"
       from the menu. Try that.
     title: Use MAPS.ME
-  sidewalk:
-    description: "Sidewalk is a footway near a road. For a better pedestrian routing,\
-      \ find a road without a sidewalk mapped, and draw two footways on the both sides\
-      \ (backed by the imagery) with an additional ''footway=sidewalk'' tag. Also\
-      \ add a crossing as a way in addition to a ''highway=crossing'' point: use ''footway=crossing''\
-      \ for it."
-    title: Add a Sidewalk
+  streetcomplete:
+    description: If your phone is an iPhone, bad luck. For Android, install the [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
+      StreetComplete] application and do a few tasks. They really take a second each.
+    title: Map with StreetComplete
   delete:
     description: It is not hard to find something to map. But can you find anything
       to delete? Delete 5 objects — but only these that are obsolete or redundant.
