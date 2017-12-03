@@ -29,11 +29,11 @@ en:
     title: Improve a River
   josm:
     description: "Install the JOSM editor, if you haven't already, and edit something\
-      \ with it. We recommend drawing some buildings: download a part of the map,\
+      \ with it. We recommend drawing some buildings:\n \nDownload a part of the map,\
       \ add an imagery layer, press \"A\" and click on a corner of a building. Then\
       \ double-click on an adjacent corner, making it a line. Then press \"X\" and\
       \ drag the line out to make it a rectangle. Finally, press \"Alt+A\" to add\
-      \ ''building=yes'' and upload the change."
+      \ ''building=yes'', and then upload the change."
     title: Make an edit with JOSM
   fix:
     description: 'Changeset comments are important. But not for you today: make a
