@@ -145,6 +145,9 @@ def get_or_create_task_for_user(user, date=None, ip=None):
         date = today()
     try:
         task_obj = Task.get(Task.user == user, Task.day == date)
+        if task_obj.task not in get_tasks(user.level):
+            task_obj.task = random_task_for_user(user)
+            task_obj.save()
     except Task.DoesNotExist:
         if ip:
             task_name = random_task_for_ip(ip)
