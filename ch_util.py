@@ -32,16 +32,16 @@ def time_until_day_ends(lang=None):
         tomorrow.year, tomorrow.month, tomorrow.day, 0, 0, 0, 0)
     left = int((midnight - datetime.datetime.utcnow()).total_seconds())
     halfhours = left // 1800
-    if not lang:
-        lang = {}
+    if not lang or 'time' not in lang:
+        lang = {'time': {}}
     if halfhours > 2:
         if halfhours % 2 == 0:
-            return lang.get('n_hours', '{} hours').format(halfhours/2)
+            return lang['time'].get('n_hours', '{} hours').format(halfhours/2)
         else:
-            return lang.get('n_hours', '{} hours').format(halfhours/2.0)
+            return lang['time'].get('n_hours', '{} hours').format(halfhours/2.0)
     elif halfhours == 2:
-        return lang.get('hour', 'an hour')
-    return lang.get('n_minutes', '{} minutes').format(left // 60)
+        return lang['time'].get('hour', 'an hour')
+    return lang['time'].get('n_minutes', '{} minutes').format(left // 60)
 
 
 def merge_dict(target, other):

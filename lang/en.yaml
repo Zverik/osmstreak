@@ -4,7 +4,7 @@ en:
   please_sign_in: "To track your progress and get more advanced tasks, [sign in] with your OpenStreetMap account."
   connect: Connect
   login: Log in
-  about: About
+  help: About
   thanks: "Thanks for editing OpenStreetMap today!"
   submit_changeset: "Submit a changeset URL for the task, or choose from a list"
   update_list: "update"
@@ -14,11 +14,12 @@ en:
   subscribe: Subscribe
   unsubscribe: Unsubscribe
 
-  n_hours: "{} hours"
-  hour: "an hour"
-  n_minutes: "{} minutes"
-  today: "Today"
-  yesterday: "Yesterday"
+  time:
+      n_hours: "{} hours"
+      hour: "an hour"
+      n_minutes: "{} minutes"
+      today: "Today"
+      yesterday: "Yesterday"
 
   validation:
       wrong_id: "Wrong changeset id: {}"
@@ -32,3 +33,12 @@ en:
       changeset_noted: "Changeset noted, thanks you! That was {} in a row."
       extra_point: "An extra point for completing the task"
       gain_level: "Congratulations on gaining a level!"
+
+  email:
+      hi: 'Hi {},'
+      new_task: 'Want to do some mapping and continue your streak? Here is an idea:'
+      to_submit: 'When done, please head to {} and click on the latest changeset.'
+      bye: 'Yours,'
+
+  about:
+      todo: TODO
