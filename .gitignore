@@ -5,3 +5,4 @@ config_local.py
 *.swp
 venv/
 telegram.state
+*.log

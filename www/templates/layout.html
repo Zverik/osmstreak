@@ -11,7 +11,7 @@
             <a href="{{ url_for('front') }}">{{ lang.title }}</a>
             <span class="right">
                 {% if user %}
-                <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} points {{ '⭐' * user.level }}</span>
+                <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} {{ '⭐' * user.level }}</span>
                 <span><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
                 {% else %}
                 <span><a href="{{ url_for('login') }}">{{ lang.login }}</a></span>

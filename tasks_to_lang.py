@@ -12,4 +12,4 @@ for t in sorted(ch.get_tasks(100)):
 
 yaml = YAML()
 with open(os.path.join(config.BASE_DIR, 'lang', 'tasks', 'en.yaml'), 'w') as f:
-    yaml.dump(lang, f)
+    yaml.dump({'en': lang}, f)
