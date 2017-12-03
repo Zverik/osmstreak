@@ -54,8 +54,12 @@ def get_language_from_request():
 
 def load_user_language():
     user = get_user()
-    data = ch.load_language_from_user('', user)
-    tasks = ch.load_language_from_user('tasks', user)
+    if user:
+        lang = user.lang
+    else:
+        lang = get_language_from_request()
+    data = ch.load_language('', lang)
+    tasks = ch.load_language('tasks', lang)
     data['tasks'] = tasks
     g.lang = data
 
@@ -112,7 +116,7 @@ def get_token(token='user'):
 
 
 def render_task(task):
-    desc = task['description'].strip()
+    desc = task['t_description'].strip()
     desc = html_esc(desc)
     desc = desc.replace('\n', '<br>')
     desc = ch.RE_MARKUP_LINK.sub(r'<a href="\1">\2</a>', desc)
@@ -136,13 +140,13 @@ def get_ip():
 def front():
     user = get_user()
     if not user:
-        task = ch.load_task(ch.random_task_for_ip(get_ip()))
+        task = ch.load_task(ch.random_task_for_ip(get_ip()), g.lang['tasks'])
         msg = html_esc(g.lang['please_sign_in']).replace(
             '[', '<a href="' + html_esc(url_for('login')) + '">').replace(']', '</a>')
         return render_template('index.html', task=render_task(task), msg=msg, lang=g.lang)
 
     task_obj = ch.get_or_create_task_for_user(user)
-    task = ch.load_task(task_obj.task)
+    task = ch.load_task(task_obj.task, g.lang['tasks'])
     return render_template('front.html', task=render_task(task),
                            user=user, tobj=task_obj, lang=g.lang,
                            timeleft=ch.time_until_day_ends(g.lang))

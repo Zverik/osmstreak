@@ -32,12 +32,19 @@ def desc_to_markdown(task):
     return desc
 
 
+def load_language(user):
+    lang = ch.load_language_from_user('telegram', user)
+    lang['tasks'] = ch.load_language_from_user('tasks', user)
+    return lang
+
+
 class Player(telepot.helper.ChatHandler):
     def __init__(self, *args, **kwargs):
         super(Player, self).__init__(*args, **kwargs)
         tg = self._get_tg()
         self.has_user = tg is not None
-        self.lang = ch.load_language_from_user('telegram', None if tg is None else tg.user)
+        user = None if tg is None else tg.user
+        self.lang = load_language(user)
 
     def t(self, *args):
         d = self.lang
@@ -63,7 +70,7 @@ class Player(telepot.helper.ChatHandler):
         if task_obj.changeset:
             self.sender.sendMessage(self.t('task_complete'))
         else:
-            task = ch.load_task(task_obj.task)
+            task = ch.load_task(task_obj.task, self.lang['tasks'])
             self.sender.sendMessage(
                 u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
                     task['emoji'], task['title'], desc_to_markdown(task),
@@ -117,7 +124,7 @@ class Player(telepot.helper.ChatHandler):
             user = self._get_tg().user
             user.lang = lang
             user.save()
-            self.lang = ch.load_language_from_user('telegram', user)
+            self.lang = load_language(user)
             self.sender.sendMessage(self.t('lang_set'))
         else:
             self.sender.sendMessage(self.t('no_such_lang').format(u', '.join(sorted(supported))))
@@ -158,7 +165,7 @@ class Player(telepot.helper.ChatHandler):
                     no_code_msg.format(config.BASE_URL))
                 return
             Telegram.create(channel=self.id, user=user)
-            self.lang = ch.load_language_from_user('telegram', user)
+            self.lang = load_language(user)
             self.sender.sendMessage(self.t('welcome').format(user.name))
             self._set_reminder('')
             self._print_task()
@@ -197,9 +204,9 @@ class Player(telepot.helper.ChatHandler):
 def send_reminder(bot, hm):
     query = Telegram.select().where(Telegram.remind_on == hm)
     for tg in query:
-        lang = ch.load_language_from_user('telegram', tg.user)
+        lang = load_language(tg.user)
         task_obj = ch.get_or_create_task_for_user(tg.user)
-        task = ch.load_task(task_obj.task)
+        task = ch.load_task(task_obj.task, lang['tasks'])
         msg = u'{} {}\n\n{}\n\n{}'.format(
                 task['emoji'], task['title'], desc_to_markdown(task),
                 lang['post_changeset'])
