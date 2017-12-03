@@ -91,7 +91,7 @@ class Player(telepot.helper.ChatHandler):
                 c['id'], c['htime'], c['comment']) for c in changesets[:5]])
             self.sender.sendMessage(msg)
         else:
-            self.sender.sendMessage(self.r('no_changesets'))
+            self.sender.sendMessage(self.t('no_changesets'))
 
     def _last_changeset(self):
         user = self._get_tg().user
