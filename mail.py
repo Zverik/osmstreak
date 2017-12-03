@@ -10,7 +10,6 @@ if os.path.exists(VENV_DIR):
 
 import config
 import ch_util as ch
-import logging
 import smtplib
 from db import database, User
 from email.mime.text import MIMEText
@@ -41,7 +40,6 @@ def send_email(user):
 
 if __name__ == '__main__':
     database.connect()
-    logging.basicConfig(level=logging.WARNING, format='%(asctime)s %(message)s', datefmt='%H:%M:%S')
     query = User.select().where(User.name == 'Zverik', User.email.is_null(False))
     for user in query:
         send_email(user)
