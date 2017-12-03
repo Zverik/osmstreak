@@ -10,7 +10,7 @@
 <form action="{{ url_for('changeset') }}">
     <p>{{ lang.submit_changeset }} (<a href="javascript:showChangesets()">{{ lang.update_list }}</a>):</p>
     <div id="changesets"></div>
-    <p><input type="text" name="changeset" value=""> <input type="submit"></p>
+    <p><input type="text" name="changeset" value=""> <input type="submit" value="{{ lang.verify }}"></p>
     <p>{{ lang.time_left }}: {{ timeleft }}.</p>
 </form>
 <script>

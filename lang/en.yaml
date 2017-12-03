@@ -6,6 +6,7 @@ en:
   help: About
   thanks: "Thanks for editing OpenStreetMap today!"
   submit_changeset: "Submit a changeset URL for the task, or choose from a list"
+  verify: Verify
   update_list: "update"
   no_changesets: "You did't edit OpenStreetMap lately."
   time_left: "Time left to submit a changeset"
