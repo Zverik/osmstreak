@@ -1,0 +1,33 @@
+ru:
+  bridge:
+    title: Протяните мост
+  stream:
+    title: Нарисуйте ручей
+  osmand:
+    title: Используйте OsmAnd
+  improve_river:
+    title: Уточните реку
+  josm:
+    title: Используйте JOSM
+  fix:
+    title: Малая правка
+  giveway:
+    title: Уступите дорогу
+  note:
+    title: Закройте заметку
+  highway:
+    title: Проложите дорогу
+  buildings:
+    title: Обведите двадцать зданий
+  lanes:
+    title: Сосчитайте полосы
+  leaf_types:
+    title: Посадите два дерева
+  coastline:
+    title: Уточните береговую линию
+  mapsme:
+    title: Попробуйте MAPS.ME
+  sidewalk:
+    title: Добавьте тротуар
+  delete:
+    title: Удалить!

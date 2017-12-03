@@ -1,0 +1,29 @@
+ru:
+  title: "OSM Streak"
+  please_sign_in: "Чтобы отслеживать свои достижения и получать больше задач, [войдите] через OpenStreetMap."
+  connect: Настройки
+  login: Войти
+  help: Помощь
+  thanks: "Спасибо, что рисовали карту сегодня!"
+  submit_changeset: "Отправьте URL пакета правок, либо выберите из списка"
+  update_list: "обновить"
+  no_changesets: "Вы не правили OpenStreetMap в последнее время."
+  time_left: "Осталось времени на загрузку"
+  connect_intro: "Получайте уведомления о новых задачах и отправляйте пакеты правок через Telegram или e-mail."
+  subscribe: Подписаться
+  unsubscribe: Отписаться
+  time:
+    n_hours: "{} часов"
+    hour: "час"
+    n_minutes: "{} минут"
+    today: "Сегодня"
+    yesterday: "Вчера"
+  email:
+    hi: 'Привет {},'
+    bye: 'С приветом,'
+  about:
+    what_is_this: Что это такое
+    points: Очки
+    tasks: Задания
+    stars: Звёзды
+    leaderboard: Рейтинг

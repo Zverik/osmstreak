@@ -1,0 +1,23 @@
+[main]
+host = https://www.transifex.com
+
+[osm-streak.the-website]
+source_file = lang/en.yaml
+source_lang = en
+type = yaml
+file_filter = lang/<lang>.yaml
+minimum_perc = 30
+
+[osm-streak.telegram-bot]
+source_file = lang/telegram/en.yaml
+source_lang = en
+type = yaml
+file_filter = lang/telegram/<lang>.yaml
+minimum_perc = 20
+
+[osm-streak.tasks]
+source_file = lang/tasks/en.yaml
+source_lang = en
+type = yaml
+file_filter = lang/tasks/<lang>.yaml
+minimum_perc = 20
