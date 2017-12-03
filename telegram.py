@@ -213,7 +213,12 @@ def send_reminder(bot, hm):
         try:
             bot.sendMessage(tg.channel, msg, parse_mode='Markdown')
         except telepot.exception.TelegramError as e:
-            logging.error('Could not remind user %s: %s', tg.user.name, e.description)
+            try:
+                bot.sendMessage(tg.channel, msg)
+                logging.error('Failed to send markdown, but text worked. Task %s, msg: %s',
+                              task_obj.task, msg)
+            except telepot.exception.TelegramError as e:
+                logging.error('Could not remind user %s: %s', tg.user.name, e.description)
 
 
 def send_reminders(bot):
