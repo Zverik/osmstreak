@@ -40,6 +40,6 @@ def send_email(user):
 
 if __name__ == '__main__':
     database.connect()
-    query = User.select().where(User.name == 'Zverik', User.email.is_null(False))
+    query = User.select().where(User.email.is_null(False))
     for user in query:
         send_email(user)
