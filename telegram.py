@@ -26,7 +26,7 @@ last_reminder = None
 
 
 def desc_to_markdown(task):
-    desc = task['description'].strip()
+    desc = task['t_description'].strip()
     desc = ch.RE_MARKUP_LINK.sub(r'[\2](\1)', desc)
     desc = ch.RE_EM.sub(r'_\1_', desc)
     return desc
@@ -73,7 +73,7 @@ class Player(telepot.helper.ChatHandler):
             task = ch.load_task(task_obj.task, self.lang['tasks'])
             self.sender.sendMessage(
                 u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
-                    task['emoji'], task['title'], desc_to_markdown(task),
+                    task['emoji'], task['t_title'], desc_to_markdown(task),
                     self.t('time_left'), ch.time_until_day_ends(self.lang),
                     self.t('post_changeset')), parse_mode='Markdown')
 
@@ -208,7 +208,7 @@ def send_reminder(bot, hm):
         task_obj = ch.get_or_create_task_for_user(tg.user)
         task = ch.load_task(task_obj.task, lang['tasks'])
         msg = u'{} {}\n\n{}\n\n{}'.format(
-                task['emoji'], task['title'], desc_to_markdown(task),
+                task['emoji'], task['t_title'], desc_to_markdown(task),
                 lang['post_changeset'])
         try:
             bot.sendMessage(tg.channel, msg, parse_mode='Markdown')
