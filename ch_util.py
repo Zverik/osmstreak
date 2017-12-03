@@ -103,19 +103,22 @@ def get_tasks(max_level=1):
 def load_task(name, lang=None):
     filename = os.path.join(config.BASE_DIR, 'tasks', name+'.yaml')
     if not os.path.exists(filename):
+        logging.error('Task %s does not exist', name)
         return None
     with open(filename, 'r') as f:
         yaml = YAML()
         data = yaml.load(f)
-    if 'title' in data and 'emoji' in data:
-        if lang:
-            t_name = name.split('_', 1)[1]
-            t_trans = lang.get(t_name, {})
-            for k in ('title', 'description'):
-                if k in t_trans:
-                    data['t_'+k] = t_trans[k]
-        return data
-    return None
+    for k in ('title', 'emoji', 'description'):
+        if k not in data:
+            logging.error('Task %s: key %s not found', name, k)
+            return None
+    if lang:
+        t_name = name.split('_', 1)[1]
+        t_trans = lang.get(t_name, {})
+        for k in ('title', 'description'):
+            if k in t_trans:
+                data['t_'+k] = t_trans[k]
+    return data
 
 
 def random_task_for_ip(ip):
