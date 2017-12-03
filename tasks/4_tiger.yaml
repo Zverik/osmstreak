@@ -1,5 +1,8 @@
 title: Fix a Tiger
 emoji: 🐅
-description: TIGER is a public domain road dataset in USA. It was imported in 2005, and the import was imperfect. Find a highway with tiger:reviewed=no and fix at least three, setting a correct road class and removing the tag.
+description: |-
+  [https://wiki.openstreetmap.org/wiki/TIGER TIGER] is a public domain road dataset in USA.
+  It was imported in 2005, and the import was imperfect.
+  Find a highway with tiger:reviewed=no and fix at least three, setting a correct road class and removing the tag.
 test:
   modified_3_ways: "highway=*"

@@ -1,5 +1,11 @@
 title: Make an edit with JOSM
 emoji: ☕
-description: "Install the JOSM editor, if you haven't already, and edit something with it. We recommend drawing some buildings: (explanation)"
+description: |-
+  Install the JOSM editor, if you haven't already, and edit something with it.
+  We recommend drawing some buildings: download a part of the map, add an imagery layer,
+  press "A" and click on a corner of a building. Then double-click on an adjacent corner,
+  making it a line. Then press "X" and drag the line out to make it a rectangle.
+  Finally, press "Alt+A" to add ''building=yes'' and upload the change.
+
 test:
   changeset: "created_by=JOSM*"

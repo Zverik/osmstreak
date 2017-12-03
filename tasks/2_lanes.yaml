@@ -1,0 +1,5 @@
+title: Count the Lanes
+emoji: ✌️
+description: Find a road that doesn't have the ''lanes'' tag set. Find a good imagery for the area and add the number of lanes for that road.
+test:
+  modified_way: ["lanes=*", "highway=*"]

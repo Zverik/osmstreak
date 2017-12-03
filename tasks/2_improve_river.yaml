@@ -1,0 +1,9 @@
+title: Improve a River
+emoji: 📏
+description: |-
+  Most rivers have already been mapped. The issue is, that was done using a low-resolution
+  satellite imagery. Now you can do better: fire up JOSM, select a river, press "W" and
+  improve the way. Add at least 10 nodes to a ''waterway=river''.
+test:
+  modified_way: "waterway=river"
+  added_10_nodes: ""

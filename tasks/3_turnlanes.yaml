@@ -1,5 +1,8 @@
 title: Turn Lanes
 emoji: ⤴
-description: Read the turn:lanes description, find an intersection with lanes visible on a satellite imagery or on Mapillary, and map all the turn lanes on all four sides of the intersection.
+description: |-
+  Read the [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] description,
+  find an intersection with lanes visible on a satellite imagery or on Mapillary,
+  and map all the turn lanes on all four sides of the intersection.
 test:
   modify_2_ways: "turn:lanes=*"

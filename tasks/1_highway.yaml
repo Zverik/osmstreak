@@ -1,0 +1,5 @@
+title: Map a Road
+emoji: 🛣️
+description: This is often the first thing people do when they join OpenStreetMap. Find an unmapped road nearby and add it to the map.
+test:
+  created_way: "highway=*"

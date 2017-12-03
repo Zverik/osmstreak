@@ -1,5 +1,5 @@
 title: Delete!
 emoji: 🔫
-description: It is not hard to find something to map. But can you find anything to delete? Delete 10 objects — but only these that are obsolete or redundant.
+description: It is not hard to find something to map. But can you find anything to delete? Delete 5 objects — but only these that are obsolete or redundant.
 test:
-  deleted_10_objects: ""
+  deleted_5_objects: ""

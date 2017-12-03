@@ -3,3 +3,4 @@ emoji: 🌉
 description: Many roads in rural areas are drawn fast and without regard for crossing streams and rivers. Find a place where a mapper forgot to split a road and mark a bridge, and do that for them.
 test:
   created_or_modified_ways: "bridge=yes"
+  created_or_modified_ways_b: "highway=*"
