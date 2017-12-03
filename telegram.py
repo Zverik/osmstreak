@@ -61,7 +61,7 @@ class Player(telepot.helper.ChatHandler):
             # TODO: Format description
             self.sender.sendMessage(
                 '{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
-                    task['emoji'].encode('utf-8'), task['title'], task['description'],
+                    task['emoji'], task['title'], task['description'],
                     self.t('time_left'), ch.time_until_day_ends(),
                     self.t('post_changeset')))
 
@@ -192,7 +192,7 @@ def send_reminder(bot, hm):
         task_obj = ch.get_or_create_task_for_user(tg.user)
         task = ch.load_task(task_obj.task)
         msg = '{} {}\n\n{}\n\n{}'.format(
-                task['emoji'].encode('utf-8'), task['title'], task['description'],
+                task['emoji'], task['title'], task['description'],
                 lang['post_changeset'].encode('utf-8'))
         try:
             bot.sendMessage(tg.channel, msg)
