@@ -89,6 +89,9 @@ def load_task(name):
         yaml = YAML()
         data = yaml.load(f)
     if 'title' in data and 'emoji' in data:
+        for k in data:
+            if isinstance(data[k], unicode):
+                data[k] = data[k].encode('utf-8')
         return data
     return None
 
