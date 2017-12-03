@@ -65,7 +65,7 @@ class Player(telepot.helper.ChatHandler):
     def _print_score(self):
         user = self._get_tg().user
         self.sender.sendMessage(self.t('n_points').format(
-            user.score) + '\n' + ('⭐' * user.level))
+            user.score) + u'\n' + (u'⭐' * user.level))
 
     def _register_changeset(self, changeset):
         user = self._get_tg().user
@@ -89,7 +89,7 @@ class Player(telepot.helper.ChatHandler):
         user = self._get_tg().user
         changesets = ch.get_user_changesets(user, lang=self.lang)
         if changesets:
-            msg = self.t('list_header') + '\n\n' + '\n'.join(['{}: {}, {}'.format(
+            msg = self.t('list_header') + u'\n\n' + u'\n'.join([u'{}: {}, {}'.format(
                 c['id'], c['htime'], c['comment']) for c in changesets[:5]])
             self.sender.sendMessage(msg)
         else:
@@ -112,7 +112,7 @@ class Player(telepot.helper.ChatHandler):
             self.lang = ch.load_language_from_user('telegram', user)
             self.sender.sendMessage(self.t('lang_set'))
         else:
-            self.sender.sendMessage(self.t('no_such_lang').format(', '.join(sorted(supported))))
+            self.sender.sendMessage(self.t('no_such_lang').format(u', '.join(sorted(supported))))
 
     def _send_help(self):
         self.sender.sendMessage(self.t('help').format(web=config.BASE_URL))

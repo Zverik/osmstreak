@@ -1,6 +1,5 @@
 en:
   title: "OSM Streak"
-
   please_sign_in: "To track your progress and get more advanced tasks, [sign in] with your OpenStreetMap account."
   connect: Connect
   login: Log in
@@ -41,4 +40,39 @@ en:
       bye: 'Yours,'
 
   about:
-      todo: TODO
+      what_is_this: What is this
+      what_is_this_content: |-
+        OSM Streak makes you do small tasks for OpenStreetMap every day. The goal is to
+        map every day for at least a year. Tasks are small, five minutes each. The point
+        is to map every day, not map as much as you can. Persistence pays off.
+      points: Points
+      points_content: |-
+        For each submission you get points. At first you get one point, from the
+        third day in a row you get two points for each task, and so on. If you keep
+        mapping for a month in a row, you would get five points for a changeset.
+      tasks: Tasks
+      tasks_content1: |-
+        You do not have to do exactly what the page tells you to. Any non-empty
+        changeset will be accepted. But if you follow the task description, you will
+        get an extra point.
+      tasks_content2: |-
+        Do not let the task intimidate you. If you think it is too hard,
+        map something else — for example, a building. The goal is to map every day,
+        not complete all the tasks.
+      stars: Stars
+      stars_content: |-
+        With points, you also may gain levels. You start at level 1: the number
+        of stars is the level you are at. In a few days you will move to level 2.
+        New levels open more tasks. Here are the point thresholds for gaining levels
+      stars_level2: level 2 (roughly five consecutive days)
+      stars_level3: level 3 (three weeks)
+      stars_level4: level 4 (three months)
+      stars_level5: level 5 (roughly a year)
+      stars_fame: |-
+        Mappers who get to the last level enter the hall of fame. They can continue
+        their mapping streak after that, of course. For each changeset at that moment
+        they will be getting 16 points.
+      leaderboard: Leaderboard
+      leaderboard_content: |-
+        There is no leaderboard. You won't know who's ahead of you and who's behind.
+        This is a challenge, not a competition.

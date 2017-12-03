@@ -5,7 +5,7 @@ import ch_util as ch
 from ruamel.yaml import YAML
 
 lang = {}
-for t in ch.get_tasks(100):
+for t in sorted(ch.get_tasks(100)):
     t_name = t.split('_', 1)[1]
     task = ch.load_task(t)
     lang[t_name] = {'title': task['title'], 'description': task['description']}

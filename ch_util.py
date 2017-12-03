@@ -74,7 +74,8 @@ def load_language(path, lang):
         with open(lang_file, 'r') as f:
             lang_data = yaml.load(f)
             merge_dict(data, lang_data[lang_data.keys()[0]])
-    return to_unicode(data)
+    # return to_unicode(data)
+    return data
 
 
 def load_language_from_user(path, user):

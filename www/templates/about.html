@@ -1,32 +1,22 @@
 {% extends "layout.html" %}
 {% block title %}About OSM Streak{% endblock %}
 {% block content %}
-<h1>What is this</h1>
-<p>OSM Streak makes you do small tasks for OpenStreetMap every day. The goal is to
-map every day for at least a year. Tasks are small, five minutes each. The point
-is to map every day, not map as much as you can. Persistence pays off.</p>
-<h2>Points</h2>
-<p>For each submission you get points. At first you get one point, from the
-third day in a row you get two points for each task, and so on. If you keep
-mapping for a month in a row, you would get five points for a changeset.</p>
-<h2>Tasks</h2>
-<p>You do not have to do exactly what the page tells you to. Any non-empty
-changeset will be accepted. But if you follow the task description, you will
-get an extra point.</p>
-<h2>Stars</h2>
-<p>With points, you also may gain levels. You start at level 1: the number
-of stars is the level you are at. In a few days you will move to level 2.
-New levels open more tasks. Here are the point thresholds for gaining levels:</p>
+<h1>{{ lang.about.what_is_this }}</h1>
+<p>{{ lang.about.what_is_this_content }}</p>
+<h2>{{ lang.about.points }}</h2>
+<p>{{ lang.about.points_content }}</p>
+<h2>{{ lang.about.tasks }}</h2>
+<p>{{ lang.about.tasks_content1 }}</p>
+<p>{{ lang.about.tasks_content2 }}</p>
+<h2>{{ lang.about.stars }}</h2>
+<p>{{ lang.about.stars_content }}:</p>
 <ul>
-    <li>{{ levels[0] }} — level 2 (roughly five consecutive days)</li>
-    <li>{{ levels[1] }} — level 3 (three weeks)</li>
-    <li>{{ levels[2] }} — level 4 (three months)</li>
-    <li>{{ levels[3] }} — level 5 (roughly a year)</li>
+    <li>{{ levels[0] }} — {{ lang.about.stars_level2 }}</li>
+    <li>{{ levels[1] }} — {{ lang.about.stars_level3 }}</li>
+    <li>{{ levels[2] }} — {{ lang.about.stars_level4 }}</li>
+    <li>{{ levels[3] }} — {{ lang.about.stars_level5 }}</li>
 </ul>
-<p>Mappers who get to the last level enter the hall of fame. They can continue
-their mapping streak after that, of course. For each changeset at that moment
-they will be getting 16 points.</p>
-<h2>Leaderboard</h2>
-<p>There is no leaderboard. You won't know who's ahead of you and who's behind.
-This is a challenge, not a competition.</p>
+<p>{{ lang.about.stars_fame }}</p>
+<h2>{{ lang.about.leaderboard }}</h2>
+<p>{{ lang.about.leaderboard_content }}</p>
 {% endblock %}
