@@ -164,6 +164,7 @@ class RequestsWrapper(object):
     def get(self, url):
         resp = requests.get(self.api + url)
         resp.status = resp.status_code
+        resp.raw_data = resp.content
         if resp.status_code == 200:
             resp.data = etree.fromstring(resp.content)
         return resp
@@ -400,6 +401,7 @@ def get_user_changesets(user, req=None, lang=None):
     resp = req.get('changesets?user={}&time={}'.format(
         user.uid, since.strftime('%Y-%m-%d')))
     if resp.status != 200:
+        logging.error('Error getting user changesets: %s %s', resp.status, resp.raw_data)
         raise Exception('Error connecting to OSM API')
     result = []
     if not lang:
