@@ -115,7 +115,6 @@ def load_task(name, lang=None):
     if lang:
         t_name = name.split('_', 1)[1]
         t_trans = lang.get(t_name, {})
-        logging.warn('Task trans: name=%s, trans=%s', t_name, t_trans)
         for k in ('title', 'description'):
             data['t_'+k] = t_trans.get(k, data[k])
     return data
