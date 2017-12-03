@@ -3,25 +3,38 @@ en:
   no_code: "Please send a hex code from {0}/settings."
   wrong_code: "Your code seems wrong."
   welcome: "Welcome {}!"
-  already_logged: "You are already logged in as {}"
+  already_logged: "You are already logged in as {}."
   you_are: "You are {}."
   which_utc: "At which UTC time would you like to map?"
   task_complete: "Thanks for editing OpenStreetMap today!"
   no_changesets: "You did't edit OpenStreetMap lately."
   unknown_cmd: "Unknown command. Please send /help to get the list."
-  no_remind: "I will not bother you."
-  remind_on: "I will send you a new task every day on {} UTC."
-  lang_set: "I will write to you in English"
-  no_such_lang: "No such language. Supported are: {}"
+  no_remind: "I will not bother you. Use /now or /remind to set a daily reminder."
+  remind_on: "I will send you a new task every day on {} UTC. Send /stop if it bothers you."
+  lang_set: "I will write to you in English."
+  no_such_lang: "No such language. Supported are: {}."
   time_left: "Time left"
   post_changeset: "Send me a changeset number or URL to submit it."
-  list_header: "Copy and paste a changeset id to submit it, or send /done to submit the first one."
+  list_header: "Copy and paste a changeset id to submit it,
+      or send /done to submit the first one."
   n_points: "{} points"
-  help: |
-    OSM Streak Bot
-
+  help: |-
     This bot helps you edit OpenStreetMap every day.
 
-    Send /start <code_from_website> to get daily reminders
+    Send /start <code_from_website> to get daily reminders.
+
+    Commands:
+
+    /task — show the task for today
+    /score — show your score and level
+    /done — submit the latest changeset
+    /list — show your eligible changesets
+
+    /now — Remind each day at the current time
+    /remind <hh:mm> — Choose time for reminding
+    /stop — Stop reminding
+
+    /whoami — Show your OSM name
+    /lang <code> — Switch language
 
     Website: {web}

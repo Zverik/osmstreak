@@ -60,7 +60,7 @@ class Player(telepot.helper.ChatHandler):
                 u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
                     task['emoji'], task['title'], desc_to_markdown(task),
                     self.t('time_left'), ch.time_until_day_ends(self.lang),
-                    self.t('post_changeset')))
+                    self.t('post_changeset')), parse_mode='Markdown')
 
     def _print_score(self):
         user = self._get_tg().user
@@ -75,6 +75,8 @@ class Player(telepot.helper.ChatHandler):
             self._print_score()
 
     def _set_reminder(self, rtime):
+        if rtime == '':
+            rtime = datetime.utcnow().strftime('%H:%M')
         user = self._get_tg()
         user.remind_on = rtime
         user.save()
@@ -112,6 +114,9 @@ class Player(telepot.helper.ChatHandler):
         else:
             self.sender.sendMessage(self.t('no_such_lang').format(', '.join(sorted(supported))))
 
+    def _send_help(self):
+        self.sender.sendMessage(self.t('help').format(web=config.BASE_URL))
+
     def on_chat_message(self, msg):
         flavor, info = telepot.flance(msg)
         if flavor == 'chat' and info[0] != 'text':
@@ -125,7 +130,7 @@ class Player(telepot.helper.ChatHandler):
         else:
             command = [None]
         if command[0] == '/help':
-            self.sender.sendMessage(self.t('help').format(web=config.BASE_URL))
+            self._send_help()
         elif not self.has_user:
             no_code_msg = self.t('no_code')
             if command[0] == '/start':
@@ -147,7 +152,7 @@ class Player(telepot.helper.ChatHandler):
             Telegram.create(channel=self.id, user=user)
             self.lang = ch.load_language_from_user('telegram', user)
             self.sender.sendMessage(self.t('welcome').format(user.name))
-            self._set_reminder(datetime.utcnow().strftime('%H:%M'))
+            self._set_reminder('')
             self._print_task()
         else:
             if command[0] == '/task':
@@ -159,7 +164,7 @@ class Player(telepot.helper.ChatHandler):
             elif command[0] == '/done':
                 self._last_changeset()
             elif command[0] == '/now':
-                self._set_reminder(datetime.utcnow().strftime('%H:%M'))
+                self._set_reminder('')
             elif command[0] == '/remind':
                 if len(command) == 1 or not RE_TIME.match(command[1]):
                     self.sender.sendMessage(self.t('which_utc'))
@@ -191,7 +196,7 @@ def send_reminder(bot, hm):
                 task['emoji'], task['title'], desc_to_markdown(task),
                 lang['post_changeset'])
         try:
-            bot.sendMessage(tg.channel, msg)
+            bot.sendMessage(tg.channel, msg, parse_mode='Markdown')
         except telepot.exception.TelegramError as e:
             logging.error('Could not remind user %s: %s', tg.user.name, e.description)
 
