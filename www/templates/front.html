@@ -1,18 +1,17 @@
 {% extends "layout.html" %}
-{% block title %}OSM Streak{% endblock %}
 {% block header %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 {% endblock %}
 {% block content %}
 {{ task | safe }}
 {% if tobj.changeset %}
-<p>Thanks for editing OpenStreetMap today! You are uploading changes {{ user.streak }} days in a row!</p>
+<p>{{ lang.thanks }}</p>
 {% else %}
 <form action="{{ url_for('changeset') }}">
-    <p>Submit a changeset URL for the task, or <a href="javascript:showChangesets()">choose from a list</a>:</p>
+    <p>{{ lang.submit_changeset }} (<a href="javascript:showChangesets()">{{ lang.update_list }}</a>):</p>
     <div id="changesets"></div>
     <p><input type="text" name="changeset" value=""> <input type="submit"></p>
-    <p>Time left to submit a changeset: {{ timeleft }}.</p>
+    <p>{{ lang.time_left }}: {{ timeleft }}.</p>
 </form>
 <script>
     function showChangesets() {
@@ -27,6 +26,10 @@
                 $ch.text(data.error);
                 return;
             }
+            if (!data.changesets.length) {
+                $ch.html('<small>{{ lang.no_changesets }}</small>');
+                return;
+            }
             var items = [];
             $.each(data.changesets, function(i, ch) {
                 items.push('<li><a href="{{ url_for('changeset') }}?changeset='+
@@ -35,6 +38,8 @@
             $('<ul>'+items.join('')+'</ul>').appendTo($ch);
         });
     }
+
+    $(function() { showChangesets(); });
 </script>
 {% endif %}
 {% endblock %}

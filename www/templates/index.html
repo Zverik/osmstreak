@@ -1,6 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}OSM Streak{% endblock %}
 {% block content %}
 {{task|safe}}
-<p>To track your progress and get more advanced tasks, <a href="{{url_for('login')}}">sign in</a> with your OpenStreetMap account.</p>
+<p>{{ msg | safe }}</p>
 {% endblock %}

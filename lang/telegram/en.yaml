@@ -15,6 +15,7 @@ en:
   no_such_lang: "No such language. Supported are: {}"
   time_left: "Time left"
   post_changeset: "Send me a changeset number or URL to submit it."
+  list_header: "Copy and paste a changeset id to submit it, or send /done to submit the first one."
   n_points: "{} points"
   help: |
     OSM Streak Bot

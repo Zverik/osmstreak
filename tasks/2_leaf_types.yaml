@@ -1,6 +1,6 @@
 title: Plant three trees
 emoji: 🍂
-description: >
+description: >-
   Mapping a tree is not just placing a ''natural=tree_node''. You have to specify its type.
   Please read wiki pages on [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type]
   and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], and then add 3 trees near your home or somewhere

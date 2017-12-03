@@ -13,6 +13,11 @@ from ruamel.yaml import YAML
 from xml.etree import ElementTree as etree
 
 
+RE_MARKUP_LINK = re.compile(r'\[(http[^ \]]+) +([^\]]+)\]')
+RE_EM = re.compile(r'\'\'(.*?)\'\'')
+RE_CHANGESET = re.compile(r'^\s*(?:https.*/changeset/)?(\d{8,})/?\s*$')
+
+
 def today():
     return datetime.datetime.utcnow().date()
 
@@ -21,20 +26,22 @@ def yesterday():
     return today() - datetime.date.resolution
 
 
-def time_until_day_ends():
+def time_until_day_ends(lang=None):
     tomorrow = today() + datetime.timedelta(days=1)
     midnight = datetime.datetime(
         tomorrow.year, tomorrow.month, tomorrow.day, 0, 0, 0, 0)
     left = int((midnight - datetime.datetime.utcnow()).total_seconds())
     halfhours = left // 1800
+    if not lang:
+        lang = {}
     if halfhours > 2:
         if halfhours % 2 == 0:
-            return '{} hours'.format(halfhours/2)
+            return lang.get('n_hours', '{} hours').format(halfhours/2)
         else:
-            return '{} hours'.format(halfhours/2.0)
+            return lang.get('n_hours', '{} hours').format(halfhours/2.0)
     elif halfhours == 2:
-        return 'an hour'
-    return '{} minutes'.format(left // 60)
+        return lang.get('hour', 'an hour')
+    return lang.get('n_minutes', '{} minutes').format(left // 60)
 
 
 def merge_dict(target, other):
@@ -44,6 +51,17 @@ def merge_dict(target, other):
             merge_dict(node, v)
         else:
             target[k] = v
+
+
+def to_unicode(d):
+    if isinstance(d, dict):
+        return {to_unicode(k): to_unicode(v) for k, v in d.iteritems()}
+    elif isinstance(d, list):
+        return [to_unicode(s) for s in d]
+    elif isinstance(d, unicode):
+        return d.encode('utf-8')
+    else:
+        return d
 
 
 def load_language(path, lang):
@@ -56,7 +74,7 @@ def load_language(path, lang):
         with open(lang_file, 'r') as f:
             lang_data = yaml.load(f)
             merge_dict(data, lang_data[lang_data.keys()[0]])
-    return data
+    return to_unicode(data)
 
 
 def load_language_from_user(path, user):
@@ -81,7 +99,7 @@ def get_tasks(max_level=1):
     return result
 
 
-def load_task(name):
+def load_task(name, lang=None):
     filename = os.path.join(config.BASE_DIR, 'tasks', name+'.yaml')
     if not os.path.exists(filename):
         return None
@@ -89,9 +107,12 @@ def load_task(name):
         yaml = YAML()
         data = yaml.load(f)
     if 'title' in data and 'emoji' in data:
-        for k in data:
-            if isinstance(data[k], unicode):
-                data[k] = data[k].encode('utf-8')
+        if lang:
+            t_name = name.split('_', 1)[1]
+            t_trans = lang.get(t_name, {})
+            for k in ('title', 'description'):
+                if k in t_trans:
+                    data['t_'+k] = t_trans[k]
         return data
     return None
 
@@ -205,11 +226,9 @@ class ValidationError(ValueError):
 
 def parse_changeset_id(changeset):
     if isinstance(changeset, basestring):
-        m = re.search(r'/changeset/(\d+)', changeset)
+        m = RE_CHANGESET.match(changeset)
         if not m:
-            m = re.match(r'^\s*(\d+)\s*$', changeset)
-            if not m:
-                raise ValidationError('Wrong changeset id: {}', changeset)
+            raise ValidationError('wrong_id', changeset)
         return int(m.group(1))
     return changeset
 
@@ -310,6 +329,16 @@ def validate_changeset(user, changeset, task_name=None, req=None):
     return date, True
 
 
+def get_last_task_day(user):
+    try:
+        last_task = Task.select(Task.day).where(
+            Task.user == user, Task.changeset.is_null(False)
+        ).order_by(Task.day.desc()).get()
+        return last_task.day
+    except Task.DoesNotExist:
+        return None
+
+
 def submit_changeset(user, changeset, req=None):
     """Validates the changeset, records it and returns a series of messages."""
     lang = load_language_from_user('', user)['validation']
@@ -320,14 +349,7 @@ def submit_changeset(user, changeset, req=None):
         if not cs_date:
             raise ValidationError('wrong_date')
 
-        try:
-            last_task = Task.select(Task.day).where(
-                Task.user == user, Task.changeset.is_null(False)
-            ).order_by(Task.day.desc()).get()
-            last_task_day = last_task.day
-        except Task.DoesNotExist:
-            last_task_day = None
-
+        last_task_day = get_last_task_day(user)
         if last_task_day and last_task_day >= cs_date:
             raise ValidationError('has_later_changeset')
 
@@ -360,28 +382,34 @@ def submit_changeset(user, changeset, req=None):
     return msgs, True
 
 
-def get_user_changesets(user, req=None):
+def get_user_changesets(user, req=None, lang=None):
     if not req:
         req = RequestsWrapper()
+    last_task_day = get_last_task_day(user)
     date = today()
+    if last_task_day == date:
+        # At least show changesets for today
+        last_task_day -= last_task_day.resolution
     since = date - date.resolution * 2
     resp = req.get('changesets?user={}&time={}'.format(
         user.uid, since.strftime('%Y-%m-%d')))
     if resp.status != 200:
         raise Exception('Error connecting to OSM API')
     result = []
+    if not lang:
+        lang = {}
     for chs in resp.data:
         chtime = datetime.datetime.strptime(chs.get('created_at'), '%Y-%m-%dT%H:%M:%SZ')
-        if chtime.date() < date - date.resolution:
+        if chtime.date() <= last_task_day:
             continue
         chdata = {
             'id': int(chs.get('id')),
             'time': chs.get('created_at')
         }
         if chtime.date() == date:
-            hdate = 'Today'
+            hdate = lang.get('today', 'Today')
         elif chtime.date() == date - date.resolution:
-            hdate = 'Yesterday'
+            hdate = lang.get('yesterday', 'Yesterday')
         else:
             hdate = chtime.strftime('%d.%m')
         chdata['htime'] = hdate + ' ' + chtime.strftime('%H:%M')

@@ -1,15 +1,12 @@
 import config
-import math
-import re
 import ch_util as ch
-from db import database, User, Task
+from db import database, User
 from www import app
 from flask import (
     session, url_for, redirect, request,
     render_template, g, flash, jsonify
 )
 from flask_oauthlib.client import OAuth
-from datetime import datetime
 
 
 oauth = OAuth()
@@ -63,6 +60,10 @@ def load_user_language():
     g.lang = data
 
 
+def html_esc(s):
+    return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+
 @app.route('/login')
 def login():
     if 'osm_token' not in session:
@@ -110,17 +111,13 @@ def get_token(token='user'):
     return None
 
 
-RE_MARKUP_LINK = re.compile(r'\[(http[^ \]]+) +([^\]]+)\]')
-RE_EM = re.compile(r'\'\'(.*?)\'\'')
-
-
 def render_task(task):
     desc = task['description'].strip()
-    desc = desc.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    desc = html_esc(desc)
     desc = desc.replace('\n', '<br>')
-    desc = RE_MARKUP_LINK.sub(r'<a href="\1">\2</a>', desc)
-    desc = RE_EM.sub(r'<i>\1</i>', desc)
-    return render_template('task.html', task=task, desc=desc)
+    desc = ch.RE_MARKUP_LINK.sub(r'<a href="\1">\2</a>', desc)
+    desc = ch.RE_EM.sub(r'<i>\1</i>', desc)
+    return render_template('task.html', task=task, desc=desc, lang=g.lang)
 
 
 def get_user():
@@ -137,21 +134,18 @@ def get_ip():
 
 @app.route('/')
 def front():
-    if 'osm_token' in session:
-        return front_osm()
-    task = ch.load_task(ch.random_task_for_ip(get_ip()))
-    return render_template('index.html', task=render_task(task))
-
-
-def front_osm():
-    if 'osm_token' not in session:
-        redirect(url_for('login'))
     user = get_user()
+    if not user:
+        task = ch.load_task(ch.random_task_for_ip(get_ip()))
+        msg = html_esc(g.lang['please_sign_in']).replace(
+            '[', '<a href="' + html_esc(url_for('login')) + '">').replace(']', '</a>')
+        return render_template('index.html', task=render_task(task), msg=msg, lang=g.lang)
+
     task_obj = ch.get_or_create_task_for_user(user)
     task = ch.load_task(task_obj.task)
     return render_template('front.html', task=render_task(task),
-                           user=user, tobj=task_obj,
-                           timeleft=ch.time_until_day_ends())
+                           user=user, tobj=task_obj, lang=g.lang,
+                           timeleft=ch.time_until_day_ends(g.lang))
 
 
 @app.route('/user/<uid>')
@@ -161,7 +155,7 @@ def userinfo(uid):
         return redirect(url_for('front'))
     try:
         quser = User.get(User.name == uid)
-        return render_template('userinfo.html', user=user, quser=quser)
+        return render_template('userinfo.html', user=user, quser=quser, lang=g.lang)
     except User.DoesNotExist:
         return 'Wrong user id'
 
@@ -187,7 +181,7 @@ def get_changesets():
         return jsonify(error='Log in please')
     user = User.get(User.uid == session['osm_uid'])
     try:
-        result = ch.get_user_changesets(user)
+        result = ch.get_user_changesets(user, openstreetmap, lang=g.lang)
     except Exception:
         return jsonify(error='Error connecting to OSM API')
     return jsonify(changesets=result)
@@ -195,7 +189,8 @@ def get_changesets():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', user=get_user(), levels=config.LEVELS)
+    return render_template('about.html', user=get_user(), levels=config.LEVELS,
+                           lang=g.lang)
 
 
 @app.route('/settings')
@@ -206,7 +201,8 @@ def settings():
     else:
         code = ''
     return render_template('connect.html', user=user, code=code,
-                           langs=ch.get_supported_languages())
+                           langs=ch.get_supported_languages(),
+                           lang=g.lang)
 
 
 @app.route('/set-email', methods=['POST'])

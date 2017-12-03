@@ -2,21 +2,21 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}{% endblock %}</title>
+        <title>{% block title %}{% endblock %}{{ lang.title }}</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         {% block header %}{% endblock %}
     </head>
     <body>
         <div id="header">
-            <a href="{{ url_for('front') }}">OSM Streak</a>
+            <a href="{{ url_for('front') }}">{{ lang.title }}</a>
             <span class="right">
                 {% if user %}
                 <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} points {{ '⭐' * user.level }}</span>
-                <span><a href="{{ url_for('settings') }}">Connect</a></span>
+                <span><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
                 {% else %}
-                <span><a href="{{ url_for('login') }}">Log in</a></span>
+                <span><a href="{{ url_for('login') }}">{{ lang.login }}</a></span>
                 {% endif %}
-                <span><a href="{{ url_for('about') }}">About</a></span>
+                <span><a href="{{ url_for('about') }}">{{ lang.about }}</a></span>
             </span>
         </div>
         <div id="content">

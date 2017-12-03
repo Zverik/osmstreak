@@ -1,29 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
-import os
-import sys
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-sys.path.insert(0, BASE_DIR)
-PYTHON = 'python2.7'
-VENV_DIR = os.path.join(BASE_DIR, 'venv', 'lib', PYTHON, 'site-packages')
-if os.path.exists(VENV_DIR):
-    sys.path.insert(1, VENV_DIR)
-
 import config
-import telepot
-from datetime import datetime
-import time
-import re
 import logging
+import os
+import re
+import telepot
+import time
 import ch_util as ch
+from datetime import datetime
 from db import database, Telegram, User
-from telepot.loop import MessageLoop
 from telepot.delegate import per_chat_id, create_open, pave_event_space
 
 
 RE_TIME = re.compile(r'^\d\d:\d\d$')
-RE_CHANGESET = re.compile(r'^(?:https.*/changeset/)?(\d{8,})/?$')
 last_reminder = None
+
+
+def desc_to_markdown(task):
+    desc = task['description'].strip()
+    desc = ch.RE_MARKUP_LINK.sub(r'[\2](\1)', desc)
+    desc = ch.RE_EM.sub(r'_\1_', desc)
+    return desc
 
 
 class Player(telepot.helper.ChatHandler):
@@ -37,7 +34,7 @@ class Player(telepot.helper.ChatHandler):
         d = self.lang
         for k in args:
             d = d[k]
-        return d.encode('utf-8')
+        return d
 
     def _get_tg(self):
         try:
@@ -58,11 +55,10 @@ class Player(telepot.helper.ChatHandler):
             self.sender.sendMessage(self.t('task_complete'))
         else:
             task = ch.load_task(task_obj.task)
-            # TODO: Format description
             self.sender.sendMessage(
-                '{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
-                    task['emoji'], task['title'], task['description'],
-                    self.t('time_left'), ch.time_until_day_ends(),
+                u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
+                    task['emoji'], task['title'], desc_to_markdown(task),
+                    self.t('time_left'), ch.time_until_day_ends(self.lang),
                     self.t('post_changeset')))
 
     def _print_score(self):
@@ -88,9 +84,9 @@ class Player(telepot.helper.ChatHandler):
 
     def _list_changesets(self):
         user = self._get_tg().user
-        changesets = ch.get_user_changesets(user)
+        changesets = ch.get_user_changesets(user, lang=self.lang)
         if changesets:
-            msg = '\n'.join(['{}: {}, {}'.format(
+            msg = self.t('list_header') + '\n\n' + '\n'.join(['{}: {}, {}'.format(
                 c['id'], c['htime'], c['comment']) for c in changesets[:5]])
             self.sender.sendMessage(msg)
         else:
@@ -155,7 +151,7 @@ class Player(telepot.helper.ChatHandler):
         else:
             if command[0] == '/task':
                 self._print_task()
-            elif RE_CHANGESET.match(text):
+            elif ch.RE_CHANGESET.match(text):
                 self._register_changeset(text)
             elif command[0] == '/list':
                 self._list_changesets()
@@ -187,13 +183,12 @@ class Player(telepot.helper.ChatHandler):
 def send_reminder(bot, hm):
     query = Telegram.select().where(Telegram.remind_on == hm)
     for tg in query:
-        logging.warning('%s on %s', tg.user.name, hm)
         lang = ch.load_language_from_user('telegram', tg.user)
         task_obj = ch.get_or_create_task_for_user(tg.user)
         task = ch.load_task(task_obj.task)
-        msg = '{} {}\n\n{}\n\n{}'.format(
-                task['emoji'], task['title'], task['description'],
-                lang['post_changeset'].encode('utf-8'))
+        msg = u'{} {}\n\n{}\n\n{}'.format(
+                task['emoji'], task['title'], desc_to_markdown(task),
+                lang['post_changeset'])
         try:
             bot.sendMessage(tg.channel, msg)
         except telepot.exception.TelegramError as e:
@@ -237,7 +232,7 @@ if __name__ == '__main__':
     bot = telepot.DelegatorBot(config.TELEGRAM_TOKEN, [
         pave_event_space()(per_chat_id(types=['private']), create_open, Player, timeout=10),
     ])
-    MessageLoop(bot).run_as_thread()
+    telepot.loop.MessageLoop(bot).run_as_thread()
     while 1:
         send_reminders(bot)
         time.sleep(10)
