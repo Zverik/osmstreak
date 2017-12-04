@@ -167,7 +167,7 @@ def userinfo(uid):
 @app.route('/changeset')
 def changeset():
     if 'osm_token' not in session:
-        redirect(url_for('login'))
+        redirect(url_for('front'))
 
     cs_data = request.args.get('changeset')
     if not cs_data.strip():
@@ -200,6 +200,8 @@ def about():
 @app.route('/settings')
 def settings():
     user = get_user()
+    if not user:
+        redirect(url_for('front'))
     if user:
         code = user.generate_code()
     else:
@@ -212,6 +214,8 @@ def settings():
 @app.route('/set-email', methods=['POST'])
 def set_email():
     user = get_user()
+    if not user:
+        redirect(url_for('front'))
     email = request.form['email']
     if not email or '@' not in email:
         new_email = None
@@ -226,6 +230,8 @@ def set_email():
 @app.route('/set-lang', methods=['POST'])
 def set_lang():
     user = get_user()
+    if not user:
+        redirect(url_for('front'))
     new_lang = request.form['lang']
     if new_lang != user.lang and new_lang in ch.get_supported_languages():
         user.lang = new_lang
