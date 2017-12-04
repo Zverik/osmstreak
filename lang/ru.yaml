@@ -41,4 +41,8 @@ ru:
     points: Очки
     tasks: Задания
     stars: Звёзды
+    stars_level2: 2 уровень (приблизительно 5 дней подряд)
+    stars_level3: 3 уровень (три недели)
+    stars_level4: 4 уровень (три месяца)
+    stars_level5: 5 уровень (около года)
     leaderboard: Рейтинг

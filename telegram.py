@@ -21,7 +21,7 @@ from telepot.loop import MessageLoop
 from telepot.delegate import per_chat_id, create_open, pave_event_space
 
 
-RE_TIME = re.compile(r'^\d\d:\d\d$')
+RE_TIME = re.compile(r'^\d?\d:\d\d$')
 last_reminder = None
 
 
@@ -92,6 +92,8 @@ class Player(telepot.helper.ChatHandler):
     def _set_reminder(self, rtime):
         if rtime == '':
             rtime = datetime.utcnow().strftime('%H:%M')
+        elif len(rtime) == 4:
+            rtime = '0' + rtime
         user = self._get_tg()
         user.remind_on = rtime
         user.save()

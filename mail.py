@@ -19,12 +19,13 @@ from email.utils import formataddr
 
 def send_email(user):
     lang = ch.load_language_from_user('', user)
+    lang['tasks'] = ch.load_language_from_user('tasks', user)
     task_obj = ch.get_or_create_task_for_user(user)
-    task = ch.load_task(task_obj.task)
-    desc = task['description']
+    task = ch.load_task(task_obj.task, lang['tasks'])
+    desc = task['t_description']
     message = u'{hi}\n\n{task}\n\n{emoji} {title}\n\n{desc}\n\n{submit}\n\n{bye}\n{streak}'.format(
         hi=lang['email']['hi'].format(user.name), task=lang['email']['new_task'],
-        emoji=task['emoji'], title=task['title'], desc=desc,
+        emoji=task['emoji'], title=task['t_title'], desc=desc,
         submit=lang['email']['to_submit'].format(config.BASE_URL), bye=lang['email']['bye'],
         streak=lang['title']
     )
