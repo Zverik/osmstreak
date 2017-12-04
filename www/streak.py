@@ -207,7 +207,7 @@ def about():
 def settings():
     user = get_user()
     if not user:
-        redirect(url_for('login', next=request.path))
+        return redirect(url_for('login', next=request.path))
     if user:
         code = user.generate_code()
     else:
@@ -221,7 +221,7 @@ def settings():
 def set_email():
     user = get_user()
     if not user:
-        redirect(url_for('front'))
+        return redirect(url_for('front'))
     email = request.form['email']
     if not email or '@' not in email:
         new_email = None
@@ -237,7 +237,7 @@ def set_email():
 def set_lang():
     user = get_user()
     if not user:
-        redirect(url_for('front'))
+        return redirect(url_for('front'))
     new_lang = request.form['lang']
     if new_lang != user.lang and new_lang in ch.get_supported_languages():
         user.lang = new_lang
