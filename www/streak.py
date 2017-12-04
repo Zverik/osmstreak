@@ -192,7 +192,9 @@ def get_changesets():
     user = User.get(User.uid == session['osm_uid'])
     try:
         result = ch.get_user_changesets(user, openstreetmap, lang=g.lang)
-    except Exception:
+    except Exception as e:
+        import logging
+        logging.error('Error getting user changesets: %s', e)
         return jsonify(error='Error connecting to OSM API')
     return jsonify(changesets=result)
 
