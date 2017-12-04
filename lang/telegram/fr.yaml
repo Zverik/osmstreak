@@ -1,0 +1,39 @@
+fr:
+  only_text: "Désolé, n'accepte que les messages texte."
+  no_code: "Veuillez envoyer un code hexadécimal à partir de {0}/settings."
+  wrong_code: "Votre code semble faux."
+  welcome: "Bienvenue {}!"
+  already_logged: "Vous êtes déjà connecté en tant que {}."
+  you_are: "Vous êtes {}."
+  which_utc: "A quelle heure UTC souhaitez-vous cartographier?"
+  task_complete: "Merci d'avoir édité OpenStreetMap aujourd'hui!"
+  no_changesets: "Vous n'avez pas édité OpenStreetMap récemment."
+  unknown_cmd: "Commande inconnue. S'il vous plaît envoyer /help pour obtenir la liste."
+  no_remind: "Je ne te dérangerai pas. Utilisez /now or /remind pour définir un rappel quotidien."
+  remind_on: "Je vous enverrai une nouvelle tâche tous les jours le {} UTC. Envoyer /stop si cela vous dérange."
+  lang_set: "Je vais vous écrire en anglais."
+  no_such_lang: "Pas un tel langage. les langues pris en charge sont: {}."
+  time_left: "Temps restant"
+  post_changeset: "Envoyez-moi un numéro de changeset ou une URL pour le soumettre."
+  list_header: "Copiez et collez un identifiant de changeset pour le soumettre, ou envoyez /done pour soumettre le premier."
+  n_points: "{} points"
+  help: |-
+    Ce bot vous aide à éditer OpenStreetMap tous les jours.
+
+    Envoyez /start<code_from_website> pour recevoir des rappels quotidiens.
+
+    Commandes:
+
+    / task - montrez la tâche pour aujourd'hui
+    / score - montrez votre score et votre niveau
+    / done - soumettre les derniers changeset
+    / list - montre vos changesets éligibles
+
+    / now - Rappelez chaque jour à l'heure actuelle
+    / remind <hh: mm> - Choisissez l'heure pour vous rappeler
+    / stop - Arrête de rappeler
+
+    / whoami - Affiche le nom de votre compte OSM
+    / lang <code> - Changer de langue
+
+    Site Web: {web}
