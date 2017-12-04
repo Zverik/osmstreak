@@ -8,7 +8,6 @@ fr:
   submit_changeset: "Soumettre une URL de changeset de la tâche ou choisir dans une liste"
   verify: Vérifier
   update_list: "mise à jour"
-  no_changesets: "Vous n'avez pas édité OpenStreetMap récemment."
   time_left: "Temps restant pour soumettre un ensemble de changeset"
   connect_intro: "Recevez des notifications pour de nouvelles tâches et soumettez des changesets par Télégram ou par e-mail."
   subscribe: Souscrire
