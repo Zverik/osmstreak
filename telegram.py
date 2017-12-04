@@ -208,6 +208,8 @@ def send_reminder(bot, hm):
     for tg in query:
         lang = load_language(tg.user)
         task_obj = ch.get_or_create_task_for_user(tg.user)
+        if task_obj.changeset is not None:
+            continue
         task = ch.load_task(task_obj.task, lang['tasks'])
         msg = u'{} {}\n\n{}\n\n{}'.format(
                 task['emoji'], task['t_title'], desc_to_markdown(task),
