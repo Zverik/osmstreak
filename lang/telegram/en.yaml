@@ -7,7 +7,7 @@ en:
   you_are: "You are {}."
   which_utc: "At which UTC time would you like to map?"
   task_complete: "Thanks for editing OpenStreetMap today!"
-  no_changesets: "You did't edit OpenStreetMap lately."
+  no_changesets: "You didn't edit OpenStreetMap lately."
   unknown_cmd: "Unknown command. Please send /help to get the list."
   no_remind: "I will not bother you. Use /now or /remind to set a daily reminder."
   remind_on: "I will send you a new task every day on {} UTC. Send /stop if it bothers you."
