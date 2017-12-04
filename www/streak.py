@@ -96,7 +96,13 @@ def oauth():
         user.save()
     # Use the same task a user has seen when not logged in
     ch.get_or_create_task_for_user(user, ip=get_ip())
-    return redirect(url_for('front'))
+
+    if session.get('next'):
+        redir = session['next']
+        del session['next']
+    else:
+        redir = url_for('front')
+    return redirect(redir)
 
 
 @app.route('/logout')
@@ -201,7 +207,7 @@ def about():
 def settings():
     user = get_user()
     if not user:
-        redirect(url_for('front'))
+        redirect(url_for('login', next=request.path))
     if user:
         code = user.generate_code()
     else:
