@@ -8,7 +8,7 @@ en:
   submit_changeset: "Submit a changeset URL for the task, or choose from a list"
   verify: Verify
   update_list: "update"
-  no_changesets: "You did't edit OpenStreetMap lately."
+  no_changesets: "You didn't edit OpenStreetMap lately."
   time_left: "Time left to submit a changeset"
   connect_intro: "Get notifications for new tasks and submit changesets by Telegram or e-mail."
   subscribe: Subscribe
