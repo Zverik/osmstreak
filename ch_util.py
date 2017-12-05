@@ -394,9 +394,9 @@ def get_user_changesets(user, req=None, lang=None):
         req = RequestsWrapper()
     last_task_day = get_last_task_day(user)
     date = today()
-    if last_task_day == date:
+    if not last_task_day or last_task_day == date:
         # At least show changesets for today
-        last_task_day -= last_task_day.resolution
+        last_task_day = date - date.resolution
     since = date - date.resolution * 2
     resp = req.get('changesets?user={}&time={}'.format(
         user.uid, since.strftime('%Y-%m-%d')))
