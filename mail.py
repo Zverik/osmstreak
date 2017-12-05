@@ -31,7 +31,7 @@ def send_email(user):
         streak=lang['title']
     )
     msg = MIMEText(message, 'plain', 'utf-8')
-    msg['Subject'] = u'[{}] {} {}'.format(lang['title'], task['emoji'], task['title'])
+    msg['Subject'] = u'[{}] {} {}'.format(lang['title'], task['emoji'], task['t_title'])
     msg['From'] = formataddr(('OSM Streak', config.EMAIL_FROM))
     msg['To'] = formataddr((user.name, user.email))
 
