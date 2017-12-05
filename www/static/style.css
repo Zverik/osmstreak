@@ -33,9 +33,9 @@ body {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 940px) {
     .wrapper {
-        width: 1026px;
+        width: 800px;
         margin: 0 auto;
     }
 }
