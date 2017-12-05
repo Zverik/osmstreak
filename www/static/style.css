@@ -44,6 +44,7 @@ body {
     padding: 0.5em 0;
     background-color: #335;
     color: #eee;
+    overflow: hidden;
 }
 
 #header a {
