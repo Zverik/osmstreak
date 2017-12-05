@@ -15,7 +15,7 @@
         <header id="header">
             <div class="wrapper">
                 <a href="{{ url_for('front') }}">{{ lang.title }}</a>
-                <span class="right normal">
+                <span class="right{% if user %} normal{% endif %}">
                     {% if user %}
                         <span class="link"><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} {{ '⭐' * user.level }}</span>
                         <span class="link"><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
@@ -25,19 +25,15 @@
                     <span class="link"><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
                 </span>
             </div>
+            {% if user %}
             <div class="wrapper small">
-                {% if user %}
-                    <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} {{ '⭐' * user.level }}</span>
-                {% endif %}
+                <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} {{ '⭐' * user.level }}</span>
                 <span class="right">
-                    {% if user %}
-                        <span class="link"><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
-                    {% else %}
-                        <span class="link"><a href="{{ url_for('login') }}">{{ lang.login }}</a></span>
-                    {% endif %}
+                    <span class="link"><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
                     <span class="link"><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
                 </span>
             </div>
+            {% endif %}
         </header>
 
 
