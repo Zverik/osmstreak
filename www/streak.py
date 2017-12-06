@@ -173,8 +173,6 @@ def front():
 @app.route('/user/<uid>')
 def userinfo(uid):
     user = get_user()
-    if user and user.name == uid:
-        return redirect(url_for('front'))
     try:
         quser = User.get(User.name == uid)
         return render_template('userinfo.html', user=user, quser=quser, lang=g.lang)
@@ -208,7 +206,7 @@ def get_changesets():
         import logging
         logging.error('Error getting user changesets: %s', e)
         return jsonify(error='Error connecting to OSM API')
-    return jsonify(changesets=result)
+    return jsonify(changesets=result[:10])
 
 
 @app.route('/about')

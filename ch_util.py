@@ -187,6 +187,15 @@ def validate_tags(obj, tagtest):
     for tt in tagtest:
         if not tt:
             continue
+        if tt.startswith('bbox:'):
+            if obj.tag != 'node':
+                logging.error('Cannot test bbox on %s', obj.tag)
+                continue
+            bbox = [float(n.strip()) for n in tt[5:].split(',')]
+            if not (bbox[0] <= float(obj.get('lon')) <= bbox[2] and
+                    bbox[1] <= float(obj.get('lat')) <= bbox[3]):
+                return False
+            continue
         p = tt.find('=')
         p2 = tt.find('~')
         if p < 0 or (p2 >= 0 and p2 < p):

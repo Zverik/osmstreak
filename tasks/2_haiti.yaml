@@ -1,0 +1,9 @@
+title: Visit Haiti
+emoji: 🇭🇹
+description: >-
+  In 2010 there was a catastrophic earthquake 25 km west of the capital of Haiti, Port-au-Prince.
+  That gave start to the Humanitarian Mapping Team, thanks to which the capital was mapped
+  perfectly. But not the rest of the country: find an unmapped building in Haiti and trace it.
+test:
+  create_area: "building=*"
+  create_4_nodes: "bbox:-74.6878,17.3559,-71.6006,20.1488"
