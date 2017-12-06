@@ -1,0 +1,31 @@
+ast_ES:
+  bridge:
+    description: Munches estraes nes fasteres fora de les villes dibúxense apriesa y ensin mirar si crucen ríos o regatos. Alcuentra un llugar onde un mapeador escaeció partir una estrada y marcar una ponte, y faelo tu.
+    title: Dibuxa una ponte
+  stream:
+    description: Los ríos del mundu de vezu tán nel mapa, pero hai una bayura de regatos que non. Escueyi unu, y fai el mapa. Non un ríu — un regatu.
+    title: Dibuxa un regatu
+  sidewalk:
+    description: Una cera ye un camín cabo una estrada. Pa un meyor enrutamientu de peatones, alcuentra una estrada ensin cera nel mapa, y dibuxa un camín a cada llau (comprobando con una imaxe) y amiesta una etiqueta ''footway=sidewalk''. Ci amiestes un pasu de peatones como camín, usa ''highway=footway + footway=crossing''.
+    title: Amiesta una cera
+  osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] ye una de les aplicaciones populares d''OpenStreetMap pa preseos Android, configurable enforma, pero una migayina complicáu pa dalgunes persones. Puede xubir puntos al mapa. Instala''l complementu «OSM Editing» y crea un puntu auquiera. Llei [http://osmand.net/features?id=osm-editing-plugin la documentación] si te pierdes na interfaz.'
+    title: Usar OsmAnd
+  improve_river:
+    description: "Bona parte de los ríos yá tán nel mapa. El problema ye qu'esto ta fecho usando imaxes de satélite de baxa resolución. Agora puedes ameyoralo: llanza JOSM, seleiciona un ríu, prime «W» y ameyora la vía. Amiesta polo menos 10 nodos a un ''waterway=river''."
+    title: Ameyorar un ríu
+  josm:
+    description: "Instala l'editor JOSM, si nun lo ficisti yá, y edita daqué con él. Recomendamos dibuxar dellos edificios:\n \nDescarga parte del mapa, añade una capa d'imaxe, prime «A» y fai click na esquina d'un edificiu. Darréu fai doble-click nuna esquina axacente corner, pa crear una llinia. Entós prime «X» y arrastra la llinia pa tresformala nun rectángulu. P'acabar, prime «Alt+A» p'añadir ''building=yes'', y xube'l cambiu."
+    title: Fai una edición con JOSM
+  fix:
+    description: 'Los comentarios de los conxuntos de cambios son importantes. Pero güei ye más fácil pa ti: fai un cambiu y pon «fix» nel campu de comentariu de los cambios. Sólo eses trés lletres, nada más.'
+    title: Una pequeña igua
+  giveway:
+    description: Hai una etiqueta especial pa marcar el triángulu de la señal «dexe pasu» nel mapa. Ye [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], naturalmente. Alcuentra esa señal, o usando Mapillary o de memoria, pon un nodiu na estrada que tien de dexar pasar, y marca esi nodiu cola etiqueta. Añade tamién una etiqueta priority_road a la estrada con preferencia.
+    title: Dexe'l pasu
+  note:
+    description: Activa les notes nel sitiu web d'OSM y alcuentra una nota ensin resolver que puedas iguar. Marca la nota como resuelta.
+    title: Resuelve una nota
+  highway:
+    description: De vezu esta ye la primera cosa que fai la xente al xunise a OpenStreetMap. Alcuentra una estrada cercaba que nun tea nel mapa y añádela.
+    title: Pon una estrada nel mapa

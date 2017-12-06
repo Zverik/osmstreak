@@ -1,0 +1,78 @@
+nl:
+  title: "OSM Streak"
+  please_sign_in: "[Meld je aan] om je voortgang bij te houden en moeilijkere opdrachten te ontvangen."
+  connect: Verbinden
+  login: Aanmelden
+  help: Over
+  thanks: "Bedankt voor het wijzigen van OpenStreetMap!"
+  submit_changeset: "Geef de link naar een wijzigingenset op, of kies er een uit de lijst"
+  verify: Bevestigen
+  update_list: "update"
+  no_changesets: "Je hebt recent geen wijzigingen doorgevoerd aan OpenStreetMap."
+  time_left: "Resterende tijd om een wijzigingenset in te dienen"
+  connect_intro: "Krijg notificaties voor nieuwe opdrachten en dien wijzigingensets in via Telegram of e-mail"
+  telegram_start: "Klik om de bot te starten"
+  subscribe: Abonneren
+  unsubscribe: Afmelden
+  time:
+    n_hours: "{} uren"
+    hour: "een uur"
+    n_minutes: "{} minuten"
+    today: "Vandaag"
+    yesterday: "Gisteren"
+  validation:
+    wrong_id: "Verkeerde wijzigingensetnummer: {}"
+    wrong_date: "Datum van de wijzigingenset klopt niet."
+    api_error: "Fout bij het verbinding maken met de OSM API."
+    api_strange: "De OSM API gaf een vreemde waarde terug voor de root xml."
+    not_yours: "Voeg alleen je wijzigingenset toe."
+    no_task: "Je hebt de OSM Streak-website niet bezocht op {}."
+    has_later_changeset: "Sorry, je hebt al een wijzigingenset geregistreerd op of na die dag."
+    old_changeset: "Deze wijzigingenset is te oud, voeg a.u.b. een nieuwe toe."
+    changeset_noted: "Wijzigingenset geaccepteerd. Dat was de {}e op rij."
+    extra_point: "Een extra punt voor het afronden van de opdracht."
+    gain_level: "Proficiat met het bereiken van het volgende niveau."
+  email:
+    hi: 'Hallo {}.'
+    new_task: 'Wil je verder mappen en je streak verbeteren? Probeer dit:'
+    to_submit: 'Ga naar {} en klik op de nieuwste wijzigingenset als je klaar bent.'
+    bye: 'Met vriendelijke groet,'
+  about:
+    what_is_this: Wat is dit?
+    what_is_this_content: >-
+        OSM Streak laat je elke dag kleine opdrachten doen voor OpenStreetMap. Het
+        doel is om voor minstens een jaar elke dag te mappen. Opdrachten duren slechts
+        vijf minuten. Het doel is om elke dag te mappen, niet om zo veel mogelijk
+        te mappen.
+    points: Punten
+    points_content: >-
+        Voor elke bijdrage krijg je punten. In het begin krijg je één punt voor een
+        wijziging. Vanaf de derde dag op rij krijg je twee punten per opdracht. Na
+        een maand lang elke dag mappen krijg je zelfs vijf punten voor een wijzigingenset.
+    tasks: Opdrachten
+    tasks_content1: >-
+        Je hoeft niet precies te doen wat de opdracht je zegt. Elke wijzigingenset
+        telt. Als je de opdrachten wel volgt krijg je wel bonuspunten.
+    tasks_content2: >-
+        Laat je niet gek maken door moeilijke opdrachten. Als een opdracht te moeilijk
+        is, zoek dan iets anders om op de kaart te zetten, bijvoorbeeld een gebouw.
+        Het doel is om elke dag iets toe te voegen, daarvoor hoef je de opdracht niet
+        per se uit te voeren.
+    stars: Sterren
+    stars_content: >-
+        Hoe meer punten, hoe hoger je niveau. Je begint op niveau 1, dat zie je tevens
+        aan het aantal sterren. Na enkele dagen groei je naar niveau 2. Hogere niveaus
+        hebben meer verschillende taken. Hier staan de benodigde punten voor de verschillende
+        niveaus.
+    stars_level2: niveau 2 (ongeveer vijf opeenvolgende dagen)
+    stars_level3: niveau 3 (drie weken)
+    stars_level4: niveau 4 (drie maanden)
+    stars_level5: niveau 5 (ongeveer een jaar)
+    stars_fame: >-
+        Mappers die het hoogste niveau bereiken komen in de hall of fame. Ze kunnen
+        daarna natuurlijk wel gewoon verder gaan met mappen. Ze krijgen dan voor elke
+        wijzigingenset 16 punten.
+    leaderboard: Scorebord
+    leaderboard_content: >-
+        Er is geen scorebord. Je weet dus niet wie er voor of achter je ligt. Dit
+        is een uitdaging, geen wedstrijd.

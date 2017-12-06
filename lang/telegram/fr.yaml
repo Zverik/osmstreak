@@ -13,26 +13,5 @@ fr:
   lang_set: "Je vais vous écrire en anglais."
   no_such_lang: "Pas un tel langage. les langues pris en charge sont: {}."
   time_left: "Temps restant"
-  post_changeset: "Envoyez-moi un numéro de changeset ou une URL pour le soumettre."
   list_header: "Copiez et collez un identifiant de changeset pour le soumettre, ou envoyez /done pour soumettre le premier."
   n_points: "{} points"
-  help: |-
-    Ce bot vous aide à éditer OpenStreetMap tous les jours.
-
-    Envoyez /start<code_from_website> pour recevoir des rappels quotidiens.
-
-    Commandes:
-
-    / task - montrez la tâche pour aujourd'hui
-    / score - montrez votre score et votre niveau
-    / done - soumettre les derniers changeset
-    / list - montre vos changesets éligibles
-
-    / now - Rappelez chaque jour à l'heure actuelle
-    / remind <hh: mm> - Choisissez l'heure pour vous rappeler
-    / stop - Arrête de rappeler
-
-    / whoami - Affiche le nom de votre compte OSM
-    / lang <code> - Changer de langue
-
-    Site Web: {web}
