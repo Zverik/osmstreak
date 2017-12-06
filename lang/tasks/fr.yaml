@@ -6,7 +6,6 @@ fr:
     description: Les rivières sont principalement cartographiées dans le monde entier, mais les cours d'eau sont trop nombreux. Choisissez-en un et cartographiez-le. Pas une rivière - un ruisseau.
     title: Dessiner un cours d'eau
   sidewalk:
-    description: "Le trottoir est une voie piétonne près d'une route. Pour un meilleur routage des piétons, trouvez une route sans trottoir cartographiée, et dessinez deux passerelles sur les deux côtés (adossé à l'image) avec une étiquette supplémentaire «trottoir = trottoir». Ajoutez également un passage comme un chemin en plus d'un point «autoroute = passage»: utilisez «passage piéton = passage» pour cela."
     title: Ajouter un trottoir
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] est l''une des applications OpenStreetMap populaires pour les appareils Android, hautement configurable, mais un peu trop complexe pour certains. Il peut télécharger des points sur la carte. Installer le plugin d" "Edition OSM" et créer un point quelque part. Lire [http://osmand.net/features?id=osm-editing-plugin la  documentation] si vous vous perdez dans l''interface.'

@@ -11,6 +11,7 @@ en:
   no_changesets: "You didn't edit OpenStreetMap lately."
   time_left: "Time left to submit a changeset"
   connect_intro: "Get notifications for new tasks and submit changesets by Telegram or e-mail."
+  telegram_start: "click to start the bot"
   subscribe: Subscribe
   unsubscribe: Unsubscribe
 

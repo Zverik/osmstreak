@@ -2,7 +2,7 @@
 {% block title %}{{ lang.connect }} {% endblock %}
 {% block content %}
 <p>{{ lang.connect_intro }}</p>
-<p>Telegram: <a href="https://t.me/osm_streak_bot?start={{code}}">click to start the bot</a>.</p>
+<p>Telegram: <a href="https://t.me/osm_streak_bot?start={{code}}">{{ lang.telegram_start }}</a>.</p>
 <form action="{{ url_for('set_email') }}" method="post">
     <p>Email:
         <input type="text" size="30" name="email" value="{{ user.email or '' }}">

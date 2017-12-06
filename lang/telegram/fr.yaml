@@ -1,6 +1,5 @@
 fr:
   only_text: "Désolé, n'accepte que les messages texte."
-  no_code: "Veuillez envoyer un code hexadécimal à partir de {0}/settings."
   wrong_code: "Votre code semble faux."
   welcome: "Bienvenue {}!"
   already_logged: "Vous êtes déjà connecté en tant que {}."
