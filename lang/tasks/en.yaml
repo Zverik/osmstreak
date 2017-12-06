@@ -107,6 +107,12 @@ en:
       with optional ''tracktype=gradeN'', with N from 1 (best) to 5 (worst). Find
       a field or a forest and draw 2-3 km of a track.
     title: Draw some track roads
+  hot_task:
+    description: 'Open [https://tasks.hotosm.org/ HOT Tasking Manager] and choose
+      a random active task. Inside, choose a random yellow rectangle and do a validation.
+      See how novice mappers draw their buildings, meditate on that a bit, and then
+      fix them: straighten the edges, improve shapes. Just a couple would do.'
+    title: Fix a building
   coastline:
     description: Many coastlines were imported long time ago from a digitized low-resolution
       satellite imagery. You can definitely help improving it in some places. Add
@@ -130,12 +136,11 @@ en:
       imagery or on Mapillary, and map all the turn lanes on all four sides of the
       intersection.
     title: Turn Lanes
-  hot_task:
-    description: 'Open [https://tasks.hotosm.org/ HOT Tasking Manager] and choose
-      a random active task. Inside, choose a random yellow rectangle and do a validation.
-      See how novice mappers draw their buildings, meditate on that a bit, and then
-      fix them: straighten the edges, improve shapes. Just a couple would do.'
-    title: Fix a building
+  farmland:
+    description: Find a patch of tillage or pasture (try Central US or Western Russia),
+      and map it with [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland
+      landuse=farmland].
+    title: Map a Farmland
   mapsme:
     description: MAPS.ME is not just a multiplatform map browser and navigator. You
       can edit the map with it. Just click on an amenity, or choose "Add a place"
