@@ -15,7 +15,7 @@ from xml.etree import ElementTree as etree
 
 RE_MARKUP_LINK = re.compile(r'\[(http[^ \]]+) +([^\]]+)\]')
 RE_EM = re.compile(r'\'\'(.*?)\'\'')
-RE_CHANGESET = re.compile(r'^\s*(?:https.*/changeset/)?(\d{8,})/?\s*$')
+RE_CHANGESET = re.compile(r'^\s*(?:https?.*/changeset/)?(\d{8,})/?\s*$')
 
 
 def today():
