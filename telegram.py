@@ -124,7 +124,7 @@ class Player(telepot.helper.ChatHandler):
         if changesets:
             self._register_changeset(changesets[0]['id'])
         else:
-            self.sender.sendMessage(self.r('no_changesets'))
+            self.sender.sendMessage(self.t('no_changesets'))
 
     def _set_lang(self, lang):
         supported = ch.get_supported_languages()
