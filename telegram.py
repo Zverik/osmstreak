@@ -106,7 +106,7 @@ class Player(telepot.helper.ChatHandler):
         if user.remind_on != rtime:
             user.remind_on = rtime
             user.save()
-        self._print_reminder(self, user)
+        self._print_reminder(user)
 
     def _list_changesets(self):
         user = self._get_tg().user
