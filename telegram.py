@@ -98,9 +98,9 @@ class Player(telepot.helper.ChatHandler):
             self.sender.sendMessage(self.t('remind_on').format(tg.remind_on))
 
     def _set_reminder(self, rtime):
-        if not rtime:
+        if rtime == '':
             rtime = datetime.utcnow().strftime('%H:%M')
-        elif len(rtime) == 4:
+        elif rtime and len(rtime) == 4:
             rtime = '0' + rtime
         user = self._get_tg()
         if user.remind_on != rtime:
