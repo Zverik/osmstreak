@@ -1,7 +1,7 @@
 title: Around the World in Five Minutes
 emoji: ✈️
 description: >-
-  Let's create a changeset with an enourmous bounding box. Map something first in
+  Let's create a changeset with an enormous bounding box. Map something first in
   [https://www.openstreetmap.org/#map=5/-48.487/-69.895 South Chile],
   and then in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
 test:
