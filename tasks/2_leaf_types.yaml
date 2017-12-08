@@ -1,7 +1,7 @@
 title: Plant two trees
 emoji: 🍂
 description: >-
-  Mapping a tree is not just placing a ''natural=tree_node''. You have to specify its type.
+  Mapping a tree is not just placing a ''natural=tree'' node. You have to specify its type.
   Please read wiki pages on [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type]
   and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], and then add 2 trees near your home or somewhere
   familiar to you using these tags.
