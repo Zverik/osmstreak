@@ -1,0 +1,79 @@
+fr:
+  title: "OSM Streak"
+  please_sign_in: "Pour suivre vos progrès et obtenir des tâches plus avancées, [sign in] avec votre compte OpenStreetMap."
+  connect: 'Connecter '
+  login: 'Se connecter '
+  help: A propos
+  thanks: "Merci d'avoir édité OpenStreetMap aujourd'hui!"
+  submit_changeset: "Soumettre une URL de changeset de la tâche ou choisir dans une liste"
+  verify: Vérifier
+  update_list: "mise à jour"
+  no_changesets: "Vous n'avez pas édité OpenStreetMap récemment."
+  time_left: "Temps restant pour soumettre un ensemble de changeset"
+  connect_intro: "Recevez des notifications pour de nouvelles tâches et soumettez des changesets par Télégram ou par e-mail."
+  subscribe: Souscrire
+  unsubscribe: Se désabonner
+  time:
+    n_hours: "{} heures"
+    hour: "une heure"
+    n_minutes: "{} minutes"
+    today: "Aujourd'hui "
+    yesterday: "Hier"
+  validation:
+    wrong_id: "Mauvais identifiant de changeset: {}."
+    wrong_date: "La date du changeset est erronée."
+    api_error: "Erreur lors de la connexion à l'API OSM."
+    api_strange: "L'API OSM a renvoyé quelque chose d'étrange pour le fichier XML racine."
+    not_yours: "S'il vous plaît ajouter seulement vos changesets."
+    no_task: "Vous n'avez pas visité le site Web OSM Streak le {}"
+    has_later_changeset: "Désolé, vous avez déjà un ensemble de modifications enregistré le ou après ce jour."
+    old_changeset: "Ce changeset est trop vieux, veuillez faire une autre édition."
+    changeset_noted: "Changeset enregistré, merci! C'était {} d'affilée."
+    extra_point: "Un point supplémentaire pour terminer la tâche."
+    gain_level: "Félicitations pour avoir gagné un niveau!"
+  email:
+    hi: 'Salut {},'
+    new_task: 'Vous voulez faire une cartographie et continuer votre série? Voici une idée:'
+    to_submit: 'Une fois terminé, dirigez-vous vers {} et cliquez sur le dernier changeset.'
+    bye: 'Le votre,'
+  about:
+    what_is_this: Qu'est-ce que c'est
+    what_is_this_content: >-
+        OSM Streak vous permet de faire de petites tâches pour OpenStreetMap tous
+        les jours. L'objectif est de cartographier chaque jour pendant au moins un
+        an. Les tâches sont petites, cinq minutes chacune. Le but est de cartographier
+        tous les jours, pas de cartographier autant que possible. La persistance est
+        payante.
+    points: Points
+    points_content: >-
+        Pour chaque soumission, vous obtenez des points. Au début, vous obtenez un
+        point, à partir du troisième jour d'affilée, vous obtenez deux points pour
+        chaque tâche, et ainsi de suite. Si vous gardez le mapping pendant un mois
+        d'affilée, vous obtiendrez cinq points pour un changeset.
+    tasks: les tâches
+    tasks_content1: >-
+        Vous n'avez pas besoin de faire exactement ce que la page vous dit. Tout changeset
+        non vide sera accepté. Mais si vous suivez la description de la tâche, vous
+        obtiendrez un point supplémentaire.
+    tasks_content2: >-
+        Ne laissez pas la tâche vous intimider. Si vous pensez que c'est trop difficile,
+        cartographiez autre chose - par exemple, un bâtiment. Le but est de cartographier
+        tous les jours, pas de terminer toutes les tâches.
+    stars: Etoiles
+    stars_content: >-
+        Avec des points, vous pouvez également gagner des niveaux. Vous commencez
+        au niveau 1: le nombre d'étoiles est le niveau auquel vous êtes. Dans quelques
+        jours, vous passerez au niveau 2. Les nouveaux niveaux ouvrent plus de tâches.
+        Voici les seuils de points pour gagner des niveaux
+    stars_level2: niveau 2 (environ cinq jours consécutifs)
+    stars_level3: niveau 3 (trois semaines)
+    stars_level4: niveau 4 (trois mois)
+    stars_level5: niveau 5 (environ un an)
+    stars_fame: >-
+        Les mappeurs qui arrivent au dernier niveau entrent dans le temple de la renommée.
+        Ils peuvent continuer leur série de cartographie après cela, bien sûr. Pour
+        chaque changeset à ce moment, ils obtiendront 16 points.
+    leaderboard: Classement
+    leaderboard_content: >-
+        Il n'y a pas de classement. Vous ne saurez pas qui est devant vous et qui
+        est derrière. C'est un défi, pas une compétition.

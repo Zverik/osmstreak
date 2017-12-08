@@ -1,0 +1,7 @@
+title: Map a Farmland
+emoji: 🐂
+description: >-
+  Find a patch of tillage or pasture (try Central US or Western Russia),
+  and map it with [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland].
+test:
+  created_area: "landuse=farmland"

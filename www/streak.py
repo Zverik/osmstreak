@@ -1,5 +1,6 @@
 import config
 import ch_util as ch
+import os
 from db import database, User
 from www import app
 from flask import (
@@ -31,6 +32,17 @@ def before_request():
 def teardown(exception):
     if not database.is_closed():
         database.close()
+
+
+def dated_url_for(endpoint, **values):
+    if endpoint == 'static':
+        filename = values.get('filename', None)
+        if filename:
+            file_path = os.path.join(app.root_path,
+                                     endpoint, filename)
+            values['q'] = int(os.stat(file_path).st_mtime)
+    return url_for(endpoint, **values)
+app.jinja_env.globals['dated_url_for'] = dated_url_for
 
 
 def get_language_from_request():
@@ -96,7 +108,13 @@ def oauth():
         user.save()
     # Use the same task a user has seen when not logged in
     ch.get_or_create_task_for_user(user, ip=get_ip())
-    return redirect(url_for('front'))
+
+    if session.get('next'):
+        redir = session['next']
+        del session['next']
+    else:
+        redir = url_for('front')
+    return redirect(redir)
 
 
 @app.route('/logout')
@@ -155,8 +173,6 @@ def front():
 @app.route('/user/<uid>')
 def userinfo(uid):
     user = get_user()
-    if user and user.name == uid:
-        return redirect(url_for('front'))
     try:
         quser = User.get(User.name == uid)
         return render_template('userinfo.html', user=user, quser=quser, lang=g.lang)
@@ -167,7 +183,7 @@ def userinfo(uid):
 @app.route('/changeset')
 def changeset():
     if 'osm_token' not in session:
-        redirect(url_for('login'))
+        redirect(url_for('front'))
 
     cs_data = request.args.get('changeset')
     if not cs_data.strip():
@@ -186,9 +202,11 @@ def get_changesets():
     user = User.get(User.uid == session['osm_uid'])
     try:
         result = ch.get_user_changesets(user, openstreetmap, lang=g.lang)
-    except Exception:
+    except Exception as e:
+        import logging
+        logging.error('Error getting user changesets: %s', e)
         return jsonify(error='Error connecting to OSM API')
-    return jsonify(changesets=result)
+    return jsonify(changesets=result[:10])
 
 
 @app.route('/about')
@@ -200,6 +218,8 @@ def about():
 @app.route('/settings')
 def settings():
     user = get_user()
+    if not user:
+        return redirect(url_for('login', next=request.path))
     if user:
         code = user.generate_code()
     else:
@@ -212,6 +232,8 @@ def settings():
 @app.route('/set-email', methods=['POST'])
 def set_email():
     user = get_user()
+    if not user:
+        return redirect(url_for('front'))
     email = request.form['email']
     if not email or '@' not in email:
         new_email = None
@@ -226,6 +248,8 @@ def set_email():
 @app.route('/set-lang', methods=['POST'])
 def set_lang():
     user = get_user()
+    if not user:
+        return redirect(url_for('front'))
     new_lang = request.form['lang']
     if new_lang != user.lang and new_lang in ch.get_supported_languages():
         user.lang = new_lang

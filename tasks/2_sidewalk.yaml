@@ -2,8 +2,7 @@ title: Add a Sidewalk
 emoji: 🚶🏿
 description: >-
   Sidewalk is a footway near a road. For a better pedestrian routing, find a road without a sidewalk mapped,
-  and draw two footways on the both sides (backed by the imagery) with an additional ''footway=sidewalk'' tag.
-  Also add a crossing as a way in addition to a ''highway=crossing'' point: use ''footway=crossing'' for it.
+  and draw two footways on the both sides (backed by an imagery) with an additional ''footway=sidewalk'' tag.
+  When adding a crossing as a way, use ''highway=footway + footway=crossing''.
 test:
   created_2_ways: ["highway=footway", "footway=sidewalk"]
-  created_way: ["highway=footway", "footway=crossing"]

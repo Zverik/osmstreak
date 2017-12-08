@@ -15,7 +15,7 @@ from xml.etree import ElementTree as etree
 
 RE_MARKUP_LINK = re.compile(r'\[(http[^ \]]+) +([^\]]+)\]')
 RE_EM = re.compile(r'\'\'(.*?)\'\'')
-RE_CHANGESET = re.compile(r'^\s*(?:https.*/changeset/)?(\d{8,})/?\s*$')
+RE_CHANGESET = re.compile(r'^\s*(?:https?.*/changeset/)?(\d{8,})/?\s*$')
 
 
 def today():
@@ -186,6 +186,15 @@ def validate_tags(obj, tagtest):
         return len(tags) == 0
     for tt in tagtest:
         if not tt:
+            continue
+        if tt.startswith('bbox:'):
+            if obj.tag != 'node':
+                logging.error('Cannot test bbox on %s', obj.tag)
+                continue
+            bbox = [float(n.strip()) for n in tt[5:].split(',')]
+            if not (bbox[0] <= float(obj.get('lon')) <= bbox[2] and
+                    bbox[1] <= float(obj.get('lat')) <= bbox[3]):
+                return False
             continue
         p = tt.find('=')
         p2 = tt.find('~')
@@ -394,9 +403,9 @@ def get_user_changesets(user, req=None, lang=None):
         req = RequestsWrapper()
     last_task_day = get_last_task_day(user)
     date = today()
-    if last_task_day == date:
+    if not last_task_day or last_task_day == date:
         # At least show changesets for today
-        last_task_day -= last_task_day.resolution
+        last_task_day = date - date.resolution
     since = date - date.resolution * 2
     resp = req.get('changesets?user={}&time={}'.format(
         user.uid, since.strftime('%Y-%m-%d')))

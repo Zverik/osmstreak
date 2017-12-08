@@ -89,18 +89,24 @@ class Player(telepot.helper.ChatHandler):
         if ok:
             self._print_score()
 
+    def _print_reminder(self, tg=None):
+        if not tg:
+            tg = self._get_tg()
+        if tg.remind_on is None:
+            self.sender.sendMessage(self.t('no_remind'))
+        else:
+            self.sender.sendMessage(self.t('remind_on').format(tg.remind_on))
+
     def _set_reminder(self, rtime):
         if rtime == '':
             rtime = datetime.utcnow().strftime('%H:%M')
-        elif len(rtime) == 4:
+        elif rtime and len(rtime) == 4:
             rtime = '0' + rtime
         user = self._get_tg()
-        user.remind_on = rtime
-        user.save()
-        if rtime is None:
-            self.sender.sendMessage(self.t('no_remind'))
-        else:
-            self.sender.sendMessage(self.t('remind_on').format(rtime))
+        if user.remind_on != rtime:
+            user.remind_on = rtime
+            user.save()
+        self._print_reminder(user)
 
     def _list_changesets(self):
         user = self._get_tg().user
@@ -118,7 +124,7 @@ class Player(telepot.helper.ChatHandler):
         if changesets:
             self._register_changeset(changesets[0]['id'])
         else:
-            self.sender.sendMessage(self.r('no_changesets'))
+            self.sender.sendMessage(self.t('no_changesets'))
 
     def _set_lang(self, lang):
         supported = ch.get_supported_languages()
@@ -144,6 +150,7 @@ class Player(telepot.helper.ChatHandler):
             return
         if text[0] == '/':
             command = text.split()
+            command[0] = command[0].lower()
         else:
             command = [None]
         if command[0] == '/help':
@@ -189,6 +196,8 @@ class Player(telepot.helper.ChatHandler):
                     self._set_reminder(command[1])
             elif RE_TIME.match(text):
                 self._set_reminder(text)
+            elif command[0] == '/when':
+                self._print_reminder()
             elif command[0] == '/stop':
                 self._set_reminder(None)
             elif command[0] == '/start':
@@ -208,6 +217,8 @@ def send_reminder(bot, hm):
     for tg in query:
         lang = load_language(tg.user)
         task_obj = ch.get_or_create_task_for_user(tg.user)
+        if task_obj.changeset is not None:
+            continue
         task = ch.load_task(task_obj.task, lang['tasks'])
         msg = u'{} {}\n\n{}\n\n{}'.format(
                 task['emoji'], task['t_title'], desc_to_markdown(task),

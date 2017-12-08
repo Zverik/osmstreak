@@ -1,0 +1,39 @@
+it:
+  only_text: "Spiacente, si accettano solo messaggi di testo."
+  no_code: "Andare a {0}/impostazioni e premere il collegamento telegram, poi fare clic su \"Inizia\" qui."
+  wrong_code: "Il tuo codice sembra sbagliato."
+  welcome: "Benvenuto {}!"
+  already_logged: "Sei già registrato come {}."
+  you_are: "Tu sei {}."
+  which_utc: "A quale fuso orario vuoi mappare?"
+  task_complete: "Grazie per il lavoro fatto oggi su OpenStreetMap!"
+  no_changesets: "Recentemente non hai lavorato su OpenStreetMap."
+  unknown_cmd: "Comando sconosciuto. Batti /help per ottenere l'elenco dei comandi."
+  no_remind: "Non ti disturberò. Usa /now o /remind per impostare promemoria giornaliero."
+  remind_on: "Ti spedirò un nuovo compito ogni giorno alle {} UTC. Invia /stop se questo ti infastidisce."
+  lang_set: "Ti scriverò in inglese."
+  no_such_lang: "Lingua non presente. Le supportate sono: {}."
+  time_left: "Tempo rimanente"
+  post_changeset: "Invia /done quando hai finito, oppure un id di unchangest se ce ne sono tanti"
+  list_header: "Copia e incolla un changeset id a cui inviare, o spedisci /done per inviare il primo."
+  n_points: "{} punti"
+  help: |-
+    Questo bot ti aiuta a editare OpenStreetMap ogni giorno.
+
+    Invia /start <code_from_website>per ottenere dei promemoria giornalieri.
+
+    Comandi:
+
+    /task — mostra il task di oggi
+    /score — mostra il punteggio e il livello
+    /done — invia l'ultimo changeset
+    /list — mostra i changesets idonei
+
+    /now — Mostra il promemoria ogni giorno all'ora corrente
+    /remind <hh:mm> — Scegli il momento in cui inviare il promemoria
+    /stop — Interrompi i promemoria
+
+    /whoami — Mostra il tuo nome utente OSM
+    /lang <code> — Cambia lingua
+
+    Website: {web}

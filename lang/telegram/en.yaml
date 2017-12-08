@@ -1,6 +1,6 @@
 en:
   only_text: "Sorry, accepting only text messages."
-  no_code: "Please send a hex code from {0}/settings."
+  no_code: "Please go to {0}/settings and press the telegram link, the click \"Start\" here."
   wrong_code: "Your code seems wrong."
   welcome: "Welcome {}!"
   already_logged: "You are already logged in as {}."
@@ -14,7 +14,7 @@ en:
   lang_set: "I will write to you in English."
   no_such_lang: "No such language. Supported are: {}."
   time_left: "Time left"
-  post_changeset: "Send me a changeset number or URL to submit it."
+  post_changeset: "Send /done when finished, or a changeset id if there are many."
   list_header: "Copy and paste a changeset id to submit it,
       or send /done to submit the first one."
   n_points: "{} points"
@@ -30,11 +30,12 @@ en:
     /done — submit the latest changeset
     /list — show your eligible changesets
 
-    /now — Remind each day at the current time
-    /remind <hh:mm> — Choose time for reminding
-    /stop — Stop reminding
+    /now — remind each day at the current time
+    /remind <hh:mm> — choose time for reminding
+    /when — show reminding time
+    /stop — stop reminding
 
-    /whoami — Show your OSM name
-    /lang <code> — Switch language
+    /whoami — show your OSM name
+    /lang <code> — switch language
 
     Website: {web}

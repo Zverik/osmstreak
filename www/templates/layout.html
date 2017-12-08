@@ -1,25 +1,43 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
         <title>{% block title %}{% endblock %}{{ lang.title }}</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="{{ dated_url_for('static', filename='style.css') }}">
         {% block header %}{% endblock %}
     </head>
     <body>
-        <div id="header">
-            <a href="{{ url_for('front') }}">{{ lang.title }}</a>
-            <span class="right">
-                {% if user %}
+        <header id="header">
+            <div class="wrapper">
+                <a href="{{ url_for('front') }}">{{ lang.title }}</a>
+                <span class="right{% if user %} normal{% endif %}">
+                    {% if user %}
+                        <span class="link"><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} {{ '⭐' * user.level }}</span>
+                        <span class="link"><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
+                    {% else %}
+                        <span class="link"><a href="{{ url_for('login') }}">{{ lang.login }}</a></span>
+                    {% endif %}
+                    <span class="link"><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
+                </span>
+            </div>
+            {% if user %}
+            <div class="wrapper small">
                 <span><a href="{{ url_for('userinfo', uid=user.name) }}">{{ user.name }}</a>: {{ user.score }} {{ '⭐' * user.level }}</span>
-                <span><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
-                {% else %}
-                <span><a href="{{ url_for('login') }}">{{ lang.login }}</a></span>
-                {% endif %}
-                <span><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
-            </span>
-        </div>
-        <div id="content">
+                <span class="right">
+                    <span class="link"><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
+                    <span class="link"><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
+                </span>
+            </div>
+            {% endif %}
+        </header>
+
+
+        <div id="content" class="wrapper">
 {% with messages = get_flashed_messages() %}
   {% if messages %}
     <ul class=flashes>

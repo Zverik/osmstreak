@@ -1,0 +1,78 @@
+it:
+  title: "OSM Streak"
+  please_sign_in: "Per tener traccia dei tuoi progressi e ottenere dei task più avanzati, fai [sign in] con il tuo account OpenStreetMap."
+  connect: Connetti
+  login: Accedi
+  help: Informazioni
+  thanks: "Grazie per aver aggiornato OpenStreetMap oggi!"
+  submit_changeset: "Invia l'URL di un changeset per il task, oppure scegli da una lista"
+  verify: Verifica
+  update_list: "aggiorna"
+  no_changesets: "Ultimamente non hai fatto editing di OpenStreetMap."
+  time_left: "Tempo rimasto per inviare un changeset"
+  connect_intro: "Ricevi notifiche per nuovi task e invia i changeset via Telegram o e-mail."
+  telegram_start: "clicca per avviare il bot"
+  subscribe: Iscriviti
+  unsubscribe: Cancella l'iscrizione
+  time:
+    n_hours: "{} ore"
+    hour: "un ora"
+    n_minutes: "{} minuti"
+    today: "Oggi"
+    yesterday: "Ieri"
+  validation:
+    wrong_id: "L'id del changeset non è corretto: {}."
+    wrong_date: "La data del changeset è sbagliata"
+    api_error: "Errore di connessione alle API OSM."
+    api_strange: "Le API OSM hanno restituito qualcosa di strano come root xml."
+    not_yours: "Si prega di aggiungere solo i propri changesets."
+    no_task: "Non hai visitato il sito di OSM Streak il giorno {}"
+    has_later_changeset: "Ci spiace, ma hai già un changeset registrato per quel giorno o per un giorno successivo."
+    old_changeset: "Il changeset è troppo vecchio. Fai per favore un altro edit."
+    changeset_noted: "Changeset registrato, grazie! Ne hai fatti {} in fila."
+    extra_point: "Un punto aggiuntivo per aver completato il task."
+    gain_level: "Contratulazioni per aver guadagnato un livello!"
+  email:
+    hi: 'Ciao {},'
+    new_task: 'Vuoi mappare qualcosa e continuare il tuo streak ? Qui c''è un''idea:'
+    to_submit: 'Quando hai finito, vai a {} e clicca sull''ultimo changeset.'
+    bye: 'I tuoi,'
+  about:
+    what_is_this: Cos'è questo
+    what_is_this_content: >-
+        OSM Streak ti invita a fare ogni giorno dei piccoli task su OpenStreetMap.
+        Lo scopo è mappare ogni giorno per almeno un anno. I task sono piccoli, da
+        cinque minuti ciascuno. L'obiettivo è mappare ogni giorno e non mappare il
+        più possibile. La perserveranza ripaga.
+    points: Punti
+    points_content: >-
+        Per ogni invio ottieni dei punti. All'inizio ottieni un punto, dal terzo giorno
+        consecutivo ottieni due punti per ogni task e così via. Se mappi ogni giorno
+        per un mese, ottieni cinque punti per un changeset.
+    tasks: Tasks
+    tasks_content1: >-
+        Non devi fare in modo preciso quello che la pagina ti dice di fare. Qualsiasi
+        changeset che non sia vuoto sarà accettato, ma se segui le istruzioni del
+        task otterrai un punto aggiuntivo.
+    tasks_content2: >-
+        Non farti intimidire dal task. Se pensi che sia troppo complicato, mappa qualcos'altro
+        - per esempio un edificio. Lo scopo è mappare ogni giorno, non completare
+        tutti i tasks.
+    stars: Stelle
+    stars_content: >-
+        Con i punti puoi anche guadagnare dei livelli. Si parte dal livello 1: il
+        numero di stelle rappresenta il livello in cui sei. In pochi giorni passerai
+        al livello 2. I nuovi livelli danno la possibilità di avere nuovi tasks. Questi
+        sono i punti che devi fare per guadagnare i livelli
+    stars_level2: livello 2 (all'incirca cinque giorni consecutivi)
+    stars_level3: livello 3 (tre settimane)
+    stars_level4: livello 4 (tre mesi)
+    stars_level5: livello 5 (all'incirca un anno)
+    stars_fame: >-
+        I mappatori che raggiungono l'ultimo livello entrano nella "hall of fame".
+        Possono continuare a mappare ovviamente. Per ogni changeset otterranno 16
+        punti.
+    leaderboard: Classifica
+    leaderboard_content: >-
+        Non c'è una classifica. Non saprai chi è davanti a te o chi ti sta dietro.
+        Questa è una sfida, non una competizione.

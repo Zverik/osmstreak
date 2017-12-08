@@ -11,6 +11,7 @@ if os.path.exists(VENV_DIR):
 import config
 import ch_util as ch
 import smtplib
+import time
 from db import database, User
 from email.mime.text import MIMEText
 from email.header import Header
@@ -30,7 +31,7 @@ def send_email(user):
         streak=lang['title']
     )
     msg = MIMEText(message, 'plain', 'utf-8')
-    msg['Subject'] = u'[{}] {} {}'.format(lang['title'], task['emoji'], task['title'])
+    msg['Subject'] = u'[{}] {} {}'.format(lang['title'], task['emoji'], task['t_title'])
     msg['From'] = formataddr(('OSM Streak', config.EMAIL_FROM))
     msg['To'] = formataddr((user.name, user.email))
 
@@ -44,3 +45,4 @@ if __name__ == '__main__':
     query = User.select().where(User.email.is_null(False))
     for user in query:
         send_email(user)
+        time.sleep(10)
