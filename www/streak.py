@@ -65,6 +65,7 @@ def get_language_from_request():
 
 
 def load_user_language():
+    g.supported_languages = ch.get_supported_languages()
     user = get_user()
     if user:
         lang = user.lang
@@ -225,7 +226,6 @@ def settings():
     else:
         code = ''
     return render_template('connect.html', user=user, code=code,
-                           langs=ch.get_supported_languages(),
                            lang=g.lang)
 
 
@@ -254,4 +254,4 @@ def set_lang():
     if new_lang != user.lang and new_lang in ch.get_supported_languages():
         user.lang = new_lang
         user.save()
-    return redirect(url_for('settings'))
+    return redirect(request.form.get('redirect', url_for('settings')))

@@ -59,6 +59,13 @@ body {
     margin-right: 0;
 }
 
+#header select {
+    overflow: hidden;
+    background: transparent;
+    color: #eee;
+    border: none;
+}
+
 #task {
     text-align: center;
     max-width: 600px;

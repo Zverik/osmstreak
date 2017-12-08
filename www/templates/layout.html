@@ -23,6 +23,13 @@
                         <span class="link"><a href="{{ url_for('login') }}">{{ lang.login }}</a></span>
                     {% endif %}
                     <span class="link"><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
+                    {% if user %}
+                    <span class="link"><select name="lang" size="1" onchange="javascript:submitLang(this.value);">
+                        {% for l in g.supported_languages %}
+                        <option value="{{ l }}"{% if l == user.lang %} selected{% endif %}>{{ l }}</option>
+                        {% endfor %}
+                    </select></span>
+                    {% endif %}
                 </span>
             </div>
             {% if user %}
@@ -31,6 +38,11 @@
                 <span class="right">
                     <span class="link"><a href="{{ url_for('settings') }}">{{ lang.connect }}</a></span>
                     <span class="link"><a href="{{ url_for('about') }}">{{ lang.help }}</a></span>
+                    <span class="link"><select name="lang" size="1" onchange="javascript:submitLang(this.value);">
+                        {% for l in g.supported_languages %}
+                        <option value="{{ l }}"{% if l == user.lang %} selected{% endif %}>{{ l }}</option>
+                        {% endfor %}
+                    </select></span>
                 </span>
             </div>
             {% endif %}
@@ -49,5 +61,18 @@
 {% endwith %}
             {% block content %}{% endblock %}
         </div>
+{% if user %}
+    <form action="{{ url_for('set_lang') }}" id="langform" method="post">
+        <input type="hidden" name="redirect" value="{{ request.path }}">
+        <input type="hidden" id="setlang" name="lang" value="{{ user.lang }}">
+    </form>
+    <script>
+        function submitLang(lang) {
+            var f = document.getElementById('langform');
+            f.lang.value = lang;
+            f.submit();
+        }
+    </script>
+{% endif %}
     </body>
 </html>

@@ -12,11 +12,4 @@
         {% endif %}
     </p>
 </form>
-<form action="{{ url_for('set_lang') }}" method="post">
-    <p>Language: <select name="lang" size="1" onchange="javascript:form.submit()">
-        {% for l in langs %}
-        <option value="{{ l }}" {% if l == user.lang %}selected{% endif %}>{{ l }}</option>
-        {% endfor %}
-    </select></p>
-</form>
 {% endblock %}
