@@ -1,0 +1,39 @@
+ast_ES:
+  only_text: "Siéntolo, aceuto namái mensaxes de testu."
+  no_code: "Entra en {0}/settings y prime nel enllaz de telegram, llueu fai click en \"Start\" equí."
+  wrong_code: "Paez que'l to códigu ta enquivocáu."
+  welcome: "¡Afáyate {}!"
+  already_logged: "Yá aniciasti sesión como {}."
+  you_are: "Yes {}."
+  which_utc: "¿A qué hora UTC te gustaría dibuxar?"
+  task_complete: "¡Gracies por editar OpenStreetMap güei!"
+  no_changesets: "Nun editasti OpenStreetMap recién."
+  unknown_cmd: "Comandu desconocíu. Unvia /help pa recibir la llista."
+  no_remind: "Nun voi cafiate. Usa /now o /remind pa configurar un recordatoriu diariu."
+  remind_on: "Voi unviate caldía una xera nueva a les {} UTC. Unvia /stop si te cafia."
+  lang_set: "Voi escribite n'inglés."
+  no_such_lang: "Nun hai esa llingua. Les que tienen encontu son: {}."
+  time_left: "Tiempu restante"
+  post_changeset: "Unvia /done cuando acabes, o un id de conxuntu de cambios si hai munchos."
+  list_header: "Copia y pega un id de conxuntu de cambios pa unvialu, o manda /done pa unviar el primeru."
+  n_points: "{} puntos"
+  help: |-
+    Esti bot t'ayuda a editar OpenStreetMap caldía.
+
+    Manda /start <code_from_website> pa recibir recordatorios diarios.
+
+    Comandos:
+
+    /task — ver la xera pa güei
+    /score — ver la to puntuación y nivel
+    /done — unviar el últimu conxuntu de cambios
+    /list — ver los conxuntos de cambios elixibles
+
+    /now — recordatoriu caldía a esta hora
+    /remind <hh:mm> — escoyer la hora del recordatoriu
+    /when — amosar la hora del recordatoriu
+    /stop — parar el recordatoriu
+    /whoami — ver el to nome d'OSM
+    /lang <code> — cambiar la llingua
+
+    Website: {web}
