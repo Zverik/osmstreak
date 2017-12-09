@@ -1,0 +1,31 @@
+es:
+  bridge:
+    description: Muchas carreteras en sitios rurales se dibujan rápido y sin tener en cuenta los cruces de arroyos y ríos. Busca un lugar donde un mapeador olvidó dividir una carretera y marcar un puente, y hazlo por él.
+    title: Dibujar un puente
+  stream:
+    description: Los ríos están dibujados en su mayoría por todo el mundo, pero hay pocos arroyos. Elige alguno, y dibújalo. No un río -un arroyo.
+    title: Dibuja un arroyo
+  postcode:
+    description: En algunos países, como Rusia o EEUU, puedes consultar los códigos postales en una fuente datos disponible al público. En otros sólo los puedes conocer o deducir de fuentes indirectas, como el sitio web de un comercio. Encuentra el código postal de un edificio que no lo tenga, y mapéalo.
+    title: Añade un código postal
+  turn_restriction:
+    description: Busca una restricción de giro sin mapear en Mapillary u otra fuente compatible con OSM. Elije un pueblo pequeño si lo deseas. Dibuja la restricción.
+    title: Añadir una restricción de giro
+  osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] es una popular aplicación  OpenStreetMap para dispositivos Android, altamente configurable, pero un poco compleja para algunos. Puede subir puntos al mapa. Instala el complemento "OSM Editing" y crea un punto en algún lugar. Lee [http://osmand.net/features?id=osm-editing-plugin la documentación] si te sientes perdido con la interfaz.'
+    title: Usa OsmAnd
+  improve_river:
+    description: "Muchos ríos ya están mapeados. El tema es que, se ha hecho usando imágenes satélite de baja resolución. Ahora puedes mejorarlo: abre JOSM, selecciona un río, pulsa \"W\" y mejora la vía. Añade al menos 10 nodos a un \"waterway=river\"."
+    title: Mejora un río
+  josm:
+    description: "Instala el editor JOSM, si no lo has hecho ya, y edita algo con el.. Recomendamos dibujar algunos edificios:\n \nDescarga una parte del mapa, añade una imagen de fondo, pulsa \"A\" y haz clic en la esquina de un edificio. Luego doble-clic en una esquina adyacente, dibujando una línea. Entonces pulsa \"X\" y arrastra la línea hasta tener un rectángulo. Finalmente, pulsa \"Alt+A\" para añadir \"building=yes\" y, finalmente, sube los cambios."
+    title: Haz una edición con JOSM
+  fix:
+    description: 'Los comentarios en los conjuntos de cambios son importantes, pero no para ti hoy: haz un cambio y pon "fix" en el campo de comentario del conjunto de cambios. Sólo esas tres letras, nada más.'
+    title: Una pequeña correción
+  gomap:
+    description: 'Mientras que la plataforma Android dispone de varios editores, en iOS no hay muchos. El mejor editor para ella ha sido https://itunes.apple.com/app/id592990211 Go Map!!] (con exclamaciones), pero se ha actualizado por última vez en 2015. Sin embargo, funciona: pruebalo, haz una edición con el.'
+    title: Go Map!!!
+  giveway:
+    description: Hay una etiqueta especial para mapear las señales de ceda el paso. Es [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way. Encuentra una de esas señales, bien usando Mapillary o tu memoria, coloca un nodo en la vía en la que se tiene que ceder el paso, y etiquétalo. Añade también la etiqueta priority_road para la vía que tiene la preferencia.
+    title: Ceda el paso

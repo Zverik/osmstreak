@@ -23,6 +23,12 @@ ja:
   note:
     description: OSMウェブサイトで地図メモ（notes）機能を有効化して、対応可能なメモを解決済みにしましょう。
     title: 地図メモ (note) の解決
+  around_the_world:
+    description: 広大な範囲を選択して変更セットを作ってみましょう。例えば[https://www.openstreetmap.org/#map=5/-48.487/-69.895 チリ南部]や、[https://www.openstreetmap.org/#map=6/55.912/159.335 カムチャッカ半島]などです。
+    title: 5分で巡る世界旅行
+  highway:
+    description: 道路は、OpenStreetMapに参加するひとの多くがはじめて地図に描く地物です。近くにある描かれていない道路を探して、描いてみましょう。
+    title: 道路を描こう
   sidewalk:
     description: ここでの歩道(sidewalk)とは、道路に接して存在する歩行者用の歩道を指します。歩行者用の経路検索のため、歩道が描かれていない道路を探して、その両脇に1本ずつ、 (航空写真を参考に) 歩道を描いて、追加で"footway=sidewalk"タグをつけましょう。横断歩道をウェイとして描く場合は、''highway=footway + footway=crossing'を使ってください。
     title: 歩道を描こう
