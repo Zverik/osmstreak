@@ -1,9 +1,18 @@
 de:
   title: "OSM Streak"
+  please_sign_in: "Um deinen Fortschritt zu verfolgen und weitere Aufgaben zu erhalten, [logge] dich mit deinem OpenStreetMap Konto ein."
   connect: Verbinden
   login: Einloggen
   help: Über
   thanks: "Danke, dass du heute OpenStreetMap-Daten bearbeitet hast!"
+  submit_changeset: "Reiche eine Changeset URL für diese Aufgabe ein, oder wähle eine aus der Liste"
+  verify: Überprüfen
+  update_list: "aktualisieren"
+  no_changesets: "Du hast in letzter Zeit nichts in OpenStreetMap bearbeitet."
+  time_left: "Verbleibende Zeit, um ein Changeset einzureichen"
+  telegram_start: "klicke, um den Bot zu starten"
+  subscribe: Abonnieren
+  unsubscribe: Abmelden
   time:
     n_hours: "{} Stunden"
     hour: "eine Stunde"
@@ -11,10 +20,21 @@ de:
     today: "Heute"
     yesterday: "Gestern"
   validation:
+    wrong_id: "Falsche changeset ID: {}."
     wrong_date: "Das Datum des Änderungssatzes ist falsch."
+    api_error: "Fehler bei der Verbindung zur OSM API."
+    api_strange: "Die OSM API hat etwas ungewöhnliches in der root.xml zurückgeliefert."
+    not_yours: "Bitte füge nur deine Changesets hinzu."
+    old_changeset: "Dieses Changeset ist zu alt, bitte mache eine neue Bearbeitung."
+    extra_point: "Ein zusätzlicher Punkt zum Abschließen der Aufgabe."
+    gain_level: "Glückwünsch zum Erreichen eines Levels!"
   email:
     hi: 'Hallo {},'
   about:
     what_is_this: Was ist dies
     points: Punkte
     tasks: Aufgaben
+    leaderboard: Bestenliste
+    leaderboard_content: >-
+        Es gibt keine Bestenliste. Du willst nicht wissen, wer vor oder hinter dir
+        ist. Dies ist eine Herausforderung, kein Wettbewerb.
