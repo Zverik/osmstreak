@@ -15,8 +15,7 @@ en:
   no_such_lang: "No such language. Supported are: {}."
   time_left: "Time left"
   post_changeset: "Send /done when finished, or a changeset id if there are many."
-  list_header: "Copy and paste a changeset id to submit it,
-      or send /done to submit the first one."
+  list_header: "Click on a changeset id to submit it:"
   n_points: "{} points"
   help: |-
     This bot helps you edit OpenStreetMap every day.
