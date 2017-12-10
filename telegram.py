@@ -112,7 +112,7 @@ class Player(telepot.helper.ChatHandler):
         user = self._get_tg().user
         changesets = ch.get_user_changesets(user, lang=self.lang)
         if changesets:
-            msg = self.t('list_header') + u'\n\n' + u'\n'.join([u'{}: {}, {}'.format(
+            msg = self.t('list_header') + u'\n\n' + u'\n'.join([u'/ch{}: {}, {}'.format(
                 c['id'], c['htime'], c['comment']) for c in changesets[:5]])
             self.sender.sendMessage(msg)
         else:
@@ -183,6 +183,8 @@ class Player(telepot.helper.ChatHandler):
                 self._print_task()
             elif ch.RE_CHANGESET.match(text):
                 self._register_changeset(text)
+            elif command[0].startswith('/ch') and ch.RE_CHANGESET.match(command[0][3:]):
+                self._register_changeset(command[0][3:])
             elif command[0] == '/list':
                 self._list_changesets()
             elif command[0] == '/done':
