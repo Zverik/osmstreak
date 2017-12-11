@@ -1,0 +1,7 @@
+title: Add a Path
+emoji: 🚶🏿
+description: >-
+  Not all footways follow the most efficient trajectory, and you won't find many outside of town. 
+  That's where [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath paths] come in - map one to help navigate those out and about (or those looking to save time).
+test:
+  created_way: ["highway=path"]
