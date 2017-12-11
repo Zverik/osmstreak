@@ -5,4 +5,5 @@ description: >-
   find an intersection with lanes visible on a satellite imagery or on Mapillary,
   and map all the turn lanes on all four sides of the intersection.
 test:
-  modify_2_ways: "turn:lanes=*"
+  modify_2_ways: "turn:lanes:forward=*"
+  modify_2_ways: "turn:lanes:backward=*"

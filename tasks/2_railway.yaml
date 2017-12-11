@@ -1,5 +1,5 @@
 title: Map a Railway
 emoji: 🚆
-description: Railways usually get less attention than roads - map some, they are no less important! For example, find a station and add missing side tracks.
+description: Railways usually get less attention than roads, but they are no less important! Map a railway line. If you can't find where, try adding side tracks at stations.
 test:
   created_way: "railway=rail"
