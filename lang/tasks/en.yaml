@@ -62,13 +62,14 @@ en:
       you can fix. Resolve the note.
     title: Resolve a Note
   around_the_world:
-    description: Let's create a changeset with an enourmous bounding box. Map something
+    description: Let's create a changeset with an enormous bounding box. Map something
       first in [https://www.openstreetmap.org/#map=5/-48.487/-69.895 South Chile],
       and then in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
     title: Around the World in Five Minutes
   railway:
-    description: Railways usually get less attention than roads - map some, they are
-      no less important! For example, find a station and add missing side tracks.
+    description: Railways usually get less attention than roads, but they are no less
+      important! Map a railway line. If you can't find where, try adding side tracks
+      at stations.
     title: Map a Railway
   highway:
     description: This is often the first thing people do when they join OpenStreetMap.
@@ -89,7 +90,7 @@ en:
       imagery for the area and add the number of lanes for that road.
     title: Count the Lanes
   leaf_types:
-    description: Mapping a tree is not just placing a ''natural=tree_node''. You have
+    description: Mapping a tree is not just placing a ''natural=tree'' node. You have
       to specify its type. Please read wiki pages on [https://wiki.openstreetmap.org/wiki/Key:leaf_type
       leaf_type] and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle],
       and then add 2 trees near your home or somewhere familiar to you using these
