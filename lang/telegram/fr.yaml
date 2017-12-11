@@ -13,5 +13,4 @@ fr:
   lang_set: "Je vais vous écrire en anglais."
   no_such_lang: "Pas un tel langage. les langues pris en charge sont: {}."
   time_left: "Temps restant"
-  list_header: "Copiez et collez un identifiant de changeset pour le soumettre, ou envoyez /done pour soumettre le premier."
   n_points: "{} points"

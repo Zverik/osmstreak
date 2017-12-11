@@ -26,6 +26,7 @@ de:
     api_strange: "Die OSM API hat etwas ungewöhnliches in der root.xml zurückgeliefert."
     not_yours: "Bitte füge nur deine Changesets hinzu."
     old_changeset: "Dieses Changeset ist zu alt, bitte mache eine neue Bearbeitung."
+    changeset_noted: "Changeset wurde registriert, Danke! Das sind {} in einer Reihe."
     extra_point: "Ein zusätzlicher Punkt zum Abschließen der Aufgabe."
     gain_level: "Glückwünsch zum Erreichen eines Levels!"
   email:
