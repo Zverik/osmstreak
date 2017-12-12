@@ -1,0 +1,7 @@
+title: Plant a Street Lamp
+emoji: 💡
+description: >-
+  Is it dark outside? Do you see a street lighed by a lamp? We're pretty sure that lamp is not mapped.
+  Add at least two [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp]s.
+test:
+  created_2_nodes: "highway=street_lamp"

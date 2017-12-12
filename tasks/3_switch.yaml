@@ -1,0 +1,8 @@
+title: Make a Railway Switch
+emoji: 🛤️
+description: >-
+  When two railways merge, they do it with a railway switch. Find a station,
+  and add at least two [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch]
+  tags to nodes where railways connect.
+test:
+  modified_2_nodes: "railway=switch"

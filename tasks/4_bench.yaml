@@ -1,0 +1,5 @@
+title: Map a Bench
+emoji: 💺
+description: Remember when you walked around a park, and there were benches? Try to remember their locations, since for this task you need to add one bench.
+test:
+  created_node: "amenity=bench"

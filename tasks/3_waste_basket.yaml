@@ -1,0 +1,7 @@
+title: Waste Baskets
+emoji: 🗑️
+description: >-
+  When outside, you are passing a lot of waste baskets: near shops, at bus stops,
+  at house entrances. Remember one, and map it with ''amenity=waste_basket''.
+test:
+  created_node: "amenity=waste_basket"
