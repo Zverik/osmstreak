@@ -1,5 +1,5 @@
 title: Draw a Stream
 emoji: 🌊
-description: Rivers are mostly mapped all over the world, but streams are too many. Choose any, and map it. Not a river — a stream.
+description: Rivers are mostly mapped all over the world, but streams are too numerous to have them all. Find a stream (not a ditch), and map it.
 test:
   created_way: "waterway=stream"
