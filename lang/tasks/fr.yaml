@@ -3,7 +3,6 @@ fr:
     description: De nombreuses routes dans les zones rurales sont tracées à la va vite sans faire des noeuds au niveau des ruisseaux et des rivières. Trouver les endroits où un mappeur a oublié de diviser les routes et marquer un pont et ainsi de suite.
     title: Dessiner un pont
   stream:
-    description: Les rivières sont principalement cartographiées dans le monde entier, mais les cours d'eau sont trop nombreux. Choisissez-en un et cartographiez-le. Pas une rivière - un ruisseau.
     title: Dessiner un cours d'eau
   postcode:
     description: Dans certains pays, comme la Russie ou les États-Unis, vous pouvez trouver un code postal dans une base de données accessible au public. Dans d'autres, vous le connaissez ou vous le déduisez de sources indirectes, comme un site Web de magasin. Trouver un code postal pour tout bâtiment qui ne l'a pas, et mapper-le.
@@ -32,9 +31,6 @@ fr:
   note:
     description: Activez les notes sur le site Web d'OSM et trouvez une note non résolue que vous pouvez corriger. Résolvez la note.
     title: Editer la note
-  railway:
-    description: Les chemins de fer reçoivent généralement moins d'attention que les routes -   en cartographiant certaines, elles n'en sont pas moins importantes! Par exemple, trouvez une station et ajoutez des pistes latérales manquantes.
-    title: Cartographier les rails
   highway:
     description: C'est souvent la première chose que les gens font quand ils rejoignent OpenStreetMap. Trouver une route non cartographiée à proximité et l'ajouter à la carte.
     title: Cartographier la route
@@ -47,8 +43,10 @@ fr:
   lanes:
     description: Trouvez une route qui n'a pas le jeu de balises ''lanes''. Trouver une bonne imagerie pour la zone et ajouter le nombre de voies pour cette route.
     title: Compter les voies
+  streetcomplete:
+    description: Si votre téléphone est un iPhone, pas de chance. Pour Android, installez l'application [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete]  et faites quelques tâches. Ils prennent vraiment une seconde chacun.
+    title: Cartographier avec StreetComplete
   leaf_types:
-    description: Mapper un arbre ne consiste pas simplement à placer un ''naturel=tree_node". Vous devez spécifier son type. Veuillez lire les pages wiki sur [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] et  [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], puis ajoutez 2 arbres à proximité de votre maison ou quelque chose de familier à l'aide de ces balises.
     title: plante deux arbres
   tiger:
     description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] est un jeu de données routières du domaine public aux États-Unis. Il a été importé en 2005 et l''importation était imparfaite. Trouver une route avec tiger:reviewed=no et fixez-en au moins trois, en définissant une classe de route correcte et en supprimant l''étiquette.'
@@ -62,17 +60,16 @@ fr:
   coastline:
     description: De nombreuses côtes ont été importées il y a longtemps à partir d'une imagerie satellite numérisée à basse résolution. Vous pouvez certainement aider à l'améliorer dans certains endroits. Ajouter au moins 10 nœuds à un littoral.
     title: Améliorer le tracé d'un littoral
-  sidewalk:
-    title: Ajouter un trottoir
+  railway:
+    title: Cartographier les rails
   turnlanes:
     description: Lire la description de [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] trouver une intersection avec des voies visibles sur une imagerie satellite ou sur Mapillary, et cartographier toutes les voies de virage des quatre côtés de l'intersection.
     title: Tournez les voies
   mapsme:
     description: MAPS.ME n'est pas seulement un navigateur de cartes multiplateforme et un navigateur. Vous pouvez modifier la carte avec. Cliquez simplement sur un aménagement ou choisissez "Ajouter un lieu" dans le menu. Essayez ça.
     title: Utiliser MAPS.ME
-  streetcomplete:
-    description: Si votre téléphone est un iPhone, pas de chance. Pour Android, installez l'application [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete]  et faites quelques tâches. Ils prennent vraiment une seconde chacun.
-    title: Cartographier avec StreetComplete
+  sidewalk:
+    title: Ajouter un trottoir
   delete:
     description: Il n'est pas difficile de trouver quelque chose à cartographier. Mais pouvez-vous trouver quelque chose à supprimer? Supprimer 5 objets - mais seulement ceux qui sont obsolètes ou redondants.
     title: Supprimer!

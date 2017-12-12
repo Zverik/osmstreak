@@ -3,7 +3,6 @@ es:
     description: Muchas carreteras en sitios rurales se dibujan rápido y sin tener en cuenta los cruces de arroyos y ríos. Busca un lugar donde un mapeador olvidó dividir una carretera y marcar un puente, y hazlo por él.
     title: Dibujar un puente
   stream:
-    description: Los ríos están dibujados en su mayoría por todo el mundo, pero hay pocos arroyos. Elige alguno, y dibújalo. No un río -un arroyo.
     title: Dibuja un arroyo
   postcode:
     description: En algunos países, como Rusia o EEUU, puedes consultar los códigos postales en una fuente datos disponible al público. En otros sólo los puedes conocer o deducir de fuentes indirectas, como el sitio web de un comercio. Encuentra el código postal de un edificio que no lo tenga, y mapéalo.
@@ -33,11 +32,8 @@ es:
     description: Activa las notas en el sitio web de OSM y busca una nota sin resolver que puedas arreglar. Resuelve la nota.
     title: Resuelve una nota
   around_the_world:
-    description: Vamos a crear un conjunto de cambios con un recuadro delimitador enorme. Mapea primero algo en el [https://www.openstreetmap.org/#map=5/-48.487/-69.895 sur de Chile], luego en [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
+    description: Vamos a crear un conjunto de cambios que abarque un recuadro delimitador enorme. Primero mapea algo en el [https://www.openstreetmap.org/#map=5/-48.487/-69.895 sur de Chile], luego en [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
     title: Alrededor del mundo en cinco minutos
-  railway:
-    description: Las vías de tren generalmente reciben menos atención que las carreteras -mapea alguna, ¡no son menos importantes! Por ejemplo, busca una estación a la que le falte las correspondientes vías a los lados.
-    title: Mapea una vía de tren
   highway:
     description: Frecuentemente esto es lo primero que hace la gente cuando se unen a OpenStreetMap. Busca una carretera cercana sin dibujar y añádela al mapa.
     title: Dibuja una carretera
@@ -47,14 +43,20 @@ es:
   buildings:
     description: Dibuja al menos 20 edificios en algún lugar. Abre tu editor preferido, navega hasta una zona rural o industrial mal mapeada, y traza algunos edificios.
     title: Dibuja veinte edificios
+  lanes:
+    description: Encuentra una carretera que no tenga la etiqueta "lanes". Usando una imagen de fondo de calidad para la zona añade el número de carriles a esa carretera.
+    title: Cuenta los carriles
   coastline:
     description: Muchos tramos de línea de costa se importaron hace mucho tiempo a partir de imágenes satélite de baja resolución digitalizadas. En algunos lugares sin duda puedes ayudar a mejorarla. Añade al menos 10 nodos a la línea de costa.
     title: Mejora la línea de costa
   haiti:
     description: 'En 2010 hubo un catastrófico terremoto 25 km al oeste de la capital de Haití, Puerto Príncipe. Eso dio comienzo al Equipo de Cartografiado Humanitario, gracias al cual la capital fue mapeada a la perfección. No así el resto del país: encuentra un edificio sin mapear en Haití y trázalo.'
     title: Visita Haití
-  sidewalk:
-    title: Añade una acera
+  railway:
+    description: Las vías de tren generalmente reciben menos atención que las carreteras, ¡pero no son menos importantes! Mapea una línea de tren. Si no puedes encontrar donde, prueba añadiendo vías a los lados en estaciones.
+    title: Mapea una vía de tren
   turnlanes:
     description: Lee la descripción de [https://wiki.openstreetmap.org/wiki/ES:Key:turn#Indicaciones de giro por carril turn:lanes], busca una intersección con Indicaciones de giro por carril visibles en una imagen de fondo o en Mapillary y mapea todas las las indicaciones de giro por carril en los cuatro lados de la intersección.
     title: Indicaciones de giro por carril
+  sidewalk:
+    title: Añade una acera

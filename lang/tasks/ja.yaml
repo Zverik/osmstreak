@@ -3,7 +3,6 @@ ja:
     description: 郊外にざっくりと描かれた多くの道路は、水路や川との交差を処理しわすれていることがしばしばあります。そうした場所を見つけ、道路ウェイを分割して橋を適切に追加しましょう。
     title: 橋を描こう
   stream:
-    description: 大きな河川の情報は世界中で最も多く描かれています。ですが、小さな川についてはさほど描かれていません。どこか小川が流れている場所を探して、マップしましょう。大きな河川ではありません、小川ですよ。
     title: 小さな川を描こう
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] はAndroid端末でよく使われるOpenStreetMapアプリのひとつです。細かい箇所までカスタマイズできるのが特徴ですが、人によっては複雑すぎるかもしれません。OsmAndではマップにポイントを投稿することができます。 "OSM Editing"プラグインをインストールして、どこかにポイントを作成しましょう。操作方法については [http://osmand.net/features?id=osm-editing-plugin the documentation] に解説があります。'
@@ -24,11 +23,12 @@ ja:
     description: OSMウェブサイトで地図メモ（notes）機能を有効化して、対応可能なメモを解決済みにしましょう。
     title: 地図メモ (note) の解決
   around_the_world:
-    description: 広大な範囲を選択して変更セットを作ってみましょう。例えば[https://www.openstreetmap.org/#map=5/-48.487/-69.895 チリ南部]や、[https://www.openstreetmap.org/#map=6/55.912/159.335 カムチャッカ半島]などです。
     title: 5分で巡る世界旅行
   highway:
     description: 道路は、OpenStreetMapに参加するひとの多くがはじめて地図に描く地物です。近くにある描かれていない道路を探して、描いてみましょう。
     title: 道路を描こう
+  railway:
+    description: 道路に比べて興味を持たれることの少ない鉄道路線、ですが、重要さは道路に負けません！ 今日は路線情報をマップしましょう。例えば、駅の近くにあるサイドトラックがまだ描けるかもしれません。
   sidewalk:
     description: ここでの歩道(sidewalk)とは、道路に接して存在する歩行者用の歩道を指します。歩行者用の経路検索のため、歩道が描かれていない道路を探して、その両脇に1本ずつ、 (航空写真を参考に) 歩道を描いて、追加で"footway=sidewalk"タグをつけましょう。横断歩道をウェイとして描く場合は、''highway=footway + footway=crossing'を使ってください。
     title: 歩道を描こう

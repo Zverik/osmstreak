@@ -15,6 +15,7 @@ ast_ES:
   no_such_lang: "Nun hai esa llingua. Les que tienen encontu son: {}."
   time_left: "Tiempu restante"
   post_changeset: "Unvia /done cuando acabes, o un id de conxuntu de cambios si hai munchos."
+  list_header: "Pulsia nun conxuntu de cambios pa unvialu:"
   n_points: "{} puntos"
   help: |-
     Esti bot t'ayuda a editar OpenStreetMap caldía.

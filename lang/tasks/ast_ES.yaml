@@ -3,7 +3,6 @@ ast_ES:
     description: Munches estraes nes fasteres fora de les villes dibúxense apriesa y ensin mirar si crucen ríos o regatos. Alcuentra un llugar onde un mapeador escaeció partir una estrada y marcar una ponte, y faelo tu.
     title: Dibuxa una ponte
   stream:
-    description: Los ríos del mundu de vezu tán nel mapa, pero hai una bayura de regatos que non. Escueyi unu, y fai el mapa. Non un ríu — un regatu.
     title: Dibuxa un regatu
   postcode:
     description: En dellos paises, como Rusia o los EEXX, puedes buscar un códigu postal nuna base de datos disponible de mou públicu. N'otros puedes sabelo o deducilo de fontes indireutes, como la páxina web d'una tienda. Alcuentra'l códigu postal de cualquier edificiu que nun lu tenga, y ponlu nel mapa.
@@ -35,15 +34,24 @@ ast_ES:
   around_the_world:
     description: Vamos crear un conxuntu de cambios con un cuadru de llende xigante. Primero dibuxa daqué nel [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Sur de Chile], Y llueu en [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
     title: Alredor del mundu en cinco minutos
-  railway:
-    description: De vezu los ferrocarriles reciben menos atención que les estraes, ¡dibuxa dalgún, nun son menos importantes! Por casu, alcuentra una estación y amiesta les víes d'apartaderu que falten.
-    title: Dibuxa un ferrocarril
   highway:
     description: De vezu esta ye la primera cosa que fai la xente al xunise a OpenStreetMap. Alcuentra una estrada cercaba que nun tea nel mapa y añádela.
     title: Pon una estrada nel mapa
   subway:
     description: Pa esto necesites conocer l'[https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping esquema de Tresporte Públicu v2]. Visita'l [https://osmz.ru/subways/ Validador de metro] y escueye una ciudá con un error nel metro. Tendría d'implicar tresformar una ruta de metro. Igua'l fallu (y puedes dexalo equí, o siguir llimpiando la rede).
     title: Igua un metro
+  buildings:
+    description: Dibuxa polo menos 20 edificios per ende. Abre'l to editor favoritu, navega a dalgún llugar poco mapeáu nuna fastera industrial o d'aldea, y dibuxa dellos edificios.
+    title: Dibuxar venti edificios
+  lanes:
+    description: Alcuentra una estrada que nun tenga puesta la etiqueta ''lanes''. Busca unes bones imáxenes del área y amiesta'l númberu de carriles de la estrada.
+    title: Cuenta los carriles
+  leaf_types:
+    description: Poner nel mapa un árbol nun ye sólo poner un nodiu ''natural=tree''. Tienes d'especificar el tipu. Mira les páxines de la wiki de [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] y [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], y llueu amiesta 2 árboles cerca de casa o nun llugar que conozas bien usando eses etiquetes.
+    title: Planta dos árboles
+  railway:
+    description: De vezu los ferrocarriles reciben menos atención que les estraes, ¡pero nun son menos importantes! Pon nel mapa una llinia de ferrocarril. Si nun atopes ónde, tenta amestar les víes d'apartaderu que falten nes estaciones.
+    title: Dibuxa un ferrocarril
   sidewalk:
     description: Una cera ye un camín cabo una estrada. Pa un meyor enrutamientu de peatones, alcuentra una estrada ensin cera nel mapa, y dibuxa un camín a cada llau (comprobando con una imaxe) y amiesta una etiqueta ''footway=sidewalk''. Ci amiestes un pasu de peatones como camín, usa ''highway=footway + footway=crossing''.
     title: Amiesta una cera
