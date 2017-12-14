@@ -183,7 +183,7 @@ class Player(telepot.helper.ChatHandler):
                 self._print_task()
             elif ch.RE_CHANGESET.match(text):
                 self._register_changeset(text)
-            elif command[0].startswith('/ch') and ch.RE_CHANGESET.match(command[0][3:]):
+            elif command[0] and command[0].startswith('/ch') and ch.RE_CHANGESET.match(command[0][3:]):
                 self._register_changeset(command[0][3:])
             elif command[0] == '/list':
                 self._list_changesets()
