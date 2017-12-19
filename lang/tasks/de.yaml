@@ -1,0 +1,66 @@
+de:
+  bridge:
+    description: Viele Straßen in ländlichen Gegenden wurden schnell und ohne Rücksicht auf kreuzende Flüße oder Bäche eingetragen. Finde einen Ort an dem ein Mapper vergessen hat eine Straße zu teilen und eine Brücke einzutragen und erledige das für sie.
+    title: Trage eine Brücke ein
+  stream:
+    description: Flüsse sind nahezu überall auf der Welt eingetragen, aber Bäche existieren viel zu oft, dass gar nicht alle eingetragen werden können. Finde einen Bach (keinen Graben), und trage ihn ein.
+    title: Trage einen Bach ein
+  postcode:
+    description: In manchen Ländern wie Russland oder den USA kann man die Postleitzahl in öffentlichen Datenbanken nachlesen. In anderen Ländern wiederum weiß man die Postleitzahl entweder einfach oder erschließt sie sich aus indirekten Quellen wie z.B. ein Laden oder eine Website. Finde eine Postleitzahl von irgendeinem Gebäude, welches keine Postleitzahl besitzt und trage diese ein.
+    title: Füge eine Postleitzahl hinzu
+  bench:
+    description: Erinnerst du dich noch daran, als du letztens einen Spaziergang durch den Park gemacht hast und einige Sitzbänke gesehen hast? Versuche dich an ihre Standorte zu erinnern und trage diese ein.
+    title: Füge eine Sitzbank hinzu
+  turn_restriction:
+    description: Finde eine nicht eingetragene Abbiegebeschränkung auf Mapillary oder einer ähnlichen Quelle. Wähle vielleicht eine kleinere Stadt aus und trage die Abbiegebeschränkung ein.
+    title: Füge eine Abbiegebeschränkung hinzu
+  osmand:
+    title: Benutze OsmAnd
+  improve_river:
+    description: "Die meisten Flüsse sind bereits eingetragen. Das Problem besteht darin, dass ein Satellitenbild mit niedriger Auflösung verwendet wurde. Jetzt kannst du es besser machen: starte JOSM, wähle einen Fluss aus, drücke \"W\" und verbessere die Linie. Füge einem \"waterway=river\" mindestens 10 Punkte hinzu."
+    title: Verbessere einen Fluss
+  josm:
+    description: "Installiere den JOSM Editor, wenn nicht bereits geschehen, und bearbeite etwas. Wir empfehlen einige Gebäude einzutragen:\n\nLade einen Kartenausschnitt herunter, füge ein Hintergrundbild ein, drücke \"A\" und klicke auf eine Ecke des Gebäudes. Dann doppelklicke auf eine benachbarte Ecke, um es zu einer Linie zu machen. Dann drücke \"X\" und ziehe die Linie heraus, um ein Rechteck zu machen. Abschließend drücke \"Alt+A\" um \"building=yes\" hinzuzufügen, und lade dann die Änderung hoch."
+    title: Mache eine Bearbeitung mit JOSM
+  gomap:
+    title: Fange an zu mappen!!!
+  note:
+    title: Löse eine Notiz
+  around_the_world:
+    title: Um die Welt in fünf Minuten
+  highway:
+    title: Mappe eine Straße
+  buildings:
+    description: Zeichne irgendwo mindestens 20 Gebäude. Öffne den Editor deiner Wahl, navigiere zu einem schlecht gemappten ländlichen oder industriellen Gebiet, und zeichne ein paar Gebäude nach.
+    title: Zeichne 20 Gebäude
+  lanes:
+    title: Zähle die Fahrspuren
+  streetcomplete:
+    description: Wenn dein Handy ein iPhone ist, hast du leider Pech gehabt. Für Android kannst du einfach die [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] App installieren und ein paar Aufgaben erledigen. Du wirst sicher nur einen kleinen Moment für eine Aufgabe brauchen.
+    title: Mappen mit StreetComplete
+  leaf_types:
+    title: Pflanze zwei Bäume
+  waste_basket:
+    title: Mülleimer
+  tiger:
+    title: Repariere einen Tiger
+  hot_task:
+    title: Korrigiere ein Gebäude
+  lamps:
+    title: Planze eine Straßenlaterne
+  coastline:
+    title: Verbessere eine Küstenlinie
+  haiti:
+    title: Besuche Haiti
+  railway:
+    title: Trage eine Eisenbahnverbindung ein
+  farmland:
+    description: Finde einen Bereich des Ackerbaus oder Weideland (z.B. in Zentral-USA oder Westrussland), und mappe es als [https://wiki.openstreetmap.org/wiki/DE:Tag:landuse%3Dfarmland landuse=farmland]
+    title: Mappe eine Ackerfläche
+  mapsme:
+    title: Benutze MAPS.ME
+  sidewalk:
+    title: Füge einen Gehweg hinzu
+  delete:
+    description: Es ist nicht schwer etwas Neues einzutragen. Aber kannst du irgendetwas Bereinigen? Lösche 5 Objekte - aber nur solche, die obsolet, veraltet, redundant oder überflüssig sind!
+    title: Bereinigen!

@@ -1,0 +1,69 @@
+pt_PT:
+  bridge:
+    title: Desenhar uma ponte
+  stream:
+    title: Desenhar uma linha de água
+  postcode:
+    title: Adicionar um código postal
+  bench:
+    title: Mapear um banco (assento)
+  turn_restriction:
+    title: Adicionar uma restrição de viragem
+  lit:
+    title: Adicionar a iluminação de uma rodovia
+  osmand:
+    title: Utilizar OSMand
+  improve_river:
+    title: Melhorar um rio
+  josm:
+    title: Editar com o JOSM
+  fix:
+    title: Pequena correção
+  gomap:
+    title: Vá Mapear!!!
+  giveway:
+    title: Sinalização de perda de prioridade
+  note:
+    title: Solucionar uma Nota
+  around_the_world:
+    title: À volta do Mundo em Cinco Minutos
+  highway:
+    title: Mapear uma rodovia
+  subway:
+    title: Solucionar metro
+  buildings:
+    title: Desenhe vinte edifícios
+  lanes:
+    title: Conte o número de vias trânsito
+  streetcomplete:
+    title: Mapear com o StreetComplete
+  leaf_types:
+    title: Plante duas árvores
+  waste_basket:
+    title: Caixotes do lixo
+  tiger:
+    title: Solucionar Tiger
+  tracks:
+    title: Desenhe alguns caminhos de terra batida
+  hot_task:
+    title: Solucionar um edifício
+  lamps:
+    title: Plante um poste de iluminação
+  coastline:
+    title: Melhore a linha de costa
+  haiti:
+    title: Visitar o Haiti
+  railway:
+    title: Mapeie uma ferrovia
+  turnlanes:
+    title: Via de trânsito de viragem
+  farmland:
+    title: Mapear um terreno agrícola
+  switch:
+    title: Mapear um Aparelho de Mudança de Via (AMV)
+  mapsme:
+    title: Utilizar MAPS.ME
+  sidewalk:
+    title: Adicionar um passeio
+  delete:
+    title: Apagar!

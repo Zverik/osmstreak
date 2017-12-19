@@ -3,13 +3,20 @@ it:
     description: Molte strade in aree rurali sono disegnate in modo veloce senza tener conto degli attraversamenti du ruscelli e fiumi. Trova un posto dove un mappatore ha dimenticato di suddividere la strada in prossimità di un corso d'acqua e aggiungere un ponte e fallo tu al suo posto.
     title: Disegna un ponte
   stream:
+    description: I fiumi sono normalmente mappati in tutto il globo, ma i torrenti e i ruscelli sono veramente tanti. Trova un torrente o un ruscello (non un fosso) e mappalo.
     title: Disegna un ruscello/torrente (stream)
   postcode:
     description: In alcune nazioni, come la Russia o gli USA, puoi trovare i codici postali in database pubblici. In altri posti o lo sai e basta oppure lo deduci da fonti indirette, come ad esempio dal sito di un negozio. Trova un CAP per gli edifici che non ce l'hanno e mappalo.
     title: Aggiungi un CAP
+  bench:
+    description: Ricordi quella volta che hai fatto una passeggiata nel parco e hai visto alcune panchine? Cerca di ricordare la loro posizione perché per questo task devi aggiungere una panchina.
+    title: Mappa una Panchina
   turn_restriction:
     description: Trova una restrizione di svolta su Mapillary o altre fonti compatibili con OSM. Scegli una piccola città. Mappa la restrizione.
     title: Aggiungi una restrizione alla svolta
+  lit:
+    description: Le città di notte sono più romantiche se le strade sono illuminate. Aggiungi "lit=yes" o "lit=no" ad alcune strade e poi guardale [http://product.itoworld.com/map/69 su questa mappa].
+    title: Mappa l'Illuminazione Stradale
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] è una della applicazioni per OpenstreetMap sui dispositivi Android, molto configurabile anche se un po'' complicata per alcuni. Ti può aiutare a caricare dei punti sulla mappa. Installa il componente aggiuntivo "Modifiche OSM" e crea un punto da qualche parte. Leggi [http://osmand.net/features?id=osm-editing-plugin la documentazione] se ti senti perso navigamdo nell''interfaccia.'
     title: Usa OsmAnd
@@ -32,6 +39,7 @@ it:
     description: Abilita la visualizzazione delle note sul sito OSM e trova una nota non ancora risolta che pensi di poter mettere a posto. Risolvi la nota
     title: Risolvi una nota
   around_the_world:
+    description: Crea un changeset con un enorme bounding box. Mappa prima qualcosa nel [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Sud del Cile] e poi qualcosa in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
     title: Attorno al Mondo in Cinque Minuti
   highway:
     description: Questa è spesso la prima cosa che viene fatta da chi si iscrive a OpenStreetMap. Trova una strada vicino a te non ancora tracciata e aggiungila alla mappa
@@ -49,7 +57,11 @@ it:
     description: Se il tuo telefono è un iPhone, sei sfortunato. Se hai Android installa l'applicazione [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] ed esegui qualche task. Ci vuole veramente un secondo per ognuno.
     title: Mappa con StreetComplete
   leaf_types:
+    description: Mappare un albero non significa solo mettere un tag "natural=tree". Devi specificare anche di che tipo è. Leggi le pagine wiki [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] e [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], quindi aggiungi 2 alberi vicino a casa o in un posto a te familiare usando questi tag.
     title: Pianta due alberi
+  waste_basket:
+    description: "Quando esci di casa passi accanto a tantissimi cestini del pattume: vicino ai negozi, alle fermate dell'autobus, all'ingresso delle case. Cerca di ricordarne uno e mappalo con \"amenity=waste_basket\"."
+    title: Cestini del Pattume
   tiger:
     description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] è un dataset di pubblico dominio delle strade degli USA. E'' stato importato nel 2005 e l''import non è stato preciso. Trova delle strade con il tag tiger:reviewed=no e mettine a posto almeno tre, impostando la classe corretta della strada e rimuovendo il tag.'
     title: Metti a posto un Tiger
@@ -59,6 +71,9 @@ it:
   hot_task:
     description: 'Apri [https://tasks.hotosm.org/ HOT Tasking Manager]  e scegli un task attivo a caso. All''interno seleziona un rettangolo giallo e fai una validazione. Nota come un mappatore principiante mappa gli edifici, ragionaci su un po'', e quindi mettili a posto: raddrizza i lati e migliora la forma. Un paio bastano.'
     title: Metti a posto un edificio
+  lamps:
+    description: Fuori fa buio? Vedi una strada illuminata da un lampione? Siamo abbastanza sicuri che quel lampione non sia mappato. Aggiungi almeno due [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp lampioni].
+    title: Pianta un Lampione
   coastline:
     description: Molte linee di costa sono state importate molto tempo fa da immagini satellitari di bassa risoluzione. Puoi sicuramente migliorarla in alcuni luoghi. Aggiungi almeno 10 nodi ad una linea di costa.
     title: Migliora una linea di costa
@@ -66,6 +81,7 @@ it:
     description: 'Nel 2010 è avvenuto un terremoto catastrofico 25km ad ovest della capitale di Haiti, Port-au-Prince. Questo ha dato avvio al Humanitarian Mapping Team, grazie al quale la capitale è stata perfettamente mappata. Ma non il resto del paese: trova un edificio non mappato in Haiti è traccialo.'
     title: Visita Haiti
   railway:
+    description: Le ferrovie normalmente ricevono meno attenzione delle strade, ma non sono meno importanti! Mappa una linea ferroviaria. Se non ne trovi una che manca prova con i binari di servizio vicino alle stazioni.
     title: Mappa una ferrovia
   turnlanes:
     description: Leggi la descrizione di [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] , trova un'intersezione con le corsie visibili su immagini satellitari o su Mapillary, e mappa tutte le corsie di svolta su tutte e quattro le strade dell'incrocio.
@@ -73,6 +89,9 @@ it:
   farmland:
     description: Trova un appezzamento per la coltivazione o il pascolo (prova in centro US o Russia occidentale), e mappalo con [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland].
     title: Mappa un terreno coltivato
+  switch:
+    description: Quando due ferrovie si uniscono lo fanno tramite uno scambio. Trova una stazione e aggiungi l'etichetta [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] ad almeno due nodi in cui si uniscono due linee ferroviarie.
+    title: Fai uno Scambio Ferroviario
   mapsme:
     description: MAPS.ME non è soltanto una mappa con navigatore multipiattaforma. Ci puoi anche editare la mappa. Clicca su un servizio/struttura o seleziona "Aggiungi un posto" dal menu. Provalo.
     title: Usa MAPS.ME

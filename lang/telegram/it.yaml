@@ -15,6 +15,7 @@ it:
   no_such_lang: "Lingua non presente. Le supportate sono: {}."
   time_left: "Tempo rimanente"
   post_changeset: "Invia /done quando hai finito, oppure un id di unchangest se ce ne sono tanti"
+  list_header: "Clicca su un id di un changeset per inviarlo:"
   n_points: "{} punti"
   help: |-
     Questo bot ti aiuta a editare OpenStreetMap ogni giorno.

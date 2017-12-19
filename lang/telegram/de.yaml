@@ -1,0 +1,40 @@
+de:
+  only_text: "Entschuldigung, nur Textnachrichten werden akzeptiert."
+  no_code: "Bitte gehe zu {0}/den Einstellungen und klicke auf den Telegram-Link. Komm dann wieder hierher zurück und klicke auf \"Start\"."
+  wrong_code: "Dein Code scheint falsch zu sein."
+  welcome: "Willkommen, {}!"
+  already_logged: "Du bist als {} eingeloggt."
+  you_are: "Du bist {}."
+  which_utc: "In welcher Zeitzone möchtest du mappen?"
+  task_complete: "Danke, dass du heute OpenStreetMap-Daten bearbeitet hast!"
+  no_changesets: "Du hast in letzter Zeit nichts in OpenStreetMap bearbeitet."
+  unknown_cmd: "Unbekannter Befehl. Bitte sende /help um die Liste zu bekommen."
+  no_remind: "Ich werde dich nicht stören. Benutze /now oder /remind um eine tägliche Erinnerung zu speichern"
+  remind_on: "Ich werde dir eine neue Aufgabe jeden Tag um {} UTC senden. Sende /stop falls es dich stören sollte."
+  lang_set: "Ich werde dir auf Englisch schreiben."
+  no_such_lang: "Sprache nicht verfügbar. Unterstützt werden: {}."
+  time_left: "Verfügbare Zeit"
+  post_changeset: "Sende /done wenn du fertig bist oder einfach eine Changeset ID."
+  list_header: "Klicke auf einen Changeset um ihn einzureichen."
+  n_points: "{} Punkte"
+  help: |-
+    Dieser Bot hilft dir, jeden Tag die OpenStreetMap zu bearbeiten.
+
+    Sende /start <code_from_website> um eine tägliche Erinnerung zu erhalten.
+
+    Befehle:
+
+    /task — zeigt die heutige Aufgabe
+    /score — zeigt deine Punkte und dein Level
+    /done — reicht deinen letzten Changeset ein
+    /list — zeigt alle für die Aufgabe berechtigten Changesets
+
+    /now — erinnert jeden Tag zu dieser Zeit
+    /remind <hh:mm> — Zeit zum Erinnern wählen
+    /when — zeigt Erinnerungszeit
+    /stop — aufhören mit Erinnern
+
+    /whoami — zeigt deinen OSM-Namen
+    /lang <code> — Sprache wechseln
+
+    Website: {web}

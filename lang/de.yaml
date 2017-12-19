@@ -10,6 +10,7 @@ de:
   update_list: "aktualisieren"
   no_changesets: "Du hast in letzter Zeit nichts in OpenStreetMap bearbeitet."
   time_left: "Verbleibende Zeit, um ein Changeset einzureichen"
+  connect_intro: "Erhalte eine Benachrichtigung für neue Aufgaben und reiche Changesets über Telegram oder per Email ein."
   telegram_start: "klicke, um den Bot zu starten"
   subscribe: Abonnieren
   unsubscribe: Abmelden
@@ -25,16 +26,54 @@ de:
     api_error: "Fehler bei der Verbindung zur OSM API."
     api_strange: "Die OSM API hat etwas ungewöhnliches in der root.xml zurückgeliefert."
     not_yours: "Bitte füge nur deine Changesets hinzu."
+    no_task: "Du hast die Website von OSM Streak unter {} nicht besucht."
+    has_later_changeset: "Entschuldigung, aber du hast schon einen Changeset an diesem Tag oder danach eingereicht."
     old_changeset: "Dieses Changeset ist zu alt, bitte mache eine neue Bearbeitung."
     changeset_noted: "Changeset wurde registriert, Danke! Das sind {} in einer Reihe."
     extra_point: "Ein zusätzlicher Punkt zum Abschließen der Aufgabe."
     gain_level: "Glückwünsch zum Erreichen eines Levels!"
   email:
     hi: 'Hallo {},'
+    new_task: 'Du willst ein bisschen mappen und deinen Streak erweitern? Hier ist eine Idee:'
+    to_submit: 'Wenn du fertig bist, gehe auf {} und klicke auf den letzten Changeset.'
+    bye: 'Bis bald,'
   about:
     what_is_this: Was ist dies
+    what_is_this_content: >-
+        OSM Streak erlaubt es dir, jeden Tag eine kleine Aufgabe für die OpenStreetMap
+        zu erledigen. Das Ziel ist, jeden Tag eines ganzen Jahres zu etwas zu mappen.
+        Die Aufgaben sind ganz einfach, meist dauern Sie nur fünf Minuten. Wichtig
+        ist, jeden Tag zu mappen, nicht so viel du kannst. Hartnäckigkeit zahlt sich
+        aus.
     points: Punkte
+    points_content: >-
+        Jedes Mal wenn du einen Changeset einreichst, bekommst du Punkte. Als erstes
+        bekommst du einen Punkt, und vom dritten Tag an bekommst du zwei Punkte für
+        eine Aufgabe, und so weiter. Wenn du einen Monat lang mappen würdest, würdest
+        du fünf Punkte für einen Changeset bekommen.
     tasks: Aufgaben
+    tasks_content1: >-
+        Du musst nicht genau das tun, was die Seite dir sagt. Jeder nicht leere Changeset
+        wird akzeptiert. Aber wenn du der Aufgabenbeschreibung folgst, bekommst du
+        einen Extrapunkt.
+    tasks_content2: >-
+        Lass dich nicht von der Aufgabe einschüchtern. Wenn du denkst, dass sie zu
+        schwer ist, mappe einfach irgendwas anderes, zum Beispiel ein Gebäude. Das
+        Ziel ist es, jeden Tag zu mappen, nicht alle Aufgaben abzuschließen.
+    stars: Stars
+    stars_content: >-
+        Mit Punkten kannst du auch Level erreichen. Du beginnst bei Level 1: Die Anzahl
+        der Sterne ist das Level, in dem du dich befindest. In ein paar Tagen wirst
+        du Level 2 erreichen. Neue Levels schalten mehr Aufgaben frei. Hier sind die
+        Punktschwellen für das Erreichen von Levels.
+    stars_level2: Level 2 (ungefähr fünf aufeinanderfolgende Tage)
+    stars_level3: Level 3 (drei Wochen)
+    stars_level4: Level 4 (drei Monate)
+    stars_level5: Level 5 (ungefähr ein Jahr)
+    stars_fame: >-
+        Mapper, die das letzte Level erreichen, kommen in die Hall of Fame. Sie können
+        dann natürlich ihren Streak fortsetzen. Für jeden Changeset ab diesem Moment
+        bekommen sie 16 Punkte.
     leaderboard: Bestenliste
     leaderboard_content: >-
         Es gibt keine Bestenliste. Du willst nicht wissen, wer vor oder hinter dir
