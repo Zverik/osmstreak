@@ -1,0 +1,40 @@
+vi:
+  only_text: "Rất tiếc, chỉ nhận được tin nhắn văn bản."
+  no_code: "Xin hãy vào {0}/settings, bấm liên kết Telegram, và bấm “Bắt đầu” tại đây."
+  wrong_code: "Mã số của bạn hình như bị sai."
+  welcome: "Chào mừng {}!"
+  already_logged: "Bạn đã đăng nhập là {}."
+  you_are: "Bạn là {}."
+  which_utc: "Bạn muốn đóng góp vào lúc giờ nào theo giờ UTC?"
+  task_complete: "Cảm ơn bạn đã sửa đổi OpenStreetMap hôm nay!"
+  no_changesets: "Lâu nay bạn không sửa đổi OpenStreetMap."
+  unknown_cmd: "Lệnh không rõ. Xin vui lòng gửi /help để nhận danh sách."
+  no_remind: "Tôi sẽ không làm phiền bạn. Gửi /now hoặc /remind để đặt lời nhắc hằng ngày."
+  remind_on: "Tôi sẽ gửi cho bạn một công việc mới mỗi ngày vào lúc {} giờ UTC. Gửi /stop nếu tôi làm phiền bạn."
+  lang_set: "Tôi sẽ nhắn tin cho bạn trong tiếng Việt."
+  no_such_lang: "Tôi không biết nói tiếng đó, chỉ biết nói: {}."
+  time_left: "Thì giờ còn lại"
+  post_changeset: "Gửi /done khi làm xong hoặc gửi số bộ thay đổi nếu có."
+  list_header: "Nhấn chuột vào số bộ thay đổi để đăng nó:"
+  n_points: "{} điểm"
+  help: |-
+    Con bot này giúp bạn sửa đổi OpenStreetMap hằng ngày.
+
+    Gửi /start <code_from_website> để nhận lời nhắc hằng ngày.
+
+    Các lệnh:
+
+    /task — xem công việc cho hôm nay
+    /score — xem điểm số và cấp của bạn
+    /done — đăng bộ thay đổi mới nhất
+    /list — xem các bộ thay đổi thích hợp của bạn
+
+    /now — nhắc mỗi ngày vào giờ này
+    /remind <hh:mm> — chọn lúc giờ để nhắc nhở
+    /when — xem giờ nhắc nhở
+    /stop — ngừng nhắc nhở
+
+    /whoami — xem tên OSM của bạn
+    /lang <code> — thay đổi ngôn ngữ
+
+    Trang chủ: {web}

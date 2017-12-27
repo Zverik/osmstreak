@@ -1,0 +1,78 @@
+vi:
+  title: "Chuỗi Sửa OSM"
+  please_sign_in: "Để theo dõi tiến triển của bạn và nhận công việc nâng cao hơn, hãy [đăng nhập] vào tài khoản OpenStreetMap của bạn."
+  connect: Kết nối
+  login: Đăng nhập
+  help: Giới thiệu
+  thanks: "Cảm ơn bạn đã sửa đổi OpenStreetMap hôm nay!"
+  submit_changeset: "Đăng URL bộ thay đổi cho công việc, hoặc chọn từ danh sách"
+  verify: Xác nhận
+  update_list: "cập nhật"
+  no_changesets: "Lâu nay bạn không sửa đổi OpenStreetMap."
+  time_left: "Thì giờ còn lại để đăng một bộ thay đổi"
+  connect_intro: "Nhận thông báo về công việc mới và đăng các bộ thay đổi qua Telegram hoặc thư điện tử."
+  telegram_start: "nhấn chuột để bắt đầu con bot"
+  subscribe: Theo dõi
+  unsubscribe: Ngừng theo dõi
+  time:
+    n_hours: "{} giờ"
+    hour: "một giờ"
+    n_minutes: "{} phút"
+    today: "Hôm nay"
+    yesterday: "Hôm qua"
+  validation:
+    wrong_id: "Số bộ thay đổi sai: {}."
+    wrong_date: "Bộ thay đổi có ngày lưu sai."
+    api_error: "Xuất hiện lỗi khi kết nối với API OSM."
+    api_strange: "API OSM trả về dữ liệu bất ngờ là phần tử gốc trong tài liệu XML."
+    not_yours: "Xin vui lòng chỉ thêm các bộ thay đổi của chính bạn."
+    no_task: "Bạn không ghé thăm trang Chuỗi sửa OSM vào ngày {}"
+    has_later_changeset: "Đáng tiếc, bạn đã đăng một bộ thay đổi vào hoặc sau ngày đó."
+    old_changeset: "Bộ thay đổi này quá cũ, xin vui lòng lưu một bộ thay đổi mới hơn."
+    changeset_noted: "Cảm ơn bạn đã đăng bộ thay đổi, tức là {} ngày liên tục!"
+    extra_point: "Tặng thêm một điểm vì hoàn thành công việc."
+    gain_level: "Chúc mừng bạn đã lên cấp!"
+  email:
+    hi: 'Chào {},'
+    new_task: 'Bạn có muốn vẽ bản đồ để kéo dài chuỗi sửa đổi của bạn? Đây có một gợi ý:'
+    to_submit: 'Khi nào làm xong, hãy ghé vào {} và nhấn chuột vào bộ thay đổi mới nhất.'
+    bye: 'Thân mến,'
+  about:
+    what_is_this: Đây là gì?
+    what_is_this_content: >-
+        Chuỗi sửa OSM mỗi ngày gợi ý bạn thực hiện các công việc nhỏ. Mục đích là
+        đóng góp vào bản đồ mỗi ngày trong thời gian ít nhất một năm. Mỗi công việc
+        chỉ mất 5 phút. Bạn đóng góp mỗi ngày là tốt rồi, không nhất thiết phải đóng
+        góp nhiều. Tính kiên gan sẽ mang lại kết quả.
+    points: Điểm
+    points_content: >-
+        Bạn sẽ trúng điểm cho mỗi bộ thay đổi được đăng. Ban đầu bạn sẽ trúng một
+        điểm; từ ngày thứ 3 liên tục, mỗi công việc thì trúng 2 điểm, v.v. Nếu bạn
+        cứ tiếp tục đóng góp cho một tháng liên tục, bạn sẽ trúng 5 điểm cho mỗi bộ
+        thay đổi.
+    tasks: Công việc
+    tasks_content1: >-
+        Bạn không cần tuân theo đúng yêu cầu trong trang. Bộ thay đổi nào sẽ được
+        chấp nhận miễn là có thay đổi nào đó. Tuy nhiên, nếu bạn tuân theo yêu cầu
+        của công việc thì bạn sẽ trúng thêm một điểm.
+    tasks_content2: >-
+        Đừng lo ngại về công việc. Nếu bạn cảm thấy nó khó làm, hãy đóng góp một cách
+        khác – chẳng hạn vẽ tòa nhà. Mục đích là đóng góp mỗi ngày, không nhất thiết
+        phải hoàn thành tất cả mọi công việc.
+    stars: Sao
+    stars_content: >-
+        Tùy theo các điểm, bạn cũng có thể lên cấp cao hơn. Bạn bắt đầu ở cấp 1: số
+        sao ứng với cấp của bạn. Trong vòng vài ngày, bạn sẽ lên cấp 2. Các cấp cao
+        hơn sẽ mở khóa thêm công việc. Đây là các tiêu chuẩn để lên cấp cao hơn:
+    stars_level2: cấp 2 (khoảng 5 ngày liên tục)
+    stars_level3: cấp 3 (3 tuần)
+    stars_level4: cấp 4 (3 tháng)
+    stars_level5: cấp 5 (khoảng 1 năm)
+    stars_fame: >-
+        Những người đạt đến cấp cuối cùng sẽ vào đại sảnh danh vọng. Họ dĩ nhiên có
+        thể tiếp tục chuỗi sửa đổi của họ. Từ lúc đó, mỗi bộ thay đổi của họ sẽ trúng
+        16 điểm.
+    leaderboard: Bảng xếp hạng
+    leaderboard_content: >-
+        Không có bảng xếp hạn. Bạn sẽ không biết ai giỏi hơn hay chậm hơn. Đây là
+        cuộc thách thức, chứ không phải là cuộc cạnh tranh.

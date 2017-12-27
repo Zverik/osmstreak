@@ -1,0 +1,83 @@
+vi:
+  bridge:
+    description: Nhiều đường sá ở vùng nông thôn đã được vẽ một cách sơ qua không kể các nơi băng qua dòng suối và con sông. Tìm ra một nơi mà ai đó đã quên thêm cầu, rồi cắt đôi con đường để đánh thẻ cầu đó cho họ.
+    title: Vẽ Cầu
+  stream:
+    description: Phần nhiều các con sông ở khắp thế giới đã được vẽ, nhưng có quá nhiều dòng suối để vẽ. Tìm ra một dòng suối (không phải mương) và vẽ nó.
+    title: Vẽ Dòng suối
+  postcode:
+    description: Tại một số quốc gia, chẳng hạn Nga hoặc Hoa Kỳ, người ta có thể lấy mã bưu chính từ một cơ sở dữ liệu công khai. Tại các quốc gia khác, bạn cần phải biết nó hoặc lấy nó từ một nguồn gián tiếp như trang chủ của tiệm. Tìm mã bưu chính của tòa nhà nào đang thiếu nó, rồi thêm mã.
+    title: Thêm Mã bưu chính
+  bench:
+    description: Lần vừa rồi ghé thăm công viên, bạn có ngồi nghỉ trên các ghế không? Cố gắng nhớ vị trí của các ghế ngồi; cho công việc này, bạn phải thêm một ghế vào bản đồ.
+    title: Vẽ Ghé ngồi
+  turn_restriction:
+    description: Tìm ra một hạn chế rẽ chưa được vẽ dùng Mapillary hoặc một nguồn khác tương thích với OSM. Bạn có thể thoải mái chọn một nơi ít đông người hơn. Thêm hạn chế vào bản đồ.
+    title: Thêm Hạn chế Rẽ
+  lit:
+    description: Thành phố ban đêm có vẻ đẹp hơn khi bật đèn sáng dọc đường. Đặt “lit=yes” hoặc “lit=no” vào một vài con đường; sau đó, coi nó sáng lên [http://product.itoworld.com/map/69 trên bản đồ này].
+    title: Bật đèn Dọc đường
+  osmand:
+    title: Sử dụng OsmAnd
+  improve_river:
+    title: Cải thiện con Sông
+  josm:
+    title: Sửa đổi dùng JOSM
+  fix:
+    title: Sửa đổi Nhỏ
+  gomap:
+    description: 'Trong khi nền tảng Android có nhiều chương trình vẽ OSM, iOS đang thiếu. Chương trình vẽ OSM đầy đủ nhất cho iOS là [https://itunes.apple.com/app/id592990211 Go Map!!] (có hai dấu chấm than), nhưng nó không được cập nhật sau 2015. Tuy nhiên, nó vẫn hoạt động: hãy thử sửa đổi dùng chương trình này.'
+    title: Go Map!!
+  giveway:
+    title: Nhường đường
+  note:
+    description: Hiển thị các ghi chú tại trang OSM và tìm ra lời ghi chú đang chờ đợi bạn giải quyết. Giải quyết vấn đề và đóng ghi chú.
+    title: Giải quyết Ghi chú
+  around_the_world:
+    title: Vòng quanh Thế giới trong Năm Phút
+  highway:
+    description: Nhiều người mới tham gia OpenStreetMap bắt đầu bằng cách tìm ra một con đường lân cận chưa đuợc vẽ và vẽ nó trên bản đồ.
+    title: Vẽ con Đường
+  subway:
+    title: Sửa Đường Xe điện ngầm
+  buildings:
+    description: Vẽ ít nhất 20 tòa nhà ở đâu cũng được. Mở chương trình vẽ ưa thích của bạn, chuyển đến một khu vực nông thôn hoặc công nghiệp, và vẽ một số tòa nhà.
+    title: Vẽ 20 Tòa nhà
+  lanes:
+    description: Tìm ra con đường thiếu thẻ “lanes”. Chọn nền hình rõ cho khu vực này và đặt số làn trên con đường.
+    title: Đếm Làn đường
+  streetcomplete:
+    title: Cải thiện Bản đồ dùng StreetComplete
+  leaf_types:
+    title: Trồng 2 Cây
+  waste_basket:
+    description: "Khi nào bạn ngoài đường, ghi nhớ vị trí của một thùng rác: đằng trước tiệm, tại trạm xe buýt, đằng trước nhà ở. Thêm nó vào bản đồ với thẻ “amenity=waste_basket”."
+    title: Thùng rác
+  tiger:
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] là một tập hợp dữ liệu thuộc phạm vi công cộng về đường sá tại Hoa Kỳ. Nó được nhập khẩu một cách không hoàn hảo vào năm 2005. Tìm ra ít nhất ba con đường có thẻ tiger:reviewed=no và sửa chúng bằng cách đặt loại đường chính xác và xóa thẻ tiger:reviewed.'
+    title: Dạy Hổ TIGER
+  tracks:
+    title: Vẽ Đường gom
+  hot_task:
+    title: Sửa Tòa nhà
+  lamps:
+    title: Dựng Cột đèn
+  coastline:
+    description: Nhiều bờ biển được vẽ cách đây lâu theo hình chụp từ vệ tinh số hóa có độ phân giải thấp. Bạn có thể giúp cải thiện nó ở nhiều chỗ. Thêm ít nhất 10 nốt vào một đường bờ biển.
+    title: Cải thiện Bờ biển
+  haiti:
+    title: Thăm Haiti
+  railway:
+    title: Vẽ Đường sắt
+  turnlanes:
+    title: Làn Rẽ
+  farmland:
+    title: Vẽ Đất Nông nghiệp
+  switch:
+    title: Vẽ Ghi Đường sắt
+  mapsme:
+    title: Sử dụng MAPS.ME
+  sidewalk:
+    title: Thêm Lề đường
+  delete:
+    title: Xóa!

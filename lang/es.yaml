@@ -1,0 +1,79 @@
+es:
+  title: "OSM Streak"
+  please_sign_in: "Para registrar tu progreso y obtener tareas avanzadas, [sign in] con tu cuenta de OpenStreetMap."
+  connect: Conectar
+  login: Registrarse
+  help: Acerca de
+  thanks: "¡Gracias por editar OpenStreetMap hoy!"
+  submit_changeset: "Remite la URL de un conjunto de cambios para la tarea, o elígela en una lista"
+  verify: Verificar
+  update_list: "actualizar"
+  no_changesets: "No has editado OpenStreetMap últimamente"
+  time_left: "Tiempo restante para remitir un conjunto de cambios"
+  connect_intro: "Recibir notificaciones para nuevas tareas y remitir conjuntos de cambios por Telegram o correo-e."
+  telegram_start: "haz clic para iniciar el programa"
+  subscribe: Subscribirse
+  unsubscribe: Desubscribirse
+  time:
+    n_hours: "{} horas"
+    hour: "una hora"
+    n_minutes: "{} minutos"
+    today: "Hoy"
+    yesterday: "Ayer"
+  validation:
+    wrong_id: "Identificador de conjunto de cambios incorrecto: {}."
+    wrong_date: "La fecha del conjunto de cambios es incorrecta."
+    api_error: "Error conectando a la API de OSM."
+    api_strange: "La API de OSM devolvió algo extraño para el xml raíz."
+    not_yours: "Por favor, añade sólo tus conjuntos de cambios."
+    no_task: "No has visitado el sitio de OSM Streak en {}."
+    has_later_changeset: "Lo siento, ya tienes un conjunto de cambios registrado en o después de ese día."
+    old_changeset: "Este conjunto de cambios es demasiado viejo, por favor haz otra edición."
+    changeset_noted: "Conjunto de cambios anotado, ¡gracias! Eso suponen {} seguidos."
+    extra_point: "Un punto extra por completar la tarea."
+    gain_level: "¡Felicidades por el nivel adquirido!"
+  email:
+    hi: 'Hola {},'
+    new_task: '¿Quieres mapear un poco y seguir tu racha? Aquí tienes una idea:'
+    to_submit: 'Cuando termines, por favor dirígete a {} y haz clic en el último conjunto de cambios.'
+    bye: 'Tus,'
+  about:
+    what_is_this: ¿Qué es este
+    what_is_this_content: >-
+        OSM Streak te hace realizar pequeñas tareas para OpenStreakMap cada día. El
+        objetivo es mapear todos los días durante al menos un año. Las tareas son
+        pequeñas, de cinco minutos cada una. Se trata de mapear todos los días, no
+        de mapear todo lo que puedas. La persistencia vale la pena.
+    points: Puntos
+    points_content: >-
+        Por cada envío obtienes puntos. Al principio obtienes un punto, a partir del
+        tercer día seguido obtienes dos por cada tarea, y así sucesivamente. Si te
+        mantienes mapeando durante un mes seguido obtienes cinco puntos por conjunto
+        de cambios.
+    tasks: Tareas
+    tasks_content1: >-
+        No tiene que hacer exactamente lo que le dice la página. Se aceptará cualquier
+        conjunto de cambios no vacío. Pero si sigues la descripción de la tarea, obtendrás
+        un punto extra.
+    tasks_content2: >-
+        No dejes que la tarea te intimide. Si crees que es demasiado difícil, mapea
+        otra cosa, por ejemplo, un edificio. El objetivo es mapear todos los días,
+        no completar todas las tareas.
+    stars: Estrellas
+    stars_content: >-
+        Con los puntos también ganas nivel. Comienzas en el nivel 1: el número de
+        estrellas es el nivel en el que estás. En unos pocos días pasarás al nivel
+        2. Los nuevos niveles dan acceso a nuevas tareas. Aquí están los umbrales
+        de puntos para ganar niveles
+    stars_level2: nivel 2 (aproximadamente cinco días consecutivos)
+    stars_level3: nivel 3 (tres semanas)
+    stars_level4: nivel 4 (tres meses)
+    stars_level5: nivel 5 (aproximadamente un año)
+    stars_fame: >-
+        Los mapeadores que llegan al último nivel entran al salón de la fama. Pueden
+        continuar su racha de mapeo después de eso, por supuesto. Para cada conjunto
+        de cambios en ese momento obtendrán 16 puntos.
+    leaderboard: Tabla de clasificación
+    leaderboard_content: >-
+        No hay una tabla de clasificación. No sabrás quién está delante de ti y quién
+        está detrás. Esto es un desafío, no una competición.

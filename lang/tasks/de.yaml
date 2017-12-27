@@ -14,7 +14,11 @@ de:
   turn_restriction:
     description: Finde eine nicht eingetragene Abbiegebeschränkung auf Mapillary oder einer ähnlichen Quelle. Wähle vielleicht eine kleinere Stadt aus und trage die Abbiegebeschränkung ein.
     title: Füge eine Abbiegebeschränkung hinzu
+  lit:
+    description: Städte sehen nachts viel besser aus, wenn die Straßen beleuchtet sind. Füge "lit=yes" order "lit=no" zu ein paar Straßen hinzu und sieh dir die Farben später [http://product.itoworld.com/map/69 auf dieser Karte] an.
+    title: Trage die Beleuchtung einer Straße ein.
   osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] ist eine bekannte OpenStreetMap-App für Android-Geräte. Du kannst total viel in den Einstellungen konfigurieren, was für manche aber ein wenig zu komplex sein mag. Du kannst sogar neue Punkte zur Karte hinzufügen. Installiere das "OSM Editing" Plugin und erstelle irgendwo einen neuen Punkt. Lies dir [http://osmand.net/features?id=osm-editing-plugin die Anleitung] durch, wenn du Hilfe benötigst.'
     title: Benutze OsmAnd
   improve_river:
     description: "Die meisten Flüsse sind bereits eingetragen. Das Problem besteht darin, dass ein Satellitenbild mit niedriger Auflösung verwendet wurde. Jetzt kannst du es besser machen: starte JOSM, wähle einen Fluss aus, drücke \"W\" und verbessere die Linie. Füge einem \"waterway=river\" mindestens 10 Punkte hinzu."
@@ -22,44 +26,77 @@ de:
   josm:
     description: "Installiere den JOSM Editor, wenn nicht bereits geschehen, und bearbeite etwas. Wir empfehlen einige Gebäude einzutragen:\n\nLade einen Kartenausschnitt herunter, füge ein Hintergrundbild ein, drücke \"A\" und klicke auf eine Ecke des Gebäudes. Dann doppelklicke auf eine benachbarte Ecke, um es zu einer Linie zu machen. Dann drücke \"X\" und ziehe die Linie heraus, um ein Rechteck zu machen. Abschließend drücke \"Alt+A\" um \"building=yes\" hinzuzufügen, und lade dann die Änderung hoch."
     title: Mache eine Bearbeitung mit JOSM
+  fix:
+    description: 'Changeset-Kommentare sind wichtig. Außer heute: mache eine Änderung und schreibe "fix" in das Changeset-Kommentar-Feld. Nur diese drei Buchstaben, mehr nicht.'
+    title: Ein kleiner Fix
   gomap:
+    description: 'Während für Android-Geräte viele OSM Editoren existieren, sieht es für iOS-Benutzer eher schlecht aus. Der beste OSM Editor für iOS heißt [https://itunes.apple.com/app/id592990211 Go Map!!] (mit Ausrufezeichen), aber er wurde das letzte Mal 2015 geupdated. Trotzdem funktioniert er noch: Versuche es, mache eine Änderung mit diesem Editor.'
     title: Fange an zu mappen!!!
+  giveway:
+    description: Es gibt einen speziellen Tag, um ein "Vorfahrt gewähren" Schild einzutragen. Das ist der Tag [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Finde solch ein Schild, entweder über Mapillary oder dein Gedächtnis, platziere einen Knoten (Node) auf eine Straße, die Vorfahrt gewähren muss und füge diesen Tag hinzu. Wenn du magst, kannst du auch den "priority_road" Tag auf die Hauptstraße setzen.
+    title: Vorfahrt beachten
   note:
+    description: Aktiviere Notizen auf der OSM Website und finde eine ungelöste Notiz, die du beheben kannst. Löse die Notiz.
     title: Löse eine Notiz
   around_the_world:
+    description: Lass uns ein Changeset mit einer riesigen Bounding Box erstellen. Mappe erst etwas in [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Südchile], und dann in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamtschatka].
     title: Um die Welt in fünf Minuten
   highway:
+    description: Das ist oft Das erste, was neue OpenStreetMap-Nutzer tun. Finde eine nicht eingetragene Straße in deiner Nähe und füge sie hinzu.
     title: Mappe eine Straße
+  subway:
+    description: Für diese Aufgabe musst du das [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 Schema] kennen. Gehe zu [https://osmz.ru/subways/ Subway Validator] und suche eine Stadt mit einem Fehler in der U-Bahn. Es sollte die Änderung einer U-Bahn-Linie enthalten. Behebe den Fehler - und dann kannst du entweder aufhören, oder weiter das U-Bahn-Netzwerk aufräumen.
+    title: Repariere eine U-Bahn
   buildings:
     description: Zeichne irgendwo mindestens 20 Gebäude. Öffne den Editor deiner Wahl, navigiere zu einem schlecht gemappten ländlichen oder industriellen Gebiet, und zeichne ein paar Gebäude nach.
     title: Zeichne 20 Gebäude
   lanes:
+    description: Finde eine Straße, die keinen "lanes" Tag besitzt. Suche ein gutes Satellitenbild für diese Gegend und füge die Anzahl der Fahrspuren dieser Straße hinzu.
     title: Zähle die Fahrspuren
   streetcomplete:
     description: Wenn dein Handy ein iPhone ist, hast du leider Pech gehabt. Für Android kannst du einfach die [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] App installieren und ein paar Aufgaben erledigen. Du wirst sicher nur einen kleinen Moment für eine Aufgabe brauchen.
     title: Mappen mit StreetComplete
   leaf_types:
+    description: Einen Baum einzutragen besteht nicht nur daraus, einen Knoten mit "natural=tree" zu platzieren. Bitte lies dir die Wiki-Einträge zu [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] und [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle] durch, füge dann 2 Bäume in deiner Umgebung hinzu und benutze diese Tags.
     title: Pflanze zwei Bäume
   waste_basket:
+    description: "Wenn du draußen bist, gehst du an vielen Mülleimern vorbei: neben Geschäften, an Bushaltestellen oder an Hauseingängen. Erinnere dich an einen und trage ihn mit \"amenity=waste_basket\" ein."
     title: Mülleimer
   tiger:
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] ist ein öffentlicher Straßendatensatz in den USA. Er wurde 2005 importiert, aber dieser Import war unvollständig. Suche eine Straße mit tiger:reviewed=no und korrigiere mindestens 3, indem du den richtigen Straßentyp hinzufügst oder den Tag einfach entfernst.'
     title: Repariere einen Tiger
+  tracks:
+    description: Wirtschafts- , Wald- oder Feldwege werden mit [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] markiert. Optional kann noch die Oberflächenbeschaffenheit des Weges mit "tracktype=gradeN", wobei N eine Art Note von 1 (bestes) bis 5 (schlechtestes) eingetragen werden. Finde ein Feld oder einen Wald und zeichne 2-3 Kilometer an solchen Wegen.
+    title: Zeichne ein paar Wege
   hot_task:
+    description: 'Öffne den [https://tasks.hotosm.org/ HOT Tasking Manager] und wähle einen zufälligen, aktiven Task. Dann suchst du dir ein gelbes Viereck und validierst ihn. Gucke dir an, wie Anfänger ihre Gebäude zeichnen, denke ein wenig darüber nach und korrigiere sie: glätte die Ecken, verbessere Formen. Nur ein paar reichen schon.'
     title: Korrigiere ein Gebäude
   lamps:
+    description: Ist es schon dunkel draußen? Siehst du eine Straße, die von einer Lampe beleuchtet wird? Bestimmt ist diese Lampe nicht eingetragen. Füge mindestens zwei [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp]s hinzu.
     title: Planze eine Straßenlaterne
   coastline:
+    description: Viele Küstenlinien wurden vor langer Zeit anhand schlechter Satellitenbilder importiert. Du kannst bestimmt helfen, sie irgendwo zu verbessern. Füge mindestens 10 neue Knoten zu einer Küstenlinie hinzu.
     title: Verbessere eine Küstenlinie
   haiti:
+    description: '2010 war dort ein schlimmes Erdbeben 25 Kilometer westlich der Hauptstadt von Haiti, Port-au-Prince. Das war der Startschuss für das "Humanitarian Mapping Team", wodurch die Hauptstadt nun perfekt kartiert ist. Nicht aber der Rest des Landes: finde ein nicht eingetragenes Gebäude in Haiti und füge es hinzu.'
     title: Besuche Haiti
   railway:
+    description: Eisenbahnen bekommen oft weniger Aufmerksamkeit als Straßen, aber sie sind nicht weniger wichtig! Trage eine Eisenbahnlinie ein. Wenn du keine finden kannst, trage einfach Nebengleise an Bahnhöfen ein.
     title: Trage eine Eisenbahnverbindung ein
+  turnlanes:
+    description: Lies die Beschreibung von [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] durch, suche eine Kreuzung, deren Fahrspuren auf Satellitenbildern oder Mapillary zu erkennen sind und trage alle Abbiegespuren auf allen Seiten der Kreuzung ein.
+    title: Abbiegespuren
   farmland:
     description: Finde einen Bereich des Ackerbaus oder Weideland (z.B. in Zentral-USA oder Westrussland), und mappe es als [https://wiki.openstreetmap.org/wiki/DE:Tag:landuse%3Dfarmland landuse=farmland]
     title: Mappe eine Ackerfläche
+  switch:
+    description: Wo sich zwei Schienen überschneiden, sind immer Weichen. Suche einen Bahnhof und füge mindestens zwei [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] Tags zu Knoten, an denen sich zwei Schienen treffen, hinzu.
+    title: Trage eine Weiche ein
   mapsme:
+    description: MAPS.ME ist nicht nur ein Kartenprogramm und Navigationsgerät. Du kannst sogar die Karte bearbeiten. Klicke einfach auf eine Einrichtung oder wähle "Füge einen neuen Ort hinzu" aus dem Menü. Versuche es.
     title: Benutze MAPS.ME
   sidewalk:
+    description: Gehwege sind Fußwege neben Straßen. Um Fußgänger besser navigieren zu können, finde eine Straße ohne einen eingetragenen Gehweg und zeichne zwei Fußwege auf beiden Seiten ein (unterstützt durch ein Satellitenbild) und füge den Tag "footway=sidewalk" hinzu. Wenn du eine Kreuzung als einen Weg hinzufügst, benutze "highway=footway" und "footway=crossing".
     title: Füge einen Gehweg hinzu
   delete:
     description: Es ist nicht schwer etwas Neues einzutragen. Aber kannst du irgendetwas Bereinigen? Lösche 5 Objekte - aber nur solche, die obsolet, veraltet, redundant oder überflüssig sind!

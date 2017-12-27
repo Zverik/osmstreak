@@ -3,13 +3,20 @@ ast_ES:
     description: Munches estraes nes fasteres fora de les villes dibúxense apriesa y ensin mirar si crucen ríos o regatos. Alcuentra un llugar onde un mapeador escaeció partir una estrada y marcar una ponte, y faelo tu.
     title: Dibuxa una ponte
   stream:
+    description: Los ríos del mundu tán nel mapa cuasi completamente, pero hai una cantidá de regatos grande enforma pa que tean toos. Alcuentra un regatu (non una canal) y ponlu nel mapa.
     title: Dibuxa un regatu
   postcode:
     description: En dellos paises, como Rusia o los EEXX, puedes buscar un códigu postal nuna base de datos disponible de mou públicu. N'otros puedes sabelo o deducilo de fontes indireutes, como la páxina web d'una tienda. Alcuentra'l códigu postal de cualquier edificiu que nun lu tenga, y ponlu nel mapa.
     title: Amiesta un códigu postal
+  bench:
+    description: ¿Alcuérdeste de cuando fuisti a un parque qu'había bancos? Tenta alcordate de los llugares, porque la siguiente xera ye amestar un bancu.
+    title: Dibuxa un bancu
   turn_restriction:
     description: Alcuentra una torga de xiru que nun tea nel mapa en Mapillary o otra fonte compatible con OSM. Si quiés, escueyi una villa más pequeña. Pon la torga nel mapa.
     title: Amiesta una torga de xiru
+  lit:
+    description: De nueche les ciudaes tienen meyor aspeutu cuando les cais tán illuminaes. Amiesta ''lit=yes'' o ''lit=no'' en delles rúes, y llueu mírales en color [http://product.itoworld.com/map/69 nesti mapa].
+    title: Pinta la lluz d'una rúa
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] ye una de les aplicaciones populares d''OpenStreetMap pa preseos Android, configurable enforma, pero una migayina complicáu pa dalgunes persones. Puede xubir puntos al mapa. Instala''l complementu «OSM Editing» y crea un puntu auquiera. Llei [http://osmand.net/features?id=osm-editing-plugin la documentación] si te pierdes na interfaz.'
     title: Usar OsmAnd
@@ -46,9 +53,21 @@ ast_ES:
   lanes:
     description: Alcuentra una estrada que nun tenga puesta la etiqueta ''lanes''. Busca unes bones imáxenes del área y amiesta'l númberu de carriles de la estrada.
     title: Cuenta los carriles
+  streetcomplete:
+    description: Si'l to teléfonu ye un iPhone, mala suerte. N'Android, instala l'aplicación [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] y fai delles xeres. Tardes sólo un segundu con cauna.
+    title: Mapea con StreetComplete
   leaf_types:
     description: Poner nel mapa un árbol nun ye sólo poner un nodiu ''natural=tree''. Tienes d'especificar el tipu. Mira les páxines de la wiki de [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] y [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], y llueu amiesta 2 árboles cerca de casa o nun llugar que conozas bien usando eses etiquetes.
     title: Planta dos árboles
+  waste_basket:
+    description: "Cuando sales, pases cerca de milenta papeleres: cabo les tiendes, nes paraes d'autobús, nes entraes de cases... Alcuérdate d'una, y ponla nel mapa con ''amenity=waste_basket''."
+    title: Papeleres
+  tiger:
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] ye un conxuntu de datos de dominiu públicu d''estraes de los EEXX. Importóse nel 2005, y la importación foi imperfeuta. Alcuentra una estrada con tiger:reviewed=no ya igua polo menos trés, poniendo una clas d''estrada correuta y desaniciando la etiqueta.'
+    title: Igua un Tiger
+  tracks:
+    description: Una pista ye un camín que lleva a dalguna casería o ta nuna viesca. Márcase con [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] y con ''tracktype=gradeN'' opcional, onde N ta ente 1 (meyor) y 5 (peor). Alcuentra un campu o una viesca y dibuxa 2-3 km de pista.
+    title: Dibuxa delles pistes
   railway:
     description: De vezu los ferrocarriles reciben menos atención que les estraes, ¡pero nun son menos importantes! Pon nel mapa una llinia de ferrocarril. Si nun atopes ónde, tenta amestar les víes d'apartaderu que falten nes estaciones.
     title: Dibuxa un ferrocarril

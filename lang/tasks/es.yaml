@@ -3,13 +3,20 @@ es:
     description: Muchas carreteras en sitios rurales se dibujan rápido y sin tener en cuenta los cruces de arroyos y ríos. Busca un lugar donde un mapeador olvidó dividir una carretera y marcar un puente, y hazlo por él.
     title: Dibujar un puente
   stream:
+    description: Los ríos están bastante mapeados en todo el mundo, pero los arroyos son demasiado numerosos para tenerlos a todos. Encuentre una corriente (no una zanja) y mapéala.
     title: Dibuja un arroyo
   postcode:
     description: En algunos países, como Rusia o EEUU, puedes consultar los códigos postales en una fuente datos disponible al público. En otros sólo los puedes conocer o deducir de fuentes indirectas, como el sitio web de un comercio. Encuentra el código postal de un edificio que no lo tenga, y mapéalo.
     title: Añade un código postal
+  bench:
+    description: ¿Recuerdas haber pasado por un parque en el que había bancos y donde estaban? Intenta recordar sus localizaciones, por que para esta tarea necesitarás añadir un banco.
+    title: Mapea un banco
   turn_restriction:
     description: Busca una restricción de giro sin mapear en Mapillary u otra fuente compatible con OSM. Elije un pueblo pequeño si lo deseas. Dibuja la restricción.
     title: Añadir una restricción de giro
+  lit:
+    description: La ciudad por la noche se ve mejor cuando las calles están iluminadas. Agregua ''lit=yes'' o ''lit=no'' a algunas carreteras, y más tarde mira cómo cambia de color [http://product.itoworld.com/map/69 en este mapa].
+    title: Mapea una farola
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] es una popular aplicación  OpenStreetMap para dispositivos Android, altamente configurable, pero un poco compleja para algunos. Puede subir puntos al mapa. Instala el complemento "OSM Editing" y crea un punto en algún lugar. Lee [http://osmand.net/features?id=osm-editing-plugin la documentación] si te sientes perdido con la interfaz.'
     title: Usa OsmAnd
@@ -46,6 +53,27 @@ es:
   lanes:
     description: Encuentra una carretera que no tenga la etiqueta "lanes". Usando una imagen de fondo de calidad para la zona añade el número de carriles a esa carretera.
     title: Cuenta los carriles
+  streetcomplete:
+    description: Si tu teléfono es un iPhone, mala suerte. Para Android, instala la aplicación [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] y has unas pocas tareas. Realmente sólo hace falta un segundo para cada una.
+    title: Mapea con StreetComplete
+  leaf_types:
+    description: Mapear un árbol no es sólo colocar un nodo con ''natural=tree''. Debes especificar su tipo. Lee por favor las páginas de la wiki en [https://wiki.openstreetmap.org/wiki/ES:Key:leaf_type tipo de hoja] y [https://wiki.openstreetmap.org/wiki/ES:Key:leaf_cycle ciclo de hoja], y añade 2 árboles cerca de tu hogar o en algún sitio que te resulte familiar para usar estas etiquetas.
+    title: Planta dos árboles
+  waste_basket:
+    description: "Mientras paseas, pasas al lado de muchas papeleras: junto a tiendas, paradas de autobús, entradas de casas. Recuerda una y mapeala con ''amenity=waste_basket''."
+    title: Papeleras
+  tiger:
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] es un conjunto de datos de carreteras público en los EE.UU. Fue importado en 2005 y la importación fue impefecta.  Busca  carreteras con tiger:reviewed=no y corrige al menos tres, ajustando una clase de carrera correcta y eliminando la etiqueta.'
+    title: Corrige Tiger
+  tracks:
+    description: Una pista agrícola es una carretera que se dirige a una granja o está en un bosquen. Se etiqueta con [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] y opcionalmente con ''tracktype=gradeN'', con N de 1 (mejor) a 5 (peor). Busca un campo o bosque y dibuja  2-3 km d una pista.
+    title: Dibuja alguna pista
+  hot_task:
+    description: 'Abre [https://tasks.hotosm.org/ HOT Tasking Manager] y elije una tarea activa cualquiera. Dentro, elige un rectángulo amarillo al azar y haz una validación. Comprueba si han dibujado los edificios cartógrafos principiantes, medítalo un poco y luego corrígelos: alinea los bordes, mejora las formas. Con un par es suficiente.'
+    title: Corrige un edificio
+  lamps:
+    description: ¿Es de noche fuera? ¿La calle está iluminada por una farola? Es bastante probable que la farola no esté mapeada. Añade dos o más  [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp]s.
+    title: Planta una farola
   coastline:
     description: Muchos tramos de línea de costa se importaron hace mucho tiempo a partir de imágenes satélite de baja resolución digitalizadas. En algunos lugares sin duda puedes ayudar a mejorarla. Añade al menos 10 nodos a la línea de costa.
     title: Mejora la línea de costa
@@ -58,5 +86,18 @@ es:
   turnlanes:
     description: Lee la descripción de [https://wiki.openstreetmap.org/wiki/ES:Key:turn#Indicaciones de giro por carril turn:lanes], busca una intersección con Indicaciones de giro por carril visibles en una imagen de fondo o en Mapillary y mapea todas las las indicaciones de giro por carril en los cuatro lados de la intersección.
     title: Indicaciones de giro por carril
+  farmland:
+    description: Encuentra una zona de cultivo o pasto (puedes mirar en el centro de EEUU o el Oeste de Rusia) y mapéalo con [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland].
+    title: Mapea un campo de cultivo
+  switch:
+    description: Donde se juntan dos vías de tren, lo hacen con un cambio de agujas. Busca una estación y añade al menos dos etiquetas [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] a los nodos donde se juntan las vías.
+    title: Mapea un cambio de agujas
+  mapsme:
+    description: MAPS.ME no sólo es una visualizador del mapa y navegador multiplataforma. Puedes editar el mapa con él. Simplemente haz clic en un punto de interés, o elige "Añadir un lugar" en el menú. Inténtalo.
+    title: Prueba MAPS.ME
   sidewalk:
+    description: '''Sidewalk'' es una vía peatonal cerca de una carretera. Para mejorar el enrutamiento a pie, busca una carretera sin sus aceras mapeadas y dibuja dos vías peatonales ("highway=footway") a ambos lados (usando una imagen aérea) con la etiqueta adicional "footway=sidewalk". Cuando añadas un paso de peatones como vía, usa "highway=footway" + "footway=crossing".'
     title: Añade una acera
+  delete:
+    description: No es tan complicado encontrar algo que mapear, pero ¿puedes encontrar algo que borrar? Borra 5 elementos — pero sólo si están obsoletos o son redundantes.
+    title: '¡A borrar! '

@@ -1,0 +1,40 @@
+es:
+  only_text: "Lo siento, se aceptan sólo mensajes de texto."
+  no_code: "Por favor ve a {0}/settings y pulsa el enlace a Telegram, haz clic en \"Comenzar\" aquí."
+  wrong_code: "Tu código parece incorrecto."
+  welcome: "¡Bienvenido {}!"
+  already_logged: "Ya estás registrado como {}."
+  you_are: "Tu eres {}."
+  which_utc: "¿A qué hora UTC te gustaría mapear?"
+  task_complete: "¡Gracias por editar OpenStreetMap hoy!"
+  no_changesets: "No has editado OpenStreetMap últimamente."
+  unknown_cmd: "Comando desconocido. Por favor, envía /help para obtener la lista."
+  no_remind: "No te molestaré. Usa /now o /remind para establecer un recordatorio diario."
+  remind_on: "Te enviaré una nueva tarea cada día a las {} UTC. Envía /stop si te molesta."
+  lang_set: "Te escribiré en inglés."
+  no_such_lang: "Idioma no disponible. Los soportados son: {}."
+  time_left: "Tiempo restante"
+  post_changeset: "Envía /done cuando acabes, o el ID de un conjunto de cambios si has hecho varios."
+  list_header: "Haz clic en el ID de un conjunto de cambios para enviarlo."
+  n_points: "{} puntos"
+  help: |-
+    Este programa te ayuda a editar OpenStreetMap todos los días.
+
+    Envía /start <code_from_website> para tener recordatorios diarios.
+
+    Comandos:
+
+    /task — muestra la tarea para hoy
+    /score — muestra tu puntuación y nivel
+    /done — remite el último conjunto de cambios
+    /list — muestra los conjuntos de cambios disponibles
+
+    /now — recordatorio diario a esta hora
+    /remind <hh:mm> — elige el momento para recibir el recordatorio
+    /when — muestra cuando se recibirá el recordatorio
+    /stop — detiene los recordatorios
+
+    /whoami — muestra tu nombre OSM
+    /lang <code> — cambiar idioma
+
+    Sitio web: {web}

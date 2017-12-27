@@ -1,0 +1,42 @@
+ast_ES:
+  title: "OSM Streak"
+  please_sign_in: "Pa siguir el to progresu y recibir xeres más avanzaes, [anicia sesión] cola to cuenta d'OpenStreetMap."
+  connect: Coneutar
+  login: Aniciar sesión
+  help: Tocante a
+  thanks: "¡Gracies por editar OpenStreetMap güei!"
+  submit_changeset: "Unvia la URL d'un conxuntu de cambios, o escueye d'una llista"
+  verify: Comprobar
+  update_list: "anovar"
+  no_changesets: "Últimamente nun editasti OpenStreetMap."
+  time_left: "Tiempu que queda pa unviar un conxuntu de cambios"
+  connect_intro: "Recibir avisos de xeres nueves y unviar conxuntos de cambios per Telegram o per corréu-e"
+  telegram_start: "pulsia p'aniciar el bot"
+  subscribe: Suscribite
+  unsubscribe: Date de baxa
+  time:
+    n_hours: "{} hores"
+    hour: "una hora"
+    n_minutes: "{} minutos"
+    today: "Güei"
+    yesterday: "Ayeri"
+  validation:
+    wrong_id: "Id de conxuntu de cambios equivocáu: {}."
+    wrong_date: "La data del conxuntu de cambios ye incorreuta"
+    api_error: "Error al coneutar cola API d'OSM."
+    api_strange: "La API d'OSM devolvió daqué estraño pal xml raigañu."
+    not_yours: "Añade sólo conxuntos de cambios propios."
+    no_task: "Nun visitasti la web d'OSM Streak el {}"
+    has_later_changeset: "Yá tienes rexistráu un conxuntu de cambios esi o después d'esi día."
+    old_changeset: "Esti conxuntu de cambios ye enforma antiguu; por favor, fai otra edición."
+    changeset_noted: "Anotáu el conxuntu de cambios, ¡gracies! Esti foi el {} siguíu."
+    extra_point: "Un puntu estra por completar la xera."
+    gain_level: "¡Norabona por xubir un nivel!"
+  email:
+    hi: 'Bones {},'
+    new_task: '¿Quiés facer daqué nel mapa y siguir cola racha? Equí tienes una idea:'
+    to_submit: 'En tando fecho, visita {} y pulsia nel últimu conxuntu de cambios.'
+    bye: 'Candialmente,'
+  about:
+    what_is_this: Qué ye esto
+    points: Puntos
