@@ -421,7 +421,9 @@ def get_user_changesets(user, req=None, lang=None):
             continue
         chdata = {
             'id': int(chs.get('id')),
-            'time': chs.get('created_at')
+            'time': chs.get('created_at'),
+            'comment': '',
+            'editor': '',
         }
         if chtime.date() == date:
             hdate = lang.get('today', 'Today')
