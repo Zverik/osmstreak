@@ -4,7 +4,7 @@ description: >-
   There is a special tag for mapping the triangle "give way" sign.
   It's [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], obviously.
   Find such a sign, either by using Mapillary or your memory, place a node on a highway that has to give way,
-  and tag that node with the tag. Also add a priority_road tag to the main road.
+  and tag that node with the tag. Also add a [https://wiki.openstreetmap.org/wiki/Key:priority_road priority_road tag] to the main road.
 test:
   created_node: "highway=give_way"
   modified_way: "priority_road=*"
