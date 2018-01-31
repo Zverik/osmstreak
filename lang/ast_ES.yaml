@@ -39,4 +39,23 @@ ast_ES:
     bye: 'Candialmente,'
   about:
     what_is_this: Qué ye esto
+    what_is_this_content: >-
+        OSM Streak t'ayuda a facer caldía pequeñes xeres pa OpenStreetMap. L'oxetivu
+        ye trabayar nel mapa caldía demientres un añu polo menos. Les xeres son pequeñes,
+        de cinco minutos caúna. El puntu ye dibuxar tolos díes nel mapa, non dibuxar
+        tolo que puedas. La constancia paga la pena.
     points: Puntos
+    points_content: >-
+        Con cada unviu recibes puntos. Al principiu recibes un puntu, dende'l tercer
+        día siguíu recibes dos puntos por cada xera, y asina socesivamente. Si sigues
+        mapeando demientres un mes siguíu, recibiríes cinco puntos por un conxuntu
+        de cambios.
+    tasks: Xeres
+    tasks_content1: >-
+        Nun tienes por qué facer exautamente lo que te diz la páxina. Cualquier conxuntu
+        de cambios que nun tea vacíu va aceutase. Pero si sigues la descripción de
+        la xera, recibirás un puntu estra.
+    stars_level2: nivel 2 (unos cinco díes siguíos)
+    stars_level3: nivel 3 (trés selmanes)
+    stars_level4: nivel 4 (trés meses)
+    stars_level5: nivel 5 (como un añu)

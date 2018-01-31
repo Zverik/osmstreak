@@ -1,6 +1,6 @@
 es:
   title: "OSM Streak"
-  please_sign_in: "Para registrar tu progreso y obtener tareas avanzadas, [sign in] con tu cuenta de OpenStreetMap."
+  please_sign_in: "Para registrar tu progreso y obtener tareas avanzadas, [accede] con tu cuenta de OpenStreetMap."
   connect: Conectar
   login: Registrarse
   help: Acerca de
@@ -38,7 +38,7 @@ es:
     to_submit: 'Cuando termines, por favor dirígete a {} y haz clic en el último conjunto de cambios.'
     bye: 'Tus,'
   about:
-    what_is_this: ¿Qué es este
+    what_is_this: ¿Qué es esto?
     what_is_this_content: >-
         OSM Streak te hace realizar pequeñas tareas para OpenStreakMap cada día. El
         objetivo es mapear todos los días durante al menos un año. Las tareas son

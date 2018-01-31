@@ -54,13 +54,13 @@ it:
     description: Individua una strada che non ha il tag "lanes" associato. Trova una buona immagine satellitare dell'area e aggiungi il numero di corsie presenti nella strada.
     title: Conta le corsie
   streetcomplete:
-    description: Se il tuo telefono è un iPhone, sei sfortunato. Se hai Android installa l'applicazione [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] ed esegui qualche task. Ci vuole veramente un secondo per ognuno.
+    description: Se il tuo telefono è un iPhone, oggi sei sfortunato. Se invece hai Android installa l'applicazione [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] ed esegui qualche task. Ci vuole veramente un secondo per ognuno.
     title: Mappa con StreetComplete
   leaf_types:
     description: Mappare un albero non significa solo mettere un tag "natural=tree". Devi specificare anche di che tipo è. Leggi le pagine wiki [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] e [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], quindi aggiungi 2 alberi vicino a casa o in un posto a te familiare usando questi tag.
     title: Pianta due alberi
   waste_basket:
-    description: "Quando esci di casa passi accanto a tantissimi cestini del pattume: vicino ai negozi, alle fermate dell'autobus, all'ingresso delle case. Cerca di ricordarne uno e mappalo con \"amenity=waste_basket\"."
+    description: "Quando esci di casa passi accanto a tantissimi cestini del pattume: vicino ai negozi, alle fermate dell'autobus, all'ingresso delle case. Cerca di ricordarne uno e mappalo con \"[https://wiki.openstreetmap.org/wiki/IT:Tag:amenity%3Dwaste_basket amenity=waste_basket]\"."
     title: Cestini del Pattume
   tiger:
     description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] è un dataset di pubblico dominio delle strade degli USA. E'' stato importato nel 2005 e l''import non è stato preciso. Trova delle strade con il tag tiger:reviewed=no e mettine a posto almeno tre, impostando la classe corretta della strada e rimuovendo il tag.'

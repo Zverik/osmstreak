@@ -68,6 +68,15 @@ ast_ES:
   tracks:
     description: Una pista ye un camín que lleva a dalguna casería o ta nuna viesca. Márcase con [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] y con ''tracktype=gradeN'' opcional, onde N ta ente 1 (meyor) y 5 (peor). Alcuentra un campu o una viesca y dibuxa 2-3 km de pista.
     title: Dibuxa delles pistes
+  hot_task:
+    description: 'Abre l''[https://tasks.hotosm.org/ Alministrador de Xeres de HOT] y escueye una xera activa al debalu. Ehí, escueye un rectángulu mariellu cualquiera y fai una convalidación. Comprueba cómo dibuxen los edificios los mapeadores nuevos, reflexona un poco, y corrixe lo necesario: enderecha muros, ameyora formes. Val con un par d''igües.'
+    title: Igua un edificiu
+  lamps:
+    description: ¿Ta escuro fora? ¿Ves una rúa allumada por una farola? Tamos enforma seguros de qu'esa farola nun ta nel mapa. Amiesta polo menos dos [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp]s.
+    title: Llanta una farola
+  coastline:
+    description: Munches llinies costeres importáronse cuantayá dixitalizando dende semeyes de satélite de baxa resolución. Puedes ayudar a ameyorales definitivamente'n dellos llugares. Amiesta polo menos 10 nodios na llinia de costa.
+    title: Ameyora una costa
   railway:
     description: De vezu los ferrocarriles reciben menos atención que les estraes, ¡pero nun son menos importantes! Pon nel mapa una llinia de ferrocarril. Si nun atopes ónde, tenta amestar les víes d'apartaderu que falten nes estaciones.
     title: Dibuxa un ferrocarril

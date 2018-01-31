@@ -11,7 +11,7 @@ es:
   unknown_cmd: "Comando desconocido. Por favor, envía /help para obtener la lista."
   no_remind: "No te molestaré. Usa /now o /remind para establecer un recordatorio diario."
   remind_on: "Te enviaré una nueva tarea cada día a las {} UTC. Envía /stop si te molesta."
-  lang_set: "Te escribiré en inglés."
+  lang_set: "Te escribiré en castellano."
   no_such_lang: "Idioma no disponible. Los soportados son: {}."
   time_left: "Tiempo restante"
   post_changeset: "Envía /done cuando acabes, o el ID de un conjunto de cambios si has hecho varios."

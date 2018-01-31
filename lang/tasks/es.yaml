@@ -24,7 +24,7 @@ es:
     description: "Muchos ríos ya están mapeados. El tema es que, se ha hecho usando imágenes satélite de baja resolución. Ahora puedes mejorarlo: abre JOSM, selecciona un río, pulsa \"W\" y mejora la vía. Añade al menos 10 nodos a un \"waterway=river\"."
     title: Mejora un río
   josm:
-    description: "Instala el editor JOSM, si no lo has hecho ya, y edita algo con el.. Recomendamos dibujar algunos edificios:\n \nDescarga una parte del mapa, añade una imagen de fondo, pulsa \"A\" y haz clic en la esquina de un edificio. Luego doble-clic en una esquina adyacente, dibujando una línea. Entonces pulsa \"X\" y arrastra la línea hasta tener un rectángulo. Finalmente, pulsa \"Alt+A\" para añadir \"building=yes\" y, finalmente, sube los cambios."
+    description: "Instala el editor JOSM, si no lo has hecho ya, y edita algo con el. Recomendamos dibujar algunos edificios:\n \nDescarga una parte del mapa, añade una imagen de fondo, pulsa \"A\" y haz clic en la esquina de un edificio. Luego doble-clic en una esquina adyacente, dibujando una línea. Entonces pulsa \"X\" y arrastra la línea hasta tener un rectángulo. Finalmente, pulsa \"Alt+A\" para añadir \"building=yes\" y, finalmente, sube los cambios."
     title: Haz una edición con JOSM
   fix:
     description: 'Los comentarios en los conjuntos de cambios son importantes, pero no para ti hoy: haz un cambio y pon "fix" en el campo de comentario del conjunto de cambios. Sólo esas tres letras, nada más.'

@@ -1,0 +1,39 @@
+ja:
+  only_text: "テキストメッセージ以外は無効です。"
+  no_code: "{0}/settings を表示し、telegramリンクを押して\"Start\"を押してください。"
+  wrong_code: "コードに間違いがあるようです。"
+  welcome: "ようこそ {}！"
+  already_logged: "{} としてログイン中です。"
+  you_are: "{}としてログイン中。"
+  which_utc: "編集を行う時間を入力してください。"
+  task_complete: "今日もOpenStreetMap編集ありがとう！"
+  no_changesets: "OpenStreetMap編集履歴がありません。"
+  unknown_cmd: "無効なコマンド。 /helpでコマンド一覧を表示できます。"
+  no_remind: "/now あるいは /remindでリマインダーをセットできます。"
+  remind_on: "毎日  {} UTC に新しいタスクを送ります。停止したい場合は /stopと入力してください。"
+  lang_set: "メッセージは英語で送られます。"
+  no_such_lang: "対象の言語翻訳がありません。サポート対象言語: {}"
+  post_changeset: "完了したら /doneと入力するか、複数回行った場合は変更セットIDを入力してください。"
+  list_header: "変更セットIDをクリックで指定: "
+  n_points: "{}ポイント"
+  help: |-
+    このボットは毎日のOpenStreetMap編集を支援します。
+
+    毎日リマインド通知を送る場合は /start <code_from_website> と入力してください。
+
+    コマンド:
+
+    /task — 本日のタスクを表示
+    /score — スコアとレベルを表示
+    /done — 直近の変更セットを表示
+    /list — タスク対象の変更セットを表示
+
+    /now — 現在の時刻で毎日リマインドを送る
+    /remind <hh:mm> — リマインドの時間を指定
+    /when — リマインド設定時間を表示
+    /stop — リマインド設定を停止
+
+    /whoami — OSMユーザ名を表示
+    /lang <code> — 言語を切り替え
+
+    ウェブサイト: {web}
