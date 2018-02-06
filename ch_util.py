@@ -269,7 +269,8 @@ def validate_changeset(user, changeset, task_name=None, req=None):
             task_obj = Task.get(Task.user == user, Task.day == date)
             task_name = task_obj.task
     except Task.DoesNotExist:
-        raise ValidationError('no_task', date.strftime('%d.%m.%Y'))
+        get_or_create_task_for_user(user, date)
+        return date, False
     task = load_task(task_name)
     if 'test' not in task:
         return date, True
