@@ -61,7 +61,7 @@ body {
 
 #header select {
     overflow: hidden;
-    background: transparent;
+    background-color: #335;
     color: #eee;
     border: none;
 }
