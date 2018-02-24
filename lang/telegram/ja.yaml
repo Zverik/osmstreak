@@ -13,6 +13,7 @@ ja:
   remind_on: "毎日  {} UTC に新しいタスクを送ります。停止したい場合は /stopと入力してください。"
   lang_set: "メッセージは英語で送られます。"
   no_such_lang: "対象の言語翻訳がありません。サポート対象言語: {}"
+  time_left: "残り時間"
   post_changeset: "完了したら /doneと入力するか、複数回行った場合は変更セットIDを入力してください。"
   list_header: "変更セットIDをクリックで指定: "
   n_points: "{}ポイント"

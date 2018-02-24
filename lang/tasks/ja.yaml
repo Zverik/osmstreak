@@ -66,7 +66,7 @@ ja:
     description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER]はアメリカを対象として公開されている道路データセットです。2005年にインポートされましたが、作業はまだ完璧ではありません。tiger:reviewed=noタグがついた道路を3つ以上探し、道路のクラスを正しく修正してからtiger:reviewed=noタグを削除しましょう。'
     title: Tigerの修正
   tracks:
-    description: 農道（track）は、その先に農場や森林が続いています。道路のタグは[https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]で、追加情報として1 (状態がよい) から5 (悪い) を意味する''tracktype=gradeN''タグをつけることができます。野原や森林の中にある農道を2-3kmほど描いてみましょう。
+    description: 農道（track）は、その先に農場や森林が続いています。道路のタグは[https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]で、追加情報として1 (状態がよい) から5 (悪い) を意味する''tracktype=gradeN''タグをつけることができます。野原や森林の中にある農道を新しく2-3kmほど描いてみましょう。
     title: 農道を描こう
   hot_task:
     description: '[https://tasks.hotosm.org/ HOT Tasking Manager]を開き、現在アクティブなタスクを1つ選びます。そこで黄色の四角形をランダムに1つ選び、内容のチェックを行ってください。初心者マッパーが建物を適当に描いていないかなどをしっかり確認し、必要に応じて角を直角にしたり形を修正したりしてください。2地域ほどやってみましょう。'
