@@ -423,6 +423,7 @@ def get_user_changesets(user, req=None, lang=None):
         chdata = {
             'id': int(chs.get('id')),
             'time': chs.get('created_at'),
+            'age': (date - chtime.date()).days,
             'comment': '',
             'editor': '',
         }
