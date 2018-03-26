@@ -18,22 +18,22 @@ ast_ES:
   list_header: "Pulsia nun conxuntu de cambios pa unvialu:"
   n_points: "{} puntos"
   help: |-
-    Esti bot t'ayuda a editar OpenStreetMap caldía.
+      Esti bot t'ayuda a editar OpenStreetMap caldía.
 
-    Manda /start <code_from_website> pa recibir recordatorios diarios.
+      Manda /start <code_from_website> pa recibir recordatorios diarios.
 
-    Comandos:
+      Comandos:
 
-    /task — ver la xera pa güei
-    /score — ver la to puntuación y nivel
-    /done — unviar el últimu conxuntu de cambios
-    /list — ver los conxuntos de cambios elixibles
+      /task — ver la xera pa güei
+      /score — ver la to puntuación y nivel
+      /done — unviar el últimu conxuntu de cambios
+      /list — ver los conxuntos de cambios elixibles
 
-    /now — recordatoriu caldía a esta hora
-    /remind <hh:mm> — escoyer la hora del recordatoriu
-    /when — amosar la hora del recordatoriu
-    /stop — parar el recordatoriu
-    /whoami — ver el to nome d'OSM
-    /lang <code> — cambiar la llingua
+      /now — recordatoriu caldía a esta hora
+      /remind <hh:mm> — escoyer la hora del recordatoriu
+      /when — amosar la hora del recordatoriu
+      /stop — parar el recordatoriu
+      /whoami — ver el to nome d'OSM
+      /lang <code> — cambiar la llingua
 
-    Website: {web}
+      Website: {web}

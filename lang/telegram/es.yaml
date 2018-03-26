@@ -18,23 +18,23 @@ es:
   list_header: "Haz clic en el ID de un conjunto de cambios para enviarlo."
   n_points: "{} puntos"
   help: |-
-    Este programa te ayuda a editar OpenStreetMap todos los días.
+      Este programa te ayuda a editar OpenStreetMap todos los días.
 
-    Envía /start <code_from_website> para tener recordatorios diarios.
+      Envía /start <code_from_website> para tener recordatorios diarios.
 
-    Comandos:
+      Comandos:
 
-    /task — muestra la tarea para hoy
-    /score — muestra tu puntuación y nivel
-    /done — remite el último conjunto de cambios
-    /list — muestra los conjuntos de cambios disponibles
+      /task — muestra la tarea para hoy
+      /score — muestra tu puntuación y nivel
+      /done — remite el último conjunto de cambios
+      /list — muestra los conjuntos de cambios disponibles
 
-    /now — recordatorio diario a esta hora
-    /remind <hh:mm> — elige el momento para recibir el recordatorio
-    /when — muestra cuando se recibirá el recordatorio
-    /stop — detiene los recordatorios
+      /now — recordatorio diario a esta hora
+      /remind <hh:mm> — elige el momento para recibir el recordatorio
+      /when — muestra cuando se recibirá el recordatorio
+      /stop — detiene los recordatorios
 
-    /whoami — muestra tu nombre OSM
-    /lang <code> — cambiar idioma
+      /whoami — muestra tu nombre OSM
+      /lang <code> — cambiar idioma
 
-    Sitio web: {web}
+      Sitio web: {web}

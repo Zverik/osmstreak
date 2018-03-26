@@ -1,33 +1,48 @@
 pt_PT:
   bridge:
+    description: Muitas estradas em áreas rurais são desenhadas rapidamente e sem ligar a cruzamentos com ribeiros e rios. Encontre um local onde um mapeador se esqueceu de dividir uma estrada e etiquetar uma ponte, e faça isso por ele.
     title: Desenhar uma ponte
   stream:
-    title: Desenhar uma linha de água
+    description: Os rios são geralmente mapeados por todo o mundo, mas os ribeiros, riachos e similares são demasiados numerosos para os desenhar todos. Encontre um ribeiro (não uma vala de drenagem de águas pluviais) e adicione-o ao mapa.
+    title: Desenhar um ribeiro
   postcode:
+    description: Em alguns países, como a Rússia ou os EUA, pode encontrar um código postal numa base de dados pública. Noutros terá de o descobrir ou deduzir de fontes indiretas, como um site de uma loja. Encontre um código postal de um edifício qualquer que não o tenha e adicione-o.
     title: Adicionar um código postal
   bench:
-    title: Mapear um banco (assento)
+    description: Lembra-se quando passeou por um parque e existiam bancos? Tente lembrar-se da localização deles, uma vez que para esta tarefa terá de adicionar um banco de jardim.
+    title: Mapear um banco de jardim
   turn_restriction:
+    description: Encontre uma restrição de viragem (p.ex. proibido virar à esquerda) não mapeada no Mapillary ou outra fonte compatível com o OSM. Escolha uma localidade pequena se quiser. Mapeie a restrição de viragem.
     title: Adicionar uma restrição de viragem
   lit:
+    description: As cidades à noite são mais bonitas quando as estradas são iluminadas. Adicione ''lit=yes'' ou ''lit=no'' a umas poucas estradas, e depois veja-as coloridas [http://product.itoworld.com/map/69 neste mapa].
     title: Adicionar a iluminação de uma rodovia
   osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] é uma das populares aplicações OpenStreetMap para dispositivos Android, altamente configurável, mas um bocado complexo para algumas pessoas. Pode enviar nós (pontos) para o mapa. Instale o módulo "OSM Editing" e crie um nó num local. Leia [http://osmand.net/features?id=osm-editing-plugin a documentação] se estiver perdido na interface.'
     title: Utilizar OSMand
   improve_river:
+    description: "A maioria dos rios já foi mapeada. O problema é que foram feitos com imagens de satélite em baixa resolução. Agora pode fazer melhor: abra o JOSM, selecione um rio, pressione a tecla \"W\" e melhore o percurso do rio. Adicione pelo menos 10 nós a um ''waterway=river''."
     title: Melhorar um rio
   josm:
+    description: "Instale o editor JOSM, se ainda não o fez, e edite algo com ele. Recomendamos desenhar alguns edifícios:\n \nDescarregue uma parte do mapa e adicione uma camada de imagens de satélite, pressione a tecla \"A\" e clique num canto de um edifício. Então faça clique duplo num canto adjacente, fazendo uma linha. Então pressione a tecla \"X\" e arraste a linha para fora para fazer um retângulo. Finalmente, pressione as teclas \"Alt+A\" para adicionar ''building=yes'' e então envie as alterações."
     title: Editar com o JOSM
   fix:
+    description: 'O sumário/resumo/comentário do conjunto de alterações é importante. Mas não hoje: faça uma alteração e coloque no campo do sumário "fix". Apenas estas 3 letras, nada mais.'
     title: Pequena correção
   gomap:
-    title: Vá Mapear!!!
+    description: 'Enquanto que a plataforma Android tem muitos editores do OpenStreetMap, o iOS tem falta de algumas alternativas. O melhor editor para ele tem sido o [https://itunes.apple.com/app/id592990211 Go Map!!] (com pontos de exclamação), mas a última atualização foi em 2015. No entanto funciona: use-o fazendo uma edição com ele.'
+    title: Go Map!!!
   giveway:
+    description: Existe uma etiqueta especial para mapear o sinal triangular "ceder prioridade". É [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], obviamente. Encontre um sinal desses, quer usando o Mapillary ou a sua memória e coloque um nó numa estrada onde se encontra esse sinal, adicionando a etiqueta ao nó. Adicione também a etiqueta priority_road à estrada principal com prioridade.
     title: Sinalização de perda de prioridade
   note:
+    description: Ative a camada de erros reportados no site do OpenStreetMap e encontre um erro não corrigido que possa corrigir. Feche o erro reportado.
     title: Solucionar uma Nota
   around_the_world:
+    description: Vamos criar um conjunto de alterações com uma área grande do mapa. Mapeia primeiro algo no [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Sul do Chile], e depois em [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
     title: À volta do Mundo em Cinco Minutos
   highway:
+    description: Isto é muitas vezes a primeira coisa que as pessoas fazem quando se juntam ao OpenStreetMap. Encontra uma estrada por mapear e adiciona-a ao mapa.
     title: Mapear uma rodovia
   subway:
     title: Solucionar metro

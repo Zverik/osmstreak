@@ -18,23 +18,23 @@ ja:
   list_header: "変更セットIDをクリックで指定: "
   n_points: "{}ポイント"
   help: |-
-    このボットは毎日のOpenStreetMap編集を支援します。
+      このボットは毎日のOpenStreetMap編集を支援します。
 
-    毎日リマインド通知を送る場合は /start <code_from_website> と入力してください。
+      毎日リマインド通知を送る場合は /start <code_from_website> と入力してください。
 
-    コマンド:
+      コマンド:
 
-    /task — 本日のタスクを表示
-    /score — スコアとレベルを表示
-    /done — 直近の変更セットを表示
-    /list — タスク対象の変更セットを表示
+      /task — 本日のタスクを表示
+      /score — スコアとレベルを表示
+      /done — 直近の変更セットを表示
+      /list — タスク対象の変更セットを表示
 
-    /now — 現在の時刻で毎日リマインドを送る
-    /remind <hh:mm> — リマインドの時間を指定
-    /when — リマインド設定時間を表示
-    /stop — リマインド設定を停止
+      /now — 現在の時刻で毎日リマインドを送る
+      /remind <hh:mm> — リマインドの時間を指定
+      /when — リマインド設定時間を表示
+      /stop — リマインド設定を停止
 
-    /whoami — OSMユーザ名を表示
-    /lang <code> — 言語を切り替え
+      /whoami — OSMユーザ名を表示
+      /lang <code> — 言語を切り替え
 
-    ウェブサイト: {web}
+      ウェブサイト: {web}

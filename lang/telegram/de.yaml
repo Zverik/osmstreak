@@ -18,23 +18,23 @@ de:
   list_header: "Klicke auf einen Changeset um ihn einzureichen."
   n_points: "{} Punkte"
   help: |-
-    Dieser Bot hilft dir, jeden Tag die OpenStreetMap zu bearbeiten.
+      Dieser Bot hilft dir, jeden Tag die OpenStreetMap zu bearbeiten.
 
-    Sende /start <code_from_website> um eine tägliche Erinnerung zu erhalten.
+      Sende /start <code_from_website> um eine tägliche Erinnerung zu erhalten.
 
-    Befehle:
+      Befehle:
 
-    /task — zeigt die heutige Aufgabe
-    /score — zeigt deine Punkte und dein Level
-    /done — reicht deinen letzten Changeset ein
-    /list — zeigt alle für die Aufgabe berechtigten Changesets
+      /task — zeigt die heutige Aufgabe
+      /score — zeigt deine Punkte und dein Level
+      /done — reicht deinen letzten Changeset ein
+      /list — zeigt alle für die Aufgabe berechtigten Changesets
 
-    /now — erinnert jeden Tag zu dieser Zeit
-    /remind <hh:mm> — Zeit zum Erinnern wählen
-    /when — zeigt Erinnerungszeit
-    /stop — aufhören mit Erinnern
+      /now — erinnert jeden Tag zu dieser Zeit
+      /remind <hh:mm> — Zeit zum Erinnern wählen
+      /when — zeigt Erinnerungszeit
+      /stop — aufhören mit Erinnern
 
-    /whoami — zeigt deinen OSM-Namen
-    /lang <code> — Sprache wechseln
+      /whoami — zeigt deinen OSM-Namen
+      /lang <code> — Sprache wechseln
 
-    Website: {web}
+      Website: {web}

@@ -18,23 +18,23 @@ vi:
   list_header: "Nhấn chuột vào số bộ thay đổi để đăng nó:"
   n_points: "{} điểm"
   help: |-
-    Con bot này giúp bạn sửa đổi OpenStreetMap hằng ngày.
+      Con bot này giúp bạn sửa đổi OpenStreetMap hằng ngày.
 
-    Gửi /start <code_from_website> để nhận lời nhắc hằng ngày.
+      Gửi /start <code_from_website> để nhận lời nhắc hằng ngày.
 
-    Các lệnh:
+      Các lệnh:
 
-    /task — xem công việc cho hôm nay
-    /score — xem điểm số và cấp của bạn
-    /done — đăng bộ thay đổi mới nhất
-    /list — xem các bộ thay đổi thích hợp của bạn
+      /task — xem công việc cho hôm nay
+      /score — xem điểm số và cấp của bạn
+      /done — đăng bộ thay đổi mới nhất
+      /list — xem các bộ thay đổi thích hợp của bạn
 
-    /now — nhắc mỗi ngày vào giờ này
-    /remind <hh:mm> — chọn lúc giờ để nhắc nhở
-    /when — xem giờ nhắc nhở
-    /stop — ngừng nhắc nhở
+      /now — nhắc mỗi ngày vào giờ này
+      /remind <hh:mm> — chọn lúc giờ để nhắc nhở
+      /when — xem giờ nhắc nhở
+      /stop — ngừng nhắc nhở
 
-    /whoami — xem tên OSM của bạn
-    /lang <code> — thay đổi ngôn ngữ
+      /whoami — xem tên OSM của bạn
+      /lang <code> — thay đổi ngôn ngữ
 
-    Trang chủ: {web}
+      Trang chủ: {web}

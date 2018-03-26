@@ -18,22 +18,22 @@ it:
   list_header: "Clicca sull'id di un changeset per inviarlo:"
   n_points: "{} punti"
   help: |-
-    Questo bot ti aiuta a editare OpenStreetMap ogni giorno.
+      Questo bot ti aiuta a editare OpenStreetMap ogni giorno.
 
-    Invia /start <code_from_website>per ottenere dei promemoria giornalieri.
+      Invia /start <code_from_website>per ottenere dei promemoria giornalieri.
 
-    Comandi:
+      Comandi:
 
-    /task — mostra il task di oggi
-    /score — mostra il punteggio e il livello
-    /done — invia l'ultimo changeset
-    /list — mostra i changesets idonei
+      /task — mostra il task di oggi
+      /score — mostra il punteggio e il livello
+      /done — invia l'ultimo changeset
+      /list — mostra i changesets idonei
 
-    /now — Mostra il promemoria ogni giorno all'ora corrente
-    /remind <hh:mm> — Scegli il momento in cui inviare il promemoria
-    /stop — Interrompi i promemoria
+      /now — Mostra il promemoria ogni giorno all'ora corrente
+      /remind <hh:mm> — Scegli il momento in cui inviare il promemoria
+      /stop — Interrompi i promemoria
 
-    /whoami — Mostra il tuo nome utente OSM
-    /lang <code> — Cambia lingua
+      /whoami — Mostra il tuo nome utente OSM
+      /lang <code> — Cambia lingua
 
-    Website: {web}
+      Website: {web}

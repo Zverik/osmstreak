@@ -1,0 +1,78 @@
+pt_PT:
+  title: "OSM Streak"
+  please_sign_in: "Para controlar o seu progresso e obter tarefas mais avançadas, [inicie sessão] com a sua conta do OpenStreetMap."
+  connect: Ligar
+  login: Iniciar sessão
+  help: Sobre
+  thanks: "Obrigado por editar o OpenStreetMap hoje!"
+  submit_changeset: "Submeta um URL do conjunto de alterações para a tarefa ou escolha de uma lista"
+  verify: Verificar
+  update_list: "Atualizar"
+  no_changesets: "Não tem editado ultimamente no OpenStreetMap."
+  time_left: "Tempo restante para submenter um conjunto de alterações"
+  connect_intro: "Obtenha notificações para novas tarefas e submeta conjunto de alterações pelo Telegram ou por email."
+  telegram_start: "clique para iniciar o robô"
+  subscribe: Subscrever
+  unsubscribe: Anular subscrição
+  time:
+    n_hours: "{} horas"
+    hour: "uma hora"
+    n_minutes: "{} minutos"
+    today: "Hoje"
+    yesterday: "Ontem"
+  validation:
+    wrong_id: "ID do conjunto de alterações errado: {}."
+    wrong_date: "A data doconjunto de alterações está errada."
+    api_error: "Erro ao ligar à API do OSM."
+    api_strange: "A API do OSM retornou algo estranho para o XML raiz."
+    not_yours: "Por favor adicione apenas os seus conjuntos de alterações."
+    no_task: "Não visitou o site OSM Streak em {}"
+    has_later_changeset: "Desculpe, já tem um conjunto de alterações registado nesse ou após esse dia. "
+    old_changeset: "Este conjunto de alterações é demasiado antigo, por favor faça outra edição."
+    changeset_noted: "Conjunto de alterações registado, obrigado! Foi {} seguidas."
+    extra_point: "Um ponto extra pr completar a tarefa."
+    gain_level: "Parabéns por ganhar um nível!"
+  email:
+    hi: 'Olá {},'
+    new_task: 'Quer fazer algum mapeamento e continuar a sua série? Aqui está uma ideia:'
+    to_submit: 'Quando terminar dirija-se a {} e clique no último conjunto de alterações.'
+    bye: 'O seu,'
+  about:
+    what_is_this: O que é isto
+    what_is_this_content: >-
+        OSM Streak faz com que faça pequenas tarefas para o OpenStreetMap todos os
+        dias. O objetivo é mapear todos os dias pelo menos durante um ano. As tarefas
+        são pequenas, 5 minutos cada uma. O objetivo é mapear todos os dias, não mapear
+        o máximo que puder, A persistência compensa.
+    points: Pontos
+    points_content: >-
+        Para cada submissão você obtém pontos. No início obtém 1 ponto, no terceiro
+        dia seguido obtém 2 pontos para cada tarefa, e por aí fora. Se continuar a
+        mapear todos os dias seguidos durante um mês obterá 5 pontos por um conjunto
+        de alterações.
+    tasks: Tarefas
+    tasks_content1: >-
+        Não tem de fazer exatamente o que a página diz. Qualquer conjunto de alterações
+        não vazio será aceite. Mas se seguir a descrição da tarefa, terá um ponto
+        extra.
+    tasks_content2: >-
+        Não deixe que a tarefa intimide. Se pensa que é demasiado difícil, mapeie
+        outra coisa qualquer  — por exemplo um edifício. O objetivo é mapear todos
+        os dias, não completar todas as tarefas.
+    stars: Estrelas
+    stars_content: >-
+        Com pontos também ganha níveis. Começa no nível 1: o número de estrelas é
+        o nível em que está. Em poucos dias estará no nível 2. Novos níveis abrem
+        novas tarefas. Aqui estão os limiares de pontos para ganhar níveis.
+    stars_level2: nível 2 (praticamente 5 dias consecutivos)
+    stars_level3: nível 3 (três semanas)
+    stars_level4: nível 4 (três meses)
+    stars_level5: nível 5 (praticamente um ano)
+    stars_fame: >-
+        Os mapeadores que obtenham o último nível entram na sala da fama. Podem continuar
+        a sua série após isso, claro. Para cada conjunto de alterações nesse momento
+        obterão 16 pontos.
+    leaderboard: Tabela classificativa
+    leaderboard_content: >-
+        Não existe uma tabela classificativa. Não saberá quem está à sua frente ou
+        atrás. Isto é um desafio, não uma competição.
