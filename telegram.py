@@ -126,6 +126,7 @@ class Player(telepot.helper.ChatHandler):
                 if change['age'] > 0:
                     self.sender.sendMessage(self.t('have_old_changesets'))
                     self._list_changesets()
+                    return
             # Force create task for users who don't want to bother
             ch.get_or_create_task_for_user(user)
             self._register_changeset(changesets[0]['id'])
