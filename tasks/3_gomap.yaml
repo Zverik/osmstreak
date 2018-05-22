@@ -2,8 +2,7 @@ title: Go Map!!!
 emoji: 🏃‍
 description: >-
   While Android platform has many OSM editors, iOS is lacking. The best OSM editor
-  for it has been [https://itunes.apple.com/app/id592990211 Go Map!!] (with exclamation
-  marks), but it has been last updated in 2015. Still, it works: give it a try,
-  make an edit with it.
+  for it is [https://itunes.apple.com/app/id592990211 Go Map!!] (with exclamation
+  marks), and it has come back from abandonware with an update for iOS11 and iPhone X. No more excuses not to map on the go - so go map!!
 test:
   changeset: "created_by=Go Map*"
