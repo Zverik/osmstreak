@@ -80,4 +80,4 @@ en:
         This is a challenge, not a competition.
       contribute: Contribute
       contribute_content: >-
-        OSM Streak is open source. You can contribute on {}.
+        OSM Streak is open source. You can contribute to it <a href="https://github.com/Zverik/osmstreak/">on GitHub</a>, for example by suggesting new challenges!
