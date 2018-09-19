@@ -77,9 +77,27 @@ ast_ES:
   coastline:
     description: Munches llinies costeres importáronse cuantayá dixitalizando dende semeyes de satélite de baxa resolución. Puedes ayudar a ameyorales definitivamente'n dellos llugares. Amiesta polo menos 10 nodios na llinia de costa.
     title: Ameyora una costa
+  haiti:
+    description: 'En 2010 hebo un terremotu catastróficu a 25 km al oeste de la capital d''Haití, Puertu Príncipe. Eso dio principiu al Equipu Humanitariu de Cartografía, gracies al que se fexo''l mapa de la capital a la perfección. Pero non nel restu del país: alcuentra un edificiu n''Haití que nun tea nel mapa y trázalu.'
+    title: Visitar Haití
   railway:
     description: De vezu los ferrocarriles reciben menos atención que les estraes, ¡pero nun son menos importantes! Pon nel mapa una llinia de ferrocarril. Si nun atopes ónde, tenta amestar les víes d'apartaderu que falten nes estaciones.
     title: Dibuxa un ferrocarril
+  turnlanes:
+    description: Llei la descripción de [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes], busca una interseición con carriles visibles na imaxe de fondu o en Mapillary y mapea toles carriles de xiru nos cuatro llaos de la interseición.
+    title: Carriles de xiru
+  farmland:
+    description: Alcuentra una zona de cultivu o prau (tenta nel centru de los EEXX o nel Oeste de Rusia) y añádela al mapa con [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland].
+    title: Pon nel mapa una tierra de llabor
+  switch:
+    description: Cuando s'amiesten dos víes de tren, fácenlo con un cambiu d'aguyes. Busca una estación y añade polo menos dos etiquetes [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] a los nodios onde se coneuten les víes.
+    title: Fai un cambiu d'aguyes
+  mapsme:
+    description: MAPS.ME nun ye sólo un visor y navegador multiplataforma del mapa. Puedes editar el mapa con él. Simplemente pulsia nun puntu d'interés, o seleiciona «Añadir un llugar» nel menú. Tenta eso.
+    title: Usa MAPS.ME
   sidewalk:
     description: Una cera ye un camín cabo una estrada. Pa un meyor enrutamientu de peatones, alcuentra una estrada ensin cera nel mapa, y dibuxa un camín a cada llau (comprobando con una imaxe) y amiesta una etiqueta ''footway=sidewalk''. Ci amiestes un pasu de peatones como camín, usa ''highway=footway + footway=crossing''.
     title: Amiesta una cera
+  delete:
+    description: Nun ye abegoso atopar daqué pa poner nel mapa, pero ¿puedes alcontrar daqué pa borrar? Borra 5 elementos (pero sólo si tán anticuaos o son redundantes).
+    title: ¡Desaniciar!

@@ -55,7 +55,24 @@ ast_ES:
         Nun tienes por qué facer exautamente lo que te diz la páxina. Cualquier conxuntu
         de cambios que nun tea vacíu va aceutase. Pero si sigues la descripción de
         la xera, recibirás un puntu estra.
+    tasks_content2: >-
+        Nun dexes que la xera t'asuste. Si crees que ye demasiao abegosa, fai cualquier
+        otra cosa, por casu, un edificiu. L'oxetivu ye trabayar nel mapa caldía, non
+        completar toles xeres.
+    stars: Estrelles
+    stars_content: >-
+        Colos puntos tamién ganes niveles. Principies nel nivel 1: el númberu d'estrelles
+        ye'l nivel nel que ts. En dellos díes pasarás al nivel 2. Los nuevos niveles
+        desbloquien nueves xeres. Equí tan les llendes de puntos pa ganar niveles
     stars_level2: nivel 2 (unos cinco díes siguíos)
     stars_level3: nivel 3 (trés selmanes)
     stars_level4: nivel 4 (trés meses)
     stars_level5: nivel 5 (como un añu)
+    stars_fame: >-
+        Los mapeadores qu'aportien al últimu nivel entren nel salón de la fama. Pueden
+        siguir col so filu de mapéu después de eso, por supuesto. Para cada conxuntu
+        de cambios dende esi momentu recibirán 16 puntos.
+    leaderboard: Tabla de clasificación
+    leaderboard_content: >-
+        Nun hai tabla de clasificación. Nun sabrás quién ta delantre de ti y quién
+        ta detrás. Esto ye un desafíu, non una competición.

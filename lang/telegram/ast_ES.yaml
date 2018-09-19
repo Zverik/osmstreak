@@ -15,6 +15,7 @@ ast_ES:
   no_such_lang: "Nun hai esa llingua. Les que tienen encontu son: {}."
   time_left: "Tiempu restante"
   post_changeset: "Unvia /done cuando acabes, o un id de conxuntu de cambios si hai munchos."
+  have_old_changesets: "Tienes conxuntos de cambios antiguos ensin unviar, seleiciona unu."
   list_header: "Pulsia nun conxuntu de cambios pa unvialu:"
   n_points: "{} puntos"
   help: |-

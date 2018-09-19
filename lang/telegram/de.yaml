@@ -15,6 +15,7 @@ de:
   no_such_lang: "Sprache nicht verfügbar. Unterstützt werden: {}."
   time_left: "Verfügbare Zeit"
   post_changeset: "Sende /done wenn du fertig bist oder einfach eine Changeset ID."
+  have_old_changesets: "Du hast alte, nicht eingereichte Changesets, bitte wähle eines."
   list_header: "Klicke auf einen Changeset um ihn einzureichen."
   n_points: "{} Punkte"
   help: |-

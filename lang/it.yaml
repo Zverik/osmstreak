@@ -8,7 +8,7 @@ it:
   submit_changeset: "Invia l'URL di un changeset per il task, oppure scegli da una lista"
   verify: Verifica
   update_list: "aggiorna"
-  no_changesets: "Ultimamente non hai fatto editing di OpenStreetMap."
+  no_changesets: "Ultimamente non hai fatto modifiche su OpenStreetMap."
   time_left: "Tempo rimasto per inviare un changeset"
   connect_intro: "Ricevi notifiche per nuovi task e invia i changeset via Telegram o e-mail."
   telegram_start: "clicca per avviare il bot"
@@ -28,13 +28,13 @@ it:
     not_yours: "Si prega di aggiungere solo i propri changesets."
     no_task: "Non hai visitato il sito di OSM Streak il giorno {}"
     has_later_changeset: "Ci spiace, ma hai già un changeset registrato per quel giorno o per un giorno successivo."
-    old_changeset: "Il changeset è troppo vecchio. Fai per favore un altro edit."
+    old_changeset: "Il changeset è troppo vecchio. Fai per favore un'altra modifica."
     changeset_noted: "Changeset registrato, grazie! Ne hai fatti {} in fila."
     extra_point: "Un punto aggiuntivo per aver completato il task."
     gain_level: "Contratulazioni per aver guadagnato un livello!"
   email:
     hi: 'Ciao {},'
-    new_task: 'Vuoi mappare qualcosa e continuare il tuo streak ? Qui c''è un''idea:'
+    new_task: 'Vuoi mappare qualcosa e continuare il tuo streak? Qui c''è un''idea:'
     to_submit: 'Quando hai finito, vai a {} e clicca sull''ultimo changeset.'
     bye: 'I tuoi,'
   about:

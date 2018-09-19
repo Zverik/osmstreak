@@ -1,0 +1,78 @@
+pl:
+  title: "OSM Streak"
+  please_sign_in: "Aby śledzić swój postęp i wykonać inne zadania, [zrejestruj się] używając swojego konta OpenStreetMap."
+  connect: Połącz
+  login: Zaloguj się
+  help: O
+  thanks: "Dziękujemy za dzisiejsze edytowanie OpenStreetMap!"
+  submit_changeset: "Wyślij link do zestawu zmian dla zadania lub wybierz z listy"
+  verify: Weryfikuj
+  update_list: "aktualizuj"
+  no_changesets: "Nie edytowałeś ostatnio OpenStreetMap."
+  time_left: "Pozostały czas na wysłanie zestawu zmian"
+  connect_intro: "Otrzymuj powiadomienia o nowych zadaniach i wysyłaj zestawy zmian w aplikacji Telegram lub przez e-mail."
+  telegram_start: "kliknij, aby uruchomić bota"
+  subscribe: Subskrybuj
+  unsubscribe: Usuń subskrypcję
+  time:
+    n_hours: "{} godzin"
+    hour: "godzina"
+    n_minutes: "{} minut"
+    today: "Dzisiaj"
+    yesterday: "Wczoraj"
+  validation:
+    wrong_id: "Zły id zestawu zmian: {}."
+    wrong_date: "Data zestawu zmian jest błędna."
+    api_error: "Błąd połączenia z API OSM."
+    api_strange: "API OSM zwróciło coś dziwnego dla głównego xml."
+    not_yours: "Proszę dodawać tylko swoje zestawy zmian."
+    no_task: "Nie odwiedziłeś strony OSM Streak {}"
+    has_later_changeset: "Przepraszamy, ale masz już zarejestrowany zestaw zmian tego dnia lub po nim."
+    old_changeset: "Zestaw zmian jest zbyt stary, proszę zrób inną edycję."
+    changeset_noted: "Zestaw zmian zapisany, dziękujemy! To był {} z kolei."
+    extra_point: "Dodatkowy punkt za wykonanie zadania."
+    gain_level: "Gratulacje za zdobycie poziomu!"
+  email:
+    hi: 'Cześć {},'
+    new_task: 'Chcesz trochę pomapować i kontynuować swoją serię? Tu jest pomysł:'
+    to_submit: 'Kiedy to zrobisz, przejdź do {} i kliknij na ostatnim zestawie zmian.'
+    bye: 'Twój, '
+  about:
+    what_is_this: Co to jest
+    what_is_this_content: >-
+        OSM Streak daje Ci codziennie małe zadania do zrobienia na OpenStreetMap.
+        Celem jest mapowanie codziennie przez przynajmniej rok. Zadania są krótkie,
+        każde na pięć minut. Chodzi o to, by mapować codziennie, a nie tyle ile zdołasz.
+        Wytrwałość się opłaca.
+    points: Punkty
+    points_content: >-
+        Za każde zadanie dostajesz punkty. Na początek będziesz dostawać jeden punkt,
+        od trzeciego dnia z rzędu będziesz dostawać dwa punkty za każde zadanie, i
+        tak dalej. Jeżeli uda Ci się mapować przez miesiąc bez przerwy, będziesz dostawać
+        pięć punktów za każdy zestaw zmian.
+    tasks: Zadania
+    tasks_content1: >-
+        Nie musisz robić dokładnie tego, co jest napisane na stronie. Każdy niepusty
+        zestaw zmian będzie zaakceptowany. Ale jeżeli zrobisz coś zgodnie z zadaniem
+        dostaniesz dodatkowy punkt.
+    tasks_content2: >-
+        Nie pozwól, aby zadanie Cię przestraszyło. Jeżeli myślisz, że jest zbyt trudne,
+        mapuj coś innego — na przykład, budynek. Celem jest codzienne mapowanie, a
+        nie wypełnienie wszystkich zadań.
+    stars: Gwiazdki
+    stars_content: >-
+        Razem z punktami, możesz też dobywać poziomy. Zaczynasz na poziomie 1: liczba
+        gwiazdek pokazuje Twój poziom. W ciągu kilku dni zdobędziesz poziom 2. Nowe
+        poziomy, to więcej zadań. Oto progi punktowe dla kolejnych poziomów
+    stars_level2: poziom 2 (mniej więcej pięć kolejnych dni)
+    stars_level3: poziom 3 (trzy tygodnie)
+    stars_level4: poziom 4 (trzy miesiące)
+    stars_level5: poziom 5 (mniej więcej rok)
+    stars_fame: >-
+        Maperzy, którzy osiągną ostatni poziom wchodzą do galerii sław. Oczywiście
+        mogą kontynuować swoją serię mapowania. Od tej pory za każdy zestaw zmian
+        otrzymają 16 punktów.
+    leaderboard: Tablica wyników
+    leaderboard_content: >-
+        Nie ma tablicy wyników. Nie dowiesz się, kto jest przed Tobą, a kto za. To
+        jest wyzwanie, a nie rywalizacja.

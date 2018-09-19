@@ -1,0 +1,41 @@
+pl:
+  only_text: "Przepraszam, akceptuję tylko wiadomości tekstowe."
+  no_code: "Idź do {0}/ustawienia i naciśnij link telegrama, następnie kliknij  tutaj \"Start\"."
+  wrong_code: "Twój kod wygląda na błędny."
+  welcome: "Witaj {}!"
+  already_logged: "Jesteś już zalogowany jako {}."
+  you_are: "Jesteś {}."
+  which_utc: "O której godzinie UTC chciałbyś mapować?"
+  task_complete: "Dziękujemy za dzisiejsze edytowanie OpenStreetMap!"
+  no_changesets: "Nie edytowałeś ostatnio OpenStreetMap."
+  unknown_cmd: "Nieznane polecenie. Wyślij /help, aby otrzymać listę."
+  no_remind: "Nie będę Cię dręczyć. Użyj /now lub /remind, aby ustawić codzienne przypomnienie."
+  remind_on: "Będę wysyłać Ci nowe zadanie codziennie o {} UTC. Wyślij /stop jeżeli się znudzisz."
+  lang_set: "Będę pisał do Ciebie po polsku."
+  no_such_lang: "Nie ma takiego języka. Wspierane są: {}."
+  time_left: "Pozostały czas"
+  post_changeset: "Wyślij /done, kiedy skończysz lub numery id zestawów zmian, jeśli jest ich kilka."
+  have_old_changesets: "Masz stare, niewysłane zestawy zmian. Wybierz proszę jeden."
+  list_header: "Kliknij na id zestawu zmian, aby go wysłać:"
+  n_points: "{} punktów"
+  help: |-
+      Ten bot pomoże Ci codziennie edytować OpenStreetMap.
+
+      Wyślij /start <code_from_website>, aby otrzymywać codzienne przypomnienia.
+
+      Polecenia:
+
+      /task — pokaż dzisiejsze zadanie
+      /score — pokaż Twój wynik i poziom
+      /done — wyślij ostatni zestaw zmian
+      /list — pokaż nadające się zestawy zmian
+
+      /now — przypomnij codziennie o tej porze
+      /remind <hh:mm> — wybierz godzinę przypomnień
+      /when — pokaż godzinę przypomnień
+      /stop — wyłącz przypomnienia
+
+      /whoami — pokaż Twoją nazwę z OSM
+      /lang <code> — zmień język
+
+      Strona: {web}
