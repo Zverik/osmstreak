@@ -4,6 +4,7 @@ pt_PT:
   welcome: "Bem-vindo {}!"
   already_logged: "Já estás autenticado como {}."
   you_are: "És {}."
+  which_utc: "Em que tempo UTC quer mapear?"
   task_complete: "Obrigado por editares hoje no OpenStreetMap!"
   no_changesets: "Não tens editado no OpenStreetMap ultimamente."
   unknown_cmd: "Comando desconhecido. Por favor usa /help para obter a lista."
@@ -16,3 +17,24 @@ pt_PT:
   have_old_changesets: "Tens conjuntos de alterações antigos por enviar, por favor escolhe um."
   list_header: "Clica num ID de um conjunto de alterações para o enviar:"
   n_points: "{} pointos"
+  help: |-
+      Este robô ajuda-o a editar o OpenStreetMap todos os dias.
+
+      Envie /start <código_do_site> para obter lembretes diários.
+
+      Comandos:
+
+      /task — mostrar a tarefa para hoje
+      /score — mostrar a sua pontuação e nível
+      /done — enviar o último conjunto de alterações
+      /list — mostrar conjunto de alterações elegíveis
+
+      /now — lembrar a cada dia do tempo atual
+      /remind <hh:mm> — escolher hora de lembrar
+      /when — mostrar tempo restante
+      /stop — parar de lembrar
+
+      /whoami — mostrar o seu nome no OSM
+      /lang <code> — alterar idioma
+
+      Website: {web}

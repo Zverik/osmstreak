@@ -1,22 +1,22 @@
 it:
   bridge:
-    description: Molte strade in aree rurali sono disegnate in modo veloce senza tener conto degli attraversamenti du ruscelli e fiumi. Trova un posto dove un mappatore ha dimenticato di suddividere la strada in prossimità di un corso d'acqua e aggiungere un ponte e fallo tu al suo posto.
+    description: Molte strade in aree rurali sono disegnate in modo veloce senza tener conto degli attraversamenti di ruscelli e fiumi. Trova un posto dove un mappatore ha dimenticato di suddividere la strada in prossimità di un corso d'acqua e aggiungere un ponte e fallo tu al suo posto.
     title: Disegna un ponte
   stream:
-    description: I fiumi sono normalmente mappati in tutto il globo, ma i torrenti e i ruscelli sono veramente tanti. Trova un torrente o un ruscello (non un fosso) e mappalo.
-    title: Disegna un ruscello o un torrente
+    description: I fiumi sono normalmente mappati in tutto il globo, ma i ruscelli sono veramente tanti. Trova un ruscello (non un fosso) e mappalo.
+    title: Disegna un ruscello
   postcode:
     description: In alcune nazioni, come la Russia o gli USA, puoi trovare i codici postali in database pubblici. In altri posti o lo sai e basta oppure lo deduci da fonti indirette, come ad esempio dal sito di un negozio. Trova un CAP per gli edifici che non ce l'hanno e mappalo.
     title: Aggiungi un CAP
   bench:
     description: Ricordi quella volta che hai fatto una passeggiata nel parco e hai visto alcune panchine? Cerca di ricordare la loro posizione perché per questo task devi aggiungere una panchina.
-    title: Mappa una Panchina
+    title: Mappa una panchina
   turn_restriction:
     description: Trova una restrizione di svolta su Mapillary o altre fonti compatibili con OSM. Scegli una piccola città. Mappa la restrizione.
     title: Aggiungi una restrizione alla svolta
   lit:
     description: Le città di notte sono più romantiche se le strade sono illuminate. Aggiungi "lit=yes" o "lit=no" ad alcune strade e poi guardale colorarsi [http://product.itoworld.com/map/69 su questa mappa].
-    title: Mappa l'Illuminazione Stradale
+    title: Mappa l'illuminazione stradale
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] è una della applicazioni per OpenstreetMap sui dispositivi Android, molto configurabile anche se un po'' complicata per alcuni. Ti può aiutare a caricare dei punti sulla mappa. Installa il componente aggiuntivo "Modifiche OSM" e crea un punto da qualche parte. Leggi [http://osmand.net/features?id=osm-editing-plugin la documentazione] se ti perdi nell''interfaccia.'
     title: Usa OsmAnd
