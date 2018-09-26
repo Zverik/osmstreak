@@ -29,7 +29,7 @@ it:
     no_task: "Non hai visitato il sito di OSM Streak il giorno {}"
     has_later_changeset: "Ci spiace, ma hai già un changeset registrato per quel giorno o per un giorno successivo."
     old_changeset: "Il changeset è troppo vecchio. Fai per favore un'altra modifica."
-    changeset_noted: "Changeset registrato, grazie! Ne hai fatti {} in fila."
+    changeset_noted: "Changeset registrato, grazie! Ne hai fatti {} di fila."
     extra_point: "Un punto aggiuntivo per aver completato il task."
     gain_level: "Contratulazioni per aver guadagnato un livello!"
   email:
