@@ -1,5 +1,5 @@
 de:
-  only_text: "Entschuldigung, nur Textnachrichten werden akzeptiert."
+  only_text: "Entschuldigung, ich akzeptiere nur Textnachrichten ;-)."
   no_code: "Bitte gehe zu {0}/den Einstellungen und klicke auf den Telegram-Link. Komm dann wieder hierher zurück und klicke auf \"Start\"."
   wrong_code: "Dein Code scheint falsch zu sein."
   welcome: "Willkommen, {}!"
@@ -11,15 +11,15 @@ de:
   unknown_cmd: "Unbekannter Befehl. Bitte sende /help um die Liste zu bekommen."
   no_remind: "Ich werde dich nicht stören. Benutze /now oder /remind um eine tägliche Erinnerung zu speichern"
   remind_on: "Ich werde dir eine neue Aufgabe jeden Tag um {} UTC senden. Sende /stop falls es dich stören sollte."
-  lang_set: "Ich werde dir auf Englisch schreiben."
-  no_such_lang: "Sprache nicht verfügbar. Unterstützt werden: {}."
+  lang_set: "Ich werde dir auf deutsch schreiben."
+  no_such_lang: "Gib eine der Abkürzungen ein. Unterstützt werden: {}."
   time_left: "Verfügbare Zeit"
   post_changeset: "Sende /done wenn du fertig bist oder einfach eine Changeset ID."
   have_old_changesets: "Du hast alte, nicht eingereichte Changesets, bitte wähle eines."
   list_header: "Klicke auf einen Changeset um ihn einzureichen."
   n_points: "{} Punkte"
   help: |-
-      Dieser Bot hilft dir, jeden Tag die OpenStreetMap zu bearbeiten.
+      Dieser Bot hilft dir, jeden Tag OpenStreetMap zu bearbeiten.
 
       Sende /start <code_from_website> um eine tägliche Erinnerung zu erhalten.
 

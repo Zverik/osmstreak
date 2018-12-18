@@ -16,7 +16,7 @@ it:
   time_left: "Tempo rimanente"
   post_changeset: "Invia /done quando hai finito, oppure l'id di un gruppo di modifiche se ce ne sono tanti"
   have_old_changesets: "Hai vecchi gruppi di modifiche non inviati; per favore scegline uno."
-  list_header: "Clicca sull'id di un changeset per inviarlo:"
+  list_header: "Clicca sull'id di un gruppo di modifiche per inviarlo:"
   n_points: "{} punti"
   help: |-
       Questo bot ti aiuta a editare OpenStreetMap ogni giorno.
@@ -27,8 +27,8 @@ it:
 
       /task — mostra il task di oggi
       /score — mostra il punteggio e il livello
-      /done — invia l'ultimo changeset
-      /list — mostra i changesets idonei
+      /done — invia l'ultimo gruppo di modifiche
+      /list — mostra i gruppi di modifiche idonei
 
       /now — Mostra il promemoria ogni giorno all'ora corrente
       /remind <hh:mm> — Scegli il momento in cui inviare il promemoria

@@ -1,5 +1,6 @@
 pt_PT:
   only_text: "Desculpe, a aceitar apenas mensagens de texto."
+  no_code: "Por favor aceda a {0}/settings e pressione no link telegram, e clique em \"Começar\" aqui."
   wrong_code: "O teu código parece estar errado."
   welcome: "Bem-vindo {}!"
   already_logged: "Já estás autenticado como {}."

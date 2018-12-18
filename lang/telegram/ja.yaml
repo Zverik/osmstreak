@@ -15,6 +15,7 @@ ja:
   no_such_lang: "対象の言語翻訳がありません。サポート対象言語: {}"
   time_left: "残り時間"
   post_changeset: "完了したら /doneと入力するか、複数回行った場合は変更セットIDを入力してください。"
+  have_old_changesets: "未登録の古い変更セットがあります。1つを選んでください。"
   list_header: "変更セットIDをクリックで指定: "
   n_points: "{}ポイント"
   help: |-
