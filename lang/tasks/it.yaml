@@ -72,7 +72,7 @@ it:
     description: 'Apri [https://tasks.hotosm.org/ HOT Tasking Manager]  e scegli un task attivo a caso. All''interno seleziona un rettangolo giallo e fai una validazione. Nota come un mappatore principiante mappa gli edifici, ragionaci su un po'' e quindi mettili a posto: raddrizza i lati e migliora la forma. Un paio bastano.'
     title: Metti a posto un edificio
   lamps:
-    description: Fuori fa buio? Vedi una strada illuminata da un lampione? Siamo abbastanza sicuri che quel lampione non sia mappato. Aggiungi almeno due [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp lampioni].
+    description: Fuori fa buio? Vedi una strada illuminata da un lampione? Siamo abbastanza sicuri che quel lampione non sia mappato. Aggiungi almeno due [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp lamipioni].
     title: Pianta un Lampione
   coastline:
     description: Molte linee di costa sono state importate molto tempo fa da immagini satellitari di bassa risoluzione. Puoi sicuramente migliorarla in alcuni luoghi. Aggiungi almeno 10 nodi ad una linea di costa.
