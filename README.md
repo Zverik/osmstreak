@@ -19,4 +19,4 @@ Translations can be done in transifex: https://www.transifex.com/openstreetmap/o
 
 ## License ##
 
-OSM Streak is released under the MIT License
+OSM Streak is released under the MIT license
