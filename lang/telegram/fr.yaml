@@ -1,5 +1,6 @@
 fr:
   only_text: "Désolé, n'accepte que les messages texte."
+  no_code: "Allez dans {0}/paramètres and appuyez sur le lien telegram. Puis cliquer sur le bouton \"Démarrer\" ici."
   wrong_code: "Votre code semble faux."
   welcome: "Bienvenue {}!"
   already_logged: "Vous êtes déjà connecté en tant que {}."
@@ -13,4 +14,28 @@ fr:
   lang_set: "Je vais vous écrire en anglais."
   no_such_lang: "Pas un tel langage. les langues pris en charge sont: {}."
   time_left: "Temps restant"
+  post_changeset: "Envoyer /done quand vous avez terminé, ou envoyer l'id d'un changeset."
+  have_old_changesets: "Vous avez de vieux changeset non soumis, choisissez en un."
+  list_header: "Cliquer sur l'id d'un changeset pour vous y abonner."
   n_points: "{} points"
+  help: |-
+      Ce bot vous aide à enrichir OSM tous les jours.
+
+      Envoyer /start <code_from_website> pour avoir des rappels tous les jours
+
+      Commandes :
+
+      /task - affiche la tâche du jour
+      /score - affiche votre score et votre niveau
+      /done - soumet le dernier changeset
+      /list - montre vos changeset éligibles
+
+      /now - avoir un rappel tous les jours à cette heure-ci
+      /remind <hh:mm> - choisir l'heure d'envoi du rappel
+      /when - affiche l'heure d'envoi du rappel
+      /stop - arrête l'envoi de rappels
+
+      /whoami - affiche votre login OSM
+      /lang <code> - changer de langue
+
+      Site web : {web}

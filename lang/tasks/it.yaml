@@ -45,7 +45,7 @@ it:
     description: Questa è spesso la prima cosa che viene fatta da chi si iscrive a OpenStreetMap. Trova una strada vicino a te non ancora tracciata e aggiungila alla mappa
     title: Mappa una strada
   subway:
-    description: Per questa attività devi conoscere lo schema [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2]. Vai sul sito [https://osmz.ru/subways/ Subway Validator] e seleziona una città in cui è segnalato un errore sulla rete metropolitana. La sistemazione dovrebbe comportare la modifica del tracciato della metro. Mettila a posto e così hai finito, oppure puoi continuare a migliorare il resto della rete.
+    description: Per questa attività devi conoscere lo schema [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2]. Vai sul sito [http://osmz.ru/subways/ Subway Validator] e seleziona una città in cui è segnalato un errore sulla rete metropolitana. La sistemazione dovrebbe comportare la modifica del tracciato della metro. Mettila a posto e così hai finito, oppure puoi continuare a migliorare il resto della rete.
     title: Metti a posto una metropolitana
   buildings:
     description: Disegna almeno 20 edifici dove vuoi. Apri il tuo editor preferito, posizionati in una zona rurale o industriale scarsamente mappata e traccia qualche edificio.
@@ -72,8 +72,8 @@ it:
     description: 'Apri [https://tasks.hotosm.org/ HOT Tasking Manager]  e scegli un task attivo a caso. All''interno seleziona un rettangolo giallo e fai una validazione. Nota come un mappatore principiante mappa gli edifici, ragionaci su un po'' e quindi mettili a posto: raddrizza i lati e migliora la forma. Un paio bastano.'
     title: Metti a posto un edificio
   lamps:
-    description: Fuori fa buio? Vedi una strada illuminata da un lampione? Siamo abbastanza sicuri che quel lampione non sia mappato. Aggiungi almeno due [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp lamipioni].
-    title: Pianta un Lampione
+    description: Fuori fa buio? Vedi una strada illuminata da un lampione? Siamo abbastanza sicuri che quel lampione non sia mappato. Aggiungi almeno due [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp lampioni].
+    title: Pianta un lampione
   coastline:
     description: Molte linee di costa sono state importate molto tempo fa da immagini satellitari di bassa risoluzione. Puoi sicuramente migliorarla in alcuni luoghi. Aggiungi almeno 10 nodi ad una linea di costa.
     title: Migliora una linea di costa

@@ -3,72 +3,100 @@ fr:
     description: De nombreuses routes dans les zones rurales sont tracées à la va vite sans faire des noeuds au niveau des ruisseaux et des rivières. Trouver les endroits où un mappeur a oublié de diviser les routes et marquer un pont et ainsi de suite.
     title: Dessiner un pont
   stream:
-    title: Dessiner un cours d'eau
+    description: Les rivières sont presque déjà toutes cartographiée, mais les ruisseaux sont trop nombreux pour être tous dessinés. Trouver un ruisseau (pas un fossé, ni un talweg) et cartographiez le.
+    title: Dessiner un ruisseau (waterway=stream)
   postcode:
-    description: Dans certains pays, comme la Russie ou les États-Unis, vous pouvez trouver un code postal dans une base de données accessible au public. Dans d'autres, vous le connaissez ou vous le déduisez de sources indirectes, comme un site Web de magasin. Trouver un code postal pour tout bâtiment qui ne l'a pas, et mapper-le.
+    description: Dans certains pays, comme la France, la Russie ou les États-Unis, vous pouvez trouver un code postal dans une base de données accessible au public. Dans d'autres, vous le connaissez ou vous le déduisez de sources indirectes, comme un site Web de magasin. Ajoutez un code postal à un bâtiment qui n'en a pas encore.
     title: Ajouter un code postal
+  bench:
+    description: Pensez à l'une de vos ballades dans un parc,  y avait-il des bancs ? Souvenez vous de leur emplacement, car pour cette tâche vous devez ajouter un banc.
+    title: Cartographiez un banc
   turn_restriction:
-    description: Trouver une restriction de virage non cartographiée sur Mapillary ou une autre source compatible OSM. Choisissez une plus petite ville si vous le souhaitez. cartographiez la restriction.
-    title: Ajouter une restriction de virage
+    description: Trouvez une interdiction de tourner sur Mapillary, OpenStreetCam ou toute autre source compatible avec OSM. Choisissez une petite ville si vous le souhaitez. Cartographiez cette interdiction de tourner (turn restriction).
+    title: Ajoutez une interdiction de tourner
+  lit:
+    description: La nuit, les villes sont plus jolies lorsque les rues sont éclairées. Ajoutez "lit=yes" si la rue dispose d'éclairage publique, "lit=no" sinon. Puis, regardez le résultat sur [http://product.itoworld.com/map/69 cette carte].
+    title: '"Éclairez" une route'
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] est l''une des applications OpenStreetMap populaires pour les appareils Android, hautement configurable, mais un peu trop complexe pour certains. Il peut télécharger des points sur la carte. Installer le plugin d" "Edition OSM" et créer un point quelque part. Lire [http://osmand.net/features?id=osm-editing-plugin la  documentation] si vous vous perdez dans l''interface.'
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] est l''une des applications OpenStreetMap populaires pour les appareils Android, hautement configurable, mais un peu trop complexe pour certains. Elle permet d''ajouter des POI sur la carte. Activez le greffon "Contribuer à OSM" et créer un point quelque part. Lire [http://osmand.net/features?id=osm-editing-plugin la documentation] si vous vous perdez dans l''interface.'
     title: Utiliser OsmAnd
   improve_river:
-    description: "La plupart des rivières ont déjà été cartographiées. Le problème est que cela a été fait en utilisant une imagerie satellitaire à basse résolution. Maintenant vous pouvez faire mieux: lancez JOSM, sélectionnez une rivière, appuyez sur \"W\" et améliorez le chemin. Ajouter au moins 10 nœuds à un  ''waterway=river''."
+    description: "La plupart des rivières ont déjà été cartographiées. Le problème est que cela a été fait en utilisant une imagerie satellitaire à basse résolution. Maintenant vous pouvez faire mieux : lancez JOSM, sélectionnez une rivière, appuyez sur \"W\" et améliorez le chemin. Ajouter au moins 10 nœuds à un  ''waterway=river''."
     title: Améliorer le tracé d'une rivière
   josm:
-    description: "Installez l'éditeur JOSM, si vous ne l'avez pas déjà fait, et modifiez quelque chose avec. Nous recommandons de dessiner quelques bâtiments: \n  \nTéléchargez une partie de la carte, ajoutez une couche d'imagerie, appuyez sur \"A\" et cliquez sur un coin d'un bâtiment. Puis double-cliquez sur un coin adjacent, ce qui en fait une ligne. Ensuite, appuyez sur \"X\" et faites glisser la ligne pour en faire un rectangle. Enfin, appuyez sur \"Alt + A\" pour ajouter \"'building = yes' ', puis énvoyer la modification."
-    title: Editer avec JOSM
+    description: "Installez l'éditeur JOSM, si vous ne l'avez pas déjà fait, et modifiez quelque chose avec. Nous recommandons de dessiner quelques bâtiments: \n  \nTéléchargez une partie de la carte, ajoutez une couche d'imagerie, appuyez sur \"A\" et cliquez sur un coin d'un bâtiment. Puis double-cliquez sur un coin adjacent, ce qui en fait une ligne. Ensuite, appuyez sur \"X\" et faites glisser la ligne pour en faire un rectangle. Enfin, appuyez sur \"Alt + A\" pour ajouter \"'building = yes' ', puis envoyer la modification."
+    title: Faire une modification avec JOSM
   fix:
     description: 'Les commentaires des changeset sont importants. Mais pas pour vous aujourd''hui: faites un changement et mettez "fix" dans le champ de commentaire changeset. Juste ces trois lettres, rien de plus.'
-    title: Une petite difficulté
+    title: Une petite correction/fix
   gomap:
-    description: 'Alors que la plate-forme Android a de nombreux éditeurs OSM, iOS fait défaut. Le meilleur éditeur OSM pour cela a été [https://itunes.apple.com/app/id592990211 Go Map!!] (avec des points d''exclamation), mais il a été mis à jour en 2015. Pourtant, cela fonctionne: faites un essai, faites une édition avec.'
-    title: Cartographier!!!
+    description: 'Alors que la plate-forme Android a de nombreux éditeurs OSM, iOS fait défaut. Le meilleur éditeur OSM pour cela est [https://itunes.apple.com/app/id592990211 Go Map!!] (avec des points d''exclamation). Faites un essai, faites une édition avec.'
+    title: Contribuez avec Go Map!!
   giveway:
-    description: Il y a une étiquette spéciale pour ajouter le panneau de signalisation routière triangle «céder le passage». c'est  [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], évidemment. Trouver un tel signe, soit en utilisant Mapillary ou votre mémoire, placez un nœud sur une route qui doit céder, et marquer ce nœud avec l'étiquette. Ajoutez également une balise priority_road à la route principale.
-    title: Laisser Passer
+    description: 'Il y a une tag spécial pour ajouter le panneau de signalisation routière "céder le passage" : [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Trouvez un tel signe, soit en utilisant Mapillary ou votre mémoire, placez un nœud sur une route qui doit céder le passage, et marquez ce nœud avec le tag. Ajoutez également une balise priority_road à la route principale.'
+    title: Ajoutez un céder le passage
   note:
-    description: Activez les notes sur le site Web d'OSM et trouvez une note non résolue que vous pouvez corriger. Résolvez la note.
-    title: Editer la note
+    description: Activez les notes sur le site web d'OSM et trouvez une note non résolue que vous pouvez corriger. Résolvez la note.
+    title: Résoudre une note OSM
+  around_the_world:
+    description: Créez un changeset avec une zone énorme. Cartographiez quelque-chose au  [https://www.openstreetmap.org/#map=5/-48.487/-69.895 sud du Chili], puis au [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
+    title: Autour du monde en 5 minutes
   highway:
-    description: C'est souvent la première chose que les gens font quand ils rejoignent OpenStreetMap. Trouver une route non cartographiée à proximité et l'ajouter à la carte.
+    description: C'est souvent la première chose que les gens font quand ils rejoignent OpenStreetMap. Trouvez une route non cartographiée à proximité et ajoutez la à la carte.
     title: Cartographier la route
   subway:
-    description: Pour cela, vous devez connaître le  [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 schema]. Aller à la [https://osmz.ru/subways/ Subway Validator] et choisissez une ville avec une erreur dans le métro. Cela devrait impliquer de modifier une route de métro. Corrigez-le - et vous pouvez y aller, ou continuer à ranger le réseau.
+    description: Pour cette tâche, vous devez connaître le  [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 schema]. Aller à la [http://osmz.ru/subways/ Subway Validator] et choisissez une ville avec une erreur dans le métro. Cela devrait impliquer de modifier une route de métro. Corrigez-le - et c'est fini, ou continuer à corriger le réseau.
     title: Corriger un métro
   buildings:
-    description: Dessinez au moins 20 bâtiments n'importe où. Ouvrez votre éditeur de choix, accédez à une zone rurale ou industrielle mal cartographiée et tracez quelques bâtiments.
-    title: vingt bâtiments dessiner
+    description: Dessinez au moins 20 bâtiments n'importe où. Ouvrez l'éditeur de votre choix, accédez à une zone rurale ou industrielle mal cartographiée et tracez quelques bâtiments.
+    title: Dessinez vingt bâtiments
   lanes:
-    description: Trouvez une route qui n'a pas le jeu de balises ''lanes''. Trouver une bonne imagerie pour la zone et ajouter le nombre de voies pour cette route.
+    description: Trouvez une route qui n'a pas le tag ''lanes''. Trouver une bonne imagerie pour la zone et ajouter le nombre de voies pour cette route.
     title: Compter les voies
   streetcomplete:
-    description: Si votre téléphone est un iPhone, pas de chance. Pour Android, installez l'application [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete]  et faites quelques tâches. Ils prennent vraiment une seconde chacun.
+    description: Si votre téléphone est un iPhone, pas de chance. Pour Android, installez l'application [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] et faites quelques tâches. Elles ne prennent vraiment que quelques secondes chacune.
     title: Cartographier avec StreetComplete
   leaf_types:
-    title: plante deux arbres
+    description: Mapper un arbre, ce n'est pas simplement placer un noeud avec le tag "natural=tree". Vous devez ajouter ton type. Lisez les articles [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle]. Puis ajoutez 2 arbres autour de chez vous ou ailleurs en utilisant ces tags.
+    title: '"Plantez" deux arbres'
+  waste_basket:
+    description: "Dehors, vous pouvez croisez beaucoup de poubelles à usage des piétons : devant les magasins, aux arrêts de bus, etc. Souvenez vous en d'une et cartographiez la avec le tag \"amenity=waste_basket\"."
+    title: Mappez une poubelle
   tiger:
     description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] est un jeu de données routières du domaine public aux États-Unis. Il a été importé en 2005 et l''importation était imparfaite. Trouver une route avec tiger:reviewed=no et fixez-en au moins trois, en définissant une classe de route correcte et en supprimant l''étiquette.'
-    title: Fixer un Tiger
+    title: '"Domptez" le tigre.'
   tracks:
-    description: Une piste est une route menant à une ferme ou à une forêt. Il est marqué par [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway = track] avec facultatif '' tracktype = gradeN '', avec N de 1 (meilleur) à 5 (pire). Trouver un champ ou une forêt et dessiner 2-3 km d'une piste.
+    description: Une piste est une route menant à une ferme ou à une forêt. Elle est marqué par [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] avec en option "tracktype=gradeN", avec N de 1 (meilleur) à 5 (pire). Trouver un champ ou une forêt et dessiner 2-3 km d'une piste.
     title: Dessiner quelques voies champêtres
   hot_task:
     description: 'Ouvrez [https://tasks.hotosm.org/ HOT Tasking Manager] et choisissez une tâche active aléatoire. À l''intérieur, choisissez un rectangle jaune aléatoire et effectuez une validation. Voyez comment les cartographes novices dessinent leurs bâtiments, méditez-les un peu, puis corrigez-les: redressez les bords, améliorez les formes. Juste un couple ferait l''affaire.'
     title: Corriger un bâtiment
+  lamps:
+    description: 'Il fait nuit dehors ? Voyez vous une rue éclairée ? Je suis presque sûr qu''elle n''est pas mappée. Ajoutez au moins 2 lampes : [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp].'
+    title: Accrochez une lampe dans la rue
   coastline:
     description: De nombreuses côtes ont été importées il y a longtemps à partir d'une imagerie satellite numérisée à basse résolution. Vous pouvez certainement aider à l'améliorer dans certains endroits. Ajouter au moins 10 nœuds à un littoral.
     title: Améliorer le tracé d'un littoral
+  haiti:
+    description: 'En 2010, il y eu un tremblement de terre catastrophique à 25 km à l''ouest de la capitale d’Haïti : Port-au-Prince. Cette catastrophe a lancé le projet de cartographie humanitaire : Humanitarian Mapping Team, grâce auquel la ville a très bien était cartographiée. Malheureusement, pas le reste du pays : trouvez un bâtiment non mappé à Haïti et dessinez le.'
+    title: Votre prochaine résidence à Haïti ?
   railway:
-    title: Cartographier les rails
+    description: Les chemins de fers sont moins mappés que les routes, mais ils ne sont pas moins important ! Cartographiez un chemin de fer. Si vous n'en trouvez pas, essayer d'ajouter les voies secondaires d'une gare.
+    title: Trouvez votre voie et cartographiez des rails
   turnlanes:
-    description: Lire la description de [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] trouver une intersection avec des voies visibles sur une imagerie satellite ou sur Mapillary, et cartographier toutes les voies de virage des quatre côtés de l'intersection.
-    title: Tournez les voies
+    description: Lire l'article [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] trouver une intersection avec des voies visibles sur une imagerie satellite ou sur Mapillary, et cartographier toutes directions des voies, des quatre côtés de l'intersection.
+    title: Indiquez les directions des voies d'un croisement
+  farmland:
+    description: Trouvez une prairie, une zone agricole (regardez au centre des États-Unis ou à l'ouest de la Russie), et mappez la avec le tag [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland].
+    title: Plantez des céréales, élevez des vaches
+  switch:
+    description: Deux voies de chemin de fer se rejoignent au niveau des aiguillages. Trouvez une gare et ajoutez au moins 2 nœuds avec le tag [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] pour connecter 2 voies.
+    title: Mappez un aiguillage
   mapsme:
     description: MAPS.ME n'est pas seulement un navigateur de cartes multiplateforme et un navigateur. Vous pouvez modifier la carte avec. Cliquez simplement sur un aménagement ou choisissez "Ajouter un lieu" dans le menu. Essayez ça.
     title: Utiliser MAPS.ME
   sidewalk:
+    description: 'Le trottoir est un chemin piéton près d''une route. Pour faciliter la navigation des piétons, trouvez une route avec les trottoirs non mappés. Dessinez 2 nouveaux chemin de chaque côté de la route et ajoutez le tag ''''footway=sidewalk''''. Puis reliez vos trottoir aux niveau des passages piéton et utilisant les tags ''''highway=footway + footway=crossing'''' sur le nœud commun entre la route et le chemin. '
     title: Ajouter un trottoir
   delete:
     description: Il n'est pas difficile de trouver quelque chose à cartographier. Mais pouvez-vous trouver quelque chose à supprimer? Supprimer 5 objets - mais seulement ceux qui sont obsolètes ou redondants.
