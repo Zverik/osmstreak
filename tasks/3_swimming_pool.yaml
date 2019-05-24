@@ -1,0 +1,7 @@
+title: Add a swimming pool
+emoji: 🏊
+description: >-
+  Let's dive into the aerial imagery add find an outdoor swimming pool.
+  Draw an area and add the following tag [https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dswimming_pool leisure=swimming_pool]
+test:
+  created_area: "leisure=swimming_pool"
