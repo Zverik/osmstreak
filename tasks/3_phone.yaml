@@ -1,0 +1,8 @@
+title: Can I ask who is calling ?
+emoji: ☎
+description: >-
+  Think about a public place: a shop, a museum, a restaurant or something else.
+  Head to its official web site or use street level imagery to get the phone number of this place
+  Then a the tag [https://wiki.openstreetmap.org/wiki/Key:phone phone] with this phone number as value (please use international format)
+test:
+  modified_area: "phone=*"
