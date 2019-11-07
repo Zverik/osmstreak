@@ -27,13 +27,13 @@ it:
     description: "Installa l'editor JOSM, se non l'hai già fatto, e modifica qualcosa. Ti consigliamo di disegnare qualche edificio:\n\nScarica una porzione della mappa, aggiungi un livello satellitare, premi \"A\" e clicca sull'angolo di un edificio. Poi fai doppio clic su un angolo adiacente, disegnando così una linea. Quindi premi \"X\" e tira la linea per disegnare un rettangolo. Infine premi \"Alt+A\" per aggiungere il tag \"building=yes\" e carica la modifica."
     title: Fai un edit usando JOSM
   fix:
-    description: 'I commenti ai gruppi di modifiche sono importanti. Ma non in questo momento per te: fai un cambiamento alla mappa e metti "fix" nel campo commento. Solo queste tre lettere, niente di più.'
+    description: 'I commenti ai gruppi di modifiche sono importanti. Ma non in questo momento per te: fai un cambiamento alla mappa e indica "fix" nel campo commento. Solo queste tre lettere, niente di più.'
     title: Una piccola modifica
   gomap:
     description: 'Mentre la piattaforma Android ha parecchi editor OSM, iOS ne ha pochi. Il miglior editor OSM è stato [https://itunes.apple.com/app/id592990211 Go Map!!] (con i punti esclamativi), ma è stato aggiornato l''ultima volta nel 2015. Comunque funziona ancora: provalo e fai un edit con questa applicazione.'
     title: Vai e mappa!!!
   giveway:
-    description: C'è un tag speciale per mappare il segnale triangolare di precedenza. È [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], ovviamente. Trova un segnale di questo tipo, usando Mapillary o la tua memoria, disegna un nodo sulla strada che deve dare la precedenza e metti questo tag sul nodo. Aggiungi anche un tag priority_road sulla strada principale.
+    description: C'è un tag speciale per mappare il segnale triangolare di precedenza. È [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], ovviamente. Trova un segnale di questo tipo, usando Mapillary o la tua memoria, disegna un nodo sulla strada che deve dare la precedenza e aggiungi questo tag sul nodo. Aggiungi anche un tag priority_road sulla strada principale.
     title: Dai la precedenza
   note:
     description: Abilita la visualizzazione delle note sul sito OSM e trova una nota non ancora risolta che pensi di poter mettere a posto. Risolvi la nota.
@@ -45,8 +45,8 @@ it:
     description: Questa è spesso la prima cosa che viene fatta da chi si iscrive a OpenStreetMap. Trova una strada vicino a te non ancora tracciata e aggiungila alla mappa
     title: Mappa una strada
   subway:
-    description: Per questa attività devi conoscere lo schema [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2]. Vai sul sito [http://osmz.ru/subways/ Subway Validator] e seleziona una città in cui è segnalato un errore sulla rete metropolitana. La sistemazione dovrebbe comportare la modifica del tracciato della metro. Mettila a posto e così hai finito, oppure puoi continuare a migliorare il resto della rete.
-    title: Metti a posto una metropolitana
+    description: Per questa attività devi conoscere lo schema [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2]. Vai sul sito [http://osmz.ru/subways/ Subway Validator] e seleziona una città in cui è segnalato un errore sulla rete metropolitana. La sistemazione dovrebbe comportare la modifica del tracciato della metro. Correggila e così hai finito, oppure puoi continuare a migliorare il resto della rete.
+    title: Correggi una metropolitana
   buildings:
     description: Disegna almeno 20 edifici dove vuoi. Apri il tuo editor preferito, posizionati in una zona rurale o industriale scarsamente mappata e traccia qualche edificio.
     title: Disegna venti edifici
@@ -63,14 +63,14 @@ it:
     description: "Quando esci di casa passi accanto a tantissimi cestini della spazzatura: vicino ai negozi, alle fermate dell'autobus, all'ingresso delle case. Cerca di ricordarne uno e mappalo con \"amenity=waste_basket\"."
     title: Cestini della spazzatura
   tiger:
-    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] è un dataset di pubblico dominio delle strade degli USA. È stato importato nel 2005, ma l''import non è stato preciso. Trova delle strade con il tag tiger:reviewed=no e mettine a posto almeno tre, impostando la classe corretta della strada e rimuovendo il tag.'
-    title: Metti a posto un Tiger
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] è un dataset di pubblico dominio delle strade degli USA. È stato importato nel 2005, ma l''import non è stato preciso. Trova delle strade con il tag tiger:reviewed=no e correggine almeno tre, impostando la classe corretta della strada e rimuovendo il tag.'
+    title: Correggi un Tiger
   tracks:
     description: Una strada sterrata è un percorso che porta verso qualche fattoria o una foresta. È indicato tramite il tag [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] con il tag opzionale ''tracktype=gradeN'', con N che varia da 1 (migliore) a 5 (peggiore). Trova un campo o una foresta e disegna 2-3 km di una strada sterrata.
     title: Disegna una strada sterrata
   hot_task:
-    description: 'Apri [https://tasks.hotosm.org/ HOT Tasking Manager]  e scegli un task attivo a caso. All''interno seleziona un rettangolo giallo e fai una validazione. Nota come un mappatore principiante mappa gli edifici, ragionaci su un po'' e quindi mettili a posto: raddrizza i lati e migliora la forma. Un paio bastano.'
-    title: Metti a posto un edificio
+    description: 'Apri [https://tasks.hotosm.org/ HOT Tasking Manager]  e scegli un task attivo a caso. All''interno seleziona un rettangolo giallo e fai una validazione. Nota come un mappatore principiante mappa gli edifici, ragionaci su un po'' e quindi correggili: raddrizza i lati e migliora la forma. Un paio bastano.'
+    title: Correggi un edificio
   lamps:
     description: Fuori fa buio? Vedi una strada illuminata da un lampione? Siamo abbastanza sicuri che quel lampione non sia mappato. Aggiungi almeno due [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp lampioni].
     title: Pianta un lampione

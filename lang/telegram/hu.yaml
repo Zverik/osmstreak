@@ -1,0 +1,41 @@
+hu:
+  only_text: "Sajnos csak szöveges üzenetet tudunk fogadni."
+  no_code: "Menjen a {0}/settings menüponthoz, nyomja meg a telegram linket, majd kattintson itt a „Start”-ra."
+  wrong_code: "Hibásnak tűnik a kódja."
+  welcome: "Isten hozta {}!"
+  already_logged: "Ön {} néven már be van jelentkezve."
+  you_are: "Ön {}."
+  which_utc: "Világidő (UTC) szerint mikor szeretne térképezni?"
+  task_complete: "Köszönjük, hogy ma is szerkesztette az OpenStreetMapet!"
+  no_changesets: "Mostanában nem szerkesztette az OpenStreetMapet."
+  unknown_cmd: "Ismeretlen parancs. A lista lekéréséhez küldjön egy /help tartalmú üzenetet."
+  no_remind: "Nem fogom zavarni. Napi emlékeztetőhöz küldjön egy /now vagy /remind tartalmú üzenetet."
+  remind_on: "Minden nap világidő (UTC) szerint {} órakor küldeni fogok egy új feladatot. Ha zavarja, küldjön egy /stop tartalmú üzenetet."
+  lang_set: "Magyarul fogok írni."
+  no_such_lang: "Ilyen nyelv nincs. A támogatott nyelvek: {}."
+  time_left: "Hátralévő idő"
+  post_changeset: "Ha végzett, küldjön egy /done tartalmú üzenetet vagy egy módosításkészlet azonosítóját (ha sok van)."
+  have_old_changesets: "Vannak régebbi, be nem küldött módosításkészletei, válasszon egyet közülük."
+  list_header: "Beküldéshez kattintson egy módosításkészlet-azonosítóra:"
+  n_points: "{} pont"
+  help: |-
+      Ez a robot segít, hogy minden nap szerkeszthesse az OpenStreetMapet.
+
+      Napi emlékeztetőkért küldjön egy /start <code_from_website> tartalmú üzenetet.
+
+      Parancsnok:
+
+      /task — a mai feladat megjelenítése
+      /score — az ön pontszámának és szintjének megjelenítése
+      /done — a legutóbbi módosításkészlet megjelenítése
+      /list — rendelkezésre álló módosításkészleteinek megjelenítése
+
+      /now — emlékeztetés minden nap a jelenlegi időben
+      /remind <hh:mm> — az emlékeztető idejének megadása
+      /when — az emlékeztető idejének megjelenítése
+      /stop — emlékeztetők leállítása
+
+      /whoami — az ön OSM felhasználónevének megjelenítése
+      /lang <code> — nyelv módosítása
+
+      Weboldal: {web}

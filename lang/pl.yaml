@@ -76,3 +76,7 @@ pl:
     leaderboard_content: >-
         Nie ma tablicy wyników. Nie dowiesz się, kto jest przed Tobą, a kto za. To
         jest wyzwanie, a nie rywalizacja.
+    contribute: Wkład
+    contribute_content: >-
+        OSM Streak jest otwartoźródłowy. Możesz wesprzeć go <a href="https://github.com/Zverik/osmstreak/">na
+        GitHubie</a>, np. sugerując nowe wyzwania!

@@ -1,0 +1,69 @@
+hu:
+  bridge:
+    title: Rajzolj fel egy hidat
+  stream:
+    title: Rajzolj fel egy patakot
+  postcode:
+    title: Adj meg egy irányítószámot
+  bench:
+    title: Rajzolj fel egy padot
+  turn_restriction:
+    title: Adj meg egy bekanyarodási korlátozást
+  lit:
+    title: Fesd fel egy út kivilágítását
+  osmand:
+    title: Használd az OsmAndot
+  improve_river:
+    title: Szabályozz egy folyót
+  josm:
+    title: Szerkessz valami JOSM-mal
+  fix:
+    title: Egy apró javítás
+  gomap:
+    title: Go Map!!!
+  giveway:
+    title: Elsőbbségadás kötelező!
+  note:
+    title: Oldj meg egy megjegyzést
+  around_the_world:
+    title: Öt perc alatt a Föld körül
+  highway:
+    title: Rajzolj fel egy utat
+  subway:
+    title: Javíts ki egy metrót
+  buildings:
+    title: Rajzolj fel húsz épületet
+  lanes:
+    title: Számold meg a sávokat
+  streetcomplete:
+    title: Térképezz StreetComplete-tel
+  leaf_types:
+    title: Ültess két fát
+  waste_basket:
+    title: Szemeteskosarak
+  tiger:
+    title: Javíts ki egy tigrist
+  tracks:
+    title: Rajzolj föl néhány mezőgazdasági utat
+  hot_task:
+    title: Javíts ki egy épületet
+  lamps:
+    title: Ültess el egy utcai lámpát
+  coastline:
+    title: Igazíts ki egy partvonalat
+  haiti:
+    title: Látogass el Haitira
+  railway:
+    title: Térképezz fel egy vasutat
+  turnlanes:
+    title: Kanyarodósáv
+  farmland:
+    title: Rajzolj fel egy mezőgazdasági területet
+  switch:
+    title: Jelölj meg egy vasúti váltót
+  mapsme:
+    title: Használd a maps.me-t
+  sidewalk:
+    title: Adj meg egy járdát
+  delete:
+    title: Törlés!

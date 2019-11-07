@@ -2,26 +2,26 @@ fr:
   only_text: "Désolé, n'accepte que les messages texte."
   no_code: "Allez dans {0}/paramètres and appuyez sur le lien telegram. Puis cliquer sur le bouton \"Démarrer\" ici."
   wrong_code: "Votre code semble faux."
-  welcome: "Bienvenue {}!"
+  welcome: "Bienvenue {} !"
   already_logged: "Vous êtes déjà connecté en tant que {}."
   you_are: "Vous êtes {}."
-  which_utc: "A quelle heure UTC souhaitez-vous cartographier?"
-  task_complete: "Merci d'avoir édité OpenStreetMap aujourd'hui!"
+  which_utc: "A quelle heure UTC souhaitez-vous cartographier ?"
+  task_complete: "Merci d'avoir édité OpenStreetMap aujourd'hui !"
   no_changesets: "Vous n'avez pas édité OpenStreetMap récemment."
-  unknown_cmd: "Commande inconnue. S'il vous plaît envoyer /help pour obtenir la liste."
-  no_remind: "Je ne te dérangerai pas. Utilisez /now or /remind pour définir un rappel quotidien."
-  remind_on: "Je vous enverrai une nouvelle tâche tous les jours le {} UTC. Envoyer /stop si cela vous dérange."
-  lang_set: "Je vais vous écrire en anglais."
-  no_such_lang: "Pas un tel langage. les langues pris en charge sont: {}."
+  unknown_cmd: "Commande inconnue. Envoyez /help pour obtenir la liste des commandes."
+  no_remind: "Je ne vous dérangerai pas. Utilisez /now or /remind pour définir un rappel quotidien."
+  remind_on: "Je vous enverrai une nouvelle tâche tous les jours à {} UTC. Envoyez /stop si cela vous dérange."
+  lang_set: "Je vous écrirai en anglais."
+  no_such_lang: "Langue non reconnue. Les langues prises en charge sont : {}."
   time_left: "Temps restant"
-  post_changeset: "Envoyer /done quand vous avez terminé, ou envoyer l'id d'un changeset."
+  post_changeset: "Envoyez /done quand vous avez terminé, ou envoyez l'id d'un changeset."
   have_old_changesets: "Vous avez de vieux changeset non soumis, choisissez en un."
-  list_header: "Cliquer sur l'id d'un changeset pour vous y abonner."
+  list_header: "Cliquez sur l'id d'un changeset pour vous y abonner."
   n_points: "{} points"
   help: |-
       Ce bot vous aide à enrichir OSM tous les jours.
 
-      Envoyer /start <code_from_website> pour avoir des rappels tous les jours
+      Envoyez /start <code_from_website> pour avoir des rappels tous les jours
 
       Commandes :
 

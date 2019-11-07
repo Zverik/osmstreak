@@ -1,0 +1,83 @@
+hu:
+  title: "OSM Streak"
+  please_sign_in: "A haladás nyomon követhetőségéért és komolyabb feladatokért [lépj be] az OpenStreetMap fiókoddal."
+  connect: Kapcsolódás
+  login: Bejelentkezés
+  help: Névjegy
+  thanks: "Köszönjük, hogy ma is szerkesztetted az OpenStreetMapet!"
+  submit_changeset: "A feladathoz add meg egy módosításkészlet URL-jét vagy válassz egyet a listából"
+  verify: Ellenőrzés
+  update_list: "frissítés"
+  no_changesets: "Mostanában nem szerkesztetted az OpenStreetMapet."
+  time_left: "A módosításkészlet beadásáig hátralévő idő"
+  connect_intro: "Telegramon vagy e-mailen is kaphatsz értesítéseket új feladatokról és beküldhetsz módosításkészleteket."
+  telegram_start: "kattints a robot indításához"
+  subscribe: Feliratkozás
+  unsubscribe: Leiratkozás
+  time:
+    n_hours: "{} óra"
+    hour: "egy óra"
+    n_minutes: "{} perc"
+    today: "Ma"
+    yesterday: "Tegnap"
+  validation:
+    wrong_id: "Hibás módosításkészlet-azonosító: {}"
+    wrong_date: "A módosításkészlet dátuma hibás."
+    api_error: "Hiba történt az OSM API-hoz való kapcsolódáskor."
+    api_strange: "Az OSM API valami bizarr dolgot küldött vissza a root xml-hez."
+    not_yours: "Légy szíves, csak a saját módosításkészleteidet add hozzá."
+    no_task: "{}: ezen a napon nem látogattál el az OSM Streak weboldalára"
+    has_later_changeset: "Sajnos már van egy aznap vagy később regisztrált módosításkészleted."
+    old_changeset: "Ez a módosításkészlet túl régi, szerkessz valami mást."
+    changeset_noted: "A módosításkészletet megjegyeztük, köszönjük. Ez volt sorban a {}."
+    extra_point: "Egy extra pont a feladat teljesítéséért."
+    gain_level: "Gratulálunk a szintlépéshez!"
+  email:
+    hi: 'Szia {}!'
+    new_task: 'Szeretnél egy kicsit térképezni és folytatni a sorozatodat? Van egy ötletünk:'
+    to_submit: 'Ha készen vagy, menj ide: {}, majd kattints a legutóbbi módosításkészletre.'
+    bye: 'Üdv:'
+  about:
+    what_is_this: Mi ez?
+    what_is_this_content: >-
+        Az OSM Streak minden nap elvégeztet veled néhány apró feladatot az OpenStreetMapen.
+        Az a cél, hogy legalább egy éven keresztül minden nap térképezzünk valamennyit.
+        A lényeg az, hogy minden nap térképezzünk, nem pedig az, hogy a lehető legtöbbet.
+        A kitartás megtérül!
+    points: Pontok
+    points_content: >-
+        Minden egyes beküldésért pontokat kapsz. Először minden feladatért 1-et, sorban
+        a harmadik naptól 2-t és így tovább. Ha sorban (vagyis megszakítás nélkül
+        minden nap) egy egész hónapon át térképezel, akkor minden módosításcsomagért
+        5 pontot kapsz.
+    tasks: Feladatok
+    tasks_content1: >-
+        Nem kell pontosan követned azt, amit az oldalon látsz. Minden nem üres módosításkészletet
+        elfogadunk. Ha viszont követed a feladatleírást, akkor egy extra pontot is
+        kapsz.
+    tasks_content2: >-
+        Ne ijedj meg a feladattól! Ha úgy tűnik, hogy túl nehéz, akkor rajzolj fel
+        valami mást, például egy épületet. A cél az, hogy minden nap térképezz, nem
+        pedig az, hogy minden feladatok elvégezz.
+    stars: Csillagok
+    stars_content: >-
+        A pontokkal szinteket is lehet ugrani. Mindenki az 1. szinten kezdi. (A szint
+        száma megegyezik a csillagok számával.) Pár nap múlva továbbléphetsz a 2.
+        szintre. Az új szintekkel új feladatok jelennek meg. A szintlépésekhez szükséges
+        pontszámok:
+    stars_level2: 2. szint (nagyjából öt egymást követő nap)
+    stars_level3: 3. szint (három hét)
+    stars_level4: 4. szint (három hónap)
+    stars_level5: 5. szint (nagyjából egy év)
+    stars_fame: >-
+        A legmagasabb szintet elérő térképészek bekerülnek a hírességek csarnokába.
+        Térképezési sorozatukat természetesen ez után is folytathatják. Ettől kezdve
+        minden módosításkészletért 16 pontot kapnak.
+    leaderboard: Ranglista
+    leaderboard_content: >-
+        Ranglista nincs: nem tudod, ki van előtted, és ki van mögötted. Ez egy kihívás,
+        nem verseny.
+    contribute: Közreműködés
+    contribute_content: >-
+        Az OSM Streak nyílt forráskódú. Szerkesztheted a <a href="https://github.com/Zverik/osmstreak/">GitHubon</a>,
+        például javasolhatsz új kihívásokat!

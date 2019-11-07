@@ -43,7 +43,7 @@ fr:
     title: Autour du monde en 5 minutes
   highway:
     description: C'est souvent la première chose que les gens font quand ils rejoignent OpenStreetMap. Trouvez une route non cartographiée à proximité et ajoutez la à la carte.
-    title: Cartographier la route
+    title: Mappez une route
   subway:
     description: Pour cette tâche, vous devez connaître le  [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 schema]. Aller à la [http://osmz.ru/subways/ Subway Validator] et choisissez une ville avec une erreur dans le métro. Cela devrait impliquer de modifier une route de métro. Corrigez-le - et c'est fini, ou continuer à corriger le réseau.
     title: Corriger un métro

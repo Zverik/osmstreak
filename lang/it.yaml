@@ -1,6 +1,6 @@
 it:
   title: "OSM Streak"
-  please_sign_in: "Per tener traccia dei tuoi progressi e ottenere dei task più avanzati, fai [sign in] con il tuo account OpenStreetMap."
+  please_sign_in: "Per tener traccia dei tuoi progressi e ottenere dei task più avanzati, [accedi] con il tuo account OpenStreetMap."
   connect: Connetti
   login: Accedi
   help: Informazioni
@@ -16,7 +16,7 @@ it:
   unsubscribe: Cancella l'iscrizione
   time:
     n_hours: "{} ore"
-    hour: "un ora"
+    hour: "un'ora"
     n_minutes: "{} minuti"
     today: "Oggi"
     yesterday: "Ieri"
@@ -49,20 +49,20 @@ it:
         Per ogni invio ottieni dei punti. All'inizio ottieni un punto, dal terzo giorno
         consecutivo ottieni due punti per ogni task e così via. Se mappi ogni giorno
         per un mese, ottieni cinque punti per un gruppo di modifiche.
-    tasks: Tasks
+    tasks: Task
     tasks_content1: >-
         Non devi fare in modo preciso quello che la pagina ti dice di fare. Qualsiasi
         gruppo di modifiche che non sia vuoto sarà accettato. Ma se segui le istruzioni
         del task otterrai un punto aggiuntivo.
     tasks_content2: >-
         Non farti intimidire dal task. Se pensi che sia troppo complicato, mappa qualcos'altro
-        - per esempio un edificio. Lo scopo è mappare ogni giorno, non completare
-        tutti i tasks.
+        (per esempio un edificio). Lo scopo è mappare ogni giorno, non completare
+        tutti i task.
     stars: Stelle
     stars_content: >-
         Con i punti puoi anche guadagnare dei livelli. Si parte dal livello 1: il
         numero di stelle rappresenta il livello in cui sei. In pochi giorni passerai
-        al livello 2. I nuovi livelli danno la possibilità di avere nuovi tasks. Questi
+        al livello 2. I nuovi livelli danno la possibilità di avere nuovi task. Questi
         sono i punti che devi fare per guadagnare i livelli
     stars_level2: livello 2 (all'incirca cinque giorni consecutivi)
     stars_level3: livello 3 (tre settimane)
@@ -76,3 +76,7 @@ it:
     leaderboard_content: >-
         Non c'è una classifica. Non saprai chi è davanti a te o chi ti sta dietro.
         Questa è una sfida, non una competizione.
+    contribute: Partecipa
+    contribute_content: >-
+        OSM Streak è open source. Puoi collaborare su <a href="https://github.com/Zverik/osmstreak/">GitHub</a>
+        ad esempio suggerendo nuove sfide!

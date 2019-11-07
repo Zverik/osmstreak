@@ -61,3 +61,7 @@ ja:
     leaderboard: リーダーボード
     leaderboard_content: >-
         リーダーボード（ランキング）機能はありません。あなたのことを知っているのはあなただけです。これは競争ではなく、チャレンジなのです。
+    contribute: 活動参加
+    contribute_content: >-
+        OSM Streakはオープンソースプロジェクトです。新しいチャレンジの提案などありましたら <a href="https://github.com/Zverik/osmstreak/">GitHub</a>
+        で提案ください！
