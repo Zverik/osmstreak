@@ -29,9 +29,9 @@ de:
     no_task: "Du hast die Website von OSM Streak unter {} nicht besucht."
     has_later_changeset: "Entschuldigung, aber du hast schon einen Changeset an diesem Tag oder danach eingereicht."
     old_changeset: "Dieses Changeset ist zu alt, bitte mache eine neue Bearbeitung."
-    changeset_noted: "Changeset wurde registriert, Danke! Das sind {} in einer Reihe."
-    extra_point: "Ein zusätzlicher Punkt zum Abschließen der Aufgabe."
-    gain_level: "Glückwünsch zum Erreichen eines Levels!"
+    changeset_noted: "Der Changeset wurde registriert, Danke! Das sind {} in einer Reihe."
+    extra_point: "Ein zusätzlicher Punkt für das Abschließen der Aufgabe."
+    gain_level: "Glückwünsch zum Erreichen eines neuen Levels!"
   email:
     hi: 'Hallo {},'
     new_task: 'Du willst ein bisschen mappen und deinen Streak erweitern? Hier ist eine Idee:'
@@ -78,3 +78,7 @@ de:
     leaderboard_content: >-
         Es gibt keine Bestenliste. Du willst nicht wissen, wer vor oder hinter dir
         ist. Dies ist eine Herausforderung, kein Wettbewerb.
+    contribute: Beitrag leisten
+    contribute_content: >-
+        OSM Strak ist open source. Du kannst dazu <a href="https://github.com/Zverik/osmstreak/">auf
+        GitHub</a> beitragen, z.B. indem du neue Aufgaben vorschlägst!
