@@ -1,0 +1,81 @@
+gl:
+  title: "OSM Streak"
+  please_sign_in: "Para rexistrar o teu progreso e obter tarefas avanzadas, [accede] coa túa conta do OpenStreetMap."
+  connect: Conectar
+  login: Rexistrarse
+  help: Acerca de
+  thanks: "Grazas por editar hoxe no OpenStreetMap!"
+  submit_changeset: "Envía a URL dun conxunto de modificacións para a tarefa, ou escóllea nunha listaxe"
+  verify: Verificar
+  update_list: "actualizar"
+  no_changesets: "Non editaches no OpenStreetMap últimamente."
+  time_left: "Tempo restante para enviar un conxunto de modificacións"
+  connect_intro: "Recibir notificacións para novas tarefas e enviar conxuntos de modificacións polo Telegram ou o correo electrónico."
+  telegram_start: "fai clic para iniciar o programa"
+  subscribe: Subscribirse
+  unsubscribe: Desubscribirse
+  time:
+    n_hours: "{} horas"
+    hour: "unha hora"
+    n_minutes: "{} minutos"
+    today: "Hoxe"
+    yesterday: "Onte"
+  validation:
+    wrong_id: "Id de conxunto de modificacións incorrecta: {}."
+    wrong_date: "A data do conxunto de modificacións é incorrecta."
+    api_error: "Erro conectando á API do OSM."
+    api_strange: "A API do OSM devolveu algo estrano para o xml raíz."
+    not_yours: "Por favor, engade só os teus conxuntos de modificacións."
+    no_task: "Non visitaches o sitio do OSM Streak en {}"
+    has_later_changeset: "Sentímolo, xa tes un conxunto de modificacións rexistrado en ou após ese día."
+    old_changeset: "Este conxunto de modificacións é demasiado vello, por favor fai outra edición."
+    changeset_noted: "Conxunto de modificacións anotado, grazas! Iso supón {} seguidos."
+    extra_point: "Un punto extra por completar a tarefa."
+    gain_level: "Parabéns polo nivel obtido!"
+  email:
+    hi: 'Ola {},'
+    new_task: 'Queres cartografar un chisco e despois seguir? Aquí tes unha idea:'
+    to_submit: 'Cando remates, por favor diríxete a {} e preme no último conxunto de modificacións.'
+    bye: 'Os teus,'
+  about:
+    what_is_this: Que é isto?
+    what_is_this_content: >-
+        O OSM Streak faite realizar pequenas tarefas para o OpenStreakMap cada día.
+        O obxectivo é cartografar todos os días durante polo menos un ano. As tarefas
+        son pequenas, de cinco minutos cada unha. Trátase de cartografar todos os
+        días, non de cartografar todo o que poidas. A persistencia paga a pena.
+    points: Puntos
+    points_content: >-
+        Por cada envío obtés puntos. Ó principio obtés un punto, a partir do terceiro
+        día seguido obtés dous por cada tarefa, e así de xeito sucesivo. Se te mantés
+        cartografando durante un mes seguido obtés cinco puntos por conxunto de modificacións.
+    tasks: Tarefas
+    tasks_content1: >-
+        Non tes que facer exactamente o que che di a páxina. Aceptarase calquera conxunto
+        de modificacións non baleiro. Pero se segues a descrición da tarefa, obterás
+        un punto adicional.
+    tasks_content2: >-
+        Non deixes que a tarefa che intimide. Se cres que é moi difícil, cartografa
+        outra cousa, por exemplo, un edificio. O obxetivo é cartografar todos os días,
+        non completar todas as tarefas.
+    stars: Estrelas
+    stars_content: >-
+        Cos puntos tamén gañas nivel. Comezas no nivel 1: o número de estrelas é o
+        nivel no que estás. En uns poucos días pasarás ó nivel 2. Os novos niveis
+        dan acceso a novas tarefas. Velaquí tes os limiares de puntos para gañar niveis
+    stars_level2: nivel 2 (aproximadamente cinco días de xeito consecutivo)
+    stars_level3: nivel 3 (tres semanas)
+    stars_level4: nivel 4 (tres meses)
+    stars_level5: nivel 5 (aproximadamente un año)
+    stars_fame: >-
+        O cartógrafos que chegan ó derradeiro nivel entran ó salón da fama. Poden
+        continuar o seu cartografado após iso, por suposto. Para cada conxunto de
+        modificacións nese intre obterán 16 puntos.
+    leaderboard: Táboa de clasificación
+    leaderboard_content: >-
+        Non hai unha táboa de clasificación. Non saberás quen está diante de ti e
+        quen está detrás. Isto é un desafío, non unha competición.
+    contribute: Contribuír
+    contribute_content: >-
+        O OSM Streak é de código aberto. Podes contribuír a el no <a href="https://github.com/Zverik/osmstreak/">GitHub</a>,
+        por exemplo, suxerindo novos desafíos!

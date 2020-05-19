@@ -1,0 +1,41 @@
+gl:
+  only_text: "Sentímolo, acéptanse só mensaxes de texto."
+  no_code: "Por favor vai a {0}/settings e preme na ligazón do Telegram, entón preme en \"Comezar\"."
+  wrong_code: "O teu código semella incorrecto."
+  welcome: "Benvido {}!"
+  already_logged: "Xa estás rexistrado coma {}."
+  you_are: "Ti es {}."
+  which_utc: "A que hora UTC gustarías de cartografar?"
+  task_complete: "Grazas por editar no OpenStreetMap hoxe!"
+  no_changesets: "Non editaches no OpenStreetMap ultimamente."
+  unknown_cmd: "Comando descoñecido. Por favor, envía /help para obter a listaxe."
+  no_remind: "Non te amolarei. Emprega /now ou /remind para estabelecer unha lembranza diaria."
+  remind_on: "Enviareiche unha nova tarefa cada día ás {} UTC. Envía /stop se te amola."
+  lang_set: "Escribirei en galego."
+  no_such_lang: "Lingua non dispoñíbel. Os soportados son: {}."
+  time_left: "Tempo restante"
+  post_changeset: "Envía /done cando remates, ou a ID dun conxunto de modificacións se fixeches varios."
+  have_old_changesets: "Tes vellos conxuntos de modificacións non enviados, escolle un."
+  list_header: "Preme na ID dun conxunto de modificacións para envialo:"
+  n_points: "{} puntos"
+  help: |-
+      Este programa axúdache a editar o OpenStreetMap todos os días.
+
+      Envía /start <code_from_website> para ter lembranzas diarias.
+
+      Comandos:
+
+      /task — amosa a tarefa para hoxe
+      /score — amosa a túa puntuación e nivel
+      /done — enviar o último conxunto de modificacións
+      /list — amosa os conxuntos de modificacións dispoñíbeis
+
+      /now — lembranza diaria a esta hora
+      /remind <hh:mm> — escolle o intre para recibir a lembranza
+      /when — amosa cando será recibida a lembranza
+      /stop — detén as lembranzas
+
+      /whoami — amosa o teu nome do OSM
+      /lang <code> — mudar lingua
+
+      Páxina web: {web}

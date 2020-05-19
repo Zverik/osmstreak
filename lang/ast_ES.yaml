@@ -76,3 +76,7 @@ ast_ES:
     leaderboard_content: >-
         Nun hai tabla de clasificación. Nun sabrás quién ta delantre de ti y quién
         ta detrás. Esto ye un desafíu, non una competición.
+    contribute: Collaborar
+    contribute_content: >-
+        OSM Streak ye códigu abiertu. Pues collaborar con él <a href="https://github.com/Zverik/osmstreak/">en
+        GitHub</a>, por casu suxeriendo nuevos retos.

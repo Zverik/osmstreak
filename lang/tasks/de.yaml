@@ -1,9 +1,9 @@
 de:
   bridge:
-    description: Viele Straßen in ländlichen Gegenden wurden schnell und ohne Rücksicht auf kreuzende Flüße oder Bäche eingetragen. Finde einen Ort an dem ein Mapper vergessen hat eine Straße zu teilen und eine Brücke einzutragen und erledige das für sie.
+    description: Viele Straßen in ländlichen Gegenden wurden schnell und ohne Rücksicht auf kreuzende Flüsse oder Bäche eingetragen. Finde einen Ort, an dem ein Mapper vergessen hat, eine Straße zu teilen und eine Brücke einzutragen, und erledige das für sie.
     title: Trage eine Brücke ein
   stream:
-    description: Flüsse sind nahezu überall auf der Welt eingetragen, aber Bäche existieren viel zu oft, dass gar nicht alle eingetragen werden können. Finde einen Bach (keinen Graben), und trage ihn ein.
+    description: Flüsse sind nahezu überall auf der Welt eingetragen, aber Bäche existieren viel zu oft, so dass gar nicht alle eingetragen werden können. Finde einen Bach (keinen Graben) und trage ihn ein.
     title: Trage einen Bach ein
   postcode:
     description: In manchen Ländern wie Russland oder den USA kann man die Postleitzahl in öffentlichen Datenbanken nachlesen. In anderen Ländern wiederum weiß man die Postleitzahl entweder einfach oder erschließt sie sich aus indirekten Quellen wie z.B. ein Laden oder eine Website. Finde eine Postleitzahl von irgendeinem Gebäude, welches keine Postleitzahl besitzt und trage diese ein.
@@ -39,7 +39,7 @@ de:
     description: 'Öffne die Startseite von OpenStreetMap: [https://openstreetmap.org]. Klicke rechts auf "Ebenen" und aktiviere "Hinweise/Fehlermeldungen". Finde einen Hinweis oder eine Fehlermeldung, die du beheben kannst. Behebe dann einen Hinweis oder eine Fehlermeldung.'
     title: 'Bearbeite "Hinweise/Fehlermeldungen". '
   around_the_world:
-    description: Lass uns ein Changeset mit einer riesigen Bounding Box erstellen. Mappe erst etwas in [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Südchile], und dann in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamtschatka].
+    description: Lass uns einen Changeset mit einer riesigen Bounding Box erstellen. Mappe erst etwas in [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Südchile], und dann in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamtschatka].
     title: Um die Welt in fünf Minuten
   highway:
     description: Straßen sind für digitale Karten sehr wichtige Elemente zur Orientierung oder zur Navigation. Finde eine nicht eingetragene Straße in deiner Nähe oder in einer Gegend in Afrika oder Lateinamerika und füge die Straße hinzu. Im Wiki findest Du Hilfe wie das Wertepaar "Schlüssel=Wert" kartiert werden kann. [https://wiki.openstreetmap.org/wiki/Key:highway#Usage]. Im Zweifelsfall wählst Du `highway=unclassified`
@@ -99,5 +99,5 @@ de:
     description: Gehwege sind Fußwege neben Straßen. Um Fußgänger besser navigieren zu können, finde eine Straße ohne einen eingetragenen Gehweg und zeichne zwei Fußwege auf beiden Seiten ein (unterstützt durch ein Satellitenbild) und füge den Tag "footway=sidewalk" hinzu. Wenn du eine Kreuzung als einen Weg hinzufügst, benutze "highway=footway" und "footway=crossing".
     title: Füge einen Gehweg hinzu
   delete:
-    description: Es ist nicht schwer etwas Neues einzutragen. Aber kannst du irgendetwas Bereinigen? Lösche 5 Objekte - aber nur solche, die veraltet, redundant oder überflüssig sind!
+    description: Es ist nicht schwer, etwas Neues einzutragen. Aber kannst du irgendetwas bereinigen? Lösche 5 Objekte - aber nur solche, die veraltet, redundant oder überflüssig sind!
     title: Bereinigen!

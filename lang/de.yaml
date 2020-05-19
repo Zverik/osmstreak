@@ -9,7 +9,7 @@ de:
   verify: Überprüfen
   update_list: "aktualisieren"
   no_changesets: "Du hast in letzter Zeit nichts in OpenStreetMap bearbeitet."
-  time_left: "Verbleibende Zeit, um ein Changeset einzureichen"
+  time_left: "Verbleibende Zeit, um einen Changeset einzureichen"
   connect_intro: "Erhalte eine Benachrichtigung für neue Aufgaben und reiche Changesets über Telegram oder per Email ein."
   telegram_start: "klicke, um den Bot zu starten"
   subscribe: Abonnieren
@@ -28,7 +28,7 @@ de:
     not_yours: "Bitte füge nur deine Changesets hinzu."
     no_task: "Du hast die Website von OSM Streak unter {} nicht besucht."
     has_later_changeset: "Entschuldigung, aber du hast schon einen Changeset an diesem Tag oder danach eingereicht."
-    old_changeset: "Dieses Changeset ist zu alt, bitte mache eine neue Bearbeitung."
+    old_changeset: "Dieser Changeset ist zu alt, bitte mache eine neue Bearbeitung."
     changeset_noted: "Der Changeset wurde registriert, Danke! Das sind {} in einer Reihe."
     extra_point: "Ein zusätzlicher Punkt für das Abschließen der Aufgabe."
     gain_level: "Glückwünsch zum Erreichen eines neuen Levels!"
@@ -42,7 +42,7 @@ de:
     what_is_this_content: >-
         OSM Streak erlaubt es dir, jeden Tag eine kleine Aufgabe für die OpenStreetMap
         zu erledigen. Das Ziel ist, jeden Tag eines ganzen Jahres zu etwas zu mappen.
-        Die Aufgaben sind ganz einfach, meist dauern Sie nur fünf Minuten. Wichtig
+        Die Aufgaben sind ganz einfach, meist dauern sie nur fünf Minuten. Wichtig
         ist, jeden Tag zu mappen, nicht so viel du kannst. Hartnäckigkeit zahlt sich
         aus.
     points: Punkte
@@ -80,5 +80,5 @@ de:
         ist. Dies ist eine Herausforderung, kein Wettbewerb.
     contribute: Beitrag leisten
     contribute_content: >-
-        OSM Strak ist open source. Du kannst dazu <a href="https://github.com/Zverik/osmstreak/">auf
+        OSM Streak ist open source. Du kannst dazu <a href="https://github.com/Zverik/osmstreak/">auf
         GitHub</a> beitragen, z.B. indem du neue Aufgaben vorschlägst!

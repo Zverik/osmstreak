@@ -15,6 +15,7 @@ es:
   no_such_lang: "Idioma no disponible. Los soportados son: {}."
   time_left: "Tiempo restante"
   post_changeset: "Envía /done cuando acabes, o el ID de un conjunto de cambios si has hecho varios."
+  have_old_changesets: "Tienes viejos conjuntos de cambios no enviados, elige uno."
   list_header: "Haz clic en el ID de un conjunto de cambios para enviarlo."
   n_points: "{} puntos"
   help: |-
