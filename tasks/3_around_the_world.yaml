@@ -1,9 +1,0 @@
-title: Around the World in Five Minutes
-emoji: ✈️
-description: >-
-  Let's create a changeset with an enormous bounding box. Map something first in
-  [https://www.openstreetmap.org/#map=5/-48.487/-69.895 South Chile],
-  and then in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
-test:
-  create_node_a: "bbox:-76.57,-56.75,-65.19,-41.36"
-  create_node_b: "bbox:154.56,49.84,174.59,65.15"
