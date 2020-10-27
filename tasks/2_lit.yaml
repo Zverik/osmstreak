@@ -1,7 +1,6 @@
 title: Paint a Road Lit
 emoji: 🌃
 description: >-
-  City at night looks better when the streets are lit. Add ''lit=yes'' or ''lit=no'' to few roads,
-  and later watch it get coloured [http://product.itoworld.com/map/69 on this map].
+  City at night looks better when the streets are lit. Add ''lit=yes'' or ''lit=no'' to few roads.
 test:
   modified_way: "lit=*"
