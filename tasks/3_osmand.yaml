@@ -5,7 +5,7 @@ description: >-
   OpenStreetMap applications for Android devices,
   highly configurable, but a bit too complex for some. It can upload points to the map.
   Install the "OSM Editing" plugin and create a point somewhere. Read
-  [http://osmand.net/features?id=osm-editing-plugin the documentation] if you get lost
+  [https://osmand.net/features/osm-editing-plugin the documentation] if you get lost
   in the interface.
 test:
   changeset: "created_by=OsmAnd*"

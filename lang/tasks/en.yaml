@@ -31,7 +31,7 @@ en:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd]
       is one of the popular OpenStreetMap applications for Android devices, highly
       configurable, but a bit too complex for some. It can upload points to the map.
-      Install the "OSM Editing" plugin and create a point somewhere. Read [http://osmand.net/features?id=osm-editing-plugin
+      Install the "OSM Editing" plugin and create a point somewhere. Read [https://osmand.net/features/osm-editing-plugin
       the documentation] if you get lost in the interface.'
     title: Use OsmAnd
   improve_river:
@@ -55,9 +55,9 @@ en:
     title: A Small Fix
   gomap:
     description: 'While Android platform has many OSM editors, iOS is lacking. The
-      best OSM editor for it has been [https://itunes.apple.com/app/id592990211 Go
-      Map!!] (with exclamation marks), but it has been last updated in 2015. Still,
-      it works: give it a try, make an edit with it.'
+      best OSM editor for it is [https://itunes.apple.com/app/id592990211 Go
+      Map!!] (with exclamation marks), and it has come back from abandonware with
+      an update for iOS11 and iPhone X. No more excuses not to map on the go - so go map!!'
     title: Go Map!!!
   giveway:
     description: There is a special tag for mapping the triangle "give way" sign.
