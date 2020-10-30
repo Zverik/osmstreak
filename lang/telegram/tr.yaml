@@ -1,0 +1,41 @@
+tr:
+  only_text: "Üzgünüm, sadece metin halindeki iletileri kabul ediyorum."
+  no_code: "Lütfen {0}/settings adresine git ve Telegram bağlantısına tıkla, sonra bu sayfada \"Start\" bağlantısına tıkla."
+  wrong_code: "Kodun yanlış görünüyor."
+  welcome: "Merhaba {}!"
+  already_logged: "Zaten {} olarak oturum açmış durumdasın."
+  you_are: "Kullanıcı adın {}."
+  which_utc: "UTC zaman diliminde saat kaçta haritalama yapmak istersin?"
+  task_complete: "Bugün OpenStreetMap'i düzenlediğin için teşekkürler!"
+  no_changesets: "Yakın zamanda OpenStreetMap üzerinde bir değişiklik yapmadın."
+  unknown_cmd: "Bilinmeyen komut, lütfen listeyi görmek için /help komutunu gönder."
+  no_remind: "Seni rahatsız etmeyeceğim. Gunluk bir hatırlatıcı kurmak için /now ya da /remind komutlarını kullan."
+  remind_on: "Sana her gün saat {} (UTC) olduğunda yeni bir görev göndereceğim. Eğer bu seni rahatsız ederse /stop komutunu gönder."
+  lang_set: "Sana İngilizce dilinde yazacağım."
+  no_such_lang: "Bu dili bilmiyorum. Desteklenen diller: {}"
+  time_left: "Kalan süre"
+  post_changeset: "Bitirdikten sonra /done komutunu, ya da birden fazla değişiklik kümesi varsa, küme numarasını gönder."
+  have_old_changesets: "Gönderilmemiş eski değişiklik kümeleri var, lütfen birisini seç."
+  list_header: "Bir değişiklik kümesi numarasına tıklayarak gönder."
+  n_points: "{} puan"
+  help: |-
+      Bu bot her gün OpenStreetMap haritasına katkıda bulunmana yardımcı olur.
+
+      Günlük hatırlatıcılar almak için /start <code_from_website> komutu gönder.
+
+      Komutlar:
+
+      /task — günün görevini göster
+      /score — puan ve seviyeni göster
+      /done — en son değişiklik kümesini gönder
+      /list — gönderilebilir değişiklik kümelerini göster
+
+      /now — her gün komutun gönderildiği saatte hatırlat
+      /remind <hh:mm> — hatırlatma saatini seç
+      /when — hatırlatma saatini göster
+      /stop — hatırlatmay bırak
+
+      /whoami — OSM kullanıcı adını göster
+      /lang <code> — dil değiştir
+
+      Websitesi: {web}

@@ -1,0 +1,82 @@
+tr:
+  title: "OSM Streak"
+  please_sign_in: "İlerleyişini takip etmek ve daha ileri seviye görevler edinmek için OpenStreetMap hesabınla [giriş yap]."
+  connect: Bağlan
+  login: Giriş yap
+  help: Hakkında
+  thanks: "Bugün OpenStreetMap'i düzenlediğin için teşekkürler!"
+  submit_changeset: "Görev icin bir değişiklik kümesi URL'si gönder ya da listeden seç."
+  verify: Doğrula
+  update_list: "güncelle"
+  no_changesets: "Yakın zamanda OpenStreetMap üzerinde bir değişiklik yapmadın."
+  time_left: "Değişiklik kümesini göndermek için kalan süre"
+  connect_intro: "Telegram ya da e-posta araciligiyla yeni görev uyarılarını al ve değişiklik kümelerini gönder."
+  telegram_start: "botu başlatmak için tıkla"
+  subscribe: Abone ol
+  unsubscribe: Abonelikten çık
+  time:
+    n_hours: "{} saat"
+    hour: "bir saat"
+    n_minutes: "{} dakika"
+    today: "Bugün"
+    yesterday: "Dün"
+  validation:
+    wrong_id: "Yanlış değişiklik kümesi numarası: {}."
+    wrong_date: "Degisiklik kümesinin tarihi hatalı"
+    api_error: "OSM API bağlantısı sırasında bir hata oluştu."
+    api_strange: "OSM API kök xml için tuhaf bir sonuç gönderdi."
+    not_yours: "Lütfen sadece kendi değişiklik kümelerini ekle."
+    no_task: "{} tarihinde OSM Streak sitesini ziyaret etmedin"
+    has_later_changeset: "Üzgünüm, bu tarihte ya da sonrasında senin adına kayıtlı bir değişiklik kümesi zaten var."
+    old_changeset: "Bu degisiklik kümesi çok eski, lütfen yeni bir değişiklik yap."
+    changeset_noted: "Değişiklik kümesi kaydedildi, teşekkürler! Bu üstüste {}. düzenlemen oldu."
+    extra_point: "Görevi tamamladığın için fazladan bir puan."
+    gain_level: "Seviye atladığın için tebrikler!"
+  email:
+    hi: 'Merhaba {},'
+    new_task: 'Haritalamaya ve serini sürdürmeye devam etmek ister misin? İşte bir fikir:'
+    to_submit: 'Tebrikler, lütfen {} üzerinden en son değişiklik kümesine tıkla.'
+    bye: 'Sevgiler,'
+  about:
+    what_is_this: Bu nedir
+    what_is_this_content: >-
+        OSM Streak her gün sana OpenStreetMap üzerinde gerçekleştirmen için küçük
+        görevler verir. Amaç bir yıl boyunca her gün haritaya katkıda bulunmaktır.
+        Önemli olan yapabildiğin kadar haritalamak değil, her gün haritaya katkı yapmaktır.
+        Kararlılık karşılığını bulur.
+    points: Puan
+    points_content: >-
+        Gönderdiğin her değişiklik kümesi için puan kazanırsın. Başta bir puan, üstüste
+        üçüncü günden sonra her bir görev için iki puan alacaksın. Bir ay boyunca
+        kesintisiz haritalamaya devam edersen, bir değişiklik kümesi için beş puan
+        alabilirsin.
+    tasks: Görevler
+    tasks_content1: >-
+        Tam olarak sayfada verilen görevi yapmak zorunda değilsin. Boş olmayan herhangi
+        bir değişiklik kümesi kabul edilecektir. Ama tanımlanan görevi gerçekleştirirsen
+        fazladan bir puan alacaksın.
+    tasks_content2: >-
+        Görevlerin gözünü korkutmasına izin verme. Çok zor olduğunu düşünüyorsan başka
+        bir şeyi düzenle, örneğin herhangi bir bina. Amaç bütün görevleri tamamlamak
+        değil, her gün haritayı düzenlemek.
+    stars: Yıldız
+    stars_content: >-
+        Puanlarla seviye atlayabilirsin. 1. seviyede 1 yıldız ile başlarsın. Bir kaç
+        gün içinde ikinci seviyeye ilerleyeceksin. Yeni seviyelerle birlikte yeni
+        görevler açılır. Seviye atlamak için gereken puanlar şöyle:
+    stars_level2: seviye 2 (kabaca art arda beş gün)
+    stars_level3: seviye 3 (üç hafta)
+    stars_level4: seviye 4 (üç ay)
+    stars_level5: seviye 5 (kabaca bir yıl)
+    stars_fame: >-
+        Son seviyeye ulaşan haritacılar şöhretler salonuna eklenir. Elbette bundan
+        sonra da haritalamaya devam edebilirler. Bu andan itibaren, her bir değişiklik
+        kümesi için 16 puan alırlar.
+    leaderboard: Puan tablosu
+    leaderboard_content: >-
+        Bir puan tablosu yok. Seni geçen ya da arkanda kalanların kim olduğunu bilmeyeceksin.
+        Bu zorlu bir görev, yarışma değil.
+    contribute: Katkıda bulun
+    contribute_content: >-
+        OSM Streak açık kaynaklıdır. <a href="https://github.com/Zverik/osmstreak/">GitHub
+        üzerinden</a>, örneğin yeni görevler önererek katkıda bulunabilirsin!

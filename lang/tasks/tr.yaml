@@ -1,0 +1,103 @@
+tr:
+  bridge:
+    description: Kırsal bölgelerdeki pek çok yol akarsu ve ırmaklar üzerinden geçişi göz önünde bulundurulmadan hızlıca çizilir. Ekleyen kişinin bir yolu bölüp köprüyü işaretmeleyi unuttuğu bir noktayı bul ve onlar için köprüyü ekle.
+    title: Bir köprü çiz
+  stream:
+    description: Irmaklar dünya çapında büyük oranda haritalandırılmıştır, ama çok fazla ırmak olduğundan tamamını eklemek zordur. Bir akarsu bul (hendek değil) ve haritaya ekle.
+    title: Bir akarsu çiz
+  postcode:
+    description: Rusya ve ABD gibi bazı ülkelerde, postakodlarını kamuya açık veritabanlarında bulabilirsin. Bunu bulamadığın yerlerde postakodlarını kişisel bilgilerinden ya da bir dükkanın websitesi gibi kaynaklardan yola çıkarak elde edebilirsin. Bir postakodu bul ve postakodu olmayan bir binaya ekle.
+    title: Bir postakodu ekle
+  bench:
+    description: Parkta gezerken gördüğün banklar vardı ya. Bu görev sırasında bir tane bank ekleyeceğin için, bankların konumlarını hatırlamaya çalış.
+    title: Haritaya bir bank ekle.
+  turn_restriction:
+    description: Mapillary yad a OSM ile uyumlu başka bir kaynaktan haritalanmamış bir dönüş yasağı bul. İstersen küçük bir yerleşim yeri seç. Yasağı haritaya ekle.
+    title: Bir dönüş yasağı ekle
+  lit:
+    description: Gece sokaklar aydınlatıldığında şehir daha iyi görünür. Bir kaç yola "lit=yes" ya da "lit=no" etiketlerini ekle, ve daha sonra [http://product.itoworld.com/map/69 bu harita üzerinde] renklendirilmesini izle.
+    title: Bir yolu aydınlat
+  osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] Android cıhazlar için en yaygın ÖpenStreetMap uygulamalarından birisi, ileri derecede özelleştirilebilir ancak bazıları için biraz fazla karmaşıktır. "OSM Editing" eklentisini kur ve herhangi bir yere bir nokta ekle. Eğer arayüzde kaybolursan [http://osmand.net/features?id=osm-editing-plugin yardım belgelerini] oku.'
+    title: OsmAnd kullan
+  improve_river:
+    description: "Bir çok nehir haritaya eklenmiştir. Ama sorun, bunun düşük çözünürlüklü uydu görüntüleri kullanılarak yapılmış olması. Daha iyisini yapabilirsin. JOSM uygulamasını aç, bir nehir seç, \"W\" tuşuna baş ve nehrin şeklini iyileştir. Bir \"waterway=river\" bul ve en az 10 nokta ekle."
+    title: Bir nehri iyileştir
+  josm:
+    description: "Eğer halen kurmadıysan JOSM düzenleyici uygulamasını kur ve uygulamayı kullanarak bir şeyleri düzenle. Bir kaç bina çizmeni öneririz.\n\nHaritanın bir bölümünü indir, bir uydu görüntüsü ekle, \"A\" tuşuna bas be binanın köşesine tıkla. Daha sonra bir yanındaki köşeye çift tıklayarak bir cizgi oluştur. \"X\" tuşuna baş ve çizgiyi dışarıya doğru çekerek bir dikdörtgen oluştur. En son \"Alt+A\" tuşlarına basarak \"building=yes\" etiketini ekle ve değişikliği yükle."
+    title: JOSM ile bir değişiklik yap
+  fix:
+    description: 'Değişiklik kümesi açıklamaları önemlidir. Ama bugün senin için önemli değil: Bir değişiklik yap ve değişiklik kümesi açıklamasına "fix" yaz, sadece bu üç harf, başka bir şeye gerek yok.'
+    title: Küçük Bir Düzeltme
+  gomap:
+    description: 'Android platformunda pek çok OSM düzenleme uygulaması varken, iOS için çok yoktur. Platform için en iyi OSM düzenleme uygulaması [https://itunes.apple.com/app/id592990211 Go Map!!] (Ünlem işaretleri ile birlikte) olmuştur ancak 2015 yılından beri güncellenmedi. Halen çalışıyor, hemen dene ve uygulama ile bir düzenleme yap.'
+    title: Go Map!!!
+  giveway:
+    description: Üçgen "yol ver" işaretini haritaya eklemek için ozel bir etiket var. Tahmin edebileceğin üzere [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Ya Mapıllary üzerinen ya da belleğinden işareti bul, yol vermesi gereken otoyola bir nokta ekle ve bu noktayı bu etiketle işaretle. Ana yola da priority_road etiketi ekle.
+    title: Yol ver
+  note:
+    description: OSM üzerinde notları görüntüle ve çözebileceğin açık bir not bul. Notta belirtilen sorunu çöz.
+    title: Bir notta belirtilen sorunu çöz
+  around_the_world:
+    description: Devasa sınırları olan bir değişiklik kümesi yaratalım. Önce [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Güney Şili'de], sonra da [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamçatka'da] bir şeyleri haritala.
+    title: Beş dakikada devri alem
+  highway:
+    description: OpenStreetMap hesabı açar açmaz pek cok kişinin ilk yaptığı şey genelde budur. Haritalandırılmamış bir yol bul ve haritaya ekle.
+    title: Haritaya bir yol ekle
+  subway:
+    description: 'Bunun için [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 şemasını] bilmen gerekir. [https://osmz.ru/subways/ Subway Validator] uygulamasını aç ve metrosunda hata olan bir şehir seç. Değişiklik bir metro hattını düzenlemeyi içermelidir. Düzelt ve bırak ya da metro ağını düzenlemeye devam et. '
+    title: Bir metro hattını düzelt
+  buildings:
+    description: Herhangi bir yerde en az 20 bina çiz. Kullandığın düzenleyiciyi aç, az haritalandırılmış kırsal ya da sanayi bölgesi bul ve bazı binaları çiz.
+    title: Yirmi bina çiz
+  lanes:
+    description: '"lanes" (şerit) etiketi eklenmemiş bir yol bul. Bölgenin iyi bir uydu görüntüsünü bul ve yolun şerit sayısını ekle. '
+    title: Şeritleri say
+  streetcomplete:
+    description: 'Eğer iPhone kullanıyorsan şansına küs. Android için [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] uygulamasını yükle ve bir kaç görevi tamamla. Her biri sadece bir kaç saniye sürüyor. '
+    title: StreetComplete ile haritaya katkı yap
+  leaf_types:
+    description: Ağaçları haritalamak noktaya sadece "natural=tree" etiketini eklemek değildir. Türünü de belirtmen gerekir. Lütfen [https://wiki.openstreetmap.org/wiki/Key:leaf_type leaf_type] ve [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], etiketi sayfalarını oku ve sonra evine yakın ya da bildiğin başka bir yere bu etiketleri kullanarak iki ağaç ekle.
+    title: İki ağaç dik
+  waste_basket:
+    description: "Dışarıda dolaşırken dükkanların yakınında, otobüs duraklarında, bina girişlerinde pek çok çöp kutusunun yanından geçiyorsun. Bir tanesinin konumunu aklında tut ve \"amenity=waste_basket\" etiketi ile haritaya ekle."
+    title: Çöp kutuları
+  tiger:
+    description: '[https://wiki.openstreetmap.org/wiki/TIGER TİGER] ABD yollarına ait kamu mali bir veri kümesidir. 2005 yılında içe aktarıldı ama aktarım eksikti. tiger:reviewed=no etiketine sahip otoyollar bul ve doğru yol sınıfını ekleyip etiketi kaldırarak en az üç tanesini düzelt.'
+    title: Kaplanı düzelt
+  tracks:
+    description: Toprak yol bir çiftliğe ya da orman arazisine giden türde bir yoldur. [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] etiketi ve seçime bağlı 'tracktype=gradeN' etiketiyle işaretlenir. N 1 (en iyi) ile 5 (en kötü) arasında bir değerdir. Bir tarla ya da orman bul ve 2-3 km uzunluğunda toprak yol ekle.
+    title: Toprak yollar çiz
+  hot_task:
+    description: '[https://tasks.hotosm.org/ HOT Görev Yoneticisi]''ni aç ve rastgele bir faal görev seç. Görev içinden rastgele bir sarı kare seç ve doğrulama yap. Yeni haritacıların binaları nasıl çizdiklerine bak, üzerine biraz düşün ve kenarları dikleştirerek, şekilleri geliştirerek düzeltmeler yap. Bir kaç tane yapsan yeterli olur.'
+    title: Bir binayı duzelt
+  lamps:
+    description: Dışarısı karanlık mı? Bir lamba tarafından aydınlatılan bir sokak mı gördün? Eminiz ki o lamba haritaya eklenmemiştir. Haritaya en az iki tane [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp] ekle.
+    title: Bir sokak lambası dik
+  coastline:
+    description: Pek çok kıyı şeridi uzun zaman önce sayısallaştırılmış düşük çözünürlüklü uydu görüntüleri kullanılarak eklendi. Bazı yerlerde daha iyi görünmelerini sağlayabilirsin. Bir kıyı şeridine en az on nokta ekle.
+    title: Bir kıyı şeridini iyileştir
+  haiti:
+    description: '2010 yılında Haiti''nin başkenti Port-au-Prince''in 25 km batısında korkunç bir deprem meydana geldi. Bu olay, başkentin tamamını harika bir şekilde haritaya ekleyen İnsanı Haritalama Takımı''nın (Humanitarian Mapping Team) başlangıcı oldu. Ama ülkenin geri kalanı icin değil. Haiti''de haritaya eklenmemiş bir bina bul ve çiz. '
+    title: Haiti'yi ziyaret et
+  railway:
+    description: 'Demiryolları genellikle yollardan daha az ilgi çekerler, ama bu onların yollardan daha az önemli olduğunu göstermez. Bir demiryolunu haritalandır. Eğer haritalandırılmamış bir demir yolu bulamadıysan istasyonlardaki yan hatları çiz. '
+    title: Haritaya bir demiryolu ekle
+  turnlanes:
+    description: '[https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes] sayfasını oku ve uydu görüntülerinde ya da Mapillary üzerinde şeritleri belirgin bir kavşak bul. Daha sonra kavşağa bağlanan her dönüş şeridini haritala. '
+    title: Dönüş Şeritleri
+  farmland:
+    description: 'Sürülmüş bir arazi ya da bir mera bul (ABD''nin orta kesimlerini ya da Rusya''nın batısını dene) ve [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland] etiketi ile haritalandır. '
+    title: Haritaya tarım alanı ekle
+  switch:
+    description: İki demiryolu birleştiğinde bunu demiryolu makası sayesinde yaparlar. Bir istasyon bul ve demiryollarının birleştiği en az iki noktaya [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] etiketi ile makas ekle.
+    title: Demiryolu makası ekle
+  mapsme:
+    description: MAPS.ME sadece birden çok platformda çalışan bir harita görüntüleyici ya da rota belirleyici değildir. Haritayı düzenlemek için de kullanılabilir. Bir tesise ya da menüden "Add a place" seçeneğine tıkla. Dene ve gör.
+    title: MAPS.ME uygulamasını kullan
+  sidewalk:
+    description: Kaldırım yolun yakınındaki bir yaya yoludur. Daha iyi yaya rotaları için, (uydu görüntülerinden destek alarak) kaldırımları haritalanmamış bir yol bul ve iki yanına da çizgiler çekerek "footway=sidewalk" etiketini ekle. Bir yaya geçidi çizerken "highway=footway" ve "footway=crossing" etiketlerini ekle.
+    title: Bir Kaldırım Ekle
+  delete:
+    description: 'Haritalayacak bir şeyler bulmak çok da zor değil. Ama silecek bir şeyler bulabilir misin? 5 nesneyi sil — ama sadece artık kullanılmayan ve gereksiz olanları. '
+    title: Sil!
