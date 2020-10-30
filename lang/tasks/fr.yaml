@@ -1,6 +1,6 @@
 fr:
   bridge:
-    description: De nombreuses routes dans les zones rurales sont tracées à la va vite sans faire des noeuds au niveau des ruisseaux et des rivières. Trouver les endroits où un mappeur a oublié de diviser les routes et marquer un pont et ainsi de suite.
+    description: De nombreuses routes dans les zones rurales sont tracées à la va vite sans faire des nœuds au niveau des ruisseaux et des rivières. Trouver les endroits où un mappeur a oublié de diviser les routes et marquer un pont et ainsi de suite.
     title: Dessiner un pont
   stream:
     description: Les rivières sont presque déjà toutes cartographiée, mais les ruisseaux sont trop nombreux pour être tous dessinés. Trouver un ruisseau (pas un fossé, ni un talweg) et cartographiez le.
@@ -9,13 +9,13 @@ fr:
     description: Dans certains pays, comme la France, la Russie ou les États-Unis, vous pouvez trouver un code postal dans une base de données accessible au public. Dans d'autres, vous le connaissez ou vous le déduisez de sources indirectes, comme un site Web de magasin. Ajoutez un code postal à un bâtiment qui n'en a pas encore.
     title: Ajouter un code postal
   bench:
-    description: Pensez à l'une de vos ballades dans un parc,  y avait-il des bancs ? Souvenez vous de leur emplacement, car pour cette tâche vous devez ajouter un banc.
+    description: Pensez à l'une de vos balades dans un parc, y avait-il des bancs ? Souvenez vous de leur emplacement, car pour cette tâche vous devez ajouter un banc.
     title: Cartographiez un banc
   turn_restriction:
     description: Trouvez une interdiction de tourner sur Mapillary, OpenStreetCam ou toute autre source compatible avec OSM. Choisissez une petite ville si vous le souhaitez. Cartographiez cette interdiction de tourner (turn restriction).
     title: Ajoutez une interdiction de tourner
   lit:
-    description: La nuit, les villes sont plus jolies lorsque les rues sont éclairées. Ajoutez "lit=yes" si la rue dispose d'éclairage publique, "lit=no" sinon. Puis, regardez le résultat sur [http://product.itoworld.com/map/69 cette carte].
+    description: La nuit, les villes sont plus jolies lorsque les rues sont éclairées. Ajoutez "lit=yes" si la rue dispose d'éclairage public, "lit=no" sinon. Puis, regardez le résultat sur [http://product.itoworld.com/map/69 cette carte].
     title: '"Éclairez" une route'
   osmand:
     description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] est l''une des applications OpenStreetMap populaires pour les appareils Android, hautement configurable, mais un peu trop complexe pour certains. Elle permet d''ajouter des POI sur la carte. Activez le greffon "Contribuer à OSM" et créer un point quelque part. Lire [http://osmand.net/features?id=osm-editing-plugin la documentation] si vous vous perdez dans l''interface.'
@@ -27,14 +27,14 @@ fr:
     description: "Installez l'éditeur JOSM, si vous ne l'avez pas déjà fait, et modifiez quelque chose avec. Nous recommandons de dessiner quelques bâtiments: \n  \nTéléchargez une partie de la carte, ajoutez une couche d'imagerie, appuyez sur \"A\" et cliquez sur un coin d'un bâtiment. Puis double-cliquez sur un coin adjacent, ce qui en fait une ligne. Ensuite, appuyez sur \"X\" et faites glisser la ligne pour en faire un rectangle. Enfin, appuyez sur \"Alt + A\" pour ajouter \"'building = yes' ', puis envoyer la modification."
     title: Faire une modification avec JOSM
   fix:
-    description: 'Les commentaires des changeset sont importants. Mais pas pour vous aujourd''hui: faites un changement et mettez "fix" dans le champ de commentaire changeset. Juste ces trois lettres, rien de plus.'
+    description: 'Les commentaires des changeset sont importants. Mais pas pour vous aujourd''hui : faites un changement et mettez "fix" dans le champ de commentaire changeset. Juste ces trois lettres, rien de plus.'
     title: Une petite correction/fix
   gomap:
     description: 'Alors que la plate-forme Android a de nombreux éditeurs OSM, iOS fait défaut. Le meilleur éditeur OSM pour cela est [https://itunes.apple.com/app/id592990211 Go Map!!] (avec des points d''exclamation). Faites un essai, faites une édition avec.'
     title: Contribuez avec Go Map!!
   giveway:
     description: 'Il y a une tag spécial pour ajouter le panneau de signalisation routière "céder le passage" : [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Trouvez un tel signe, soit en utilisant Mapillary ou votre mémoire, placez un nœud sur une route qui doit céder le passage, et marquez ce nœud avec le tag. Ajoutez également une balise priority_road à la route principale.'
-    title: Ajoutez un céder le passage
+    title: Ajoutez un cédez le passage
   note:
     description: Activez les notes sur le site web d'OSM et trouvez une note non résolue que vous pouvez corriger. Résolvez la note.
     title: Résoudre une note OSM
@@ -99,5 +99,5 @@ fr:
     description: 'Le trottoir est un chemin piéton près d''une route. Pour faciliter la navigation des piétons, trouvez une route avec les trottoirs non mappés. Dessinez 2 nouveaux chemin de chaque côté de la route et ajoutez le tag ''''footway=sidewalk''''. Puis reliez vos trottoir aux niveau des passages piéton et utilisant les tags ''''highway=footway + footway=crossing'''' sur le nœud commun entre la route et le chemin. '
     title: Ajouter un trottoir
   delete:
-    description: Il n'est pas difficile de trouver quelque chose à cartographier. Mais pouvez-vous trouver quelque chose à supprimer? Supprimer 5 objets - mais seulement ceux qui sont obsolètes ou redondants.
-    title: Supprimer!
+    description: Il n'est pas difficile de trouver quelque chose à cartographier. Mais pouvez-vous trouver quelque chose à supprimer ? Supprimer 5 objets - mais seulement ceux qui sont obsolètes ou redondants.
+    title: Supprimer !

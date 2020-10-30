@@ -5,7 +5,7 @@ fr:
   welcome: "Bienvenue {} !"
   already_logged: "Vous êtes déjà connecté en tant que {}."
   you_are: "Vous êtes {}."
-  which_utc: "A quelle heure UTC souhaitez-vous cartographier ?"
+  which_utc: "À quelle heure UTC souhaitez-vous cartographier ?"
   task_complete: "Merci d'avoir édité OpenStreetMap aujourd'hui !"
   no_changesets: "Vous n'avez pas édité OpenStreetMap récemment."
   unknown_cmd: "Commande inconnue. Envoyez /help pour obtenir la liste des commandes."
