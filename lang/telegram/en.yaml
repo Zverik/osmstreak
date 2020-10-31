@@ -1,6 +1,6 @@
 en:
   only_text: "Sorry, accepting only text messages."
-  no_code: "Please go to {0}/settings and press the telegram link, the click \"Start\" here."
+  no_code: "Please go to {0}/settings and press the telegram link, then click \"Start\" here."
   wrong_code: "Your code seems wrong."
   welcome: "Welcome {}!"
   already_logged: "You are already logged in as {}."

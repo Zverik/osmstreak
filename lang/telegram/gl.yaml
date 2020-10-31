@@ -1,6 +1,5 @@
 gl:
   only_text: "Sentímolo, acéptanse só mensaxes de texto."
-  no_code: "Por favor vai a {0}/settings e preme na ligazón do Telegram, entón preme en \"Comezar\"."
   wrong_code: "O teu código semella incorrecto."
   welcome: "Benvido {}!"
   already_logged: "Xa estás rexistrado coma {}."

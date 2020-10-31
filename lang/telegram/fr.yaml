@@ -1,6 +1,5 @@
 fr:
   only_text: "Désolé, n'accepte que les messages texte."
-  no_code: "Allez dans {0}/paramètres and appuyez sur le lien telegram. Puis cliquer sur le bouton \"Démarrer\" ici."
   wrong_code: "Votre code semble faux."
   welcome: "Bienvenue {} !"
   already_logged: "Vous êtes déjà connecté en tant que {}."

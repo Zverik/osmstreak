@@ -18,7 +18,6 @@ ast_ES:
     description: De nueche les ciudaes tienen meyor aspeutu cuando les cais tán illuminaes. Amiesta ''lit=yes'' o ''lit=no'' en delles rúes, y llueu mírales en color [http://product.itoworld.com/map/69 nesti mapa].
     title: Pinta la lluz d'una rúa
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] ye una de les aplicaciones populares d''OpenStreetMap pa preseos Android, configurable enforma, pero una migayina complicáu pa dalgunes persones. Puede xubir puntos al mapa. Instala''l complementu «OSM Editing» y crea un puntu auquiera. Llei [http://osmand.net/features?id=osm-editing-plugin la documentación] si te pierdes na interfaz.'
     title: Usar OsmAnd
   improve_river:
     description: "Bona parte de los ríos yá tán nel mapa. El problema ye qu'esto ta fecho usando imaxes de satélite de baxa resolución. Agora puedes ameyoralo: llanza JOSM, seleiciona un ríu, prime «W» y ameyora la vía. Amiesta polo menos 10 nodos a un ''waterway=river''."
@@ -30,7 +29,6 @@ ast_ES:
     description: 'Los comentarios de los conxuntos de cambios son importantes. Pero güei ye más fácil pa ti: fai un cambiu y pon «fix» nel campu de comentariu de los cambios. Sólo eses trés lletres, nada más.'
     title: Una pequeña igua
   gomap:
-    description: 'Mentanto que la plataforma Android tien munchos editores pa OSM, pa iOS falten. El meyor editor pa OSM d''ellos venía siendo [https://itunes.apple.com/app/id592990211 Go Map!!] (colos signos d''esclamación), pero l''últimu anovamientu foi en 2015. Sicasí, funciona: pruébalu, fai una edición con él.'
     title: Go Map!!!
   giveway:
     description: Hai una etiqueta especial pa marcar el triángulu de la señal «dexe pasu» nel mapa. Ye [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], naturalmente. Alcuentra esa señal, o usando Mapillary o de memoria, pon un nodiu na estrada que tien de dexar pasar, y marca esi nodiu cola etiqueta. Añade tamién una etiqueta priority_road a la estrada con preferencia.

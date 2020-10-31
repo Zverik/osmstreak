@@ -18,7 +18,6 @@ pt_PT:
     description: As cidades à noite são mais bonitas quando as estradas são iluminadas. Adicione ''lit=yes'' ou ''lit=no'' a umas poucas estradas, e depois veja-as coloridas [http://product.itoworld.com/map/69 neste mapa].
     title: Adicionar a iluminação de uma rodovia
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] é uma das populares aplicações OpenStreetMap para dispositivos Android, altamente configurável, mas um bocado complexo para algumas pessoas. Pode enviar nós (pontos) para o mapa. Instale o módulo "OSM Editing" e crie um nó num local. Leia [http://osmand.net/features?id=osm-editing-plugin a documentação] se estiver perdido na interface.'
     title: Utilizar OSMand
   improve_river:
     description: "A maioria dos rios já foi mapeada. O problema é que foram feitos com imagens de satélite em baixa resolução. Agora pode fazer melhor: abra o JOSM, selecione um rio, pressione a tecla \"W\" e melhore o percurso do rio. Adicione pelo menos 10 nós a um ''waterway=river''."
@@ -30,7 +29,6 @@ pt_PT:
     description: 'O sumário/resumo/comentário do conjunto de alterações é importante. Mas não hoje: faça uma alteração e coloque no campo do sumário "fix". Apenas estas 3 letras, nada mais.'
     title: Pequena correção
   gomap:
-    description: 'Enquanto que a plataforma Android tem muitos editores do OpenStreetMap, o iOS tem falta de algumas alternativas. O melhor editor para ele tem sido o [https://itunes.apple.com/app/id592990211 Go Map!!] (com pontos de exclamação), mas a última atualização foi em 2015. No entanto funciona: use-o fazendo uma edição com ele.'
     title: Go Map!!!
   giveway:
     description: Existe uma etiqueta especial para mapear o sinal triangular "ceder prioridade". É [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], obviamente. Encontre um sinal desses, quer usando o Mapillary ou a sua memória e coloque um nó numa estrada onde se encontra esse sinal, adicionando a etiqueta ao nó. Adicione também a etiqueta priority_road à estrada principal com prioridade.

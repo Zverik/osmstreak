@@ -18,7 +18,6 @@ fr:
     description: La nuit, les villes sont plus jolies lorsque les rues sont éclairées. Ajoutez "lit=yes" si la rue dispose d'éclairage public, "lit=no" sinon. Puis, regardez le résultat sur [http://product.itoworld.com/map/69 cette carte].
     title: '"Éclairez" une route'
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] est l''une des applications OpenStreetMap populaires pour les appareils Android, hautement configurable, mais un peu trop complexe pour certains. Elle permet d''ajouter des POI sur la carte. Activez le greffon "Contribuer à OSM" et créer un point quelque part. Lire [http://osmand.net/features?id=osm-editing-plugin la documentation] si vous vous perdez dans l''interface.'
     title: Utiliser OsmAnd
   improve_river:
     description: "La plupart des rivières ont déjà été cartographiées. Le problème est que cela a été fait en utilisant une imagerie satellitaire à basse résolution. Maintenant vous pouvez faire mieux : lancez JOSM, sélectionnez une rivière, appuyez sur \"W\" et améliorez le chemin. Ajouter au moins 10 nœuds à un  ''waterway=river''."
@@ -30,7 +29,6 @@ fr:
     description: 'Les commentaires des changeset sont importants. Mais pas pour vous aujourd''hui : faites un changement et mettez "fix" dans le champ de commentaire changeset. Juste ces trois lettres, rien de plus.'
     title: Une petite correction/fix
   gomap:
-    description: 'Alors que la plate-forme Android a de nombreux éditeurs OSM, iOS fait défaut. Le meilleur éditeur OSM pour cela est [https://itunes.apple.com/app/id592990211 Go Map!!] (avec des points d''exclamation). Faites un essai, faites une édition avec.'
     title: Contribuez avec Go Map!!
   giveway:
     description: 'Il y a une tag spécial pour ajouter le panneau de signalisation routière "céder le passage" : [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Trouvez un tel signe, soit en utilisant Mapillary ou votre mémoire, placez un nœud sur une route qui doit céder le passage, et marquez ce nœud avec le tag. Ajoutez également une balise priority_road à la route principale.'

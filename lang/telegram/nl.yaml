@@ -1,6 +1,5 @@
 nl:
   only_text: "Sorry, alleen tekstberichten zijn toegestaan."
-  no_code: "Ga naar {0}/instellingen en klik op de Telegram-link. Klik vervolgens hier op 'Start'."
   wrong_code: "Je commando lijkt niet te kloppen"
   welcome: "Welkom {}!"
   already_logged: "Je bent al ingelogd als {}."

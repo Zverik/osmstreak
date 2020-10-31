@@ -18,7 +18,6 @@ gl:
     description: A cidade pola noite pode verse mellor cando as rúas están alumeadas. Engade ''lit=yes'' ou ''lit=no'' para marcar se están alumeadas ou non.
     title: Debuxa unha estrada alumeada
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] é unha popular aplicación do OpenStreetMap para dispositivos Android, altamente configurábel, pero un pouco complexa para algúns. Pode subir puntos ó mapa. Instala o engadido de "OSM Editing" e crea un punto nalgún lugar. Le [http://osmand.net/features?id=osm-editing-plugin a documentación] se te sintes perdido coa interface.'
     title: Empregar OsmAnd
   improve_river:
     description: "Moitos ríos xa están cartografados. O tema é que foi feito empregando imaxes satelitais de baixa resolución. Agora podes melloralo: abre o JOSM, escolle un río, preme \"W\" e mellora a vía. Engade polo menos dez nós a un \"waterway=river\"."
@@ -30,7 +29,6 @@ gl:
     description: 'Os comentarios nos conxuntos de modificacións son importantes, pero non para ti hoxe: fai unha modificación e pon "fix" no campo do comentario do conxunto de modificacións. Só esas tres letras, nada máis.'
     title: Un pequeno arranxo
   gomap:
-    description: 'Mentres que a plataforma do Android dispón de varios editores, no iOS non hai moitos. O mellor editor foi https://itunes.apple.com/app/id592990211 Go Map!!] (con exclamacións), pero foi actualizado por derradeira vez no 2015. Porén, funciona: próbao, fai unha edición con el.'
     title: Go Map!!!
   giveway:
     description: Hai unha etiqueta especial para cartografar os sinais de ceda o paso. É [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way. Atopa unha deses sinais, ben empregando o Mapillary ou ben grazas á túa memoria e imaxes aéreas, coloca un nó na vía na que se ten que ceder o paso, e etiquétao. Engade tamén a etiqueta priority_road para a vía que ten a prioridade.

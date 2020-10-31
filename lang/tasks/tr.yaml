@@ -1,6 +1,6 @@
 tr:
   bridge:
-    description: Kırsal bölgelerdeki pek çok yol akarsu ve ırmaklar üzerinden geçişi göz önünde bulundurulmadan hızlıca çizilir. Ekleyen kişinin bir yolu bölüp köprüyü işaretmeleyi unuttuğu bir noktayı bul ve onlar için köprüyü ekle.
+    description: Kırsal bölgelerdeki pek çok yol akarsu ve ırmaklar üzerinden geçişi göz önünde bulundurulmadan hızlıca çizilir. Ekleyen kişinin bir yolu bölüp köprüyü işaretmeleyi unuttuğu bir noktayı bul ve onların yerine köprüyü ekle.
     title: Bir köprü çiz
   stream:
     description: Irmaklar dünya çapında büyük oranda haritalandırılmıştır, ama çok fazla ırmak olduğundan tamamını eklemek zordur. Bir akarsu bul (hendek değil) ve haritaya ekle.
@@ -18,7 +18,6 @@ tr:
     description: Gece sokaklar aydınlatıldığında şehir daha iyi görünür. Bir kaç yola "lit=yes" ya da "lit=no" etiketlerini ekle, ve daha sonra [http://product.itoworld.com/map/69 bu harita üzerinde] renklendirilmesini izle.
     title: Bir yolu aydınlat
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] Android cıhazlar için en yaygın ÖpenStreetMap uygulamalarından birisi, ileri derecede özelleştirilebilir ancak bazıları için biraz fazla karmaşıktır. "OSM Editing" eklentisini kur ve herhangi bir yere bir nokta ekle. Eğer arayüzde kaybolursan [http://osmand.net/features?id=osm-editing-plugin yardım belgelerini] oku.'
     title: OsmAnd kullan
   improve_river:
     description: "Bir çok nehir haritaya eklenmiştir. Ama sorun, bunun düşük çözünürlüklü uydu görüntüleri kullanılarak yapılmış olması. Daha iyisini yapabilirsin. JOSM uygulamasını aç, bir nehir seç, \"W\" tuşuna baş ve nehrin şeklini iyileştir. Bir \"waterway=river\" bul ve en az 10 nokta ekle."
@@ -30,7 +29,6 @@ tr:
     description: 'Değişiklik kümesi açıklamaları önemlidir. Ama bugün senin için önemli değil: Bir değişiklik yap ve değişiklik kümesi açıklamasına "fix" yaz, sadece bu üç harf, başka bir şeye gerek yok.'
     title: Küçük Bir Düzeltme
   gomap:
-    description: 'Android platformunda pek çok OSM düzenleme uygulaması varken, iOS için çok yoktur. Platform için en iyi OSM düzenleme uygulaması [https://itunes.apple.com/app/id592990211 Go Map!!] (Ünlem işaretleri ile birlikte) olmuştur ancak 2015 yılından beri güncellenmedi. Halen çalışıyor, hemen dene ve uygulama ile bir düzenleme yap.'
     title: Go Map!!!
   giveway:
     description: Üçgen "yol ver" işaretini haritaya eklemek için ozel bir etiket var. Tahmin edebileceğin üzere [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Ya Mapıllary üzerinen ya da belleğinden işareti bul, yol vermesi gereken otoyola bir nokta ekle ve bu noktayı bu etiketle işaretle. Ana yola da priority_road etiketi ekle.

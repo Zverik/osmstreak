@@ -26,7 +26,6 @@ vi:
   fix:
     title: Sửa đổi Nhỏ
   gomap:
-    description: 'Trong khi nền tảng Android có nhiều chương trình vẽ OSM, iOS đang thiếu. Chương trình vẽ OSM đầy đủ nhất cho iOS là [https://itunes.apple.com/app/id592990211 Go Map!!] (có hai dấu chấm than), nhưng nó không được cập nhật sau 2015. Tuy nhiên, nó vẫn hoạt động: hãy thử sửa đổi dùng chương trình này.'
     title: Go Map!!
   giveway:
     title: Nhường đường

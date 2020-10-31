@@ -18,7 +18,6 @@ de:
     description: Städte sehen nachts viel besser aus, wenn die Straßen beleuchtet sind. Füge "lit=yes" order "lit=no" zu ein paar Straßen hinzu und sieh dir die Farben später [http://product.itoworld.com/map/69 auf dieser Karte] an.
     title: Trage eine Straßenlaterne ein.
   osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] ist eine bekannte OpenStreetMap-App für Android-Geräte. Du kannst total viel in den Einstellungen konfigurieren, was für manche aber ein wenig zu komplex sein mag. Du kannst sogar neue Punkte zur Karte hinzufügen. Installiere das "OSM Editing" Plugin und erstelle irgendwo einen neuen Punkt. Lies dir [http://osmand.net/features?id=osm-editing-plugin die Anleitung] durch, wenn du Hilfe benötigst.'
     title: Benutze OsmAnd
   improve_river:
     description: "Die meisten Flüsse sind bereits eingetragen. Das Problem besteht darin, dass ein Satellitenbild mit niedriger Auflösung verwendet wurde. Jetzt kannst du es besser machen: starte JOSM, wähle einen Fluss aus, drücke \"W\" und verbessere die Linie. Füge einem \"waterway=river\" mindestens 10 Punkte hinzu."
@@ -30,7 +29,6 @@ de:
     description: 'Changeset-Kommentare sind wichtig. Außer heute: mache eine Änderung und schreibe "fix" in das Changeset-Kommentar-Feld. Nur diese drei Buchstaben, mehr nicht.'
     title: Ein kleiner Fix
   gomap:
-    description: 'Während für Android-Geräte viele OSM Editoren existieren, sieht es für iOS-Benutzer eher schlecht aus. Der beste OSM Editor für iOS heißt [https://itunes.apple.com/app/id592990211 Go Map!!] (mit Ausrufezeichen), aber er wurde das letzte Mal 2015 upgedated. Trotzdem funktioniert er noch: Versuche es, mache eine Änderung mit diesem Editor.'
     title: Fange an zu mappen!
   giveway:
     description: Es gibt einen speziellen Tag, um ein "Vorfahrt gewähren" Schild einzutragen. Das ist der Tag [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Finde solch ein Schild, entweder über Mapillary oder dein Gedächtnis, platziere einen Knoten (Node) auf eine Straße, die Vorfahrt gewähren muss und füge diesen Tag hinzu. Wenn du magst, kannst du auch den "priority_road" Tag auf die Hauptstraße setzen.

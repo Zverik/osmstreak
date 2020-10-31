@@ -1,6 +1,5 @@
 it:
   only_text: "Spiacente, si accettano solo messaggi di testo."
-  no_code: "Andare in {0}/impostazioni e premere il collegamento telegram, poi fare clic su \"Inizia\" qui."
   wrong_code: "Il tuo codice sembra sbagliato."
   welcome: "Benvenuto {}!"
   already_logged: "Sei già registrato come {}."

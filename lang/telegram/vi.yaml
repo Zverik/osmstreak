@@ -1,6 +1,5 @@
 vi:
   only_text: "Rất tiếc, chỉ nhận được tin nhắn văn bản."
-  no_code: "Xin hãy vào {0}/settings, bấm liên kết Telegram, và bấm “Bắt đầu” tại đây."
   wrong_code: "Mã số của bạn hình như bị sai."
   welcome: "Chào mừng {}!"
   already_logged: "Bạn đã đăng nhập là {}."

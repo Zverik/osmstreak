@@ -1,6 +1,5 @@
 ast_ES:
   only_text: "Siéntolo, aceuto namái mensaxes de testu."
-  no_code: "Entra en {0}/settings y prime nel enllaz de telegram, llueu fai click en \"Start\" equí."
   wrong_code: "Paez que'l to códigu ta enquivocáu."
   welcome: "¡Afáyate {}!"
   already_logged: "Yá aniciasti sesión como {}."

@@ -1,6 +1,5 @@
 ja:
   only_text: "テキストメッセージ以外は無効です。"
-  no_code: "{0}/settings を表示し、telegramリンクを押して\"Start\"を押してください。"
   wrong_code: "コードに間違いがあるようです。"
   welcome: "ようこそ {}！"
   already_logged: "{} としてログイン中です。"

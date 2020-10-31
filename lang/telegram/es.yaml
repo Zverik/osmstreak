@@ -1,6 +1,5 @@
 es:
   only_text: "Lo siento, se aceptan sólo mensajes de texto."
-  no_code: "Por favor ve a {0}/settings y pulsa el enlace a Telegram, haz clic en \"Comenzar\" aquí."
   wrong_code: "Tu código parece incorrecto."
   welcome: "¡Bienvenido {}!"
   already_logged: "Ya estás registrado como {}."

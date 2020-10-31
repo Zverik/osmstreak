@@ -1,6 +1,5 @@
 hu:
   only_text: "Sajnos csak szöveges üzenetet tudunk fogadni."
-  no_code: "Menjen a {0}/settings menüponthoz, nyomja meg a telegram linket, majd kattintson itt a „Start”-ra."
   wrong_code: "Hibásnak tűnik a kódja."
   welcome: "Isten hozta {}!"
   already_logged: "Ön {} néven már be van jelentkezve."

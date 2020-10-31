@@ -1,6 +1,5 @@
 tr:
   only_text: "Üzgünüm, sadece metin halindeki iletileri kabul ediyorum."
-  no_code: "Lütfen {0}/settings adresine git ve Telegram bağlantısına tıkla, sonra bu sayfada \"Start\" bağlantısına tıkla."
   wrong_code: "Kodun yanlış görünüyor."
   welcome: "Merhaba {}!"
   already_logged: "Zaten {} olarak oturum açmış durumdasın."
