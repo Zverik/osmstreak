@@ -18,6 +18,7 @@ pl:
     description: Miasto nocą wygląda lepiej, kiedy ulice są oświetlone. Dodaj "lit=yes" lub "lit=no" do kilku dróg, a później zobacz, jak nabierają barw [http://product.itoworld.com/map/69 na tej mapie].
     title: Dodaj oświetlenie drogi
   osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] jest jedną z popularnych aplikacji OpenStreetMap dla urządzeń z Androidem. Bardzo konfigurowalna, ale zbyt skomplikowana dla niektórych. Może dodawać też punkty do mapy. Zainstaluj wtyczkę "OSM Editing" i utwórz gdzieś punkt. Przeczytaj [https://osmand.net/features?id=osm-editing-plugin dokumentację], jeśli się pogubisz w interfejsie.'
     title: Użyj OsmAnd
   improve_river:
     description: "Większość rzek jest już zmapowana. Problemem jest, że zostało to zrobione przy użyciu podkładów w niskiej rozdzielczości. Teraz możesz to zrobić lepiej: odpal JOSM, wybierz rzekę, naciśnij \"W\" i ulepsz rzekę. Dodaj co najmniej 10 węzłów do \"waterway=river\"."
@@ -29,6 +30,7 @@ pl:
     description: 'Komentarze do zestawów zmian są ważne. Ale nie dzisiaj: zrób zmianę i wpisz "fix" w polu komentarza. Tylko te trzy litery, nic więcej.'
     title: Mała poprawka
   gomap:
+    description: 'Podczas gdy na Androida jest wiele edytorów OSM, na iOS ich brakuje. Najlepszym edytorem OSM dla urządzeń Apple jest [https://itunes.apple.com/app/id592990211 Go Map!!] (z wykrzyknikami) i wrócił do aktywności z aktualizacjami dla iOS11 i iPhone X. Nie ma więcej wymówek - ruszaj mapować!!'
     title: Go Map!!
   giveway:
     description: Istnieje specjalny tag do mapowania trójkątnego znaku "ustąp pierwszeństwa". To jest oczywiście [https://wiki.openstreetmap.org/wiki/Pl:Tag:highway%3Dgive_way highway=give_way]. Znajdź taki znak używając Mapillary lub z pamięci, dodaj węzeł na drodze, która ma ustąpić pierwszeństwa i oznacz go tagiem. Dodaj również tag priority_road do głównej drogi.

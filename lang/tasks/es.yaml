@@ -18,6 +18,7 @@ es:
     description: La ciudad por la noche se ve mejor cuando las calles están iluminadas. Agregua ''lit=yes'' o ''lit=no'' a algunas carreteras, y más tarde mira cómo cambia de color [http://product.itoworld.com/map/69 en este mapa].
     title: Mapea una farola
   osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] es una popular aplicación  OpenStreetMap para dispositivos Android, altamente configurable, pero un poco compleja para algunos. Puede subir puntos al mapa. Instala el complemento "OSM Editing" y crea un punto en algún lugar. Lee [https://osmand.net/features/osm-editing-plugin la documentación] si te sientes perdido con la interfaz.'
     title: Usa OsmAnd
   improve_river:
     description: "Muchos ríos ya están mapeados. El tema es que, se ha hecho usando imágenes satélite de baja resolución. Ahora puedes mejorarlo: abre JOSM, selecciona un río, pulsa \"W\" y mejora la vía. Añade al menos 10 nodos a un \"waterway=river\"."
@@ -29,6 +30,7 @@ es:
     description: 'Los comentarios en los conjuntos de cambios son importantes, pero no para ti hoy: haz un cambio y pon "fix" en el campo de comentario del conjunto de cambios. Sólo esas tres letras, nada más.'
     title: Una pequeña correción
   gomap:
+    description: 'Mientras que la plataforma Android dispone de varios editores, en iOS no hay muchos. El mejor editor para ella ha sido https://itunes.apple.com/app/id592990211 Go Map!!] (con exclamaciones), y ha vuelto del abandono con una actualización para iOS11 y iPhoneX. No hay excusas para mapear sin parar, así que... Go Map!!'
     title: Go Map!!!
   giveway:
     description: Hay una etiqueta especial para mapear las señales de ceda el paso. Es [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way. Encuentra una de esas señales, bien usando Mapillary o tu memoria, coloca un nodo en la vía en la que se tiene que ceder el paso, y etiquétalo. Añade también la etiqueta priority_road para la vía que tiene la preferencia.

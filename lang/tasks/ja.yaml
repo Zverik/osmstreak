@@ -15,9 +15,10 @@ ja:
     description: MapillaryやOSMで使える情報源を参照して、まだ入力されていない方向転換制限（右折禁止・左折禁止）を見つけてみましょう。小さな街のほうがよいかもしれません。方向転換制限を入力してみましょう。
     title: 方向転換制限の入力
   lit:
-    description: 街灯の明かりに包まれた街はいつもより美しく見えます。道路に対して"lit=yes"や"lit=no"を入力し、少し時間が経ってから[http://product.itoworld.com/map/69 この地図で]街が色づいているのを見てみましょう。
+    description: 街灯の明かりに包まれた街はいつもより美しく見えます。道路に対して"lit=yes"や"lit=no"を入力しましょう。
     title: 道路に明かりを灯して
   osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] はAndroid端末でよく使われるOpenStreetMapアプリのひとつです。細かい箇所までカスタマイズできるのが特徴ですが、人によっては複雑すぎるかもしれません。OsmAndではマップにポイントを投稿することができます。 "OSM編集"プラグインをインストールして、どこかにポイントを作成しましょう。操作方法については [https://osmand.net/features/osm-editing-plugin ドキュメント] に解説があります。'
     title: OsmAndを使おう
   improve_river:
     description: "ほとんどの大きな河川は既に描かれています。問題は、それらが描かれる際に、画質の悪い衛星写真が利用されている、ということです。いまの私たちならもっと正確に描くことが可能です。JOSMを起動し、河川を選択し、 \"W\"キーを押してウェイの精度を向上させましょう。\"waterway=river\"ウェイに対して、10個以上のノードを追加してください。"
@@ -29,6 +30,7 @@ ja:
     description: '変更セットのコメントは本来非常に重要です。ですが、今日のあなたには関係ありません。地図の編集を行い、コメントとして単に "fix" とだけ入力しましょう。入力するのはこの3文字だけで、それ以上入れてはいけません。'
     title: 小さな変更
   gomap:
+    description: 'Androidプラットフォームには多くのOSMエディタが用意されていますが、iOSではまだ少ないのが現状です。そのなかで最も使いやすいアプリが  [https://itunes.apple.com/app/id592990211 Go Map!!] （ビックリマークまでを含む）です。iOS11とiPhone Xのためにアバンダンウェアから戻ってきました。外出先で地図を描かない理由はもうありません！'
     title: Go Map!!!
   giveway:
     description: OSMでは、三角形の "give way （ゆずれ）" 標識をマップするための特別なタグが用意されています。それがまさしく[https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]タグです。Mapillaryや自分の記憶を頼りにこの標識を探して、道路のライン上にノードを入力し、このタグをつけましょう。また、メインの道路のほうには priority_roadタグをつけましょう。
@@ -37,7 +39,7 @@ ja:
     description: OSMウェブサイトで地図メモ（notes）機能を有効化して、対応可能なメモを解決済みにしましょう。
     title: 地図メモ (note) の解決
   around_the_world:
-    description: 広大な範囲を選択して変更セットを作ってみましょう。例えば[https://www.openstreetmap.org/#map=5/-48.487/-69.895 チリ南部]や、[https://www.openstreetmap.org/#map=6/55.912/159.335 カムチャッカ半島]などです。
+    description: 広大な範囲を選択して変更セットを作ってみましょう。例えば[https://www.openstreetmap.org/#map=5/-48.487/-69.895 チリ南部]や、[https://www.openstreetmap.org/#map=6/55.912/159.335 カムチャツカ半島]などです。
     title: 5分で巡る世界旅行
   highway:
     description: 道路は、OpenStreetMapに参加するひとの多くがはじめて地図に描く地物です。近くにある描かれていない道路を探して、描いてみましょう。

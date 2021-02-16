@@ -18,6 +18,7 @@ it:
     description: Le città di notte sono più romantiche se le strade sono illuminate. Aggiungi "lit=yes" o "lit=no" ad alcune strade e poi guardale colorarsi [http://product.itoworld.com/map/69 su questa mappa].
     title: Mappa l'illuminazione stradale
   osmand:
+    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd] è una della applicazioni per OpenstreetMap sui dispositivi Android, molto configurabile anche se un po'' complicata per alcuni. Ti può aiutare a caricare dei punti sulla mappa. Installa il componente aggiuntivo "Modifiche OSM" e crea un punto da qualche parte. Leggi [http://osmand.net/features?id=osm-editing-plugin la documentazione] se ti perdi nell''interfaccia.'
     title: Usa OsmAnd
   improve_river:
     description: "Molti fiumi sono già stati mappati. Il problema è che spesso l'attività è stata svolta usando delle immagini satellitari a bassa risoluzione. Oggi puoi fare di meglio: lancia JOSM, seleziona un fiume, premi \"W\" e migliora il suo percorso. Aggiungi almeno 10 nodi a un \"waterway=river\""
@@ -29,6 +30,7 @@ it:
     description: 'I commenti ai gruppi di modifiche sono importanti. Ma non in questo momento per te: fai un cambiamento alla mappa e indica "fix" nel campo commento. Solo queste tre lettere, niente di più.'
     title: Una piccola modifica
   gomap:
+    description: 'Mentre la piattaforma Android ha parecchi editor OSM, iOS ne ha pochi. Il miglior editor OSM è stato [https://itunes.apple.com/app/id592990211 Go Map!!] (con i punti esclamativi), ed è tornato operativo con un aggiornamento per iOS11 e iPhone X. Non hai più scuse per mappare velocemente - quindi Go Map!!'
     title: Vai e mappa!!!
   giveway:
     description: C'è un tag speciale per mappare il segnale triangolare di precedenza. È [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way], ovviamente. Trova un segnale di questo tipo, usando Mapillary o la tua memoria, disegna un nodo sulla strada che deve dare la precedenza e aggiungi questo tag sul nodo. Aggiungi anche un tag priority_road sulla strada principale.

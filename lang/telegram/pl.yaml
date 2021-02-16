@@ -1,5 +1,6 @@
 pl:
   only_text: "Przepraszam, akceptuję tylko wiadomości tekstowe."
+  no_code: "Idź do {0}/ustawienia i naciśnij link telegrama, następnie kliknij tutaj \"Start\"."
   wrong_code: "Twój kod wygląda na błędny."
   welcome: "Witaj {}!"
   already_logged: "Jesteś już zalogowany jako {}."

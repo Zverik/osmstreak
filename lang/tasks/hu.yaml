@@ -18,6 +18,7 @@ hu:
     description: A városok éjszaka jobban néznek ki, ha az utcák ki vannak világítva. Néhány úthoz adj (lit=yes) vagy (lit=no) címkét!
     title: Fesd fel egy út kivilágítását
   osmand:
+    description: 'Android operációs rendszerű készülékeken az egyik legnépszerűbb OpenStreetMap-alkalmazás az [https://play.google.com/store/apps/details?id=net.osmand OsmAnd]. Rendkívül sok beállítás van rajta, egyeseknek viszont egy kicsit túl bonyolult. Az alkalmazás képes pontokat feltenni a térképre. Telepítsd az „OSM Editing” (OSM-szerkesztő) bővítményt, és hozz létre egy pontot valahol. Ha elveszel a felhasználói felületen, olvasd el [https://osmand.net/features/osm-editing-plugin a bővítmény dokumentációját].'
     title: Használd az OsmAndot
   improve_river:
     description: "A legtöbb térképet már felrajzolták a folyóra. A gond az, hogy ezek gyakran alacsony felbontású műholdképek alapján történtek. Most javíthatsz ezen: izzítsd be a JOSM-ot, válassz ki egy folyót, nyomd meg a W-t, és javítsd ki a vonalat. Adj legalább 10 pontot egy waterway=river címkéjű vonalhoz."
@@ -29,6 +30,7 @@ hu:
     description: 'A módosításkészletek megjegyzései fontosak – de nem ma. Végezz el egy módosítást, és írd be a módosításkészlet megjegyzésmezőjébe, hogy „fix”. Csak ezt a három betűt, semmi mást.'
     title: Egy apró javítás
   gomap:
+    description: 'Miközben Adrodidra sok OSM-szerkesztő van, iOS-re elég kevés. A legjobb a [https://itunes.apple.com/app/id592990211 Go Map!!] (így, felkiáltójelekkel), és most végre visszatért a szoftvertemetőből egy iOS11 és iPhoneX frissítéssel. Nincs több kifogás, amiért nem menet közben nem rajzolod a térképet. Irány térképezni!'
     title: Go Map!!!
   giveway:
     description: A csúcsára állított háromszöggel ábrázolt „elsőbbségadás kötelező” táblára külön címke van, mégpedig (természetesen) a [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Keress egy ilyent emlékezetből vagy a Mapillaryn, tégy egy pontot arra az útra, amelyen elsőbbséget kell adni, és címkézd föl az említett módon. A fő úthoz adj egy priority_road címkét is.
