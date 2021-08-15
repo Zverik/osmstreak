@@ -1,180 +1,218 @@
 en:
+  buildings:
+    title: Draw twenty buildings
+    description: Draw at least 20 buildings anywhere. Open your editor of choice,
+      navigate to a poorly mapped rural or industrial area, and trace some buildings.
+  coastline:
+    title: Improve a Coastline
+    description: >-
+      Many coastlines were imported long time ago from a digitized low-resolution
+      satellite imagery.
+      You can definitely help improving it in some places. Add at least 10 nodes to
+      a coastline.
+  farmland:
+    title: Map a Farmland
+    description: >-
+      Find a patch of tillage or pasture (try Central US or Western Russia),
+      and map it with [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland
+      landuse=farmland].
+  highway:
+    title: Map a Road
+    description: This is often the first thing people do when they join OpenStreetMap.
+      Find an unmapped road nearby and add it to the map.
+  josm:
+    title: Make an edit with JOSM
+    description: >-
+      Install the JOSM editor, if you haven't already, and edit something with it.
+      We recommend drawing some buildings:
+       
+      Download a part of the map, add an imagery layer,
+      press "A" and click on a corner of a building. Then double-click on an adjacent
+      corner,
+      making it a line. Then press "X" and drag the line out to make it a rectangle.
+      Finally, press "Alt+A" to add ''building=yes'', and then upload the change.
+  fix:
+    title: A Small Fix
+    description: >-
+      Changeset comments are important. But not for you today: make a change and put
+      "fix"
+      in the changeset comment field. Just these three letters, nothing more.
+  haiti:
+    title: Visit Haiti
+    description: >-
+      In 2010 there was a catastrophic earthquake 25 km west of the capital of Haiti,
+      Port-au-Prince.
+      That gave start to the Humanitarian Mapping Team, thanks to which the capital
+      was mapped
+      perfectly. But not the rest of the country: find an unmapped building in Haiti
+      and trace it.
+  improve_river:
+    title: Improve a River
+    description: >-
+      Most rivers have already been mapped. The issue is, that was done using a low-resolution
+      satellite imagery. Now you can do better: fire up JOSM, select a river, press
+      "W" and
+      improve the way. Add at least 10 nodes to a ''waterway=river''.
+  lanes:
+    title: Count the Lanes
+    description: Find a road that doesn't have the ''lanes'' tag set. Find a good
+      imagery for the area and add the number of lanes for that road.
+  leaf_types:
+    title: Plant two trees
+    description: >-
+      Mapping a tree is not just placing a ''natural=tree'' node. You have to specify
+      its type.
+      Please read wiki pages on [https://wiki.openstreetmap.org/wiki/Key:leaf_type
+      leaf_type]
+      and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle], and then
+      add 2 trees near your home or somewhere
+      familiar to you using these tags.
+  lit:
+    title: Paint a Road Lit
+    description: >-
+      City at night looks better when the streets are lit. Add ''lit=yes'' or ''lit=no''
+      to few roads.
+  mapsme:
+    title: Use Organic Maps
+    description: Organic Maps is not just a multiplatform map browser and navigator.
+      You can edit the map with it. Just click on an amenity, or choose "Add a place"
+      from the menu. Try that.
+  note:
+    title: Resolve a Note
+    description: Enable notes on the OSM website and find an unresolved note that
+      you can fix. Resolve the note.
+  railway:
+    title: Map a Railway
+    description: Railways usually get less attention than roads, but they are no less
+      important! Map a railway line. If you can't find where, try adding side tracks
+      at stations.
+  sidewalk:
+    title: Add a Sidewalk
+    description: >-
+      Sidewalk is a footway near a road. For a better pedestrian routing, find a road
+      without a sidewalk mapped,
+      and draw two footways on the both sides (backed by an imagery) with an additional
+      ''footway=sidewalk'' tag.
+      When adding a crossing as a way, use ''highway=footway + footway=crossing''.
+  stream:
+    title: Draw a Stream
+    description: Rivers are mostly mapped all over the world, but streams are too
+      numerous to have them all. Find a stream (not a ditch), and map it.
   bridge:
+    title: Draw a Bridge
     description: Many roads in rural areas are drawn fast and without regard for crossing
       streams and rivers. Find a place where a mapper forgot to split a road and mark
       a bridge, and do that for them.
-    title: Draw a Bridge
-  stream:
-    description: Rivers are mostly mapped all over the world, but streams are too
-      numerous to have them all. Find a stream (not a ditch), and map it.
-    title: Draw a Stream
+  delete:
+    title: Delete!
+    description: It is not hard to find something to map. But can you find anything
+      to delete? Delete 5 objects — but only these that are obsolete or redundant.
+  giveway:
+    title: Give Way
+    description: >-
+      There is a special tag for mapping the triangle "give way" sign.
+      It's [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way],
+      obviously.
+      Find such a sign, either by using Mapillary or your memory, place a node on
+      a highway that has to give way,
+      and tag that node with the tag. Also add a [https://wiki.openstreetmap.org/wiki/Key:priority_road
+      priority_road tag] to the main road.
+  gomap:
+    title: Go Map!!!
+    description: >-
+      While Android platform has many OSM editors, iOS is lacking. The best OSM editor
+      for it is [https://itunes.apple.com/app/id592990211 Go Map!!] (with exclamation
+      marks), and it has come back from abandonware with an update for iOS11 and iPhone
+      X. No more excuses not to map on the go - so go map!!
+  lamps:
+    title: Plant a Street Lamp
+    description: >-
+      Is it dark outside? Do you see a street lighed by a lamp? We're pretty sure
+      that lamp is not mapped.
+      Add at least two [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp
+      highway=street_lamp]s.
+  osmand:
+    title: Use OsmAnd
+    description: >-
+      [https://play.google.com/store/apps/details?id=net.osmand OsmAnd] is one of
+      the popular
+      OpenStreetMap applications for Android devices,
+      highly configurable, but a bit too complex for some. It can upload points to
+      the map.
+      Install the "OSM Editing" plugin and create a point somewhere. Read
+      [https://osmand.net/features/osm-editing-plugin the documentation] if you get
+      lost
+      in the interface.
+  streetcomplete:
+    title: Map with StreetComplete
+    description: >-
+      If your phone is an iPhone, bad luck. For Android, install the
+      [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
+      StreetComplete]
+      application and do a few tasks. They really take a second each.
+  switch:
+    title: Make Two Railway Switches
+    description: >-
+      When two railways merge, they do it with a railway switch. Find a station,
+      and add at least two [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch
+      railway=switch]
+      tags to nodes where railways connect.
+  tracks:
+    title: Draw some track roads
+    description: >-
+      A track road is a road leading to some farm or in a forest. It is marked by
+      [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]
+      with optional ''tracktype=gradeN'', with N from 1 (best) to 5 (worst).
+      Find a field or a forest and draw 2-3 km of a track.
+  turn_restriction:
+    title: Add a Turn Restriction
+    description: Find an unmapped turn restriction on Mapillary or other OSM-compatible
+      source. Choose a smaller town if you like. Map the restriction.
+  turnlanes:
+    title: Turn Lanes
+    description: >-
+      Read the [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane
+      turn:lanes] description,
+      find an intersection with lanes visible on a satellite imagery or on Mapillary,
+      and map all the turn lanes on all four sides of the intersection.
+  waste_basket:
+    title: Waste Baskets
+    description: >-
+      When outside, you are passing a lot of waste baskets: near shops, at bus stops,
+      at house entrances. Remember one, and map it with ''amenity=waste_basket''.
+  bench:
+    title: Map a Bench
+    description: Remember when you walked around a park, and there were benches? Try
+      to remember their locations, since for this task you need to add one bench.
+  hot_task:
+    title: Fix a building
+    description: >-
+      Open [https://tasks.hotosm.org/ HOT Tasking Manager] and choose a random active
+      task.
+      Inside, choose a random yellow rectangle and do a validation. See how novice
+      mappers draw their buildings,
+      meditate on that a bit, and then fix them: straighten the edges, improve shapes.
+      Just a couple would do.
   postcode:
+    title: Add a Postcode
     description: In some countries, like Russia or the USA, you can find a postcode
       in a publicly-available database. In others you just know it or deduce it from
       indirect sources, like a shop website. Find a postcode for any building that
       does not have it, and map it.
-    title: Add a Postcode
-  bench:
-    description: Remember when you walked around a park, and there were benches? Try
-      to remember their locations, since for this task you need to add one bench.
-    title: Map a Bench
-  turn_restriction:
-    description: Find an unmapped turn restriction on Mapillary or other OSM-compatible
-      source. Choose a smaller town if you like. Map the restriction.
-    title: Add a Turn Restriction
-  lit:
-    description: City at night looks better when the streets are lit. Add ''lit=yes''
-      or ''lit=no'' to few roads, and later watch it get coloured [http://product.itoworld.com/map/69
-      on this map].
-    title: Paint a Road Lit
-  osmand:
-    description: '[https://play.google.com/store/apps/details?id=net.osmand OsmAnd]
-      is one of the popular OpenStreetMap applications for Android devices, highly
-      configurable, but a bit too complex for some. It can upload points to the map.
-      Install the "OSM Editing" plugin and create a point somewhere. Read [https://osmand.net/features/osm-editing-plugin
-      the documentation] if you get lost in the interface.'
-    title: Use OsmAnd
-  improve_river:
-    description: "Most rivers have already been mapped. The issue is, that was done\
-      \ using a low-resolution satellite imagery. Now you can do better: fire up JOSM,\
-      \ select a river, press \"W\" and improve the way. Add at least 10 nodes to\
-      \ a ''waterway=river''."
-    title: Improve a River
-  josm:
-    description: "Install the JOSM editor, if you haven't already, and edit something\
-      \ with it. We recommend drawing some buildings:\n \nDownload a part of the map,\
-      \ add an imagery layer, press \"A\" and click on a corner of a building. Then\
-      \ double-click on an adjacent corner, making it a line. Then press \"X\" and\
-      \ drag the line out to make it a rectangle. Finally, press \"Alt+A\" to add\
-      \ ''building=yes'', and then upload the change."
-    title: Make an edit with JOSM
-  fix:
-    description: 'Changeset comments are important. But not for you today: make a
-      change and put "fix" in the changeset comment field. Just these three letters,
-      nothing more.'
-    title: A Small Fix
-  gomap:
-    description: 'While Android platform has many OSM editors, iOS is lacking. The
-      best OSM editor for it is [https://itunes.apple.com/app/id592990211 Go
-      Map!!] (with exclamation marks), and it has come back from abandonware with
-      an update for iOS11 and iPhone X. No more excuses not to map on the go - so go map!!'
-    title: Go Map!!!
-  giveway:
-    description: There is a special tag for mapping the triangle "give way" sign.
-      It's [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way],
-      obviously. Find such a sign, either by using Mapillary or your memory, place
-      a node on a highway that has to give way, and tag that node with the tag. Also
-      add a priority_road tag to the main road.
-    title: Give Way
-  note:
-    description: Enable notes on the OSM website and find an unresolved note that
-      you can fix. Resolve the note.
-    title: Resolve a Note
-  around_the_world:
-    description: Let's create a changeset with an enormous bounding box. Map something
-      first in [https://www.openstreetmap.org/#map=5/-48.487/-69.895 South Chile],
-      and then in [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
-    title: Around the World in Five Minutes
-  highway:
-    description: This is often the first thing people do when they join OpenStreetMap.
-      Find an unmapped road nearby and add it to the map.
-    title: Map a Road
   subway:
-    description: For this you need to know the [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping
-      Public Transport v2 schema]. Head to the [https://osmz.ru/subways/ Subway Validator]
-      and pick a city with an error in the subway. It should involve modifying a subway
-      route. Fix it — and you may go, or continue tidying up the network.
     title: Fix a subway
-  buildings:
-    description: Draw at least 20 buildings anywhere. Open your editor of choice,
-      navigate to a poorly mapped rural or industrial area, and trace some buildings.
-    title: Draw twenty buildings
-  lanes:
-    description: Find a road that doesn't have the ''lanes'' tag set. Find a good
-      imagery for the area and add the number of lanes for that road.
-    title: Count the Lanes
-  streetcomplete:
-    description: If your phone is an iPhone, bad luck. For Android, install the [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
-      StreetComplete] application and do a few tasks. They really take a second each.
-    title: Map with StreetComplete
-  leaf_types:
-    description: Mapping a tree is not just placing a ''natural=tree'' node. You have
-      to specify its type. Please read wiki pages on [https://wiki.openstreetmap.org/wiki/Key:leaf_type
-      leaf_type] and [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle],
-      and then add 2 trees near your home or somewhere familiar to you using these
-      tags.
-    title: Plant two trees
-  waste_basket:
-    description: "When outside, you are passing a lot of waste baskets: near shops,\
-      \ at bus stops, at house entrances. Remember one, and map it with ''amenity=waste_basket''."
-    title: Waste Baskets
+    description: >-
+      For this you need to know the [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping
+      Public Transport v2 schema].
+      Head to the [https://osmz.ru/subways/ Subway Validator] and pick a city with
+      an error in the subway.
+      It should involve modifying a subway route. Fix it — and you may go, or continue
+      tidying up the network.
   tiger:
-    description: '[https://wiki.openstreetmap.org/wiki/TIGER TIGER] is a public domain
-      road dataset in USA. It was imported in 2005, and the import was imperfect.
-      Find a highway with tiger:reviewed=no and fix at least three, setting a correct
-      road class and removing the tag.'
     title: Fix a Tiger
-  tracks:
-    description: A track road is a road leading to some farm or in a forest. It is
-      marked by [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track]
-      with optional ''tracktype=gradeN'', with N from 1 (best) to 5 (worst). Find
-      a field or a forest and draw 2-3 km of a track.
-    title: Draw some track roads
-  hot_task:
-    description: 'Open [https://tasks.hotosm.org/ HOT Tasking Manager] and choose
-      a random active task. Inside, choose a random yellow rectangle and do a validation.
-      See how novice mappers draw their buildings, meditate on that a bit, and then
-      fix them: straighten the edges, improve shapes. Just a couple would do.'
-    title: Fix a building
-  lamps:
-    description: Is it dark outside? Do you see a street lighed by a lamp? We're pretty
-      sure that lamp is not mapped. Add at least two [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp
-      highway=street_lamp]s.
-    title: Plant a Street Lamp
-  coastline:
-    description: Many coastlines were imported long time ago from a digitized low-resolution
-      satellite imagery. You can definitely help improving it in some places. Add
-      at least 10 nodes to a coastline.
-    title: Improve a Coastline
-  haiti:
-    description: 'In 2010 there was a catastrophic earthquake 25 km west of the capital
-      of Haiti, Port-au-Prince. That gave start to the Humanitarian Mapping Team,
-      thanks to which the capital was mapped perfectly. But not the rest of the country:
-      find an unmapped building in Haiti and trace it.'
-    title: Visit Haiti
-  railway:
-    description: Railways usually get less attention than roads, but they are no less
-      important! Map a railway line. If you can't find where, try adding side tracks
-      at stations.
-    title: Map a Railway
-  turnlanes:
-    description: Read the [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane
-      turn:lanes] description, find an intersection with lanes visible on a satellite
-      imagery or on Mapillary, and map all the turn lanes on all four sides of the
-      intersection.
-    title: Turn Lanes
-  farmland:
-    description: Find a patch of tillage or pasture (try Central US or Western Russia),
-      and map it with [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland
-      landuse=farmland].
-    title: Map a Farmland
-  switch:
-    description: When two railways merge, they do it with a railway switch. Find a
-      station, and add at least two [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch
-      railway=switch] tags to nodes where railways connect.
-    title: Make a Railway Switch
-  mapsme:
-    description: MAPS.ME is not just a multiplatform map browser and navigator. You
-      can edit the map with it. Just click on an amenity, or choose "Add a place"
-      from the menu. Try that.
-    title: Use MAPS.ME
-  sidewalk:
-    description: Sidewalk is a footway near a road. For a better pedestrian routing,
-      find a road without a sidewalk mapped, and draw two footways on the both sides
-      (backed by an imagery) with an additional ''footway=sidewalk'' tag. When adding
-      a crossing as a way, use ''highway=footway + footway=crossing''.
-    title: Add a Sidewalk
-  delete:
-    description: It is not hard to find something to map. But can you find anything
-      to delete? Delete 5 objects — but only these that are obsolete or redundant.
-    title: Delete!
+    description: >-
+      [https://wiki.openstreetmap.org/wiki/TIGER TIGER] is a public domain road dataset
+      in USA.
+      It was imported in 2005, and the import was imperfect.
+      Find a highway with tiger:reviewed=no and fix at least three, setting a correct
+      road class and removing the tag.

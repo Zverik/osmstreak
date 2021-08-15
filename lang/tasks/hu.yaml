@@ -1,103 +1,180 @@
 hu:
-  bridge:
-    description: Vidéki területeken gyakran sietve rajzolnak utakat, és nem figyelnek a patakokkal és folyókkal történő kereszteződésekre. Keress egy helyet, ahol a térképező elfelejtette elvágni az utat és jelölni a hidat, és tedd meg ezt Te!
-    title: Rajzolj fel egy hidat
-  stream:
-    description: A folyók többnyire világszerte szerepelnek a térképen, patakból azonban túl sok van. Keress egy patakot (ne árkot), és rajzold fel a térképre!
-    title: Rajzolj fel egy patakot
-  postcode:
-    description: Egyes országokban, például Oroszországban, az USA-ban vagy Magyarországon az irányítószámok nyilvános adatbázisokban is megtalálhatók. Más országokban valamilyen közvetett forrásból kell kikövetkeztetni őket. Keress egy irányítószám nélkül épületet, és címkézd fel a megfelelő irányítószámmal.
-    title: Adj meg egy irányítószámot
-  bench:
-    description: Amikor legutóbb egy parkban sétáltál, padokat is láttál, emlékszel? Próbáld felidézni a helyüket, mert ebben a feladatban fel kell tenned a térképre egy padot.
-    title: Rajzolj fel egy padot
-  turn_restriction:
-    description: Keress egy a térképen még nem szereplő bekanyarodási korlátozást a Mapillaryn vagy más, OSM-mel összeegyeztethető forrásban. Ha gondolod, válassz egy kisebb várost, és rajzold fel a térképre a korlátozást.
-    title: Adj meg egy bekanyarodási korlátozást
-  lit:
-    description: A városok éjszaka jobban néznek ki, ha az utcák ki vannak világítva. Néhány úthoz adj (lit=yes) vagy (lit=no) címkét!
-    title: Fesd fel egy út kivilágítását
-  osmand:
-    description: 'Android operációs rendszerű készülékeken az egyik legnépszerűbb OpenStreetMap-alkalmazás az [https://play.google.com/store/apps/details?id=net.osmand OsmAnd]. Rendkívül sok beállítás van rajta, egyeseknek viszont egy kicsit túl bonyolult. Az alkalmazás képes pontokat feltenni a térképre. Telepítsd az „OSM Editing” (OSM-szerkesztő) bővítményt, és hozz létre egy pontot valahol. Ha elveszel a felhasználói felületen, olvasd el [https://osmand.net/features/osm-editing-plugin a bővítmény dokumentációját].'
-    title: Használd az OsmAndot
-  improve_river:
-    description: "A legtöbb térképet már felrajzolták a folyóra. A gond az, hogy ezek gyakran alacsony felbontású műholdképek alapján történtek. Most javíthatsz ezen: izzítsd be a JOSM-ot, válassz ki egy folyót, nyomd meg a W-t, és javítsd ki a vonalat. Adj legalább 10 pontot egy waterway=river címkéjű vonalhoz."
-    title: Szabályozz egy folyót
-  josm:
-    description: "Ha eddig még nem tetted meg, telepítsd a JOSM szerkesztőt, és szerkessz vele valamit. Mi néhány épületet ajánlunk kezdésnek:\n \nTöltsd le a térkép egy részét, adj hozzá egy műholdkép-réteget, nyomd meg az A-t, majd kattints egy épület valamelyik sarkára. Aztán kattints duplán a szomszédos sarokra, hogy létrejöjjön egy vonal. Ez után nyomd meg az X-et, és húzd ki a vonalat, hogy egy téglalapot alkosson. Végül nyomd meg az Alt-A-t, add hozzá a building=yes címkét, majd töltsd föl a módosítást."
-    title: Szerkessz valami JOSM-mal
-  fix:
-    description: 'A módosításkészletek megjegyzései fontosak – de nem ma. Végezz el egy módosítást, és írd be a módosításkészlet megjegyzésmezőjébe, hogy „fix”. Csak ezt a három betűt, semmi mást.'
-    title: Egy apró javítás
-  gomap:
-    description: 'Miközben Adrodidra sok OSM-szerkesztő van, iOS-re elég kevés. A legjobb a [https://itunes.apple.com/app/id592990211 Go Map!!] (így, felkiáltójelekkel), és most végre visszatért a szoftvertemetőből egy iOS11 és iPhoneX frissítéssel. Nincs több kifogás, amiért nem menet közben nem rajzolod a térképet. Irány térképezni!'
-    title: Go Map!!!
-  giveway:
-    description: A csúcsára állított háromszöggel ábrázolt „elsőbbségadás kötelező” táblára külön címke van, mégpedig (természetesen) a [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way]. Keress egy ilyent emlékezetből vagy a Mapillaryn, tégy egy pontot arra az útra, amelyen elsőbbséget kell adni, és címkézd föl az említett módon. A fő úthoz adj egy priority_road címkét is.
-    title: Elsőbbségadás kötelező!
-  note:
-    description: Engedélyezd az [https://openstreetmap.org OSM-weboldalon] a megjegyzések megjelenítését, és keress egy lezáratlant, amelyet meg tudsz javítani. Oldd meg, és zárd le a jegyzetet!
-    title: Oldj meg egy megjegyzést
-  around_the_world:
-    description: Készítsünk egy módosításkészletet egy hatalmas határolókeretben! Térképezz fel valamit először [https://www.openstreetmap.org/#map=5/-48.487/-69.895 Chile déli részén], majd [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamcsatkán].
-    title: Öt perc alatt a Föld körül
-  highway:
-    description: Gyakran ez az első, amit az emberek elvégeznek, amikor csatlakoznak az OpenStreetMap-közösséghez. Keress a közeledben egy térképen nem szereplő utat, és rajzold fel a térképre!
-    title: Rajzolj fel egy utat
-  subway:
-    description: Ehhez ismerned kell a  [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping Public Transport v2 sémát]. Lépj a [http://osmz.ru/subways/ metróérvényesítő] oldalra, és válassz egy várost, ahol hibás a metró feltérképezése. Ez alighanem a metróútvonal módosításával fog járni. Javítsd ki – aztán mehetsz, amerre látsz, vagy folytathatod a hálózat tisztítását.
-    title: Javíts ki egy metrót
   buildings:
-    description: Rajzolj legalább 20 épületet, bárhol. Nyiss meg egy tetszés szerinti szerkesztőt, keress egy hiányosan feltérképezett vidéki vagy ipari területet, és rajzold körül pár épület széleit.
     title: Rajzolj fel húsz épületet
-  lanes:
-    description: Keress egy olyan utat, amelyen nincs beállítva „lanes” címke. Keress egy jó minőségű műholdfelvételt a területről, és add meg az úton lévő sávok számát.
-    title: Számold meg a sávokat
-  streetcomplete:
-    description: Ha iPhone-od van, az pech. Androidos készülék esetén telepítsd a [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] alkalmazást, és végezz el egy pár feladatot. Tényleg csak pár másodpercbe kerül!
-    title: Térképezz StreetComplete-tel
-  leaf_types:
-    description: Egy fa feltérképezése nem csak abból áll, hogy lepottyantasz egy „natural=tree” címkét. A fa típusát is meg kell határoznod. Olvasd el a [https://wiki.openstreetmap.org/wiki/Key:leaf_type lombtípusról] és a [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle lombciklusról] szóló wikioldalakat, aztán e címkék segítségével rajzolj fel két fát a környékeden vagy egy másik ismerős területen.
-    title: Ültess két fát
-  waste_basket:
-    description: "Az utcán járva egy csomó szemétkosár mellett elmegyünk: buszmegállóban, boltok mellett vagy házak bejáratnál. Gondolj vissza egyre, és rajzold fel a térképre az „amenity=waste_basket” címke használatával."
-    title: Szemeteskosarak
-  tiger:
-    description: 'A [https://wiki.openstreetmap.org/wiki/TIGER TIGER] egy nyilvánosan használható adatbázis az USA-ban. 2005-ben importálták az OpenStreetMapbe, de a bevitel tökéletlen lett. Keress „tiger:reviewed=no” címkéjű utakat, és javíts ki legalább hármat, vagyis állítsd be rajta a helyes útkategóriát, és távolítsd el a címkét.'
-    title: Javíts ki egy tigrist
-  tracks:
-    description: Egy mezőgazdasági út általában egy gazdasághoz vagy az erdőbe vezet; a térképen [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack „highway=track”] címkével jelöljük. Ez kiegészülhet egy „tracktype=gradeN” címkével, ahol az N egy 1-től (legjobb) 5-ig (legrosszabb) terjedő szám lehet. Keress egy szántóföldet, mezőt vagy erdőt, és rajzolj be rajta 2-3 km mezőgazdasági utat.
-    title: Rajzolj föl néhány mezőgazdasági utat
-  hot_task:
-    description: 'Nyisd meg a [https://tasks.hotosm.org/ Humanitárius OpenStreetMap Team feladatkezelőjét],  és válassz egy véletlenszerű feladatot. Itt válassz egy sárga téglalapot és végezz el egy érvényesítést (validation). Nézd meg, hogy rajzolják fel épületeiket az újonc térképezők, gondolkodj el rajta egy kicsit, aztán javítsd ki őket: egyenesítsd ki az éleket, javítsd ki az épületek alakját. Már néhány ilyen is segítség.'
-    title: Javíts ki egy épületet
-  lamps:
-    description: Sötét van kint? Látod, ahogy az utcát megvilágítják a lámpák? Elég valószínű, hogy az a lámpa nem szerepel a térképen. Rajzolj fel legalább két utcai lámpát a [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp] címkével!
-    title: Ültess el egy utcai lámpát
+    description: Rajzolj legalább 20 épületet, bárhol. Nyiss meg egy tetszés szerinti szerkesztőt, keress egy hiányosan feltérképezett vidéki vagy ipari területet, és rajzold körül pár épület széleit.
   coastline:
-    description: Sok partvonalat réges-régen importáltak digitalizált, kis felbontású műholdképekből. Egyes helyeken egyértelműen sokat segíthetsz, ha kijavítod őket. Adj legalább 10 pontot egy tenger- vagy tóparthoz.
     title: Igazíts ki egy partvonalat
-  haiti:
-    description: '2010-ben katasztrofális földrengés volt Haiti fővárosától, Port-au-Prince-től 25 km-re nyugatra. Ez volt a kezdő lökés a Humanitárius OpenStreetMap Team (HOT) létrejöttéhez, aminek köszönhetően a főváros tökéletesen fel lett térképezve. Az ország többi része azonban nem: egy műholdképen keress egy a térképen még nem szereplő épületet Haitin, és rajzold körbe!'
-    title: Látogass el Haitira
-  railway:
-    description: A vasutak általában kevesebb figyelmet kapnak, mint a közutak, pedig nem kevésbé fontosak. Rajzolj föl egy vasútvonalat! Ha nem tudod, hol keress ilyent, próbálj meg egy vasútállomáson néhány mellékvágányt fölrajzolni.
-    title: Térképezz fel egy vasutat
-  turnlanes:
-    description: Olvasd el a  [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane „turn:lanes”] címke leírását, egy műholdképen vagy a Mapillaryn keress egy olyan kereszteződést, ahol kanyarodósávok is vannak, és rajzold fel a térképre az összes kanyarodosávot a kereszteződésnek mind a négy oldalán.
-    title: Kanyarodósáv
+    description: >-
+        Sok partvonalat réges-régen importáltak digitalizált, kis felbontású műholdképekből.
+        Egyes helyeken egyértelműen sokat segíthetsz, ha kijavítod őket. Adj legalább
+        10 pontot egy tenger- vagy tóparthoz.
   farmland:
-    description: Keress egy darabkányi megművelt földet vagy legelőt (próbálkozhatsz például az USA középső részével, Nyugat-Oroszországgal vagy a magyar Kis- vagy Nagyalfölddel). Ha megvan, térképezd fel a [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland „landuse=farmland”] címke használatával.
     title: Rajzolj fel egy mezőgazdasági területet
-  switch:
-    description: Ahol két vasútvonal egyesül, ott van egy váltó. Keress egy vasútállomást, és adj hozzá legalább két [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch „railway=switch”] címkét ott, ahol a vágányok kapcsolódnak.
-    title: Jelölj meg egy vasúti váltót
-  mapsme:
-    description: A MAPS.ME nem csupán egy több platformon is használható térképböngésző és útvonaltervező alkalmazás. Szerkeszteni is lehet vele a térképet. Egyszerűen kattints egy hasznos vagy fontos létesítményre vagy válaszd ki a menüből a „Hely hozzáadását”. Próbáld ki!
-    title: Használd a maps.me-t
+    description: >-
+        Keress egy darabkányi megművelt földet vagy legelőt (próbálkozhatsz például
+        az USA középső részével, Nyugat-Oroszországgal vagy a magyar Kis- vagy Nagyalfölddel).
+        Ha megvan, térképezd fel a [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland
+        „landuse=farmland”] címke használatával.
+  highway:
+    title: Rajzolj fel egy utat
+    description: Gyakran ez az első, amit az emberek elvégeznek, amikor csatlakoznak az OpenStreetMap-közösséghez. Keress a közeledben egy térképen nem szereplő utat, és rajzold fel a térképre!
+  josm:
+    title: Szerkessz valami JOSM-mal
+    description: >-
+        Ha eddig még nem tetted meg, telepítsd a JOSM szerkesztőt, és szerkessz vele
+        valamit. Mi néhány épületet ajánlunk kezdésnek:
+
+
+        Töltsd le a térkép egy részét, adj hozzá egy műholdkép-réteget, nyomd meg
+        az A-t, majd kattints egy épület valamelyik sarkára. Aztán kattints duplán
+        a szomszédos sarokra, hogy létrejöjjön egy vonal. Ez után nyomd meg az X-et,
+        és húzd ki a vonalat, hogy egy téglalapot alkosson. Végül nyomd meg az Alt-A-t,
+        add hozzá a building=yes címkét, majd töltsd föl a módosítást.
+  fix:
+    title: Egy apró javítás
+    description: >-
+        A módosításkészletek megjegyzései fontosak – de nem ma. Végezz el egy módosítást,
+        és írd be a módosításkészlet megjegyzésmezőjébe, hogy „fix”. Csak ezt a három
+        betűt, semmi mást.
+  haiti:
+    title: Látogass el Haitira
+    description: >-
+        2010-ben katasztrofális földrengés volt Haiti fővárosától, Port-au-Prince-től
+        25 km-re nyugatra. Ez volt a kezdő lökés a Humanitárius OpenStreetMap Team
+        (HOT) létrejöttéhez, aminek köszönhetően a főváros tökéletesen fel lett térképezve.
+        Az ország többi része azonban nem: egy műholdképen keress egy a térképen még
+        nem szereplő épületet Haitin, és rajzold körbe!
+  improve_river:
+    title: Szabályozz egy folyót
+    description: >-
+        A legtöbb térképet már felrajzolták a folyóra. A gond az, hogy ezek gyakran
+        alacsony felbontású műholdképek alapján történtek. Most javíthatsz ezen: izzítsd
+        be a JOSM-ot, válassz ki egy folyót, nyomd meg a W-t, és javítsd ki a vonalat.
+        Adj legalább 10 pontot egy waterway=river címkéjű vonalhoz.
+  lanes:
+    title: Számold meg a sávokat
+    description: Keress egy olyan utat, amelyen nincs beállítva „lanes” címke. Keress egy jó minőségű műholdfelvételt a területről, és add meg az úton lévő sávok számát.
+  leaf_types:
+    title: Ültess két fát
+    description: >-
+        Egy fa feltérképezése nem csak abból áll, hogy lepottyantasz egy „natural=tree”
+        címkét. A fa típusát is meg kell határoznod. Olvasd el a [https://wiki.openstreetmap.org/wiki/Key:leaf_type
+        lombtípusról] és a [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle lombciklusról]
+        szóló wikioldalakat, aztán e címkék segítségével rajzolj fel két fát a környékeden
+        vagy egy másik ismerős területen.
+  lit:
+    title: Fesd fel egy út kivilágítását
+  note:
+    title: Oldj meg egy megjegyzést
+    description: Engedélyezd az [https://openstreetmap.org OSM-weboldalon] a megjegyzések megjelenítését, és keress egy lezáratlant, amelyet meg tudsz javítani. Oldd meg, és zárd le a jegyzetet!
+  railway:
+    title: Térképezz fel egy vasutat
+    description: A vasutak általában kevesebb figyelmet kapnak, mint a közutak, pedig nem kevésbé fontosak. Rajzolj föl egy vasútvonalat! Ha nem tudod, hol keress ilyent, próbálj meg egy vasútállomáson néhány mellékvágányt fölrajzolni.
   sidewalk:
-    description: A járda egy út melletti gyalogút. A jobb gyalogos útvonaltervezés érdekében keress egy feltérképezetlen járdával rendelkező utat, és húzz egy-egy járdát a két oldalára (természetesen műholdkép alapján) egy kiegészítő „footway=sidewalk” címkével. Ha vonalként rajzolsz fel egy kereszteződést, akkor a „highway=footway” és „footway=crossing” címkekombinációt használd.
     title: Adj meg egy járdát
+    description: >-
+        A járda egy út melletti gyalogút. A jobb gyalogos útvonaltervezés érdekében
+        keress egy feltérképezetlen járdával rendelkező utat, és húzz egy-egy járdát
+        a két oldalára (természetesen műholdkép alapján) egy kiegészítő „footway=sidewalk”
+        címkével. Ha vonalként rajzolsz fel egy kereszteződést, akkor a „highway=footway”
+        és „footway=crossing” címkekombinációt használd.
+  stream:
+    title: Rajzolj fel egy patakot
+    description: A folyók többnyire világszerte szerepelnek a térképen, patakból azonban túl sok van. Keress egy patakot (ne árkot), és rajzold fel a térképre!
+  bridge:
+    title: Rajzolj fel egy hidat
+    description: Vidéki területeken gyakran sietve rajzolnak utakat, és nem figyelnek a patakokkal és folyókkal történő kereszteződésekre. Keress egy helyet, ahol a térképező elfelejtette elvágni az utat és jelölni a hidat, és tedd meg ezt Te!
   delete:
-    description: Térképre rajzolandó dolgot találni nem túl nehéz. De találsz-e valami törölnivalót? Törölj 5 objektumot a térképről – de csak akkor, ha már elavultak vagy fölöslegesek!
     title: Törlés!
+    description: Térképre rajzolandó dolgot találni nem túl nehéz. De találsz-e valami törölnivalót? Törölj 5 objektumot a térképről – de csak akkor, ha már elavultak vagy fölöslegesek!
+  giveway:
+    title: Elsőbbségadás kötelező!
+  gomap:
+    title: Go Map!!!
+    description: >-
+        Miközben Adrodidra sok OSM-szerkesztő van, iOS-re elég kevés. A legjobb a
+        [https://itunes.apple.com/app/id592990211 Go Map!!] (így, felkiáltójelekkel),
+        és most végre visszatért a szoftvertemetőből egy iOS11 és iPhoneX frissítéssel.
+        Nincs több kifogás, amiért nem menet közben nem rajzolod a térképet. Irány
+        térképezni!
+  lamps:
+    title: Ültess el egy utcai lámpát
+    description: >-
+        Sötét van kint? Látod, ahogy az utcát megvilágítják a lámpák? Elég valószínű,
+        hogy az a lámpa nem szerepel a térképen. Rajzolj fel legalább két utcai lámpát
+        a [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp highway=street_lamp]
+        címkével!
+  osmand:
+    title: Használd az OsmAndot
+    description: >-
+        Android operációs rendszerű készülékeken az egyik legnépszerűbb OpenStreetMap-alkalmazás
+        az [https://play.google.com/store/apps/details?id=net.osmand OsmAnd]. Rendkívül
+        sok beállítás van rajta, egyeseknek viszont egy kicsit túl bonyolult. Az alkalmazás
+        képes pontokat feltenni a térképre. Telepítsd az „OSM Editing” (OSM-szerkesztő)
+        bővítményt, és hozz létre egy pontot valahol. Ha elveszel a felhasználói felületen,
+        olvasd el [https://osmand.net/features/osm-editing-plugin a bővítmény dokumentációját].
+  streetcomplete:
+    title: Térképezz StreetComplete-tel
+    description: >-
+        Ha iPhone-od van, az pech. Androidos készülék esetén telepítsd a [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
+        StreetComplete] alkalmazást, és végezz el egy pár feladatot. Tényleg csak
+        pár másodpercbe kerül!
+  switch:
+    description: >-
+        Ahol két vasútvonal egyesül, ott van egy váltó. Keress egy vasútállomást,
+        és adj hozzá legalább két [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch
+        „railway=switch”] címkét ott, ahol a vágányok kapcsolódnak.
+  tracks:
+    title: Rajzolj föl néhány mezőgazdasági utat
+    description: >-
+        Egy mezőgazdasági út általában egy gazdasághoz vagy az erdőbe vezet; a térképen
+        [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack „highway=track”]
+        címkével jelöljük. Ez kiegészülhet egy „tracktype=gradeN” címkével, ahol az
+        N egy 1-től (legjobb) 5-ig (legrosszabb) terjedő szám lehet. Keress egy szántóföldet,
+        mezőt vagy erdőt, és rajzolj be rajta 2-3 km mezőgazdasági utat.
+  turn_restriction:
+    title: Adj meg egy bekanyarodási korlátozást
+    description: Keress egy a térképen még nem szereplő bekanyarodási korlátozást a Mapillaryn vagy más, OSM-mel összeegyeztethető forrásban. Ha gondolod, válassz egy kisebb várost, és rajzold fel a térképre a korlátozást.
+  turnlanes:
+    title: Kanyarodósáv
+    description: >-
+        Olvasd el a  [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane
+        „turn:lanes”] címke leírását, egy műholdképen vagy a Mapillaryn keress egy
+        olyan kereszteződést, ahol kanyarodósávok is vannak, és rajzold fel a térképre
+        az összes kanyarodosávot a kereszteződésnek mind a négy oldalán.
+  waste_basket:
+    title: Szemeteskosarak
+    description: >-
+        Az utcán járva egy csomó szemétkosár mellett elmegyünk: buszmegállóban, boltok
+        mellett vagy házak bejáratnál. Gondolj vissza egyre, és rajzold fel a térképre
+        az „amenity=waste_basket” címke használatával.
+  bench:
+    title: Rajzolj fel egy padot
+    description: Amikor legutóbb egy parkban sétáltál, padokat is láttál, emlékszel? Próbáld felidézni a helyüket, mert ebben a feladatban fel kell tenned a térképre egy padot.
+  hot_task:
+    title: Javíts ki egy épületet
+    description: >-
+        Nyisd meg a [https://tasks.hotosm.org/ Humanitárius OpenStreetMap Team feladatkezelőjét],  és
+        válassz egy véletlenszerű feladatot. Itt válassz egy sárga téglalapot és végezz
+        el egy érvényesítést (validation). Nézd meg, hogy rajzolják fel épületeiket
+        az újonc térképezők, gondolkodj el rajta egy kicsit, aztán javítsd ki őket:
+        egyenesítsd ki az éleket, javítsd ki az épületek alakját. Már néhány ilyen
+        is segítség.
+  postcode:
+    title: Adj meg egy irányítószámot
+    description: Egyes országokban, például Oroszországban, az USA-ban vagy Magyarországon az irányítószámok nyilvános adatbázisokban is megtalálhatók. Más országokban valamilyen közvetett forrásból kell kikövetkeztetni őket. Keress egy irányítószám nélkül épületet, és címkézd fel a megfelelő irányítószámmal.
+  subway:
+    title: Javíts ki egy metrót
+    description: >-
+        Ehhez ismerned kell a  [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping
+        Public Transport v2 sémát]. Lépj a [http://osmz.ru/subways/ metróérvényesítő]
+        oldalra, és válassz egy várost, ahol hibás a metró feltérképezése. Ez alighanem
+        a metróútvonal módosításával fog járni. Javítsd ki – aztán mehetsz, amerre
+        látsz, vagy folytathatod a hálózat tisztítását.
+  tiger:
+    title: Javíts ki egy tigrist
+    description: >-
+        A [https://wiki.openstreetmap.org/wiki/TIGER TIGER] egy nyilvánosan használható
+        adatbázis az USA-ban. 2005-ben importálták az OpenStreetMapbe, de a bevitel
+        tökéletlen lett. Keress „tiger:reviewed=no” címkéjű utakat, és javíts ki legalább
+        hármat, vagyis állítsd be rajta a helyes útkategóriát, és távolítsd el a címkét.

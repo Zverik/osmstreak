@@ -1,101 +1,160 @@
 gl:
-  bridge:
-    description: Moitas estradas en sitios rurais debúxanse axiña e sen ter en conta os cruzamentos de regatos e ríos. Procura un lugar onde un cartógrafo esqueceu dividir unha estrada e marcar unha ponte, e faino por el.
-    title: Debuxar unha ponte
-  stream:
-    description: Os ríos están moi cartografados en todo o mundo, pero os regatos son moi numerosos para telos a todos. Atopa un regato (non unha cuneta) e cartográfaa.
-    title: Debuxa un regato
-  postcode:
-    description: Nalgúns países, coma Rusia ou EEUU, podes consultar os códigos postais nunha fonte de datos dispoñíbel ó público. Noutros só os podes coñecer ou deducir de fontes indiretas, coma o sitio web dun comercio. Atopa o código postal dun edificio que non o teña, e cartográfao.
-    title: Engade un código postal
-  bench:
-    description: Lembras pasar por un parque no que había bancos e onde estaban? Tenta lembrar as súas localizacións, por que para esta tarefa precisarás engadir un.
-    title: Cartografa un banco
-  turn_restriction:
-    description: Procura una restrición de xiro sen cartografar no Mapillary ou outra fonte compatíbel co OSM. Escolle unha vila pequeno se o desexas. Debuxa a restrición.
-    title: Engadir unha restrición de xiro
-  lit:
-    description: A cidade pola noite pode verse mellor cando as rúas están alumeadas. Engade ''lit=yes'' ou ''lit=no'' para marcar se están alumeadas ou non.
-    title: Debuxa unha estrada alumeada
-  osmand:
-    title: Empregar OsmAnd
-  improve_river:
-    description: "Moitos ríos xa están cartografados. O tema é que foi feito empregando imaxes satelitais de baixa resolución. Agora podes melloralo: abre o JOSM, escolle un río, preme \"W\" e mellora a vía. Engade polo menos dez nós a un \"waterway=river\"."
-    title: Mellora un río
+  buildings:
+    title: Debuxa vinte edificios
+    description: Debuxa polo menos 20 edificios nalgún lugar. Abre o teu editor preferido, navega até unha zona rural ou industrial mal cartografada, e traza algúns edificios.
+  coastline:
+    title: Mellora a beiramar
+    description: >-
+        Moitos treitos de beiramar foron importados hai moito tempo a partir de imaxes
+        satelitais de baixa resolución dixitalizadas. Nalgúns lugares sen dúbida podes
+        axudar a mellorala. Engade polo menos 10 nós á liña de costa.
+  farmland:
+    title: Debuxa un campo de cultivo
+    description: >-
+        Atopa unha zona de cultivo ou pasto (podes ollar no centro dos EE.UU. ou o
+        Oeste de Rusia) e cartográfaa con [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland
+        landuse=farmland].
+  highway:
+    title: Debuxa unha estrada
+    description: Decote isto é o primeiro que fai a xente cando se unen ó OpenStreetMap. Procura unha estrada preto de ti sen debuxar e engádea ó mapa.
   josm:
-    description: "Instala o editor JOSM, se non o fixeches xa, e edita algo con el. Recomendamos debuxar algúns edificios:\n \nBaixa unha parte do mapa, engade unha imaxe de fondo, preme \"A\" e fai clic na esquina dun edificio. Despois dobre clic nunha esquina adxacente, debuxando unha liña. Entón preme \"X\" e arrastra a liña até ter un rectángulo. Finalmente, preme \"Alt+A\" para engadir \"building=yes\" e sube as modificacións."
     title: Fai unha edición co JOSM
+    description: >-
+        Instala o editor JOSM, se non o fixeches xa, e edita algo con el. Recomendamos
+        debuxar algúns edificios:
+
+
+        Baixa unha parte do mapa, engade unha imaxe de fondo, preme "A" e fai clic
+        na esquina dun edificio. Despois dobre clic nunha esquina adxacente, debuxando
+        unha liña. Entón preme "X" e arrastra a liña até ter un rectángulo. Finalmente,
+        preme "Alt+A" para engadir "building=yes" e sube as modificacións.
   fix:
-    description: 'Os comentarios nos conxuntos de modificacións son importantes, pero non para ti hoxe: fai unha modificación e pon "fix" no campo do comentario do conxunto de modificacións. Só esas tres letras, nada máis.'
     title: Un pequeno arranxo
+    description: >-
+        Os comentarios nos conxuntos de modificacións son importantes, pero non para
+        ti hoxe: fai unha modificación e pon "fix" no campo do comentario do conxunto
+        de modificacións. Só esas tres letras, nada máis.
+  haiti:
+    title: Visita Haití
+    description: >-
+        No 2010 houbo un catastrófico terremoto 25km ó oeste da capital de Haití,
+        Porto Príncipe. Iso deu comezo ó Equipo de Cartografado Humanitario, grazas
+        ó cal a capital foi cartografada á perfección. Non así o resto do país: atopa
+        un edificio sen debuxar en Haití e trázao.
+  improve_river:
+    title: Mellora un río
+    description: >-
+        Moitos ríos xa están cartografados. O tema é que foi feito empregando imaxes
+        satelitais de baixa resolución. Agora podes melloralo: abre o JOSM, escolle
+        un río, preme "W" e mellora a vía. Engade polo menos dez nós a un "waterway=river".
+  lanes:
+    title: Conta os carrís
+    description: Atopa unha estrada que non teña a etiqueta "lanes". Empregando unha imaxe de fondo de calidade para a zona (PNOA en España) engade o número de carrís a esa estrada.
+  leaf_types:
+    title: Planta dúas árbores
+    description: >-
+        Cartografar unha árbore non é só colocar un nó con ''natural=tree''. Tes que
+        especificar o seu tipo. Le por favor as páxinas da wiki de [https://wiki.openstreetmap.org/wiki/ES:Key:leaf_type
+        tipo de folla] e [https://wiki.openstreetmap.org/wiki/ES:Key:leaf_cycle ciclo
+        da folla], e engade dúas árbores preto do teu fogar ou nalgún lugar que che
+        resulte familiar para empregar estas etiquetas.
+  lit:
+    title: Debuxa unha estrada alumeada
+  note:
+    title: Resolve unha nota
+    description: Activa as notas no sitio web do OSM e procura unha nota sen resolver que poidas arranxar. Resolve a nota.
+  railway:
+    title: Debuxa unha vía de tren
+    description: As vías de tren xeralmente reciben menos atención que as estradas, pero non son menos importantes! Debuxa unha liña de tren. Se non podes atopar onde, proba engadindo vías ás beiras das estacións.
+  sidewalk:
+    title: Engade unha beirarrúa
+    description: >-
+        As 'Sidewalk' son as vías peonís preto dunha calzada, o que se chaman beirarrúas.
+        Para mellorar o enrutamento a pé, procura unha estrada sen as súas beirarrúas
+        cartografadas e debuxa dúas vías peonís ("highway=footway") a ambas beiras
+        (empregando unha imaxe aérea) coa etiqueta adicional "footway=sidewalk". Cando
+        engadas un paso de peóns coma vía, emprega "highway=footway" + "footway=crossing".
+  stream:
+    title: Debuxa un regato
+    description: Os ríos están moi cartografados en todo o mundo, pero os regatos son moi numerosos para telos a todos. Atopa un regato (non unha cuneta) e cartográfaa.
+  bridge:
+    title: Debuxar unha ponte
+    description: Moitas estradas en sitios rurais debúxanse axiña e sen ter en conta os cruzamentos de regatos e ríos. Procura un lugar onde un cartógrafo esqueceu dividir unha estrada e marcar unha ponte, e faino por el.
+  delete:
+    title: Elimina!
+    description: Non é tan difícil atopar algo que cartografar, pero podes atopar algo que eliminar? Elimina 5 elementos — pero só se están obsoletos ou son redundantes.
+  giveway:
+    title: Ceda o paso
   gomap:
     title: Go Map!!!
-  giveway:
-    description: Hai unha etiqueta especial para cartografar os sinais de ceda o paso. É [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way highway=give_way. Atopa unha deses sinais, ben empregando o Mapillary ou ben grazas á túa memoria e imaxes aéreas, coloca un nó na vía na que se ten que ceder o paso, e etiquétao. Engade tamén a etiqueta priority_road para a vía que ten a prioridade.
-    title: Ceda o paso
-  note:
-    description: Activa as notas no sitio web do OSM e procura unha nota sen resolver que poidas arranxar. Resolve a nota.
-    title: Resolve unha nota
-  around_the_world:
-    description: Imos crear un conxunto de modificacións que abranga un recadro delimitador enorme. Primeiro cartografa algo no [https://www.openstreetmap.org/#map=5/-48.487/-69.895 sur de Chile], despois en [https://www.openstreetmap.org/#map=6/55.912/159.335 Kamchatka].
-    title: Arredor do mundo en cinco minutos
-  highway:
-    description: Decote isto é o primeiro que fai a xente cando se unen ó OpenStreetMap. Procura unha estrada preto de ti sen debuxar e engádea ó mapa.
-    title: Debuxa unha estrada
-  subway:
-    description: Para isto precisas coñecer o [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping esquema de Transporte Público v2]. Vai ó [https://osmz.ru/subways/ Validador de liñas de Metro] e escolle unha cidade cun erro no metro. Ten que implicar a modificación dunha liña de metro. Arránxao, e podes ir ou continuar ordenando a rede.
-    title: Arranxa unha liña de metro
-  buildings:
-    description: Debuxa polo menos 20 edificios nalgún lugar. Abre o teu editor preferido, navega até unha zona rural ou industrial mal cartografada, e traza algúns edificios.
-    title: Debuxa vinte edificios
-  lanes:
-    description: Atopa unha estrada que non teña a etiqueta "lanes". Empregando unha imaxe de fondo de calidade para a zona (PNOA en España) engade o número de carrís a esa estrada.
-    title: Conta os carrís
-  streetcomplete:
-    description: Se o teu teléfono é un iPhone, mala sorte. Para o Android, instala a aplicación [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete StreetComplete] e fai unhas poucas tarefas. Realmente só fai falla un segundo para cada unha.
-    title: Cartografa co StreetComplete
-  leaf_types:
-    description: Cartografar unha árbore non é só colocar un nó con ''natural=tree''. Tes que especificar o seu tipo. Le por favor as páxinas da wiki de [https://wiki.openstreetmap.org/wiki/ES:Key:leaf_type tipo de folla] e [https://wiki.openstreetmap.org/wiki/ES:Key:leaf_cycle ciclo da folla], e engade dúas árbores preto do teu fogar ou nalgún lugar que che resulte familiar para empregar estas etiquetas.
-    title: Planta dúas árbores
-  waste_basket:
-    description: "Mentres estás a pasear, pasas ó carón de moitas papeleiras: xunto a tendas, paraxes de bus, entradas de casas. Lembra unha e cartográfaa con ''amenity=waste_basket''."
-    title: Papeleiras
-  tiger:
-    description: 'O [https://wiki.openstreetmap.org/wiki/TIGER TIGER] é un conxunto de datos de estradas público nos EE.UU. Foi importado no 2005 e a importación foi impefecta. Procura estradas con tiger:reviewed=no e corrixe polo menos tres, axustando unha clase de estrada correcta e eliminando a etiqueta.'
-    title: Arranxa un Tiger
-  tracks:
-    description: Unha pista agrícola é unha estrada que se dirixe a unha granxa ou está nun bosque. Etiquétase con [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack highway=track] e de xeito opcional con ''tracktype=gradeN'', con N de 1 (mellor) a 5 (peor), para indicar a dureza do seu chan. Atopa un campo ou bosque e debuxa 2-3km dunha pista.
-    title: Debuxa algunha estrada
-  hot_task:
-    description: 'Abre o [https://tasks.hotosm.org/ HOT Tasking Manager] e escolle unha tarefa activa calquera. Dentro, escolle un rectángulo amarelo ó chou e fai unha validación. Comproba se debuxaron os edificios cartógrafos principiantes, medítao un chisco e despois corríxeos: aliña os bordos, mellora as formas. Cun par chega dabondo.'
-    title: Arranxa un edificio
   lamps:
-    description: É noite fóra? A rúa está alumeada por un farol? É bastante probábel que o farol non estea cartografado. Engade dous ou máis  [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp farois].
     title: Engade un farol
-  coastline:
-    description: Moitos treitos de beiramar foron importados hai moito tempo a partir de imaxes satelitais de baixa resolución dixitalizadas. Nalgúns lugares sen dúbida podes axudar a mellorala. Engade polo menos 10 nós á liña de costa.
-    title: Mellora a beiramar
-  haiti:
-    description: 'No 2010 houbo un catastrófico terremoto 25km ó oeste da capital de Haití, Porto Príncipe. Iso deu comezo ó Equipo de Cartografado Humanitario, grazas ó cal a capital foi cartografada á perfección. Non así o resto do país: atopa un edificio sen debuxar en Haití e trázao.'
-    title: Visita Haití
-  railway:
-    description: As vías de tren xeralmente reciben menos atención que as estradas, pero non son menos importantes! Debuxa unha liña de tren. Se non podes atopar onde, proba engadindo vías ás beiras das estacións.
-    title: Debuxa unha vía de tren
-  turnlanes:
-    description: Le a descrición de [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane turn:lanes], atopa unha intersección con indicacións de xiro por carril visíbeis nunha imaxe de fondo ou no Mapillary e engade todas as indicacións de xiro por carril nos catro lados da intersección.
-    title: Indicacións de xiro por carril
-  farmland:
-    description: Atopa unha zona de cultivo ou pasto (podes ollar no centro dos EE.UU. ou o Oeste de Rusia) e cartográfaa con [https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dfarmland landuse=farmland].
-    title: Debuxa un campo de cultivo
+    description: >-
+        É noite fóra? A rúa está alumeada por un farol? É bastante probábel que o
+        farol non estea cartografado. Engade dous ou máis  [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dstreet_lamp
+        farois].
+  osmand:
+    title: Empregar OsmAnd
+  streetcomplete:
+    title: Cartografa co StreetComplete
+    description: >-
+        Se o teu teléfono é un iPhone, mala sorte. Para o Android, instala a aplicación
+        [https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
+        StreetComplete] e fai unhas poucas tarefas. Realmente só fai falla un segundo
+        para cada unha.
   switch:
-    description: Onde se xuntan dúas vías de tren, fano cun cambio de agullas. Atopa unha estación e engade polo menos dúas etiquetas [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch railway=switch] ós nós onde se xuntan as vías.
-    title: Engade un cambio de agullas
-  mapsme:
-    description: O MAPS.ME non só é un visualizador do mapa e navegador multiplataforma. Podes editar o mapa con el. Sinxelamente preme nun punto de interese, ou escolle "Engadir un lugar" no menú. Téntao.
-    title: Emprega o MAPS.ME
-  sidewalk:
-    description: As 'Sidewalk' son as vías peonís preto dunha calzada, o que se chaman beirarrúas. Para mellorar o enrutamento a pé, procura unha estrada sen as súas beirarrúas cartografadas e debuxa dúas vías peonís ("highway=footway") a ambas beiras (empregando unha imaxe aérea) coa etiqueta adicional "footway=sidewalk". Cando engadas un paso de peóns coma vía, emprega "highway=footway" + "footway=crossing".
-    title: Engade unha beirarrúa
-  delete:
-    description: Non é tan difícil atopar algo que cartografar, pero podes atopar algo que eliminar? Elimina 5 elementos — pero só se están obsoletos ou son redundantes.
-    title: Elimina!
+    description: >-
+        Onde se xuntan dúas vías de tren, fano cun cambio de agullas. Atopa unha estación
+        e engade polo menos dúas etiquetas [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch
+        railway=switch] ós nós onde se xuntan as vías.
+  tracks:
+    title: Debuxa algunha estrada
+    description: >-
+        Unha pista agrícola é unha estrada que se dirixe a unha granxa ou está nun
+        bosque. Etiquétase con [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack
+        highway=track] e de xeito opcional con ''tracktype=gradeN'', con N de 1 (mellor)
+        a 5 (peor), para indicar a dureza do seu chan. Atopa un campo ou bosque e
+        debuxa 2-3km dunha pista.
+  turn_restriction:
+    title: Engadir unha restrición de xiro
+    description: Procura una restrición de xiro sen cartografar no Mapillary ou outra fonte compatíbel co OSM. Escolle unha vila pequeno se o desexas. Debuxa a restrición.
+  turnlanes:
+    title: Indicacións de xiro por carril
+    description: >-
+        Le a descrición de [https://wiki.openstreetmap.org/wiki/Key:turn#Turning_indications_per_lane
+        turn:lanes], atopa unha intersección con indicacións de xiro por carril visíbeis
+        nunha imaxe de fondo ou no Mapillary e engade todas as indicacións de xiro
+        por carril nos catro lados da intersección.
+  waste_basket:
+    title: Papeleiras
+    description: >-
+        Mentres estás a pasear, pasas ó carón de moitas papeleiras: xunto a tendas,
+        paraxes de bus, entradas de casas. Lembra unha e cartográfaa con ''amenity=waste_basket''.
+  bench:
+    title: Cartografa un banco
+    description: Lembras pasar por un parque no que había bancos e onde estaban? Tenta lembrar as súas localizacións, por que para esta tarefa precisarás engadir un.
+  hot_task:
+    title: Arranxa un edificio
+    description: >-
+        Abre o [https://tasks.hotosm.org/ HOT Tasking Manager] e escolle unha tarefa
+        activa calquera. Dentro, escolle un rectángulo amarelo ó chou e fai unha validación.
+        Comproba se debuxaron os edificios cartógrafos principiantes, medítao un chisco
+        e despois corríxeos: aliña os bordos, mellora as formas. Cun par chega dabondo.
+  postcode:
+    title: Engade un código postal
+    description: Nalgúns países, coma Rusia ou EEUU, podes consultar os códigos postais nunha fonte de datos dispoñíbel ó público. Noutros só os podes coñecer ou deducir de fontes indiretas, coma o sitio web dun comercio. Atopa o código postal dun edificio que non o teña, e cartográfao.
+  subway:
+    title: Arranxa unha liña de metro
+    description: >-
+        Para isto precisas coñecer o [https://wiki.openstreetmap.org/wiki/Proposed_features/Metro_Mapping
+        esquema de Transporte Público v2]. Vai ó [https://osmz.ru/subways/ Validador
+        de liñas de Metro] e escolle unha cidade cun erro no metro. Ten que implicar
+        a modificación dunha liña de metro. Arránxao, e podes ir ou continuar ordenando
+        a rede.
+  tiger:
+    title: Arranxa un Tiger
+    description: >-
+        O [https://wiki.openstreetmap.org/wiki/TIGER TIGER] é un conxunto de datos
+        de estradas público nos EE.UU. Foi importado no 2005 e a importación foi impefecta.
+        Procura estradas con tiger:reviewed=no e corrixe polo menos tres, axustando
+        unha clase de estrada correcta e eliminando a etiqueta.
