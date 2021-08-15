@@ -19,10 +19,13 @@ from datetime import datetime
 from db import database, Telegram, User
 from telepot.loop import MessageLoop
 from telepot.delegate import per_chat_id, create_open, pave_event_space
+from telepot.exception import TelegramError
+from peewee import OperationalError
 
 
 RE_TIME = re.compile(r'^\d?\d:\d\d$')
 last_reminder = None
+need_stop = False
 
 
 def desc_to_markdown(task):
@@ -57,6 +60,10 @@ class Player(telepot.helper.ChatHandler):
             return Telegram.get(Telegram.channel == self.id)
         except Telegram.DoesNotExist:
             return None
+        except OperationalError:
+            global need_stop
+            need_stop = True
+            raise
 
     def _find_user_by_code(self, code):
         for u in User.select():
@@ -71,11 +78,19 @@ class Player(telepot.helper.ChatHandler):
             self.sender.sendMessage(self.t('task_complete'))
         else:
             task = ch.load_task(task_obj.task, self.lang['tasks'])
-            self.sender.sendMessage(
-                u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
-                    task['emoji'], task['t_title'], desc_to_markdown(task),
-                    self.t('time_left'), ch.time_until_day_ends(self.lang),
-                    self.t('post_changeset')), parse_mode='Markdown')
+            try:
+                self.sender.sendMessage(
+                    u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
+                        task['emoji'], task['t_title'], desc_to_markdown(task),
+                        self.t('time_left'), ch.time_until_day_ends(self.lang),
+                        self.t('post_changeset')), parse_mode='Markdown')
+            except TelegramError:
+                logging.warn('Fails task: %s', task['t_title'])
+                self.sender.sendMessage(
+                    u'{}\n\n{}\n\n{}: {}\n\n{}'.format(
+                        task['t_title'], task,
+                        self.t('time_left'), ch.time_until_day_ends(self.lang),
+                        self.t('post_changeset')), parse_mode='Markdown')
 
     def _print_score(self):
         user = self._get_tg().user
@@ -282,5 +297,7 @@ if __name__ == '__main__':
     ])
     MessageLoop(bot).run_as_thread()
     while 1:
+        if need_stop:
+            sys.exit(3)
         send_reminders(bot)
         time.sleep(10)
