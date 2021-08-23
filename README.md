@@ -8,7 +8,7 @@ http://streak.osmz.ru
 
 ## Contribute ##
 
-Fell free to:
+Feel free to:
 *  do pull request
 *  submit issues
 *  create new challenges
