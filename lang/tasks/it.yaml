@@ -62,6 +62,12 @@ it:
         questi tag.
   lit:
     title: Mappa l'illuminazione stradale
+    description: >-
+        Di notte in città si vede meglio quando le strade sono illuminate. Aggiungi
+        “lit=yes” oppure “lit=no” a un po’ di strade.
+  mapsme:
+    title: Usa Organic Maps
+    description: Organic Maps non è soltanto una mappa con navigatore multipiattaforma. Puoi anche modificare la mappa. Clicca su un servizio/struttura o seleziona "Aggiungi un luogo" dal menu. Provalo.
   note:
     title: Risolvi una nota
     description: Abilita la visualizzazione delle note sul sito OSM e trova una nota non ancora risolta che pensi di poter mettere a posto. Risolvi la nota.
@@ -87,6 +93,12 @@ it:
     description: Non è difficile trovare qualcosa da mappare. Ma riesci a scovare qualcosa da cancellare? Cancella 5 oggetti - ma solo quelli obsoleti o duplicati.
   giveway:
     title: Dai la precedenza
+    description: >-
+        C'è un tag speciale per mappare il segnale triangolare di precedenza. È [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way
+        highway=give_way], ovviamente. Trova un segnale di questo tipo, usando Mapillary
+        o la tua memoria, disegna un nodo sulla strada che deve dare la precedenza
+        e aggiungi questo tag sul nodo. Aggiungi anche un tag [https://wiki.openstreetmap.org/wiki/Key:priority_road
+        priority_road] sulla strada principale.
   gomap:
     title: Vai e mappa!!!
     description: >-
@@ -117,6 +129,7 @@ it:
         StreetComplete] ed esegui qualche task. Ci vuole veramente un secondo per
         ognuno.
   switch:
+    title: Fai due scambi ferroviari
     description: >-
         Quando due ferrovie si uniscono lo fanno tramite uno scambio. Trova una stazione
         e aggiungi l'etichetta [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch

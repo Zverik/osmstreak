@@ -45,6 +45,11 @@ ja:
         leaf_type]ページや [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle leaf_cycle]ページを参照して、家の近所など見知った場所にある木を2本、OSMに入力してみましょう。
   lit:
     title: 道路に明かりを灯して
+    description: >-
+        道路に街灯があると、夜の街は良く見えます。 いくつかの道路に「lit = yes」または「lit = no」を追加しましょう。
+  mapsme:
+    title: Organic Maps を使おう
+    description: Organic Maps は単なるナビ付き地図ではありません。地図の編集だって可能です。表示されている施設をクリックするか、メニューにある"地図上に場所を追加"をクリックしてみてください。お試しあれ。
   note:
     title: 地図メモ (note) の解決
     description: OSMウェブサイトで地図メモ（notes）機能を有効化して、対応可能なメモを解決済みにしましょう。
@@ -68,6 +73,10 @@ ja:
     description: 地図になにかを追加するのは難しくありません。では削除するのはどうでしょう？ 地物を5つ以上削除しましょう。削除するのは、実際に既に無くなっていたり、間違って複数入力されていたりする地物だけにしてください。
   giveway:
     title: Give Way（ゆずれ）
+    description: >-
+        OSMでは、三角形の "give way （ゆずれ）" 標識をマップするための特別なタグが用意されています。それがまさしく[https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way
+        highway=give_way]タグです。Mapillaryや自分の記憶を頼りにこの標識を探して、道路のライン上にノードを入力し、このタグをつけましょう。また、メインの道路のほうには
+        priority_roadタグをつけましょう。
   gomap:
     title: Go Map!!!
     description: >-
@@ -90,6 +99,7 @@ ja:
         iPhoneのかた、本日は残念でした。Androidのかたは[https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete
         StreetComplete]をインストールして、タスクをいくつかこなしてみましょう。1つ1つのタスクは数秒で終わります。
   switch:
+    title: 分岐器の追加
     description: >-
         2つの線路が交差する場所には、分岐器（railway swith）があるはずです。鉄道駅を探し、線路が接続する場所に対して[https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch
         railway=switch]タグを付与したノードを2つ以上追加しましょう。

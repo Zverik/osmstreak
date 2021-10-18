@@ -64,6 +64,12 @@ hu:
         vagy egy másik ismerős területen.
   lit:
     title: Fesd fel egy út kivilágítását
+    description: >-
+        A városok éjszaka jobban néznek ki, ha az utcák ki vannak világítva. Néhány
+        úthoz adj (lit=yes) vagy (lit=no) címkét!
+  mapsme:
+    title: Használd az Organic Maps-et
+    description: Az Organic Maps nem csupán egy többplatformos térképböngésző és navigátor. Szerkesztheted is vele a térképet. Csak kattints egy fontos vagy hasznos létesítményre, vagy válaszd a menüből a „Hely hozzáadása” lehetőséget. Próbáld ki!
   note:
     title: Oldj meg egy megjegyzést
     description: Engedélyezd az [https://openstreetmap.org OSM-weboldalon] a megjegyzések megjelenítését, és keress egy lezáratlant, amelyet meg tudsz javítani. Oldd meg, és zárd le a jegyzetet!
@@ -89,6 +95,14 @@ hu:
     description: Térképre rajzolandó dolgot találni nem túl nehéz. De találsz-e valami törölnivalót? Törölj 5 objektumot a térképről – de csak akkor, ha már elavultak vagy fölöslegesek!
   giveway:
     title: Elsőbbségadás kötelező!
+    description: >-
+        Van egy speciális címke a háromszög alakú „elsőbbségadás kötelező” jelzőtábla
+        leképezésére. Ez természetesen a [https://wiki.openstreetmap.org/wiki/Tag:highway%3Dgive_way
+        highway=give_way]. Keress egy ilyen táblát, akár a Mapillaryn, akár a saját
+        emlékezetedben, helyezz el egy pontot egy olyan úton, amelyen elsőbbséget
+        kell adni, és címkézd fel a pontot a fenti címkével. A főútra helyezz egy
+        [https://wiki.openstreetmap.org/wiki/Key:priority_road priority_road címkét]
+        is.
   gomap:
     title: Go Map!!!
     description: >-
@@ -120,6 +134,7 @@ hu:
         StreetComplete] alkalmazást, és végezz el egy pár feladatot. Tényleg csak
         pár másodpercbe kerül!
   switch:
+    title: Rajzolj fel két vasúti váltót
     description: >-
         Ahol két vasútvonal egyesül, ott van egy váltó. Keress egy vasútállomást,
         és adj hozzá legalább két [https://wiki.openstreetmap.org/wiki/Tag:railway%3Dswitch
