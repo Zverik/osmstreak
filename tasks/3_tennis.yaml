@@ -1,0 +1,6 @@
+title: Fix some tennis courts
+emoji: 🎾
+description: Sometimes, multiple tennis courts are mapped as one. Find one such instance using this [https://overpass-turbo.eu/s/1bhu Overpass query] and fix it.
+test:
+  created_or_modified_ways: "leisure=pitch"
+  created_or_modified_ways_b: "sport=tennis"
