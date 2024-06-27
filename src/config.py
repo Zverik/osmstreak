@@ -6,7 +6,7 @@ DEBUG = False
 # Override these (and anything else) in config_local.py
 TELEGRAM_STATE = os.path.join(BASE_DIR, '..', 'telegram.state')
 DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, '..', 'streak.db')
-BASE_URL = 'http://localhost:5000'
+BASE_URL = 'http://127.0.0.1:5000'
 EMAIL_FROM = 'streak@localhost'
 
 LEVELS = [10, 70, 500, 2700]

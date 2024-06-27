@@ -19,7 +19,7 @@ oauth.register(
     authorize_url='https://www.openstreetmap.org/oauth2/authorize',
     client_id=app.config['OAUTH_KEY'] or '123',
     client_secret=app.config['OAUTH_SECRET'] or '123',
-    client_kwargs={'scope': 'read_prefs write_api'},
+    client_kwargs={'scope': 'read_prefs'},
 )
 
 
@@ -88,8 +88,8 @@ def html_esc(s):
 def login():
     if 'osm_token2' not in session:
         session['objects'] = request.args.get('objects')
-        return oauth.openstreetmap.authorize(
-            callback=url_for('oauth_callback'))
+        return oauth.openstreetmap.authorize_redirect(
+            app.config['BASE_URL'].rstrip('/') + url_for('oauth_callback'))
     return login()
 
 

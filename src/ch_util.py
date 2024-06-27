@@ -411,11 +411,22 @@ def get_user_changesets(user, token=None, lang=None):
     result = []
     if not lang:
         lang = {}
+
+    first_found_date = None
     for chs in resp.data:
         chtime = datetime.datetime.strptime(
             chs.get('created_at'), '%Y-%m-%dT%H:%M:%SZ')
         if chtime.date() <= last_task_day:
             continue
+
+        # Display changesets only for the earliest day.
+        # This is a hack to prevent clicking on today and then
+        # remembering you forgot to click on yesterday.
+        if first_found_date is None:
+            first_found_date = chtime.date()
+        elif chtime.date() > first_found_date:
+            continue
+
         chdata = {
             'id': int(chs.get('id')),
             'time': chs.get('created_at'),
