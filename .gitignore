@@ -3,6 +3,7 @@ __pycache__/
 config_local.py
 *.db
 *.swp
-venv/
+.venv/
 telegram.state
 *.log
+.mypy_cache/

@@ -1,24 +1,25 @@
-import config
-import ch_util as ch
 import os
-from db import database, User
-from www import app
+from ..db import database, User
+from . import app
+from .. import ch_util as ch
 from flask import (
     session, url_for, redirect, request,
     render_template, g, flash, jsonify
 )
-from flask_oauthlib.client import OAuth
+from authlib.integrations.flask_client import OAuth
+from authlib.common.errors import AuthlibBaseError
+from xml.etree import ElementTree as etree
 
 
-oauth = OAuth()
-openstreetmap = oauth.remote_app(
-    'OpenStreetMap',
-    base_url='https://api.openstreetmap.org/api/0.6/',
-    request_token_url='https://www.openstreetmap.org/oauth/request_token',
-    access_token_url='https://www.openstreetmap.org/oauth/access_token',
-    authorize_url='https://www.openstreetmap.org/oauth/authorize',
-    consumer_key=app.config['OAUTH_KEY'] or '123',
-    consumer_secret=app.config['OAUTH_SECRET'] or '123'
+oauth = OAuth(app)
+oauth.register(
+    'openstreetmap',
+    api_base_url='https://api.openstreetmap.org/api/0.6/',
+    access_token_url='https://www.openstreetmap.org/oauth2/token',
+    authorize_url='https://www.openstreetmap.org/oauth2/authorize',
+    client_id=app.config['OAUTH_KEY'] or '123',
+    client_secret=app.config['OAUTH_SECRET'] or '123',
+    client_kwargs={'scope': 'read_prefs write_api'},
 )
 
 
@@ -42,6 +43,8 @@ def dated_url_for(endpoint, **values):
                                      endpoint, filename)
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
+
+
 app.jinja_env.globals['dated_url_for'] = dated_url_for
 
 
@@ -83,24 +86,26 @@ def html_esc(s):
 
 @app.route('/login')
 def login():
-    if 'osm_token' not in session:
+    if 'osm_token2' not in session:
         session['objects'] = request.args.get('objects')
-        return openstreetmap.authorize(callback=url_for('oauth'))
+        return oauth.openstreetmap.authorize(
+            callback=url_for('oauth_callback'))
     return login()
 
 
 @app.route('/oauth')
-def oauth():
-    resp = openstreetmap.authorized_response()
-    if resp is None:
+def oauth_callback():
+    try:
+        token = oauth.openstreetmap.authorize_access_token()
+    except AuthlibBaseError:
         return 'Denied. <a href="' + url_for('login') + '">Try again</a>.'
-    session['osm_token'] = (
-            resp['oauth_token'],
-            resp['oauth_token_secret']
-    )
-    user_details = openstreetmap.get('user/details').data
-    session['osm_uid'] = int(user_details[0].get('id'))
+
+    session['osm_token2'] = token
+
+    response = oauth.openstreetmap.get('user/details')
+    user_details = etree.fromstring(response.content)
     name = user_details[0].get('display_name')
+    session['osm_uid'] = int(user_details[0].get('id'))
     user, created = User.get_or_create(uid=session['osm_uid'],
                                        defaults={'name': name})
     if user.name != name or created:
@@ -120,18 +125,11 @@ def oauth():
 
 @app.route('/logout')
 def logout():
-    if 'osm_token' in session:
-        del session['osm_token']
+    if 'osm_token2' in session:
+        del session['osm_token2']
     if 'osm_uid' in session:
         del session['osm_uid']
     return redirect(url_for('front'))
-
-
-@openstreetmap.tokengetter
-def get_token(token='user'):
-    if token == 'user' and 'osm_token' in session:
-        return session['osm_token']
-    return None
 
 
 def render_task(task):
@@ -151,7 +149,8 @@ def get_user():
 
 def get_ip():
     if 'X-Forwarded-For' in request.headers:
-        return request.headers.getlist("X-Forwarded-For")[0].rpartition(' ')[-1]
+        return request.headers.getlist(
+            "X-Forwarded-For")[0].rpartition(' ')[-1]
     return request.remote_addr or 'unknown'
 
 
@@ -161,8 +160,10 @@ def front():
     if not user:
         task = ch.load_task(ch.random_task_for_ip(get_ip()), g.lang['tasks'])
         msg = html_esc(g.lang['please_sign_in']).replace(
-            '[', '<a href="' + html_esc(url_for('login')) + '">').replace(']', '</a>')
-        return render_template('index.html', task=render_task(task), msg=msg, lang=g.lang)
+            '[', '<a href="' + html_esc(url_for('login')) + '">').replace(
+                ']', '</a>')
+        return render_template('index.html', task=render_task(task),
+                               msg=msg, lang=g.lang)
 
     task_obj = ch.get_or_create_task_for_user(user)
     task = ch.load_task(task_obj.task, g.lang['tasks'])
@@ -176,21 +177,22 @@ def userinfo(uid):
     user = get_user()
     try:
         quser = User.get(User.name == uid)
-        return render_template('userinfo.html', user=user, quser=quser, lang=g.lang)
+        return render_template('userinfo.html', user=user,
+                               quser=quser, lang=g.lang)
     except User.DoesNotExist:
         return 'Wrong user id'
 
 
 @app.route('/changeset')
 def changeset():
-    if 'osm_token' not in session:
+    if 'osm_token2' not in session:
         redirect(url_for('front'))
 
     cs_data = request.args.get('changeset')
     if not cs_data.strip():
         return redirect(url_for('front'))
     user = get_user()
-    msgs, _ = ch.submit_changeset(user, cs_data, openstreetmap)
+    msgs, _ = ch.submit_changeset(user, cs_data, session['osm_token2'])
     for m in msgs:
         flash(m)
     return redirect(url_for('front'))
@@ -198,11 +200,12 @@ def changeset():
 
 @app.route('/changesets')
 def get_changesets():
-    if 'osm_token' not in session:
+    if 'osm_token2' not in session:
         return jsonify(error='Log in please')
     user = User.get(User.uid == session['osm_uid'])
     try:
-        result = ch.get_user_changesets(user, openstreetmap, lang=g.lang)
+        result = ch.get_user_changesets(
+            user, session['osm_token2'], lang=g.lang)
     except Exception as e:
         import logging
         logging.error('Error getting user changesets: %s', e)
@@ -212,8 +215,9 @@ def get_changesets():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', user=get_user(), levels=config.LEVELS,
-                           lang=g.lang)
+    return render_template(
+        'about.html', user=get_user(), levels=app.config['LEVELS'],
+        lang=g.lang)
 
 
 @app.route('/settings')

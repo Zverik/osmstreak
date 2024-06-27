@@ -1,4 +1,4 @@
-import config
+from . import config
 from hashlib import sha256
 from playhouse.db_url import connect
 from playhouse.migrate import (
@@ -36,7 +36,7 @@ class User(BaseModel):
     def generate_code(self):
         m = sha256()
         m.update(str(self.uid))
-        m.update(self.name.encode('utf-8'))
+        m.update(self.name)
         m.update(config.SECRET_KEY)
         return m.hexdigest()
 

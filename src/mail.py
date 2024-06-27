@@ -1,20 +1,10 @@
 #!/usr/bin/env python
-import os
-import sys
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-sys.path.insert(0, BASE_DIR)
-PYTHON = 'python2.7'
-VENV_DIR = os.path.join(BASE_DIR, 'venv', 'lib', PYTHON, 'site-packages')
-if os.path.exists(VENV_DIR):
-    sys.path.insert(1, VENV_DIR)
-
-import config
-import ch_util as ch
 import smtplib
 import time
-from db import database, User
+from . import config
+from . import ch_util as ch
+from .db import database, User
 from email.mime.text import MIMEText
-from email.header import Header
 from email.utils import formataddr
 
 

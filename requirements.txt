@@ -1,6 +1,8 @@
-peewee>=2.8.0
-flask>=0.11
+peewee
+flask
 flask-Compress
-flask-OAuthlib
+authlib
 ruamel.yaml
 telepot
+gunicorn
+requests

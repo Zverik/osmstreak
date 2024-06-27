@@ -1,16 +1,17 @@
 # Changeset utils
 
-import config
 import datetime
 import logging
 import math
 import os
 import re
 import requests
-from db import database, Task
+from . import config
+from .db import database, Task
 from random import Random, choice
 from ruamel.yaml import YAML
 from xml.etree import ElementTree as etree
+from authlib.integrations.requests_client import OAuth2Auth
 
 
 RE_MARKUP_LINK = re.compile(r'\[(http[^ \]]+) +([^\]]+)\]')
@@ -36,9 +37,11 @@ def time_until_day_ends(lang=None):
         lang = {'time': {}}
     if halfhours > 2:
         if halfhours % 2 == 0:
-            return lang['time'].get('n_hours', '{} hours').format(halfhours/2)
+            return lang['time'].get('n_hours', '{} hours').format(
+                halfhours/2)
         else:
-            return lang['time'].get('n_hours', '{} hours').format(halfhours/2.0)
+            return lang['time'].get('n_hours', '{} hours').format(
+                halfhours/2.0)
     elif halfhours == 2:
         return lang['time'].get('hour', 'an hour')
     return lang['time'].get('n_minutes', '{} minutes').format(left // 60)
@@ -53,27 +56,18 @@ def merge_dict(target, other):
             target[k] = v
 
 
-def to_unicode(d):
-    if isinstance(d, dict):
-        return {to_unicode(k): to_unicode(v) for k, v in d.iteritems()}
-    elif isinstance(d, list):
-        return [to_unicode(s) for s in d]
-    elif isinstance(d, unicode):
-        return d.encode('utf-8')
-    else:
-        return d
-
-
 def load_language(path, lang):
     yaml = YAML()
-    with open(os.path.join(config.BASE_DIR, 'lang', path or '', 'en.yaml'), 'r') as f:
+    with open(os.path.join(
+            config.BASE_DIR, 'lang', path or '', 'en.yaml'), 'r') as f:
         data = yaml.load(f)
-        data = data[data.keys()[0]]
-    lang_file = os.path.join(config.BASE_DIR, 'lang', path or '', lang + '.yaml')
+        data = data[list(data.keys())[0]]
+    lang_file = os.path.join(
+        config.BASE_DIR, 'lang', path or '', lang + '.yaml')
     if os.path.exists(lang_file):
         with open(lang_file, 'r') as f:
             lang_data = yaml.load(f)
-            merge_dict(data, lang_data[lang_data.keys()[0]])
+            merge_dict(data, lang_data[list(lang_data.keys())[0]])
     # return to_unicode(data)
     return data
 
@@ -83,7 +77,7 @@ def load_language_from_user(path, user):
 
 
 def get_supported_languages():
-    return set([x[:x.index('.')].decode('utf-8') for x in os.listdir(
+    return set([x[:x.index('.')] for x in os.listdir(
         os.path.join(config.BASE_DIR, 'lang')) if '.yaml' in x])
 
 
@@ -134,7 +128,8 @@ def random_task_for_user(user):
     tasks = set(get_tasks(user.level))
     if not tasks:
         return None
-    last_tasks = set([x[0] for x in Task.select(Task.task).where(Task.user == user).order_by(
+    last_tasks = set([x[0] for x in Task.select(Task.task).where(
+        Task.user == user).order_by(
         Task.day.desc()).limit(int(len(tasks) * 0.7)).tuples()])
     return choice(list(tasks - last_tasks))
 
@@ -158,11 +153,12 @@ def get_or_create_task_for_user(user, date=None, ip=None):
 
 
 class RequestsWrapper(object):
-    def __init__(self):
+    def __init__(self, token=None):
         self.api = 'https://api.openstreetmap.org/api/0.6/'
+        self.auth = OAuth2Auth(token)
 
     def get(self, url):
-        resp = requests.get(self.api + url)
+        resp = requests.get(self.api + url, auth=self.auth)
         resp.status = resp.status_code
         resp.raw_data = resp.content
         if resp.status_code == 200:
@@ -177,7 +173,7 @@ def validate_tags(obj, tagtest):
     # level~^-[1-5]$
     # natural=wood;water
     # name,i~^mcdon
-    if isinstance(tagtest, basestring):
+    if isinstance(tagtest, str):
         tagtest = [tagtest]
     tags = {}
     for t in obj.findall('tag'):
@@ -241,7 +237,7 @@ class ValidationError(ValueError):
 
 
 def parse_changeset_id(changeset):
-    if isinstance(changeset, basestring):
+    if isinstance(changeset, str):
         m = RE_CHANGESET.match(changeset)
         if not m:
             raise ValidationError('wrong_id', changeset)
@@ -249,9 +245,8 @@ def parse_changeset_id(changeset):
     return changeset
 
 
-def validate_changeset(user, changeset, task_name=None, req=None):
-    if not req:
-        req = RequestsWrapper()
+def validate_changeset(user, changeset, task_name=None, token=None):
+    req = RequestsWrapper(token)
     resp = req.get('changeset/{}'.format(changeset))
     if resp.status != 200:
         raise ValidationError('api_error')
@@ -356,12 +351,12 @@ def get_last_task_day(user):
         return None
 
 
-def submit_changeset(user, changeset, req=None):
+def submit_changeset(user, changeset, token=None):
     """Validates the changeset, records it and returns a series of messages."""
     lang = load_language_from_user('', user)['validation']
     try:
         changeset = parse_changeset_id(changeset)
-        cs_date, conforms = validate_changeset(user, changeset, None, req)
+        cs_date, conforms = validate_changeset(user, changeset, None, token)
 
         if not cs_date:
             raise ValidationError('wrong_date')
@@ -399,9 +394,8 @@ def submit_changeset(user, changeset, req=None):
     return msgs, True
 
 
-def get_user_changesets(user, req=None, lang=None):
-    if not req:
-        req = RequestsWrapper()
+def get_user_changesets(user, token=None, lang=None):
+    req = RequestsWrapper(token)
     last_task_day = get_last_task_day(user)
     date = today()
     if not last_task_day or last_task_day == date:
@@ -411,13 +405,15 @@ def get_user_changesets(user, req=None, lang=None):
     resp = req.get('changesets?user={}&time={}'.format(
         user.uid, since.strftime('%Y-%m-%d')))
     if resp.status != 200:
-        logging.error('Error getting user changesets: %s %s', resp.status, resp.raw_data)
+        logging.error('Error getting user changesets: %s %s',
+                      resp.status, resp.raw_data)
         raise Exception('Error connecting to OSM API')
     result = []
     if not lang:
         lang = {}
     for chs in resp.data:
-        chtime = datetime.datetime.strptime(chs.get('created_at'), '%Y-%m-%dT%H:%M:%SZ')
+        chtime = datetime.datetime.strptime(
+            chs.get('created_at'), '%Y-%m-%dT%H:%M:%SZ')
         if chtime.date() <= last_task_day:
             continue
         chdata = {
