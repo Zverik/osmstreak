@@ -91,3 +91,7 @@ def migrate():
 
     if v.version != LAST_VERSION:
         raise ValueError('LAST_VERSION in db.py should be {}'.format(v.version))
+
+
+if __name__ == '__main__':
+    migrate()
