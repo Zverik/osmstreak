@@ -1,19 +1,17 @@
-#!/usr/bin/env python3
-import os
-import sys
 import logging
+import asyncio
 import re
-import telepot
-import time
+import os
 from . import config
 from . import ch_util as ch
 from .db import database, Telegram, User
+from aiogram import Bot, Dispatcher, html
+from aiogram.client.default import DefaultBotProperties
 from datetime import datetime, UTC
-from telepot.loop import MessageLoop
-from telepot.delegate import per_chat_id, create_open, pave_event_space
-from telepot.exception import TelegramError
 from peewee import OperationalError
 
+
+dp = Dispatcher()
 
 RE_TIME = re.compile(r'^\d?\d:\d\d$')
 last_reminder = None
@@ -72,14 +70,14 @@ class Player(telepot.helper.ChatHandler):
             task = ch.load_task(task_obj.task, self.lang['tasks'])
             try:
                 self.sender.sendMessage(
-                    u'{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
+                    '{} {}\n\n{}\n\n{}: {}\n\n{}'.format(
                         task['emoji'], task['t_title'], desc_to_markdown(task),
                         self.t('time_left'), ch.time_until_day_ends(self.lang),
                         self.t('post_changeset')), parse_mode='Markdown')
             except TelegramError:
                 logging.warn('Fails task: %s', task['t_title'])
                 self.sender.sendMessage(
-                    u'{}\n\n{}\n\n{}: {}\n\n{}'.format(
+                    '{}\n\n{}\n\n{}: {}\n\n{}'.format(
                         task['t_title'], task,
                         self.t('time_left'), ch.time_until_day_ends(self.lang),
                         self.t('post_changeset')), parse_mode='Markdown')
@@ -87,7 +85,7 @@ class Player(telepot.helper.ChatHandler):
     def _print_score(self):
         user = self._get_tg().user
         self.sender.sendMessage(self.t('n_points').format(
-            user.score) + u'\n' + (u'⭐' * user.level))
+            user.score) + '\n' + ('⭐' * user.level))
 
     def _register_changeset(self, changeset):
         user = self._get_tg().user
@@ -119,8 +117,9 @@ class Player(telepot.helper.ChatHandler):
         user = self._get_tg().user
         changesets = ch.get_user_changesets(user, lang=self.lang)
         if changesets:
-            msg = self.t('list_header') + u'\n\n' + u'\n'.join([u'/ch{}: {}, {}'.format(
-                c['id'], c['htime'], c['comment']) for c in changesets[:5]])
+            msg = (self.t('list_header') + '\n\n' + '\n'.join(
+                ['/ch{}: {}, {}'.format(c['id'], c['htime'], c['comment'])
+                 for c in changesets[:5]]))
             self.sender.sendMessage(msg)
         else:
             self.sender.sendMessage(self.t('no_changesets'))
@@ -149,7 +148,8 @@ class Player(telepot.helper.ChatHandler):
             self.lang = load_language(user)
             self.sender.sendMessage(self.t('lang_set'))
         else:
-            self.sender.sendMessage(self.t('no_such_lang').format(u', '.join(sorted(supported))))
+            self.sender.sendMessage(self.t('no_such_lang').format(
+                ', '.join(sorted(supported))))
 
     def _send_help(self):
         self.sender.sendMessage(self.t('help').format(web=config.BASE_URL))
@@ -173,7 +173,8 @@ class Player(telepot.helper.ChatHandler):
             no_code_msg = self.t('no_code')
             if command[0] == '/start':
                 if len(command) == 1:
-                    self.sender.sendMessage(no_code_msg.format(config.BASE_URL))
+                    self.sender.sendMessage(
+                        no_code_msg.format(config.BASE_URL))
                     return
                 hashcode = command[1]
             else:
@@ -197,7 +198,8 @@ class Player(telepot.helper.ChatHandler):
                 self._print_task()
             elif ch.RE_CHANGESET.match(text):
                 self._register_changeset(text)
-            elif command[0] and command[0].startswith('/ch') and ch.RE_CHANGESET.match(command[0][3:]):
+            elif (command[0] and command[0].startswith('/ch') and
+                  ch.RE_CHANGESET.match(command[0][3:])):
                 self._register_changeset(command[0][3:])
             elif command[0] == '/list':
                 self._list_changesets()
@@ -217,9 +219,11 @@ class Player(telepot.helper.ChatHandler):
             elif command[0] == '/stop':
                 self._set_reminder(None)
             elif command[0] == '/start':
-                self.sender.sendMessage(self.t('already_logged').format(self._get_tg().user.name))
+                self.sender.sendMessage(self.t('already_logged').format(
+                    self._get_tg().user.name))
             elif command[0] == '/whoami':
-                self.sender.sendMessage(self.t('you_are').format(self._get_tg().user.name))
+                self.sender.sendMessage(self.t('you_are').format(
+                    self._get_tg().user.name))
             elif command[0] == '/score':
                 self._print_score()
             elif command[0] == '/lang':
@@ -250,7 +254,7 @@ def send_reminder(bot, hm):
                 logging.error('Could not remind user %s: %s', tg.user.name, e.description)
 
 
-def send_reminders(bot):
+async def send_reminders():
     global last_reminder
     dnow = datetime.now(UTC)
     now = [dnow.hour, dnow.minute]
@@ -281,13 +285,22 @@ def send_reminders(bot):
         logging.warn('Could not write state file: %s', e)
 
 
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.WARNING, format='%(asctime)s %(message)s', datefmt='%H:%M:%S')
+async def main() -> None:
+    bot = Bot(token=config.TELEGRAM_TOKEN)
+    await dp.start_polling(bot)
+
+
+if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.WARNING, format='%(asctime)s %(message)s',
+        datefmt='%H:%M:%S')
     database.connect()
-    bot = telepot.DelegatorBot(config.TELEGRAM_TOKEN, [
-        pave_event_space()(per_chat_id(types=['private']), create_open, Player, timeout=10),
-    ])
-    MessageLoop(bot).run_as_thread()
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.create_task(send_reminders())
+    executor.start_polling(dp, skip_updates=True, on_shutdown=db.on_shutdown)
+
+    # TODO: delete this after implementing polling
     while 1:
         if need_stop:
             sys.exit(3)
