@@ -35,9 +35,9 @@ class User(BaseModel):
 
     def generate_code(self):
         m = sha256()
-        m.update(str(self.uid))
-        m.update(self.name)
-        m.update(config.SECRET_KEY)
+        m.update(str(self.uid).encode())
+        m.update(self.name.encode())
+        m.update(config.SECRET_KEY.encode())
         return m.hexdigest()
 
 
