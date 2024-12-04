@@ -1,0 +1,8 @@
+title: Draw a solar panel
+emoji: ☀️
+description: >-
+  Use satellite or aerial imagery to locate a solar panel. If you can not find one, have a look to the roofs of some houses.
+  Then draw an area over it with appopriate [https://wiki.openstreetmap.org/wiki/Tag:generator:type%3Dsolar_photovoltaic_panel tags].
+  Read this article, because some tags are mandatory.
+test:
+  created_area: "generator:method=photovoltaic"
