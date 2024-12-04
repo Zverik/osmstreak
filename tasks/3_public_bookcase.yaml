@@ -1,0 +1,8 @@
+title: Grab a book
+emoji: 📚
+description: >-
+  Have you ever get or drop a book in a public bookcase?
+  Try to remenber where, then add a node with the tag
+  [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpublic_bookcase amenity=public_bookcase].
+test:
+  created_node: "amenity=public_bookcase"
