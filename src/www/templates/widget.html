@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+        .osm-streak-widget {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            max-width: 320px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            box-sizing: border-box;
+        }
+        .osm-streak-widget h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .stats-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+        }
+        .stat-label {
+            font-size: 11px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+        .powered-by {
+            text-align: center;
+            font-size: 10px;
+            opacity: 0.8;
+            margin: 0;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .powered-by a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .powered-by a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="osm-streak-widget">
+        <h3>🎯 {{ user.name }}'s OSM Streak</h3>
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-value">{{ user.score }}</div>
+                <p class="stat-label">Score</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ user.level }}</div>
+                <p class="stat-label">Level</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ user.streak }}</div>
+                <p class="stat-label">Days</p>
+            </div>
+        </div>
+        <p class="powered-by">
+            Powered by <a href="http://streak.osmz.ru" target="_blank">OSM Streak</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -11,3 +11,4 @@ except ImportError:
     pass
 
 from . import streak
+from . import api
